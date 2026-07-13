@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cardinal Foundation Services — website
 
-## Getting Started
+Marketing site for [cardinalfoundationservices.com](https://cardinalfoundationservices.com).
 
-First, run the development server:
+Built with **Next.js 16** (App Router, TypeScript, Tailwind CSS v4), a
+**Resend**-powered contact form, and deployed to **Fly.io** as a Docker
+container. Pushes to `main` deploy automatically via GitHub Actions.
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local   # then paste your Resend API key
+npm run dev                  # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How the contact form works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The form (`src/app/contact-form.tsx`) posts JSON to the route handler at
+`src/app/api/contact/route.ts`, which validates the input and sends an email
+via Resend. Configuration comes from three environment variables:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable             | Purpose                                              |
+| -------------------- | ---------------------------------------------------- |
+| `RESEND_API_KEY`     | Your Resend API key (secret).                        |
+| `CONTACT_TO_EMAIL`   | Inbox that receives inquiries.                       |
+| `CONTACT_FROM_EMAIL` | From address — must be on a Resend-verified domain.  |
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Deploys happen automatically when you push to `main` (see
+`.github/workflows/fly-deploy.yml`). To deploy by hand:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+fly deploy
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Set production secrets on Fly (never commit them):
 
-## Deploy on Vercel
+```bash
+fly secrets set RESEND_API_KEY=re_xxx \
+  CONTACT_TO_EMAIL=leads@cardinalfoundationservices.com \
+  CONTACT_FROM_EMAIL=website@cardinalfoundationservices.com
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Brand colors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All colors live as CSS variables at the top of `src/app/globals.css`. Swap
+those hex values to match the exact Cardinal brand palette; the whole site
+updates from there.
