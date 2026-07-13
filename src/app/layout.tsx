@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cardinalfoundationservices.com"),
   title: {
-    default: "Cardinal Foundation Services | Foundation & Structural Contractor — DFW",
+    default: "Cardinal Foundation Services | Engineer-Owned Foundation, Concrete & Structural Contractor — Fort Worth, TX",
     template: "%s | Cardinal Foundation Services",
   },
   description:
-    "Foundation, concrete & structural contractor serving Dallas–Fort Worth. Engineer-involved diagnosis, built for North Texas soil. Request a free inspection.",
+    "Engineer-owned foundation, concrete, drainage, and structural repair, plus new construction, for commercial properties and homeowners across Texas. Turn-key and self-performed. Request a free inspection.",
   openGraph: {
     title: "Cardinal Foundation Services",
     description:
-      "Foundation, concrete & structural contractor serving Dallas–Fort Worth.",
+      "Engineer-owned, turn-key foundation, concrete & structural contractor serving Fort Worth and Texas.",
     url: "https://cardinalfoundationservices.com",
     siteName: "Cardinal Foundation Services",
     locale: "en_US",
@@ -27,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+    <html lang="en" className="h-full">
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }
