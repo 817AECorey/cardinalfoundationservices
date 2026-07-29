@@ -1,20 +1,35 @@
 import { NextRequest } from "next/server";
 import { Resend } from "resend";
+import { appendFile, mkdir } from "fs/promises";
+import { dirname } from "path";
 
 /*
-  Contact endpoint for both the hero quick-estimate card and the multi-step
-  quote form. Routes submissions by lead type to the right inbox:
+  Lead pipeline (spec section 8, hard launch gate).
 
+  Flow: validate -> DURABLY STORE (JSONL append, always first) -> send
+  transactional email -> on send failure: alert email + failure recorded.
+  Client redirects to /thank-you/ (noindex) on success, which fires the
+  GA4 event and Google Ads conversion.
+
+  Routing by lead type:
     Commercial       -> CONTACT_TO_COMMERCIAL
     Residential      -> CONTACT_TO_RESIDENTIAL
     New Construction -> CONTACT_TO_NEWCONSTRUCTION
+  Any unset route falls back to CONTACT_TO_DEFAULT.
 
-  Any unset route falls back to CONTACT_TO_DEFAULT (info@cardinalfoundationservices.com).
-  Set these as Fly secrets in production; they can all point at one inbox to start.
+  ENV (see launch runbook):
+    RESEND_API_KEY        transactional email provider key (REQUIRED)
+    CONTACT_FROM_EMAIL    verified sender (default website@cardinalfoundationservices.com)
+    CONTACT_TO_DEFAULT    default inbox (default info@cardinalfoundationservices.com)
+    CONTACT_TO_COMMERCIAL / CONTACT_TO_RESIDENTIAL / CONTACT_TO_NEWCONSTRUCTION (optional)
+    LEADS_FILE            durable JSONL path (default /data/leads.jsonl; mount a volume there)
+    ALERT_EMAIL           send-failure alert recipient (default CONTACT_TO_DEFAULT)
 */
 
 const DEFAULT_TO = process.env.CONTACT_TO_DEFAULT ?? "info@cardinalfoundationservices.com";
 const FROM_EMAIL = process.env.CONTACT_FROM_EMAIL ?? "website@cardinalfoundationservices.com";
+const LEADS_FILE = process.env.LEADS_FILE ?? "/data/leads.jsonl";
+const ALERT_EMAIL = process.env.ALERT_EMAIL ?? DEFAULT_TO;
 
 function routeFor(lead: string): string {
   switch (lead) {
@@ -36,6 +51,21 @@ function isEmail(v: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 }
 
+/* Durable storage: JSONL append, one record per submission (and per
+   send-failure). Never throws into the request path. */
+async function store(record: Record<string, unknown>): Promise<boolean> {
+  const line = JSON.stringify({ ts: new Date().toISOString(), ...record }) + "\n";
+  try {
+    await mkdir(dirname(LEADS_FILE), { recursive: true });
+    await appendFile(LEADS_FILE, line, "utf8");
+    return true;
+  } catch (err) {
+    // storage failure must not lose the lead silently: it still goes to email
+    console.error("[lead-store] FAILED to persist submission:", err, line);
+    return false;
+  }
+}
+
 export async function POST(request: NextRequest) {
   let payload: Record<string, unknown>;
   try {
@@ -49,8 +79,9 @@ export async function POST(request: NextRequest) {
     return Response.json({ ok: true });
   }
 
-  const lead = clean(payload.lead, 40) || "Commercial";
+  const lead = clean(payload.lead, 40) || "Residential";
   const service = clean(payload.service, 120);
+  const property = clean(payload.property, 120);
   const city = clean(payload.city, 160);
   const urgency = clean(payload.urgency, 80);
   const details = clean(payload.details, 4000);
@@ -60,17 +91,23 @@ export async function POST(request: NextRequest) {
   const company = clean(payload.company, 200);
   const source = clean(payload.source, 60);
 
-  // Phone + name are the only hard requirements (email is optional on the forms).
-  if (!name || !phone) {
+  // Required fields (server-side): name, phone, city/zip on every form.
+  if (!name || !phone || !city) {
     return Response.json(
-      { error: "Please provide your name and a phone number." },
+      { error: "Please provide your name, phone number, and city or ZIP." },
       { status: 422 }
     );
   }
 
+  const record = { lead, service, property, name, phone, email, city, urgency, details, company, source };
+
+  // 1) Durable storage FIRST: every submission lands on disk before email.
+  const stored = await store({ type: "lead", ...record });
+
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.error("[contact] RESEND_API_KEY is not set");
+    await store({ type: "send-failure", reason: "RESEND_API_KEY unset", ...record });
     return Response.json({ error: "Email service is not configured yet." }, { status: 500 });
   }
 
@@ -82,11 +119,12 @@ export async function POST(request: NextRequest) {
     ``,
     `Lead type: ${lead}`,
     `Service:   ${service || "(not specified)"}`,
+    property ? `Property:  ${property}` : null,
     `Name:      ${name}`,
     `Phone:     ${phone}`,
     `Email:     ${email || "(not provided)"}`,
     company ? `Company:   ${company}` : null,
-    city ? `City:      ${city}` : null,
+    `City/ZIP:  ${city}`,
     urgency ? `Timeline:  ${urgency}` : null,
     ``,
     details ? `Notes:` : null,
@@ -94,6 +132,7 @@ export async function POST(request: NextRequest) {
     ``,
     `Routed to: ${to}`,
     `Form:      ${source || "unknown"}`,
+    stored ? null : `WARNING: durable storage failed for this lead; email is the only copy.`,
   ].filter((l) => l !== null);
 
   try {
@@ -101,17 +140,25 @@ export async function POST(request: NextRequest) {
       from: `Cardinal Website <${FROM_EMAIL}>`,
       to: [to],
       replyTo: email && isEmail(email) ? email : undefined,
-      subject: `New ${lead} inquiry — ${name}`,
+      subject: `New ${lead} inquiry - ${name}`,
       text: lines.join("\n"),
     });
-
-    if (error) {
-      console.error("[contact] Resend error:", error);
-      return Response.json({ error: "We couldn't send your message. Please call us instead." }, { status: 502 });
-    }
+    if (error) throw new Error(JSON.stringify(error));
     return Response.json({ ok: true });
   } catch (err) {
-    console.error("[contact] Unexpected error:", err);
-    return Response.json({ error: "We couldn't send your message. Please call us instead." }, { status: 500 });
+    // 2) Send failure: record it durably and alert.
+    console.error("[contact] send failure:", err);
+    await store({ type: "send-failure", reason: String(err), ...record });
+    try {
+      await resend.emails.send({
+        from: `Cardinal Website <${FROM_EMAIL}>`,
+        to: [ALERT_EMAIL],
+        subject: `ALERT: lead email delivery failed (${lead} / ${name})`,
+        text: `A lead email failed to deliver and is stored in ${LEADS_FILE}.\n\nError: ${String(err)}\n\n${lines.join("\n")}`,
+      });
+    } catch (alertErr) {
+      console.error("[contact] ALERT email also failed:", alertErr);
+    }
+    return Response.json({ error: "We couldn't send your message. Please call us instead." }, { status: 502 });
   }
 }

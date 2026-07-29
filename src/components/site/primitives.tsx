@@ -1,4 +1,5 @@
 import type { CSSProperties, ReactNode, MouseEvent } from "react";
+import Link from "next/link";
 import { Arrow, ArrowUR } from "./icons";
 
 export const PHONE = "(972) 656-8251";
@@ -38,8 +39,25 @@ export const Kicker = ({ children, color = "var(--red)", style }: { children: Re
   </div>
 );
 
-/* Image slot replacement — real <img> filling its container (cover). */
-export function Img({ label, src, h, style }: { label: string; src: string; h?: number; style?: CSSProperties }) {
+/* Image slot. Per the build addendum (7/28): every image slot renders a
+   neutral placeholder marked FOR-MEDIA with real descriptive alt text.
+   Stock URLs (Unsplash etc.) are never rendered; real media drops in later
+   via CompanyCam / Google Drive / Adobe Stock. Local files under /public
+   (e.g. the logo) still render as real images. */
+export function Img({ label, src, h, style }: { label: string; src?: string; h?: number; style?: CSSProperties }) {
+  const isLocal = !!src && src.startsWith("/");
+  if (!isLocal) {
+    return (
+      <div
+        role="img"
+        aria-label={label}
+        data-media-slot="FOR-MEDIA"
+        style={{ width: "100%", height: h ? h + "px" : "100%", background: "var(--gray-2)", border: "1px dashed var(--gray)", display: "flex", alignItems: "center", justifyContent: "center", padding: 20, ...style }}
+      >
+        <span className="over" style={{ color: "var(--muted)", fontSize: 11, textAlign: "center", lineHeight: 1.6 }}>FOR-MEDIA: {label}</span>
+      </div>
+    );
+  }
   return (
     <img
       src={src}
@@ -50,12 +68,31 @@ export function Img({ label, src, h, style }: { label: string; src: string; h?: 
   );
 }
 
+/* TCPA consent line (content/26, REQUIRED under every form submit button). */
+export const TCPA = () => (
+  <p style={{ fontSize: 11.5, fontWeight: 500, color: "var(--muted)", lineHeight: 1.5, margin: "4px 0 0", textAlign: "center" }}>
+    By submitting, you agree that Cardinal Foundation Services may contact you by phone, text, or email about your request. Message and data rates may apply.
+  </p>
+);
+
+/* Labeled placeholder for slots the design leaves without a photo
+   (real jobsite/team photos only — no stock stand-ins). */
+export function PhotoSlot({ label, style }: { label: string; style?: CSSProperties }) {
+  return (
+    <div role="img" aria-label={label} data-media-slot="FOR-MEDIA" style={{ background: "var(--gray-2)", border: "1px dashed var(--gray)", display: "flex", alignItems: "center", justifyContent: "center", padding: 20, ...style }}>
+      <span className="over" style={{ color: "var(--muted)", fontSize: 11, textAlign: "center", lineHeight: 1.6 }}>FOR-MEDIA: {label}</span>
+    </div>
+  );
+}
+
 /* light = true → on a dark background → white-wordmark variant */
 export function Logo({ light = true, h = 42 }: { light?: boolean; h?: number }) {
   const src = light ? "/cardinal-logo-dark.png" : "/cardinal-logo.png";
+  /* Source image is 1504x496 (~3:1). Render at fixed height with intrinsic
+     aspect preserved: width auto + object-fit contain, never stretched. */
   return (
-    <a href="#top" style={{ display: "flex", alignItems: "center" }}>
-      <img src={src} alt="Cardinal Foundation Services" style={{ height: h, width: "auto", display: "block" }} />
-    </a>
+    <Link href="/" style={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
+      <img src={src} alt="Cardinal Foundation Services" width={1504} height={496} style={{ height: h, width: "auto", maxWidth: "none", objectFit: "contain", display: "block" }} />
+    </Link>
   );
 }
