@@ -147,6 +147,8 @@ section { position: relative; }
 .mega-col a:hover::after, .mega-col a:focus-visible::after { width: 100%; }
 .mega-col a.hub { color: #e3e1de; font-weight: 800; font-size: 15px; }
 .mega-col a.hub:hover { color: #fff; }
+/* not-yet-live services: plain muted text, deliberately not interactive */
+.mega-col .soon { display: inline-block; padding: 6px 0; font-size: 14px; font-weight: 500; color: #616161; cursor: default; }
 .mega-feature { border: 1px solid var(--red); padding: 22px 24px; display: flex; flex-direction: column; align-self: start; }
 .mega-feature .title { font-family: var(--display); font-weight: var(--disp-weight); text-transform: uppercase; line-height: 1.05; font-size: 21px; color: #fff; margin: 4px 0 10px; }
 .mega-feature .desc { color: #a8a8a8; font-size: 13px; line-height: 1.55; font-weight: 500; margin-bottom: 16px; }

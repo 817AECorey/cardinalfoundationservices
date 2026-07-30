@@ -26,7 +26,7 @@ function RfHero() {
   return (
     <section style={{ position: "relative", background: "var(--ink)", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0 }}>
-        <Img label="Large residential foundation repair. Pier installation at a high-end home" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1700&q=80" style={{ height: "100%" }} />
+        <Img label="Large residential foundation repair. Pier installation at a large custom home" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1700&q=80" style={{ height: "100%" }} />
       </div>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,12,12,.92) 0%, rgba(12,12,12,.6) 45%, rgba(12,12,12,.92) 100%)" }} />
       <div className="d-blueprint" style={{ opacity: .45 }} />
@@ -45,7 +45,7 @@ function RfHero() {
               Residential foundation repair for <span style={{ color: "var(--red)" }}>homes of every size.</span>
             </h1>
             <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
-              Large, structural, and high-end residential repairs. Multi-symptom movement, big elevation changes, and homes other contractors refer out. An engineer inspects your home, and the same company performs the repair.
+              Large, structural, and full-scope residential repairs. Multi-symptom movement, big elevation changes, and homes other contractors refer out. An engineer inspects your home, and the same company performs the repair.
             </p>
             <p style={{ color: "#fff", fontSize: 15, fontWeight: 700, margin: "0 0 28px", display: "flex", alignItems: "center", gap: 10 }}>
               <Check s={16} c="var(--red)" /> Inspected by an engineer, not a commissioned salesperson.
@@ -136,7 +136,7 @@ function RfQuickCard() {
 /* ---------- POSITIONING (who this is for) ---------- */
 const RF_FIT = [
   { t: "Complex structural movement", d: "Multiple symptoms at once. Cracking, sloping floors, and separation that point to structural movement rather than one settled corner." },
-  { t: "Large and high-end homes", d: "Custom homes, large slabs, pier and beam estates, and properties where the repair plan has to respect finishes and landscaping." },
+  { t: "Large and custom homes", d: "Custom homes, large slabs, pier and beam estates, and properties where the repair plan has to respect finishes and landscaping." },
   { t: "Large retaining walls", d: "Failing or leaning walls that hold real load, repaired with tieback anchors or rebuilt structurally." },
   { t: "Builder repairs", d: "Warranty and construction-defect repairs performed for builders. Specialized projects that call for specialized crews." },
   { t: "The jobs others refer out", d: "Repairs that need engineering, custom pier plans, or equipment most residential foundation companies do not carry." },

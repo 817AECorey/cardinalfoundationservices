@@ -33,7 +33,7 @@ export async function submitLead(payload: LeadPayload): Promise<boolean> {
 const D_LEADS = ["Commercial", "Residential", "New Construction"];
 const D_SVC: Record<string, string[]> = {
   Commercial: ["Foundation Repair", "Concrete Lifting / Floor Leveling", "Concrete & Tilt-Wall", "Retaining Walls", "Drainage / Stormwater", "Not sure, need an assessment"],
-  Residential: ["Complex Structural Repair", "Large Retaining Walls", "Concrete Lifting / Leveling", "High-End Home Foundation", "Not sure, need an inspection"],
+  Residential: ["Complex Structural Repair", "Large Retaining Walls", "Concrete Lifting / Leveling", "Custom Home Foundation", "Not sure, need an inspection"],
   "New Construction": ["Commercial Concrete", "Tilt-Wall Construction", "Builder Work / Additions", "Earthwork / Grading", "Not sure, need to scope"],
 };
 const D_URGENCY = ["Active damage / urgent", "Within the month", "Planning / budgeting"];
@@ -52,7 +52,7 @@ const D_COMMERCIAL: { n: string; t: string; d: string; items: string[]; href?: s
 ];
 const D_NEWCON = [
   { t: "Commercial Concrete & Tilt-Wall", d: "Structural slab pours, panel fabrication, and erection for warehouse and industrial shells." },
-  { t: "Builder Work & Additions", d: "Specialized structural work for builders and developers. Custom and high-end residential, additions, and builder piers." },
+  { t: "Builder Work & Additions", d: "Specialized structural work for builders and developers. Custom residential, additions, and builder piers." },
   { t: "Earthwork & Grading", d: "Site preparation, grading, and developer infrastructure that sets the foundation up correctly." },
 ];
 const D_STEPS = [
@@ -76,7 +76,7 @@ const D_WORK = [
 const D_RES: { t: string; items: string[]; href?: string }[] = [
   { t: "Complex Structural Repair", items: ["Multi-symptom failures", "Engineered pier plans"], href: "/residential/foundation-repair/" },
   { t: "Large Retaining Walls", items: ["Tieback anchors", "Structural rebuilds"] },
-  { t: "High-End & Custom Homes", items: ["Pier & beam", "Slab foundations"] },
+  { t: "Large & Custom Homes", items: ["Pier & beam", "Slab foundations"] },
   { t: "Concrete Lifting & Leveling", items: ["House lifting", "Driveways & pool decks", "Slab lifting"], href: "/residential/concrete-leveling/" },
 ];
 
@@ -89,7 +89,10 @@ const D_RES: { t: string; items: string[]; href?: string }[] = [
    Not-yet-live addendum items (Pier & Beam, Slab Repair, Second Opinion,
    Root Barriers, Warning Signs, Cost Guide, FAQs, Field Notes) enter when
    their pages ship; Resources renders one column until then. */
-type MegaLink = { label: string; href: string; hub?: boolean };
+/* href omitted = not-yet-live service: renders as plain muted text (never a
+   link to a non-existent route); adding the href when the page ships is the
+   only change needed to make it live */
+type MegaLink = { label: string; href?: string; hub?: boolean };
 type MegaColumn = { num: string; title: string; links: MegaLink[] };
 type MegaFeature = { kicker: string; title: string; desc: string; href: string; cta: string };
 type NavEntry = { label: string; href: string; columns?: MegaColumn[]; feature?: MegaFeature };
@@ -163,7 +166,31 @@ const NAV: NavEntry[] = [
       cta: "See the assessments",
     },
   },
-  { label: "New Construction", href: "/new-construction/" },
+  {
+    label: "New Construction", href: "/new-construction/",
+    columns: [
+      {
+        num: "01", title: "Site & Concrete", links: [
+          { label: "Earthwork & Grading", href: "/new-construction/earthwork-grading/" },
+          { label: "Concrete Flatwork, Slabs & Stamped", href: "/new-construction/concrete-flatwork/" },
+        ],
+      },
+      {
+        num: "02", title: "Coming Online", links: [
+          { label: "Pier Drilling" },
+          { label: "Foundations" },
+          { label: "Soil Conditioning" },
+        ],
+      },
+    ],
+    feature: {
+      kicker: "Engineering + concrete, one scope",
+      title: "For Builders & GCs",
+      desc: "Grading, select fill, and finished flatwork planned and self-performed as one engineered scope. One contractor from pad prep to pour.",
+      href: "/new-construction/",
+      cta: "See how we work",
+    },
+  },
   { label: "Projects", href: "/projects/" },
   {
     label: "Resources", href: "/resources/pier-systems-explained/",
@@ -199,6 +226,7 @@ function sectionFor(pathname: string): string | null {
 const OVERVIEW: Record<string, { label: string; href: string }> = {
   Residential: { label: "All residential services", href: "/residential/" },
   Commercial: { label: "All commercial services", href: "/commercial/" },
+  "New Construction": { label: "All new construction services", href: "/new-construction/" },
 };
 
 function MegaPanel({ entry, open, onKeyDown, panelRef }: { entry: NavEntry; open: boolean; onKeyDown: (e: React.KeyboardEvent) => void; panelRef: (el: HTMLDivElement | null) => void }) {
@@ -216,9 +244,14 @@ function MegaPanel({ entry, open, onKeyDown, panelRef }: { entry: NavEntry; open
             <div className="mega-col" key={col.title}>
               <div className="mono mega-kicker"><span className="num">{col.num}</span>{col.title}</div>
               <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-                {col.links.map((l, li) => (
-                  <a key={l.href + l.label} href={l.href} className={l.hub ? "hub" : undefined} data-col={ci} data-idx={li} tabIndex={open ? 0 : -1}>{l.label}</a>
-                ))}
+                {col.links.map((l, li) =>
+                  l.href ? (
+                    <a key={l.href + l.label} href={l.href} className={l.hub ? "hub" : undefined} data-col={ci}
+                      data-idx={col.links.slice(0, li).filter((x) => x.href).length} tabIndex={open ? 0 : -1}>{l.label}</a>
+                  ) : (
+                    <span key={l.label} className="soon">{l.label}</span>
+                  )
+                )}
               </div>
             </div>
           ))}
@@ -302,8 +335,9 @@ export function DNav() {
     const at = (c: number, x: number) => panel.querySelector<HTMLAnchorElement>(`a[data-col="${c}"][data-idx="${x}"]`);
     if (e.key === "ArrowDown" && col !== null && idx !== null) { e.preventDefault(); (at(col, idx + 1) ?? at(col, 0))?.focus(); }
     if (e.key === "ArrowUp" && col !== null && idx !== null) { e.preventDefault(); (at(col, idx - 1) ?? at(col, 0))?.focus(); }
-    if (e.key === "ArrowRight" && col !== null) { e.preventDefault(); (at(col + 1, 0) ?? at(0, 0))?.focus(); }
-    if (e.key === "ArrowLeft" && col !== null) { e.preventDefault(); (at(col - 1, 0) ?? at(col, 0))?.focus(); }
+    /* a column may hold only coming-soon text (no anchors); step past it */
+    if (e.key === "ArrowRight" && col !== null) { e.preventDefault(); (at(col + 1, 0) ?? at(col + 2, 0) ?? at(0, 0))?.focus(); }
+    if (e.key === "ArrowLeft" && col !== null) { e.preventDefault(); (at(col - 1, 0) ?? at(col - 2, 0) ?? at(col, 0))?.focus(); }
   };
 
   const megaEntries = NAV.filter((n) => n.columns);
@@ -382,16 +416,17 @@ export function DNav() {
             m.columns ? (
               <details key={m.label} open={m.label === "Residential"}>
                 <summary className="disp" style={{ color: "#fff", fontSize: 22, padding: "14px 0" }}>
-                  <span className="mono m-kicker" style={{ display: "block", marginBottom: 4 }}>{m.label === "Residential" ? "Homeowners" : m.label === "Commercial" ? "Owners & PMs" : "Guides"}</span>
+                  <span className="mono m-kicker" style={{ display: "block", marginBottom: 4 }}>{m.label === "Residential" ? "Homeowners" : m.label === "Commercial" ? "Owners & PMs" : m.label === "New Construction" ? "Builders & GCs" : "Guides"}</span>
                   {m.label} ▾
                 </summary>
                 <div style={{ display: "flex", flexDirection: "column", paddingBottom: 14 }}>
                   {/* first row: section overview link to the hub page */}
                   <Link href={m.href} onClick={() => setMobileOpen(false)} style={{ color: "#fff", fontWeight: 800, fontSize: 15, padding: "7px 0 7px 14px" }}>{m.label} overview</Link>
-                  {m.columns.map((col) => (
+                  {/* mobile lists live pages only; coming-soon (href-less) items stay desktop-panel-only */}
+                  {m.columns.filter((col) => col.links.some((l) => l.href)).map((col) => (
                     <div key={col.title} style={{ paddingLeft: 14 }}>
                       <div className="mono m-kicker" style={{ margin: "10px 0 2px" }}>{col.num} {col.title}</div>
-                      {col.links.map((l) => (
+                      {col.links.filter((l): l is MegaLink & { href: string } => !!l.href).map((l) => (
                         <Link key={l.href + l.label} href={l.href} onClick={() => setMobileOpen(false)} style={{ display: "block", color: l.hub ? "#e3e1de" : "#bdbdbd", fontWeight: l.hub ? 800 : 600, fontSize: 14.5, padding: "6px 0 6px 14px" }}>{l.label}</Link>
                       ))}
                     </div>
@@ -820,7 +855,7 @@ function DResidential() {
             <h2 className="disp" style={{ fontSize: 46, marginTop: 16, color: "var(--ink)" }}>Residential Services</h2>
           </div>
           <p style={{ color: "#3a3a3a", fontWeight: 500, lineHeight: 1.55, maxWidth: 440 }}>
-            We take the large, complicated repairs many contractors won&apos;t. High-end homes, large retaining walls, complex structural issues, and builder repairs that call for specialized crews. Not small routine jobs.
+            We take the large, complicated repairs many contractors won&apos;t. Custom homes, large retaining walls, complex structural issues, and builder repairs that call for specialized crews. Not small routine jobs.
           </p>
         </div>
         <div className="d-3" style={{ gridTemplateColumns: "repeat(4,1fr)", gap: 14 }}>

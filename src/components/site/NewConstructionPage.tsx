@@ -180,7 +180,7 @@ function NIntro() {
 const N_SERVICES = [
   { n: "01", t: "Commercial Concrete", d: "Structural slab pours, building pads, and site concrete for new commercial shells.", items: ["Structural Slab Pours", "Building Pads", "Site Paving", "Foundations"], img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80", feature: true },
   { n: "02", t: "Tilt-Wall Construction", d: "Panel fabrication and erection for warehouse and industrial shells.", items: ["Panel Fabrication", "Panel Erection", "Warehouse & Industrial Shells"], img: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&q=80" },
-  { n: "03", t: "Builder Work & Additions", d: "Specialized structural work for builders and developers. Custom and high-end residential, additions, and builder piers.", items: ["Builder Piers", "Additions", "Custom & High-End Homes"], img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80" },
+  { n: "03", t: "Builder Work & Additions", d: "Specialized structural work for builders and developers. Custom residential, additions, and builder piers.", items: ["Builder Piers", "Additions", "Custom Homes"], img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80" },
   { n: "04", t: "Earthwork & Grading", d: "Site preparation, grading, and developer infrastructure that sets the foundation up correctly.", items: ["Cut & Fill", "Site Grading", "Soil Preparation", "Developer Infrastructure"], img: "https://images.unsplash.com/photo-1473621038790-b778b4750efe?w=900&q=80" },
 ];
 function NServices() {

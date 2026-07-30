@@ -46,7 +46,7 @@ function RHero() {
               Residential foundation repair, <span style={{ color: "var(--red)" }}>engineered and self-performed.</span>
             </h1>
             <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
-              We take the large, complicated repairs that call for specialized crews. Complex structural issues, big retaining walls, concrete lifting, and high-end homes across DFW and the Houston area. An inspection determines the cause before anything is recommended.
+              We take the large, complicated repairs that call for specialized crews. Complex structural issues, big retaining walls, concrete lifting, and custom homes across DFW and the Houston area. An inspection determines the cause before anything is recommended.
             </p>
             <p style={{ color: "#fff", fontSize: 15, fontWeight: 700, margin: "0 0 28px", display: "flex", alignItems: "center", gap: 10 }}>
               <Check s={16} c="var(--red)" /> Every scope is reviewed by a licensed Professional Engineer.
@@ -64,7 +64,7 @@ function RHero() {
 }
 
 /* ---------- hero card: free home inspection request ---------- */
-const R_SVC_OPTS = ["Complex Structural Repair", "Large Retaining Walls", "Concrete Lifting / Leveling", "High-End Home Foundation", "Not sure, need an inspection"];
+const R_SVC_OPTS = ["Complex Structural Repair", "Large Retaining Walls", "Concrete Lifting / Leveling", "Custom Home Foundation", "Not sure, need an inspection"];
 const R_PROP = ["Single-family home", "Custom / high-end home", "Pier & beam home", "Townhome / duplex", "Other"];
 function RInspectCard() {
   const router = useRouter();
@@ -179,7 +179,7 @@ const R_SERVICES: { n: string; t: string; d: string; items: string[]; img: strin
   { n: "01", t: "Complex Structural Repair", d: "Multi-symptom failures and engineered pier plans for homes with more than one thing going on.", items: ["Foundation Settlement", "Engineered Pier Plans", "Pier & Beam Repair", "Multi-Symptom Failures"], img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80", feature: true, href: "/residential/foundation-repair" },
   { n: "02", t: "Large Retaining Walls", d: "Tieback anchors, structural rebuilds, and replacement for walls that hold back real load.", items: ["Tieback Anchors", "Structural Rebuilds", "Wall Replacement"], img: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=900&q=80" },
   { n: "03", t: "Concrete Lifting & Leveling", d: "Settled slabs, driveways, and pool decks raised back to grade with polyurethane foam or mudjacking.", items: ["House Lifting", "Driveways & Pool Decks", "Slab Lifting", "Void Filling"], img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80" },
-  { n: "04", t: "High-End & Custom Home Foundations", d: "Foundation work for custom and high-end homes, where the repair has to respect the house.", items: ["Pier & Beam", "Slab Foundations", "Custom Home Repair"], img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" },
+  { n: "04", t: "Large & Custom Home Foundations", d: "Foundation work for large and custom homes, where the repair has to respect the house.", items: ["Pier & Beam", "Slab Foundations", "Custom Home Repair"], img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" },
 ];
 function RServices() {
   return (
@@ -191,7 +191,7 @@ function RServices() {
             <h2 className="disp" style={{ color: "#fff", fontSize: 50, marginTop: 16 }}>The repairs that call for specialized crews</h2>
           </div>
           <p style={{ color: "#bdbdbd", fontWeight: 500, lineHeight: 1.55 }}>
-            Four service lines, one contractor. We focus on large, complex, and high-end residential work rather than small routine jobs. Select a service for details on how the work is engineered and installed.
+            Four service lines, one contractor. We focus on large, complex, full-scope residential work rather than small routine jobs. Select a service for details on how the work is engineered and installed.
           </p>
         </div>
         <div className="r-svc">

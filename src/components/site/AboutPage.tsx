@@ -158,7 +158,7 @@ function AValues() {
 /* ---------- WHAT WE DO (pathways) ---------- */
 const A_PATHS = [
   { t: "Commercial", href: "/commercial", d: "Foundation repair, concrete lifting, tilt-wall, retaining walls, and drainage for warehouses, retail, multifamily, and industrial sites." },
-  { t: "Residential", href: "/residential", d: "Specialized, large-scale repairs. High-end homes, complex structural movement, large retaining walls, and the jobs others refer out." },
+  { t: "Residential", href: "/residential", d: "Specialized, large-scale repairs. Custom homes, complex structural movement, large retaining walls, and the jobs others refer out." },
   { t: "New Construction", href: "/new-construction", d: "Commercial concrete, tilt-wall, builder work, and earthwork for builders and developers. A separate pathway, not a repair add-on." },
 ];
 function APaths() {
