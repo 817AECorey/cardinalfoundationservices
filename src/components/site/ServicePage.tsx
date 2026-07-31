@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Arrow, Phone, Check } from "./icons";
-import { Btn, Kicker, dScroll, PHONE, PHONE_TEL } from "./primitives";
+import { Btn, Kicker, Img, dScroll, PHONE, PHONE_TEL } from "./primitives";
 import { DNav, DTrustBar, DContact, DFooter } from "./DirectionD";
 
 /* ============================================================
@@ -139,9 +139,18 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
     <div className="page dirD c-page">
       <span id="top" />
       <DNav />
-      {/* HERO */}
+      {/* HERO — when the page has real project media, it fills the hero
+         behind the same gradient treatment as the residential hub */}
       <section style={{ position: "relative", background: "var(--ink)", overflow: "hidden" }}>
-        <div className="d-blueprint" style={{ opacity: .5 }} />
+        {d.heroImage && (
+          <>
+            <div style={{ position: "absolute", inset: 0 }}>
+              <Img label={d.heroImage.alt} src={d.heroImage.src} style={{ height: "100%" }} />
+            </div>
+            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,12,12,.92) 0%, rgba(12,12,12,.6) 45%, rgba(12,12,12,.92) 100%)" }} />
+          </>
+        )}
+        <div className="d-blueprint" style={{ opacity: d.heroImage ? .45 : .5 }} />
         <div className="wrap" style={{ position: "relative", zIndex: 2, paddingTop: 26, paddingBottom: 58 }}>
           <div className="c-crumb over" style={{ fontSize: 11, color: "#9a9a9a", marginBottom: 26 }}>
             {d.crumbs.map((c, i) => (
