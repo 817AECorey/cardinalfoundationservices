@@ -26,7 +26,7 @@ function RfHero() {
   return (
     <section style={{ position: "relative", background: "var(--ink)", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0 }}>
-        <Img label="Large residential foundation repair. Pier installation at a large custom home" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1700&q=80" style={{ height: "100%" }} />
+        <Img label="Crew installing foundation piers beneath a North Texas home" src="/images/foundation-repair-pier-installation-fort-worth.webp" style={{ height: "100%" }} />
       </div>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,12,12,.92) 0%, rgba(12,12,12,.6) 45%, rgba(12,12,12,.92) 100%)" }} />
       <div className="d-blueprint" style={{ opacity: .45 }} />

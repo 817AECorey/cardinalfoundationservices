@@ -18,6 +18,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Concrete Leveling" }],
   kicker: "Concrete Leveling · DFW",
   h1: "Concrete Leveling for Homes in DFW",
+  heroImage: { src: "/images/polyurethane-foam-injection-slab-lifting.webp", alt: "Rendering of polyurethane foam injection lifting a settled concrete slab", width: 1400, height: 1005 },
   intro: [
     "Settled concrete is one of the most common problems homeowners across Dallas-Fort Worth and the Houston area live with, and one of the fastest to fix. Cardinal lifts sunken driveways, patios, walkways, garage floors, and interior slabs back to level, and installs both of the proven methods, so the recommendation is about your slab rather than our truck.",
   ],

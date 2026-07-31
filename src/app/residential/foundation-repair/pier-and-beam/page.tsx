@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Foundation Repair", href: "/residential/foundation-repair/" }, { label: "Pier & Beam" }],
   kicker: "Residential Foundation Repair · DFW",
   h1: "Pier and Beam Foundation Repair",
+  heroImage: { src: "/images/pier-and-beam-crawl-space-repair.webp", alt: "Crawl space beam and pier repair under a pier and beam home", width: 1400, height: 934 },
   intro: [
     "Pier and beam and crawl space foundations are their own discipline: wood members, shims, and piers working together above open ground, common in older Dallas-Fort Worth and Houston-area neighborhoods and homes with real character. Cardinal repairs both traditional and complex pier and beam systems, with an inspection process built for what actually fails under these homes.",
   ],

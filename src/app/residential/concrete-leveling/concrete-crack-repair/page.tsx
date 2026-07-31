@@ -16,6 +16,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Concrete Leveling", href: "/residential/concrete-leveling/" }, { label: "Concrete Crack Repair" }],
   kicker: "Concrete Leveling · DFW",
   h1: "Concrete Crack Repair",
+  heroImage: { src: "/images/cracked-driveway-concrete-repair.webp", alt: "Cracked residential driveway before concrete repair", width: 1600, height: 897 },
   intro: [
     "Cracks in concrete can lead to structural issues if not addressed. Cardinal repairs cracked concrete across Dallas-Fort Worth and the Houston area, whether it is your driveway, patio, sidewalk, foundation, or a commercial property, repairing and reinforcing the concrete to prevent further damage and restore integrity and appearance.",
   ],

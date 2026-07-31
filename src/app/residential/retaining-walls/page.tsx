@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Retaining Walls" }],
   kicker: "Residential · DFW",
   h1: "Retaining Wall Repair and Design",
+  heroImage: { src: "/images/retaining-wall-construction-fort-worth.webp", alt: "Retaining wall construction at a residential property", width: 1200, height: 796 },
   intro: [
     "A retaining wall that leans, bulges, or cracks is losing its argument with the soil behind it, and in North Texas that argument is usually about water. Cardinal repairs, designs, and installs residential retaining walls across Dallas-Fort Worth and the Houston area, treating the wall and the pressure behind it as one problem, because fixing the wall without relieving the load rebuilds the failure.",
   ],

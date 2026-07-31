@@ -13,6 +13,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Drainage", href: "/residential/drainage/" }, { label: "French Drains" }],
   kicker: "Residential Drainage · DFW",
   h1: "French Drain Installation and Repair",
+  heroImage: { src: "/images/french-drain-system-installation.webp", alt: "Completed french drain line running along a residential property", width: 1600, height: 1067 },
   intro: [
     "A french drain is an underground interception system: a gravel-bedded, perforated pipe that collects water moving through the soil and carries it away before it reaches your foundation. Across Dallas-Fort Worth and the Houston area, where soil moisture swings are the root cause of most foundation movement, a well-designed french drain is foundation protection as much as it is yard drainage.",
   ],

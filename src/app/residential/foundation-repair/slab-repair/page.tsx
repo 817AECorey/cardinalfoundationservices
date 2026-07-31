@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Foundation Repair", href: "/residential/foundation-repair/" }, { label: "Slab Repair" }],
   kicker: "Residential Foundation Repair · DFW",
   h1: "Slab Foundation Repair",
+  heroImage: { src: "/images/settled-concrete-slab-foundation-crack.webp", alt: "Concrete slab showing settlement cracking, illustrative condition photo", width: 1400, height: 951 },
   intro: [
     "Slab repair maintains the structural integrity of your home, preventing further damage from cracks, uneven settling, and erosion under the slab. Cardinal repairs slab foundations across Dallas-Fort Worth and the Houston area, addressing the movement and the cause behind it, on both conventional and post-tension foundations.",
   ],

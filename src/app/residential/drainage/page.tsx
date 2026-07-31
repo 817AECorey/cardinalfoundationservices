@@ -13,6 +13,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Drainage" }],
   kicker: "Residential Drainage · DFW",
   h1: "Home Drainage Repair and Design in Dallas-Fort Worth",
+  heroImage: { src: "/images/french-drain-installation-fort-worth-texas.webp", alt: "French drain trench with gravel and pipe along a home foundation", width: 1400, height: 1400 },
   intro: [
     "Most foundation problems in North Texas are water problems first. Expansive clay swells where water collects and shrinks where it is starved, and a yard that drains badly writes that cycle directly into your foundation. Cardinal designs and installs residential drainage systems across Dallas-Fort Worth and the Houston area that move water away from your home and keep the soil around it stable.",
   ],

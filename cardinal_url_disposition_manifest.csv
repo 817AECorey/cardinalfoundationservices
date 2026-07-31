@@ -1,0 +1,88 @@
+source_url,launch_destination,expected_status,indexable_destination,launch_tier,reason
+/baytown-multi-family/,/projects/baytown-multi-family/,301,yes,1,case study moves under /projects/ (Carrollton slug fixes city typo)
+/steel-piers-n-stemmons/,/projects/steel-piers-n-stemmons/,301,yes,1,case study moves under /projects/ (Carrollton slug fixes city typo)
+/commercial-foundation-stabilization-creekside-erosion-repair/,/projects/commercial-foundation-stabilization-creekside-erosion-repair/,301,yes,1,case study moves under /projects/ (Carrollton slug fixes city typo)
+/diplomat-drive-polyurethane-injection-industrial-foundation-lift-void-fill/,/projects/diplomat-drive-polyurethane-injection-industrial-foundation-lift-void-fill/,301,yes,1,case study moves under /projects/ (Carrollton slug fixes city typo)
+/multi-family-foundation-repair-in-carrolton-tx/,/projects/multifamily-foundation-repair-carrollton-tx/,301,yes,1,case study moves under /projects/ (Carrollton slug fixes city typo)
+/restaurant-foundation-repair-foam-injection/,/projects/restaurant-foundation-repair-foam-injection/,301,yes,1,case study moves under /projects/ (Carrollton slug fixes city typo)
+/tilt-wall-foundation-drainage-restoration/,/projects/tilt-wall-foundation-drainage-restoration/,301,yes,1,case study moves under /projects/ (Carrollton slug fixes city typo)
+/lewisville-tx-multi-family-pier-stabilization-foundation-lifting-and-drainage-repair/,/projects/lewisville-tx-multi-family-pier-stabilization-foundation-lifting-and-drainage-repair/,301,yes,1,case study moves under /projects/ (Carrollton slug fixes city typo)
+/multi-family-foundation-repair-in-austin-tx/,/projects/multi-family-foundation-repair-in-austin-tx/,301,yes,1,case study moves under /projects/ (Carrollton slug fixes city typo)
+/,/,200,yes,1,homepage
+/about-us/,/about/,301,yes,1,rename
+/contact-us/,/contact/,301,yes,1,rename
+/services/,/,301,yes,1,global services hub dissolved by three-way fork
+/our-work-portfolio/,/projects/,301,yes,1,portfolio hub rename
+/grading/,/new-construction/earthwork-grading/,301,yes,1,service moves under new-construction; destination REQUIRED at launch
+/services/foundation-repair-fort-worth/,/residential/foundation-repair/,301,yes,1,geo-keyed hub to clean hub
+/services/foundation-repair-fort-worth/steel-piers/,/residential/foundation-repair/steel-piers/,301,yes,1,pier page to clean path
+/services/foundation-repair-fort-worth/concrete-pressed-piers/,/residential/foundation-repair/concrete-pressed-piers/,301,yes,1,pier page to clean path
+/services/foundation-repair-fort-worth/helical-piers/,/residential/foundation-repair/helical-piers/,301,yes,1,pier page to clean path
+/services/foundation-repair-fort-worth/drilled-piers/,/residential/foundation-repair/drilled-piers/,301,yes,1,pier page to clean path
+/services/foundation-repair-fort-worth/hybrid-piers/,/residential/foundation-repair/hybrid-piers/,301,yes,1,pier page to clean path
+/services/foundation-repair-fort-worth/remedial-piers/,/residential/foundation-repair/,301,yes,1,CONSOLIDATION: umbrella duplicate of hub
+/services/foundation-repair-fort-worth/pier-and-beam-foundation-repair/,/residential/foundation-repair/pier-and-beam/,301,yes,1,rename
+/services/foundation-repair-fort-worth/slab-repair-fort-worth/,/residential/foundation-repair/slab-repair/,301,yes,1,rename
+/post-tension-slab-repair/,/residential/foundation-repair/post-tension-slab-repair/,301,yes,1,root orphan into tree; 39 Q2 sessions = full polish
+/services/foundation-repair-fort-worth/retaining-wall-repair-fort-worth/,/residential/retaining-walls/,301,yes,1,CONSOLIDATION: repair+design merge (both ~5 sessions)
+/services/foundation-repair-fort-worth/retaining-wall-design-fort-worth/,/residential/retaining-walls/,301,yes,1,CONSOLIDATION: repair+design merge
+/services/concrete-leveling-fort-worth/,/residential/concrete-leveling/,301,yes,1,hub rename
+/services/polyurethane-foam-injection/,/residential/concrete-leveling/polyurethane-foam-injection/,301,yes,1,winner of poly pair; full polish
+/services/polyurethane-foam-injection-contractors-fort-worth/,/residential/concrete-leveling/polyurethane-foam-injection/,301,yes,1,"CONSOLIDATION: retarget existing 301, no chain"
+/services/mudjacking/,/residential/concrete-leveling/mudjacking/,301,yes,1,winner of mudjacking pair
+/services/mudjacking-fort-worth/,/residential/concrete-leveling/mudjacking/,301,yes,1,"CONSOLIDATION: retarget existing 301, no chain"
+/concrete-crack-repair/,/residential/concrete-leveling/concrete-crack-repair/,301,yes,1,root orphan into tree
+/stamped-concrete-contractor-fort-worth/,/new-construction/concrete-flatwork/,301,yes,1,flatwork destination REQUIRED at launch; page must carry stamped section (confirm offering)
+/concrete-slab-contractors-fort-worth/,/new-construction/concrete-flatwork/,301,yes,1,flatwork destination; page must carry slab-contractor section
+/services/concrete-leveling-for-cities-and-municipalities/,/commercial/concrete-lifting/municipal/,301,yes,1,audience move to commercial
+/services/drainage-repair-fort-worth/,/residential/drainage/,301,yes,1,winner of drainage pair (78 Q2 sessions); full polish; canonical content source
+/services/drainage/,/residential/drainage/,301,yes,1,CONSOLIDATION: loser of drainage pair (absent from top 50)
+/services/french-drain-installation-repair-fort-worth/,/residential/drainage/french-drains/,301,yes,1,CONSOLIDATION: weaker of french pair
+/french-drains/,/residential/drainage/french-drains/,301,yes,1,winner of french pair; canonical content source
+/area-drains/,/residential/drainage/area-drains/,301,yes,1,root orphan into tree
+/services/commercial-foundation-repair/,/services/commercial-foundation-repair/,200,yes,1,PRESERVED page-one ranker; permanent legacy-URL exception; the ONLY commercial FR hub
+/commercial/foundation-repair/,/services/commercial-foundation-repair/,301,yes,1,clean parent path 301s to preserved hub; NO indexable page generated here
+/services/commercial-structural-repair/,/commercial/structural-repair/,301,yes,1,rename
+/services/commercial-foundation-repair-contractors/underpinning-contractors/,/commercial/foundation-repair/underpinning/,301,yes,1,child page to clean path; parent in breadcrumb+schema = preserved legacy hub
+/services/commercial-foundation-repair-contractors/drilled-pier-contractors/,/commercial/foundation-repair/drilled-piers/,301,yes,1,child page to clean path; parent in breadcrumb+schema = preserved legacy hub
+/services/commercial-foundation-repair-contractors/helical-piers-tieback-contractors/,/commercial/foundation-repair/helical-piers-tiebacks/,301,yes,1,child page to clean path; parent in breadcrumb+schema = preserved legacy hub
+/services/commercial-foundation-repair-contractors/hybrid-pier-system-contractors/,/commercial/foundation-repair/hybrid-piers/,301,yes,1,child page to clean path; parent in breadcrumb+schema = preserved legacy hub
+/services/commercial-foundation-repair-contractors/post-tension-repair-contractors/,/commercial/foundation-repair/post-tension-repair/,301,yes,1,child page to clean path; parent in breadcrumb+schema = preserved legacy hub
+/services/commercial-concrete-lifting-stabilization-contractors/warehouse-floor-leveling-contractors/,/commercial/concrete-lifting/warehouse-floor-leveling/,301,yes,1,full polish (strategy priority)
+/services/commercial-concrete-lifting-stabilization-contractors/commercial-mudjacking-contractors/,/commercial/concrete-lifting/mudjacking/,301,yes,1,rename
+/services/commercial-concrete-lifting-stabilization-contractors/polyurethane-foam-injection-contractors/,/commercial/concrete-lifting/polyurethane-foam-injection/,301,yes,1,rename; differentiation brief vs residential poly required
+/services/commercial-concrete-installation-repair-contractors/commercial-slab-pouring-contractors/,/commercial/concrete-construction/slab-pouring/,301,yes,1,rename
+/services/commercial-concrete-installation-repair-contractors/expansion-joint-mastic-repair-contractors/,/commercial/concrete-construction/expansion-joint-mastic-repair/,301,yes,1,rename
+/services/commercial-concrete-installation-repair-contractors/concrete-crack-structural-repair-contractors/,/commercial/concrete-construction/structural-crack-repair/,301,yes,1,rename
+/services/commercial-concrete-slab-repair-fort-worth/,/commercial/concrete-construction/slab-repair/,301,yes,1,CONSOLIDATION: slab repair pair merge
+/services/commercial-concrete-slab-repair/,/commercial/concrete-construction/slab-repair/,301,yes,1,CONSOLIDATION: slab repair pair merge
+/services/commercial-drainage-stormwater-contractors/foundation-perimeter-drainage-contractors/,/commercial/drainage/perimeter-drainage/,301,yes,1,rename
+/services/commercial-drainage-stormwater-contractors/commercial-french-drain-system-contractors/,/commercial/drainage/french-drains/,301,yes,1,rename; differentiation brief vs residential required
+/services/commercial-retaining-wall-contractors/structural-retaining-wall-repair-contractors/,/commercial/retaining-walls/structural-repair/,301,yes,1,rename
+/services/commercial-retaining-wall-contractors/retaining-wall-tieback-anchor-contractors/,/commercial/retaining-walls/tieback-anchors/,301,yes,1,rename
+/services/tilt-wall-construction-contractors/,/commercial/tilt-wall/,301,yes,1,#2 traffic page; FULL POLISH
+/services/parking-garage-concrete-structural-repair/,/commercial/specialty/parking-garage-repair/,301,yes,1,specialty page to clean path
+/services/lube-pit-foundation-repair-dfw/,/commercial/specialty/lube-pit-foundation-repair/,301,yes,1,specialty page to clean path
+/services/metal-deck-slab-repair-fort-worth/,/commercial/specialty/metal-deck-slab-repair/,301,yes,1,specialty page to clean path
+/services/balcony-repair-fort-worth/,/commercial/specialty/balcony-repair/,301,yes,1,specialty page to clean path
+/services/lightweight-concrete-repair-fort-worth/,/commercial/specialty/lightweight-concrete-repair/,301,yes,1,specialty page to clean path
+/services/historical-building-foundation-repair/,/commercial/specialty/historical-building-foundation-repair/,301,yes,1,specialty page to clean path
+/services/commercial-waterproofing-contractors/,/commercial/specialty/waterproofing/,301,yes,1,specialty page to clean path
+/services/waters-of-the-us-contractors/,/commercial/specialty/waters-of-the-us/,301,yes,1,specialty page to clean path
+/services/foundation-repair-houston/,/locations/houston/,301,yes,1,FULL POLISH; foundation-repair-led page; names 10 communities/15 zips; paid final-URL swap gated on staging tests
+/services/structural-foundation-repair-in-possum-kingdom-lake/,/locations/possum-kingdom-lake/,301,yes,1,CONSOLIDATION: PK 3-to-1 (zero landing data)
+/services/concrete-leveling-possum-kingdom-lake/,/locations/possum-kingdom-lake/,301,yes,1,CONSOLIDATION: PK 3-to-1
+/services/balcony-repair-possum-kingdom-lake/,/locations/possum-kingdom-lake/,301,yes,1,CONSOLIDATION: PK 3-to-1
+/kansas-city-foundation-repair/,/kansas-city-foundation-repair/,200,yes,1,stays live per client (7/28); out of main nav; honest service-area language; sub-decisions flagged
+/category/project-portfolio/,/projects/,301,yes,1,archive to portfolio hub
+/category/project-portfolio/commercial/,/projects/,301,yes,1,archive to portfolio hub
+/category/project-portfolio/multi-family/,/projects/,301,yes,1,archive to portfolio hub
+/author/cardinal/,/field-notes/,301,yes,1,content archive to content home (round-2 correction; was /about/)
+/concrete-slabe-contractors-fort-worth/,/new-construction/concrete-flatwork/,301,yes,1,"LIVE typo duplicate, 24 Q2 sessions"
+/drilled-piers/,/residential/foundation-repair/drilled-piers/,301,yes,1,LIVE root duplicate
+/foundation-repair-in-dallas-tx/,/locations/dallas/,301,yes,1,deleted page w/ Q2 traffic; destination REQUIRED at launch
+/multifamily-foundation-repair-dfw/,/commercial/multifamily/,301,yes,1,deleted page w/ Q2 traffic; destination REQUIRED at launch
+/foundation-pier-types-explained-cornerstone/,/resources/pier-systems-explained/,301,yes,1,deleted page w/ Q2 traffic; destination REQUIRED at launch
+/services-2/,n/a,410,no,1,junk duplicate; intentional gone
+/elementor-6458/,n/a,410,no,1,leaked template; intentional gone
+/iv/,n/a,410,no,1,junk; intentional gone

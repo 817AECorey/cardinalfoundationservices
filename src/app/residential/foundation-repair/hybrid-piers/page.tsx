@@ -16,6 +16,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Foundation Repair", href: "/residential/foundation-repair/" }, { label: "Hybrid Piers" }],
   kicker: "Residential Foundation Repair · DFW",
   h1: "Hybrid Piers for Home Foundation Repair",
+  heroImage: { src: "/images/hybrid-pier-system-foundation-repair.webp", alt: "Cutaway rendering of a hybrid pier system beneath a home foundation", width: 1600, height: 946 },
   intro: [
     "Hybrid pier systems combine materials, most commonly concrete pilings with steel components, to buy some of steel's depth and capacity at less than steel's cost. They are a legitimate middle path when a home's conditions ask for more than pressed concrete but do not justify full steel, and Cardinal installs them across Dallas-Fort Worth and the Houston area as one of five pier systems.",
   ],

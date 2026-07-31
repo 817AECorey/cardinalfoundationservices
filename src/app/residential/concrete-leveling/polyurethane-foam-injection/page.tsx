@@ -16,6 +16,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Concrete Leveling", href: "/residential/concrete-leveling/" }, { label: "Slab Lifting (Poly)" }],
   kicker: "Concrete Leveling · DFW",
   h1: "Concrete Slab Lifting with Polyurethane Foam",
+  heroImage: { src: "/images/polyurethane-foam-injection-slab-lifting.webp", alt: "Rendering of polyurethane foam injection lifting a settled concrete slab", width: 1400, height: 1005 },
   intro: [
     "A sunken driveway slab, a settled patio, a garage floor that dips toward the door: settled concrete is one of the most common problems homeowners across Dallas-Fort Worth and the Houston area live with, and one of the fastest to fix. Polyurethane foam injection lifts settled concrete back to level by filling the failed soil beneath it, usually in hours, with the slab back in use the same day.",
   ],

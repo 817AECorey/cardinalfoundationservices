@@ -13,6 +13,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Foundation Repair", href: "/residential/foundation-repair/" }, { label: "Drilled Piers" }],
   kicker: "Residential Foundation Repair · DFW",
   h1: "Drilled Piers for Home Foundation Repair",
+  heroImage: { src: "/images/drilled-pier-shaft-rebar-fort-worth-texas.webp", alt: "Drilled pier shaft with steel reinforcement at a Texas job site", width: 1400, height: 788 },
   intro: [
     "Drilled piers are reinforced concrete columns poured in place beneath a structure: a shaft is drilled to design depth, steel reinforcement is set, and concrete is placed to create a solid, engineered support. They are a long-trusted system for stabilizing homes, additions, patio decks, staircases, and other structures across Dallas-Fort Worth and the Houston area, and one of several pier types Cardinal installs based on what the inspection finds.",
   ],

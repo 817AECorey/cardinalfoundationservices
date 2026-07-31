@@ -30,6 +30,9 @@ export type ServicePageData = {
   kicker: string;
   h1: string;
   intro: string[];
+  /* Optional hero photo (image insertion pass). Renders only when provided;
+     pages without one keep the approved text-only hero untouched. */
+  heroImage?: { src: string; alt: string; width: number; height: number };
   sections: Section[];
   /* hub pages: linked child cards composed from each child page's opening (do not invent services) */
   childCards?: { t: string; d: string; href: string }[];
@@ -159,6 +162,23 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
           </div>
         </div>
       </section>
+
+      {/* Hero photo (image insertion pass): real project media, LCP element */}
+      {d.heroImage && (
+        <section style={{ background: "var(--paper)", borderBottom: "1px solid var(--line)" }}>
+          <div className="wrap" style={{ padding: "0" }}>
+            <img
+              src={d.heroImage.src}
+              alt={d.heroImage.alt}
+              width={d.heroImage.width}
+              height={d.heroImage.height}
+              loading="eager"
+              fetchPriority="high"
+              style={{ width: "100%", height: "auto", maxHeight: 520, objectFit: "cover", display: "block" }}
+            />
+          </div>
+        </section>
+      )}
       <DTrustBar />
       {/* BODY SECTIONS */}
       {d.sections.map((s, si) => (
