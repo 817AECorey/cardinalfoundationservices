@@ -163,22 +163,6 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         </div>
       </section>
 
-      {/* Hero photo (image insertion pass): real project media, LCP element */}
-      {d.heroImage && (
-        <section style={{ background: "var(--paper)", borderBottom: "1px solid var(--line)" }}>
-          <div className="wrap" style={{ padding: "0" }}>
-            <img
-              src={d.heroImage.src}
-              alt={d.heroImage.alt}
-              width={d.heroImage.width}
-              height={d.heroImage.height}
-              loading="eager"
-              fetchPriority="high"
-              style={{ width: "100%", height: "auto", maxHeight: 520, objectFit: "cover", display: "block" }}
-            />
-          </div>
-        </section>
-      )}
       <DTrustBar />
       {/* BODY SECTIONS */}
       {d.sections.map((s, si) => (
