@@ -173,25 +173,69 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       </section>
 
       <DTrustBar />
-      {/* BODY SECTIONS */}
-      {d.sections.map((s, si) => (
-        <section key={s.h2} style={{ background: si % 2 ? "var(--bone)" : "var(--paper)", padding: "72px 0", borderBottom: "1px solid var(--line)" }}>
+      {/* BODY SECTIONS — hub design vocabulary: numbered red kickers,
+         alternating two-column media splits for prose-only sections,
+         sign-style card grids for bullet sections */}
+      {d.sections.map((s, si) => {
+        const proseOnly = !s.bullets && !s.steps && !s.table;
+        const num = String(si + 1).padStart(2, "0");
+        const media = (
+          <div style={{ position: "relative", minHeight: 340 }}>
+            <div style={{ position: "absolute", inset: 0 }}>
+              <Img label={s.h2} style={{ height: "100%" }} />
+            </div>
+          </div>
+        );
+        const heading = (
+          <>
+            <div className="disp" style={{ fontSize: 15, color: "var(--red)" }}>{num}</div>
+            <h2 className="disp" style={{ fontSize: 42, margin: "10px 0 18px", color: "var(--ink)", maxWidth: 760 }}>{s.h2}</h2>
+          </>
+        );
+        if (proseOnly) {
+          return (
+            <section key={s.h2} style={{ background: si % 2 ? "var(--bone)" : "var(--paper)", padding: "84px 0", borderBottom: "1px solid var(--line)" }}>
+              <div className="wrap c-2">
+                {si % 2 === 1 && media}
+                <div>
+                  {heading}
+                  {s.paras?.map((p) => (
+                    <p key={p.slice(0, 40)} className="lead" style={{ marginBottom: 16 }}>{p}</p>
+                  ))}
+                  {s.parasAfter?.map((p) => (
+                    <p key={p.slice(0, 40)} className="lead" style={{ margin: "16px 0 0" }}>{p}</p>
+                  ))}
+                </div>
+                {si % 2 === 0 && media}
+              </div>
+            </section>
+          );
+        }
+        return (
+        <section key={s.h2} style={{ background: si % 2 ? "var(--bone)" : "var(--paper)", padding: "84px 0", borderBottom: "1px solid var(--line)" }}>
           <div className="wrap">
-            <h2 className="disp" style={{ fontSize: 38, margin: "0 0 22px", color: "var(--ink)", maxWidth: 760 }}>{s.h2}</h2>
+            {heading}
             {s.paras?.map((p) => (
               <p key={p.slice(0, 40)} className="lead" style={{ maxWidth: 820, marginBottom: 16 }}>{p}</p>
             ))}
             {s.bullets && (
-              <ul style={{ listStyle: "none", padding: 0, margin: "10px 0 0", display: "flex", flexDirection: "column", gap: 12, maxWidth: 820 }}>
+              <div className="c-signs" style={{ marginTop: 26 }}>
                 {s.bullets.map((b, bi) => (
-                  <li key={bi} style={{ display: "flex", gap: 11, alignItems: "flex-start" }}>
-                    <span style={{ flexShrink: 0, marginTop: 4 }}><Check s={16} c="var(--red)" /></span>
-                    <span style={{ color: "#3a3a3a", fontSize: 16.5, lineHeight: 1.55, fontWeight: 500 }}>
-                      {Array.isArray(b) ? (<><strong style={{ color: "var(--ink)" }}>{b[0]}</strong>{b[1]}</>) : b}
-                    </span>
-                  </li>
+                  <div key={bi} style={{ background: "#fff", padding: "24px 24px 22px" }}>
+                    <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+                      <span style={{ flexShrink: 0, marginTop: 3 }}><Check s={16} c="var(--red)" /></span>
+                      {Array.isArray(b) ? (
+                        <div>
+                          <h3 className="disp" style={{ fontSize: 18, color: "var(--ink)", marginBottom: 8 }}>{b[0]}</h3>
+                          <p style={{ color: "var(--muted)", fontSize: 14, lineHeight: 1.55, fontWeight: 500 }}>{b[1]}</p>
+                        </div>
+                      ) : (
+                        <span style={{ color: "#3a3a3a", fontSize: 15.5, lineHeight: 1.55, fontWeight: 500 }}>{b}</span>
+                      )}
+                    </div>
+                  </div>
                 ))}
-              </ul>
+              </div>
             )}
             {s.steps && (
               <div className="c-svc" style={{ marginTop: 10, maxWidth: 1000 }}>
@@ -226,7 +270,8 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
             ))}
           </div>
         </section>
-      ))}
+        );
+      })}
       {/* HUB CHILD CARDS (live children only; new children enter as they ship) */}
       {d.childCards && d.childCards.length > 0 && (
         <section className="tex-dark" style={{ padding: "80px 0" }}>
