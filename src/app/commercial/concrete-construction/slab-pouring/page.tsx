@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Construction", href: "/commercial/concrete-construction/" }, { label: "Slab Pouring" }],
   kicker: "Concrete Construction · DFW",
   h1: "Commercial Slab Pouring",
+  heroImage: { src: "/images/slab-pouring-formed-foundation.webp", alt: "Formed foundation prepared for concrete placement", width: 1600, height: 1200 },
   intro: [
     "Commercial slab systems must be engineered to handle structural loads, equipment traffic, and long-term soil movement. Cardinal Foundation Services provides professional commercial slab pouring across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. From new warehouse slabs to structural foundation slabs for retail, office, and industrial facilities, our team installs reinforced concrete systems built for durability and performance. Proper subgrade preparation and reinforcement are critical in North Texas, where expansive clay soils can impact slab longevity.",
   ],

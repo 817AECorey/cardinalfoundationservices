@@ -16,6 +16,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Drainage", href: "/residential/drainage/" }, { label: "Area Drains" }],
   kicker: "Residential Drainage · DFW",
   h1: "Area Drain Installation and Repair",
+  heroImage: { src: "/images/area-drain-trench-installation.webp", alt: "Drain trench excavated along a building", width: 1200, height: 1600 },
   intro: [
     "Area drains collect the water you can see: standing water in yards, patios, courtyards, and low spots that has nowhere to go. Cardinal installs and repairs area and surface drain systems across Dallas-Fort Worth and the Houston area as part of complete drainage design, because standing water near a home is foundation trouble on a delay in North Texas clay.",
   ],

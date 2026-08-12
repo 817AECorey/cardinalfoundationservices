@@ -17,12 +17,14 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Multifamily" }],
   kicker: "Multifamily · DFW & Texas",
   h1: "Multifamily Foundation Repair",
+  heroImage: { src: "/images/multifamily-foundation-repair-exterior.webp", alt: "Multifamily building during exterior foundation repair", width: 1600, height: 1200 },
   intro: [
     "Multifamily foundation problems multiply: one soil condition, many buildings, hundreds of residents, and an asset whose value moves with its structural story. Cardinal repairs multifamily foundations across DFW and Texas with scopes built for how communities actually operate, and a project record you can inspect before you call.",
   ],
   sections: [
     {
       h2: "Documented multifamily work",
+      img: { src: "/images/foundation-settlement-brick-crack.webp", alt: "Settlement cracking in a multifamily masonry wall before repair" },
       paras: [
         "Four completed multifamily projects are published in our portfolio: pier stabilization, foundation lifting, and drainage repair in Lewisville, multifamily foundation repair in Carrollton, a Baytown community, and a project in Austin. Each is documented with conditions found, methods used, and results, because a multifamily owner deserves more evidence than a brochure.",
       ],

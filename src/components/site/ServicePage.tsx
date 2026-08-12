@@ -22,6 +22,8 @@ export type Section = {
   paras?: string[];
   bullets?: Bullet[];
   parasAfter?: string[];
+  /* real project photo for the section's media slot; placeholder shows when absent */
+  img?: { src: string; alt: string };
   steps?: [string, string][]; // numbered what-to-expect style
   table?: { head: string[]; rows: string[][]; note?: string };
 };
@@ -182,7 +184,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         const media = (
           <div style={{ position: "relative", minHeight: 340 }}>
             <div style={{ position: "absolute", inset: 0 }}>
-              <Img label={s.h2} style={{ height: "100%" }} />
+              <Img label={s.img?.alt ?? s.h2} src={s.img?.src} style={{ height: "100%" }} />
             </div>
           </div>
         );

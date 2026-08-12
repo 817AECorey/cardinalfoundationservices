@@ -17,12 +17,14 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/" }, { label: "Steel Piers" }],
   kicker: "Commercial Foundation Repair · DFW",
   h1: "Steel Piers for Commercial Structures",
+  heroImage: { src: "/images/steel-pier-installation-multifamily-crew.webp", alt: "Cardinal crew installing piers at an occupied multifamily property", width: 1600, height: 1200 },
   intro: [
     "Commercial structures put loads on foundations that pressed pilings were never sized for. Steel piers, driven in sections to refusal on load-bearing strata, deliver the depth and capacity that hotels, multifamily buildings, retail structures, and industrial facilities require, and they install in confined, occupied, operating conditions where larger equipment cannot go.",
   ],
   sections: [
     {
       h2: "Why steel for commercial loads",
+      img: { src: "/images/concrete-pier-cylinders-staged-multifamily.webp", alt: "Pier materials staged at an occupied multifamily property" },
       paras: [
         "Capacity and depth. Each pier is hydraulically driven until the strata itself refuses further advance, verified pier by pier during installation, then load-tested against the structure it will carry. In North Texas expansive clay, that puts commercial loads on ground that does not move with the weather, which is the difference between a repair and a recurring line item.",
       ],

@@ -16,6 +16,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Drainage" }],
   kicker: "Commercial & Industrial · Dallas-Fort Worth",
   h1: "Commercial Drainage",
+  heroImage: { src: "/images/commercial-drainage-trench-installation.webp", alt: "Drainage trench installed along a multifamily building", width: 1200, height: 1600 },
   intro: [
     "Commercial perimeter drainage systems and commercial french drains that protect structures at the root cause across Dallas-Fort Worth, scoped from an engineered assessment and executed by Cardinal's own crews around your operations. Each service below carries its own page with scope detail and documented project links.",
     "Every scope starts with the structural read: conditions, probable root cause, and a documented engineered bid ownership can review. Work carries a workmanship warranty, terms vary by service.",

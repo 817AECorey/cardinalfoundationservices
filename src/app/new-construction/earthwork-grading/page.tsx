@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "New Construction", href: "/new-construction/" }, { label: "Earthwork & Grading" }],
   kicker: "New Construction · DFW",
   h1: "Earthwork, Grading, and Soil Conditioning",
+  heroImage: { src: "/images/earthwork-grading-building-pad.webp", alt: "Graded pad with forms set for a new foundation", width: 1600, height: 1200 },
   intro: [
     "Every foundation problem we repair started as a dirt decision. Grading that drains toward the structure, uncompacted fill, unconditioned expansive clay: the repair industry runs on site work done wrong. Cardinal performs earthwork, grading, and soil conditioning across DFW for builders, developers, and property owners, with the bias of a company that spends the other half of its week fixing what bad site work causes.",
   ],

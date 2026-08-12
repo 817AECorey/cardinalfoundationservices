@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Locations", href: "/locations/" }, { label: "Fort Worth" }],
   kicker: "Foundation Repair · Fort Worth, TX · Headquarters",
   h1: "Foundation Repair in Fort Worth",
+  heroImage: { src: "/images/fort-worth-residential-foundation-repair.webp", alt: "Foundation repair at a North Texas brick home", width: 1600, height: 1200 },
   intro: [
     "Fort Worth is home base. Cardinal Foundation Services is headquartered here, our crews work these neighborhoods daily, and the soil under this city, expansive clay that moves with every wet-dry cycle, is the soil our company was built to handle. We provide residential foundation repair, commercial and structural work, concrete services, and drainage correction across Fort Worth and the surrounding communities.",
   ],

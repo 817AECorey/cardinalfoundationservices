@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Drainage", href: "/commercial/drainage/" }, { label: "French Drains" }],
   kicker: "Commercial Drainage · DFW",
   h1: "Commercial French Drain Systems",
+  heroImage: { src: "/images/french-drain-installation-commercial.webp", alt: "French drain trench during installation", width: 1200, height: 1600 },
   intro: [
     "Excess groundwater around commercial structures can contribute to slab movement, foundation instability, and retaining wall pressure. Cardinal Foundation Services installs engineered commercial french drain systems across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. French drains are subsurface drainage systems designed to intercept and redirect groundwater away from commercial foundations and slab systems. In North Texas, where expansive clay soils react significantly to moisture fluctuations, managing subsurface water is critical to long-term structural performance.",
   ],

@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Drainage", href: "/commercial/drainage/" }, { label: "Perimeter Drainage" }],
   kicker: "Commercial Drainage · DFW",
   h1: "Foundation Perimeter Drainage",
+  heroImage: { src: "/images/perimeter-drainage-multifamily.webp", alt: "Perimeter drainage excavation along a building foundation", width: 1600, height: 1200 },
   intro: [
     "Water accumulation around commercial foundations is one of the leading causes of slab movement, differential settlement, and long-term structural damage in North Texas. Cardinal Foundation Services provides engineered foundation perimeter drainage systems across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. Our perimeter drainage solutions intercept and redirect groundwater away from foundation edges and slab perimeters, helping maintain consistent soil moisture levels and protecting your commercial building from moisture-related movement.",
   ],

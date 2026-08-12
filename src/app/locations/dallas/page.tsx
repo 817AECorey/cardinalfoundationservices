@@ -16,6 +16,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Locations", href: "/locations/" }, { label: "Dallas" }],
   kicker: "Foundation Repair · Dallas, TX",
   h1: "Foundation Repair in Dallas",
+  heroImage: { src: "/images/dallas-area-foundation-crew.webp", alt: "Cardinal crew at a Dallas-area multifamily foundation project", width: 1600, height: 1200 },
   intro: [
     "Dallas sits on the same expansive clay that keeps foundation crews busy across North Texas: soil that swells through wet springs and shrinks hard in summer drought, moving the houses and buildings on top of it. Cardinal serves property owners throughout Dallas and nearby communities with residential foundation repair, commercial and structural work, concrete lifting, and drainage correction, from our Fort Worth base with crews working across the Metroplex.",
   ],

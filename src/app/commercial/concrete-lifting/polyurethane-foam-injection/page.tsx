@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Lifting", href: "/commercial/concrete-lifting/" }, { label: "Polyurethane Foam Injection" }],
   kicker: "Concrete Lifting & Stabilization · DFW",
   h1: "Commercial Polyurethane Foam Injection",
+  heroImage: { src: "/images/polyurethane-foam-injection-port-commercial.webp", alt: "Polyurethane injection equipment set on commercial concrete", width: 1200, height: 1600 },
   intro: [
     "Soil voids beneath commercial slabs can lead to settlement, cracking, and operational disruption. Cardinal Foundation Services provides engineered polyurethane foam injection across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. High-density structural polyurethane fills voids, stabilizes subgrade soils, and lifts settled commercial slabs with precision control, allowing rapid stabilization without large-scale demolition, which suits active warehouses, retail facilities, and industrial properties.",
   ],

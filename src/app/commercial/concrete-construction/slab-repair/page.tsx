@@ -17,6 +17,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Construction", href: "/commercial/concrete-construction/" }, { label: "Slab Repair" }],
   kicker: "Concrete Construction · DFW",
   h1: "Commercial Concrete Slab Repair and Leveling",
+  heroImage: { src: "/images/commercial-slab-repair-interior.webp", alt: "Commercial interior slab after repair", width: 1200, height: 1600 },
   intro: [
     "Cardinal Foundation Services provides commercial concrete slab repair and leveling for properties across the Dallas-Fort Worth metroplex, including Dallas, Fort Worth, Arlington, Irving, Grand Prairie, Coppell, Carrollton, and Plano. Uneven or settling concrete slabs can create safety hazards, damage equipment, and disrupt operations. Our solutions are engineered specifically for commercial and industrial environments, not residential concrete.",
   ],

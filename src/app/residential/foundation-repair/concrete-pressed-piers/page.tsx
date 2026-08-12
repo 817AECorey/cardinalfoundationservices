@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How pressed piers work",
+      img: { src: "/images/pier-jacks-under-grade-beam.webp", alt: "Hydraulic jacks supporting a grade beam during pier installation" },
       paras: [
         "Precast concrete cylinders are hydraulically pressed into the soil in sequence, using the structure's own weight as the reaction force, until soil resistance stops them. The home is then lifted toward level and the load rests on the stacked pilings. It is a proven, economical method for leveling settled slab foundations, and our crews guide you through the process and explain what is happening under your home at each step.",
       ],

@@ -19,6 +19,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services" }],
   kicker: "Commercial & Industrial · Dallas-Fort Worth",
   h1: "Specialty Structural Services",
+  heroImage: { src: "/images/specialty-structural-materials-staged.webp", alt: "Structural repair materials staged on site", width: 1600, height: 1200 },
   intro: [
     "Commercial parking garages, lube pits, metal deck slabs, balconies, lightweight concrete, historical buildings, waterproofing, waters of the US compliance, erosion work, and emergency shoring across Dallas-Fort Worth, scoped from an engineered assessment and executed by Cardinal's own crews around your operations. Each service below carries its own page with scope detail and documented project links.",
     "Every scope starts with the structural read: conditions, probable root cause, and a documented engineered bid ownership can review. Work carries a workmanship warranty, terms vary by service.",

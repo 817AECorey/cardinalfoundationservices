@@ -16,12 +16,14 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair" }],
   kicker: "Commercial & Industrial · Dallas-Fort Worth",
   h1: "Commercial Foundation Repair in Dallas-Fort Worth",
+  heroImage: { src: "/images/commercial-foundation-repair-pressed-piers-haltom-city.webp", alt: "Concrete pier sections staged for foundation repair at a commercial building", width: 1600, height: 1200 },
   intro: [
     "Foundation movement in a commercial building is a business problem before it is a structural one. It affects safety, operations, tenant experience, and long-term asset value. Cardinal Foundation Services provides commercial foundation repair across the Dallas-Fort Worth area, including Fort Worth, Dallas, Arlington, Irving, Grand Prairie, Coppell, Carrollton, Plano, and the surrounding commercial corridors, for warehouses, industrial facilities, multifamily properties, hotels, retail centers, and parking structures.",
   ],
   sections: [
     {
       h2: "Built for commercial loads and commercial schedules",
+      img: { src: "/images/pier-hole-hydraulic-ram-commercial.webp", alt: "Hydraulic ram set in a pier hole cut at a commercial slab edge" },
       paras: [
         "Commercial structures move differently than homes. Heavier loads, larger slabs, longer spans, and North Texas expansive clay create settlement patterns that require a structural read of root cause and load paths, not a one-size pier count. Every Cardinal commercial project is scoped from an assessment of the structure and soil conditions, documented for ownership, and executed by our own crews. We self-perform the work, which means the company that scoped your repair is the company standing on your slab.",
         "Our crews are equipped for active sites: occupied buildings, tenant coordination, after-hours access, phased work around operations, and the safety requirements that come with them. Where a property must stay open, the repair plan is built around keeping it open.",

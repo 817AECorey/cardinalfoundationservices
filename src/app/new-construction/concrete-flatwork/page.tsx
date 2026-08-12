@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "New Construction", href: "/new-construction/" }, { label: "Concrete Flatwork" }],
   kicker: "New Construction · DFW",
   h1: "Concrete Flatwork, Slabs, and Stamped Concrete",
+  heroImage: { src: "/images/concrete-flatwork-forms-stamped.webp", alt: "Formed slab and flatwork prepared for concrete", width: 1600, height: 1200 },
   intro: [
     "Concrete lasts as long as the ground it sits on, which is why a foundation company pours good flatwork: we prepare the soil like the slab's life depends on it, because it does. Cardinal pours concrete slabs, driveways, patios, walkways, and stamped decorative concrete across DFW for homeowners, builders, and light commercial projects.",
   ],

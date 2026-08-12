@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Construction", href: "/commercial/concrete-construction/" }, { label: "Structural Crack Repair" }],
   kicker: "Concrete Construction · DFW",
   h1: "Commercial Concrete Crack Repair",
+  heroImage: { src: "/images/structural-crack-repair-slab.webp", alt: "Repaired crack running across a commercial slab", width: 1200, height: 1600 },
   intro: [
     "Structural concrete cracking in commercial buildings can indicate load stress, soil movement, or moisture-related expansion. Cardinal Foundation Services provides engineered concrete crack structural repair across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. We repair structural cracks in commercial slabs, walls, and load-bearing elements to restore integrity and prevent further deterioration. Unlike cosmetic patching, our approach addresses the underlying causes contributing to crack formation.",
   ],

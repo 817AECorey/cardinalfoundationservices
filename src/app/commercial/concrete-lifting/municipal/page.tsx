@@ -15,6 +15,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Lifting", href: "/commercial/concrete-lifting/" }, { label: "Municipal" }],
   kicker: "Municipal & Institutional · DFW",
   h1: "Concrete Leveling for Cities and Municipalities",
+  heroImage: { src: "/images/municipal-sidewalk-concrete-repair.webp", alt: "Repaired sidewalk section along a commercial corridor", width: 1200, height: 1600 },
   intro: [
     "Cardinal Foundation Services is an engineer-owned contractor specializing in concrete lifting and leveling services for municipality flatwork. Our experience with large-scale concrete projects supports durable, safe, and accessible public spaces.",
   ],

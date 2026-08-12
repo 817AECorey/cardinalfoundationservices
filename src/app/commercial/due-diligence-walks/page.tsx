@@ -17,6 +17,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Multifamily Due Diligence" }],
   kicker: "Acquisitions · DFW & Texas",
   h1: "Multifamily Foundation and Structural Due Diligence",
+  heroImage: { src: "/images/due-diligence-multifamily-pool-courtyard.webp", alt: "Multifamily pool courtyard during a property walk", width: 1600, height: 1200 },
   intro: [
     "Foundation issues found after closing become your capital plan. Found before closing, they become your negotiation. Cardinal provides foundation and structural due diligence for multifamily and commercial acquisitions across Dallas-Fort Worth and Texas, structured so you can start free and scale the analysis to the size of the deal.",
   ],
