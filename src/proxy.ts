@@ -31,7 +31,12 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
-  return NextResponse.next();
+  const res = NextResponse.next();
+  /* staging host must never be indexed; the production domain is unaffected */
+  if (host.endsWith(".fly.dev")) {
+    res.headers.set("X-Robots-Tag", "noindex, nofollow");
+  }
+  return res;
 }
 
 export const config = {
