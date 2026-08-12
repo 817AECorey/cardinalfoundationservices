@@ -32,8 +32,9 @@ export function proxy(request: NextRequest) {
   }
 
   const res = NextResponse.next();
-  /* staging host must never be indexed; the production domain is unaffected */
-  if (host.endsWith(".fly.dev")) {
+  /* only the production domain may be indexed; staging, previews, and any
+     other host get a hard noindex */
+  if (host !== "cardinalfoundationservices.com") {
     res.headers.set("X-Robots-Tag", "noindex, nofollow");
   }
   return res;
