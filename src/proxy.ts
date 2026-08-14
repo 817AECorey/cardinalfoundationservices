@@ -8,6 +8,16 @@ import { REDIRECTS_301, GONE_410 } from "@/lib/redirects";
 
 const GONE = new Set(GONE_410);
 
+/* Security headers on every proxy response (pages, redirects, 410s).
+   Deliberately no CSP. Static assets bypass the proxy via the matcher. */
+function secured<T extends Response>(res: T): T {
+  res.headers.set("Strict-Transport-Security", "max-age=31536000");
+  res.headers.set("X-Content-Type-Options", "nosniff");
+  res.headers.set("X-Frame-Options", "SAMEORIGIN");
+  res.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
+  return res;
+}
+
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -16,22 +26,22 @@ export function proxy(request: NextRequest) {
   if (host.startsWith("www.")) {
     const url = request.nextUrl.clone();
     url.host = host.slice(4);
-    return NextResponse.redirect(url, 301);
+    return secured(NextResponse.redirect(url, 301));
   }
   const key = pathname !== "/" && pathname.endsWith("/") ? pathname.slice(0, -1) : pathname;
 
   if (GONE.has(key)) {
-    return new NextResponse("Gone", { status: 410 });
+    return secured(new NextResponse("Gone", { status: 410 }));
   }
 
   const dest = REDIRECTS_301[key];
   if (dest && dest !== pathname) {
     const url = request.nextUrl.clone();
     url.pathname = dest;
-    return NextResponse.redirect(url, 301);
+    return secured(NextResponse.redirect(url, 301));
   }
 
-  const res = NextResponse.next();
+  const res = secured(NextResponse.next());
   /* only the production domain may be indexed; staging, previews, and any
      other host get a hard noindex */
   if (host !== "cardinalfoundationservices.com") {
