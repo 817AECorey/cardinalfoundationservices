@@ -7,7 +7,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    acquisition; the PM page, when live, owns the ongoing relationship). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Multifamily Foundation Repair in DFW & Texas | Cardinal Foundation Services" },
+  title: { absolute: "Multifamily Foundation Repair in DFW & Texas | Cardinal" },
   description:
     "Foundation repair for apartment communities and multifamily properties in DFW and Texas. Documented projects in Carrollton, Lewisville, Baytown, and Austin. Phased around residents. Request an assessment.",
   alternates: { canonical: "/commercial/multifamily/" },

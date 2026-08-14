@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* HQ location page, inherits Fort Worth geo intent (content/19). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Foundation Repair in Fort Worth, TX | Cardinal Foundation Services" },
+  title: { absolute: "Foundation Repair in Fort Worth, TX | Cardinal" },
   description:
     "Fort Worth's engineer-owned foundation repair and concrete contractor: piers, slab lifting, drainage, pier and beam, and commercial structural work. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/locations/fort-worth/" },

@@ -3,7 +3,7 @@ import ServicePage, { type ServicePageData } from "@/components/site/ServicePage
 import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "Post-Tension Slab & Cable Repair in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Post-Tension Slab & Cable Repair in DFW | Cardinal" },
   description:
     "Post-tension slab repair for DFW homes: cable and tendon issues, slab settlement on post-tension foundations, and repairs that respect the system. Free inspection report.",
   alternates: { canonical: "/residential/foundation-repair/post-tension-slab-repair/" },

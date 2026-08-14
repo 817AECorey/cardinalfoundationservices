@@ -6,7 +6,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    Additional DFW community pages enter the cards as they come online. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Service Areas | Cardinal Foundation Services | DFW, Houston & Texas" },
+  title: { absolute: "Service Areas | Cardinal | DFW, Houston & Texas" },
   description:
     "Cardinal Foundation Services serves DFW for residential and commercial work, the Houston area for residential foundation repair, and Texas for larger commercial and structural projects.",
   alternates: { canonical: "/locations/" },

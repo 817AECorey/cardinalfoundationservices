@@ -9,7 +9,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    documented. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Steel Piers for Foundation Repair in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Steel Piers for Foundation Repair in DFW | Cardinal" },
   description:
     "Steel pier foundation repair for DFW homes. Driven to load-bearing strata for deep, lasting support in North Texas expansive clay. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/steel-piers/" },

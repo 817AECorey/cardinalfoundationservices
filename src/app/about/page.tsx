@@ -4,7 +4,7 @@ import { JsonLd, localBusinessJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 /* Title/meta from content/25_about (E-E-A-T anchor). */
 export const metadata: Metadata = {
-  title: { absolute: "About Cardinal Foundation Services | Engineer-Owned, Fort Worth, TX" },
+  title: { absolute: "About Cardinal | Engineer-Owned Foundation Repair, Fort Worth TX" },
   description:
     "Cardinal Foundation Services is an engineer-owned foundation repair and commercial concrete contractor in Fort Worth, TX, serving DFW and Texas with 35+ years of combined team experience.",
   alternates: { canonical: "/about/" },

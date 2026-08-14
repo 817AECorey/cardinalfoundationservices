@@ -3,7 +3,7 @@ import ServicePage, { type ServicePageData } from "@/components/site/ServicePage
 import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "French Drain Installation & Repair in DFW | Cardinal Foundation Services" },
+  title: { absolute: "French Drain Installation & Repair in DFW | Cardinal" },
   description:
     "French drain installation and repair for DFW homes. Intercept subsurface water before it reaches your foundation. Designed and installed by the crews who fix the foundations.",
   alternates: { canonical: "/residential/drainage/french-drains/" },

@@ -7,7 +7,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    CRE vocabulary; never claims full PCA/ASTM E2018 scope. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Multifamily Foundation & Structural Due Diligence | DFW & Texas | Cardinal" },
+  title: { absolute: "Multifamily Foundation Due Diligence | DFW & Texas | Cardinal" },
   description:
     "Pre-acquisition foundation and structural due diligence for multifamily and commercial properties in DFW and Texas. Free inspection report on select buildings, then Type A or Type B property-wide analysis.",
   alternates: { canonical: "/commercial/due-diligence-walks/" },

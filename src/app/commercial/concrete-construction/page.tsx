@@ -8,7 +8,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    cards then. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Concrete Construction & Repair in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Concrete Construction & Repair in DFW | Cardinal" },
   description:
     "Commercial Concrete Construction & Repair for commercial properties across Dallas-Fort Worth: slab pouring, slab repair, expansion joint and mastic repair, and structural crack repair. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/concrete-construction/" },

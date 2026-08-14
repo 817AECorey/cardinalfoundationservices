@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://cardinalfoundationservices.com"),
   title: {
     // Service + geo first; engineer-owned lives in the META, never the title opener.
-    default: "Foundation Repair & Commercial Concrete in DFW & Texas | Cardinal Foundation Services",
+    default: "Foundation Repair & Commercial Concrete | DFW & Houston | Cardinal",
     template: "%s | Cardinal Foundation Services",
   },
   description:

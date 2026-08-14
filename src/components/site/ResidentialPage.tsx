@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Arrow, Phone, Check } from "./icons";
 import { Btn, Kicker, Img, TCPA, dScroll, PHONE, PHONE_TEL } from "./primitives";
-import { DNav, DTrustBar, DPierPath, DPierSystems, DContact, DFooter, submitLead } from "./DirectionD";
+import { DNav, DTrustBar, DPierPath, DPierSystems, DContact, DFooter, submitLead, DFW_CITIES, HOUSTON_CITIES } from "./DirectionD";
 
 /* ============================================================
    RESIDENTIAL — top-level inner page.
@@ -262,8 +262,8 @@ function RSigns() {
 }
 
 /* ---------- SERVICE AREA (DFW + Houston) ---------- */
-const R_AREA_DFW = ["Fort Worth", "Dallas", "Arlington", "Plano", "Frisco", "McKinney", "Denton", "Keller", "Grapevine", "Mansfield", "Carrollton", "Lewisville"];
-const R_AREA_HOU = ["Houston", "Katy", "Sugar Land", "The Woodlands", "Pearland", "Cypress"];
+const R_AREA_DFW = DFW_CITIES;
+const R_AREA_HOU = HOUSTON_CITIES;
 function RServiceArea() {
   return (
     <section style={{ background: "var(--paper)", padding: "76px 0", borderBottom: "1px solid var(--line)" }}>

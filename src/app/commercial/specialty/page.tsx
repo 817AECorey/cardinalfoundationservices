@@ -9,7 +9,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    ship in the snapshot-parity pass. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Specialty Structural Services in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Specialty Structural Services in DFW | Cardinal" },
   description:
     "Specialty Structural Services for commercial properties across Dallas-Fort Worth: parking garages, lube pits, metal deck slabs, balconies, lightweight concrete, historical buildings, waterproofing, waters of the US compliance, erosion work, and emergency shoring. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/specialty/" },

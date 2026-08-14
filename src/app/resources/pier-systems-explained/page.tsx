@@ -7,7 +7,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    "Steel Piers vs. Concrete Piers" section. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Foundation Pier Systems Compared: Steel, Concrete, Helical & Drilled | Cardinal" },
+  title: { absolute: "Pier Systems Compared: Steel, Concrete & Helical | Cardinal" },
   description:
     "Steel piers vs concrete piers vs helical vs drilled: how each foundation pier system works, how deep each goes, what each costs relative to the others, and which situations fit each. A plain comparison from a Texas foundation contractor.",
   alternates: { canonical: "/resources/pier-systems-explained/" },

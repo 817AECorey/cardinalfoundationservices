@@ -3,7 +3,7 @@ import ServicePage, { type ServicePageData } from "@/components/site/ServicePage
 import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "Drilled Piers for Foundation Repair in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Drilled Piers for Foundation Repair in DFW | Cardinal" },
   description:
     "Drilled concrete piers for DFW homes, patios, decks, and additions. Poured-in-place reinforced piers for long-term stability in North Texas soil. Free inspection report.",
   alternates: { canonical: "/residential/foundation-repair/drilled-piers/" },

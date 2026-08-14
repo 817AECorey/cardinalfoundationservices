@@ -3,7 +3,7 @@ import OurWorkPage from "@/components/site/OurWorkPage";
 
 /* Title/meta from content/24_projects-hub. */
 export const metadata: Metadata = {
-  title: { absolute: "Foundation Repair Projects & Case Studies | Cardinal Foundation Services" },
+  title: { absolute: "Foundation Repair Projects & Case Studies | Cardinal" },
   description:
     "Documented foundation and structural projects across Texas: tilt wall, multifamily, industrial, steel piers, and commercial repairs with conditions found, methods used, and results.",
   alternates: { canonical: "/projects/" },

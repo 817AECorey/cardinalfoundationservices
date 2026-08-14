@@ -7,7 +7,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    municipal enter as their snapshot-parity pages ship. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Concrete Lifting & Stabilization in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Concrete Lifting & Stabilization in DFW | Cardinal" },
   description:
     "Concrete Lifting & Stabilization for commercial properties across Dallas-Fort Worth: slab lifting, void fill, warehouse floor leveling, polyurethane injection, mudjacking, and municipal concrete leveling. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/concrete-lifting/" },

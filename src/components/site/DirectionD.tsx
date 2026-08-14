@@ -37,7 +37,9 @@ const D_SVC: Record<string, string[]> = {
   "New Construction": ["Commercial Concrete", "Tilt-Wall Construction", "Builder Work / Additions", "Earthwork / Grading", "Not sure, need to scope"],
 };
 const D_URGENCY = ["Active damage / urgent", "Within the month", "Planning / budgeting"];
-export const D_CITIES = ["Fort Worth", "Dallas", "Arlington", "Plano", "Frisco", "McKinney", "Denton", "Keller", "Grapevine", "Mansfield", "Carrollton", "Lewisville", "Houston", "Katy", "Sugar Land", "The Woodlands", "Pearland", "Cypress"];
+export const DFW_CITIES = ["Fort Worth", "Dallas", "Arlington", "Plano", "Frisco", "McKinney", "Denton", "Keller", "Grapevine", "Mansfield", "Carrollton", "Lewisville", "Irving", "Garland", "Richardson", "Grand Prairie", "Allen", "Flower Mound", "Prosper", "Celina", "Little Elm", "Melissa", "Bedford", "Euless", "Hurst", "North Richland Hills", "Burleson", "Southlake", "Colleyville", "Rockwall", "Wylie", "Weatherford", "Midlothian"];
+export const HOUSTON_CITIES = ["Houston", "Katy", "Sugar Land", "The Woodlands", "Pearland", "Cypress"];
+export const D_CITIES = [...DFW_CITIES, ...HOUSTON_CITIES];
 /* Credibility bar per content/14. The 4.9 Google rating appears as visible
    text only, NEVER as review markup; TODO: link it to the Google Business
    Profile once the GBP URL is provided. */
@@ -575,7 +577,7 @@ function DHero() {
               Foundation Repair in Dallas-Fort Worth &amp; Houston
             </h1>
             <p className="fade-up" style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
-              Residential, commercial, and new construction foundation and concrete work across Texas. Engineered scope, self-performed crews, and an inspection that gives you data before anyone gives you a price.
+              From commercial and residential foundation repair to new construction and concrete work, we deliver expert solutions and self-performed workmanship backed by local knowledge and engineer-owned service you can trust.
             </p>
             <p className="fade-up" style={{ color: "#fff", fontSize: 15, fontWeight: 700, margin: "0 0 28px", display: "flex", alignItems: "center", gap: 10 }}>
               <Check s={16} c="var(--red)" /> Owned and operated with a licensed Professional Engineer.

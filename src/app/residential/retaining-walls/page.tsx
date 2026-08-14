@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Merge destination for the live repair + design pages (content/20). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Retaining Wall Repair & Design in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Retaining Wall Repair & Design in DFW | Cardinal" },
   description:
     "Retaining wall repair, design, and installation for DFW homes: leaning, cracking, or failing walls corrected at the cause. Free evaluation.",
   alternates: { canonical: "/residential/retaining-walls/" },

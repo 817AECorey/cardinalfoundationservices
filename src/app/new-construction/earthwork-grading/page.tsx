@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Redirect destination for live /grading/ (content/22). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Earthwork, Grading & Soil Conditioning in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Earthwork, Grading & Soil Conditioning in DFW | Cardinal" },
   description:
     "Earthwork, lot grading, and soil conditioning for builders, developers, and property owners in DFW. Site prep from the contractor that repairs what bad grading causes.",
   alternates: { canonical: "/new-construction/earthwork-grading/" },
