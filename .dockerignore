@@ -10,3 +10,8 @@ README.md
 !.env.example
 .DS_Store
 fly.toml
+media-inbox
+asset_bundle
+media_inventory.csv
+placed.tsv
+LAUNCH_RUNBOOK.md
