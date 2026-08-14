@@ -66,7 +66,31 @@ async function store(record: Record<string, unknown>): Promise<boolean> {
   }
 }
 
+/* Per-IP throttle: 5 requests per 10 minutes, then 429. In-memory and
+   per-instance (each Fly machine counts separately), which is adequate
+   spam pressure relief without external state. */
+const RATE_LIMIT = 5;
+const RATE_WINDOW_MS = 10 * 60 * 1000;
+const hits = new Map<string, number[]>();
+function rateLimited(ip: string): boolean {
+  const now = Date.now();
+  const recent = (hits.get(ip) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
+  if (recent.length >= RATE_LIMIT) { hits.set(ip, recent); return true; }
+  recent.push(now);
+  hits.set(ip, recent);
+  // opportunistic cleanup so the map cannot grow unbounded
+  if (hits.size > 5000) {
+    for (const [k, v] of hits) if (v.every((t) => now - t >= RATE_WINDOW_MS)) hits.delete(k);
+  }
+  return false;
+}
+
 export async function POST(request: NextRequest) {
+  const ip = request.headers.get("fly-client-ip") ?? request.headers.get("x-forwarded-for")?.split(",")[0].trim() ?? "unknown";
+  if (rateLimited(ip)) {
+    return Response.json({ error: "Too many requests. Please call us instead." }, { status: 429 });
+  }
+
   let payload: Record<string, unknown>;
   try {
     payload = await request.json();
