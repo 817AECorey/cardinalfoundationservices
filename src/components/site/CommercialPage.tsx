@@ -44,13 +44,6 @@ function CHero() {
             <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
               Warehouses, retail centers, multifamily, and industrial buildings settle for reasons an inspection can identify. We assess the structure and soil, engineer the plan of repair, and our own crews carry it out around your operations.
             </p>
-            <p style={{ color: "#fff", fontSize: 15, fontWeight: 700, margin: "0 0 28px", display: "flex", alignItems: "center", gap: 10 }}>
-              <Check s={16} c="var(--red)" /> Every scope is reviewed by a licensed Professional Engineer.
-            </p>
-            <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-              <Btn variant="red" arrow="ur" href="#c-services" onClick={(e) => { e.preventDefault(); dScroll("c-services"); }}>Browse Commercial Services</Btn>
-              <Btn variant="ghost" arrow="none" href={PHONE_TEL}><Phone s={15} c="#fff" /> {PHONE}</Btn>
-            </div>
           </div>
           <div style={{ display: "flex", justifyContent: "flex-end" }}><CAssessCard /></div>
         </div>
@@ -346,8 +339,8 @@ export default function CommercialPage() {
       <DNav />
       <CHero />
       <DTrustBar />
-      <CIntro />
       <CServices />
+      <CIntro />
       <CSigns />
       <DPierPath />
       <DPierSystems />

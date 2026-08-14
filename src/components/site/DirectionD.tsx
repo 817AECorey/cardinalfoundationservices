@@ -104,6 +104,47 @@ type NavEntry = { label: string; href: string; columns?: MegaColumn[]; feature?:
 
 const NAV: NavEntry[] = [
   {
+    label: "Commercial", href: "/commercial/",
+    columns: [
+      {
+        num: "01", title: "Structural", links: [
+          /* Legacy URL by spec; NEVER the clean path */
+          { label: "Multifamily & Apartments", href: "/commercial/multifamily/" },
+          { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/", hub: true },
+          { label: "Steel Piers", href: "/commercial/foundation-repair/steel-piers/" },
+          { label: "Underpinning", href: "/commercial/foundation-repair/underpinning/" },
+          { label: "Tilt Wall", href: "/commercial/tilt-wall/" },
+        ],
+      },
+      {
+        num: "02", title: "Concrete", links: [
+          { label: "Concrete Lifting & Warehouse Floors", href: "/commercial/concrete-lifting/", hub: true },
+          { label: "Warehouse Floor Leveling", href: "/commercial/concrete-lifting/warehouse-floor-leveling/" },
+          { label: "Poly Injection", href: "/commercial/concrete-lifting/polyurethane-foam-injection/" },
+          { label: "Slab Repair", href: "/commercial/concrete-construction/slab-repair/" },
+          { label: "Concrete Construction", href: "/commercial/concrete-construction/" },
+        ],
+      },
+      {
+        num: "03", title: "Site & Specialty", links: [
+          { label: "Drainage", href: "/commercial/drainage/", hub: true },
+          { label: "French Drains", href: "/commercial/drainage/french-drains/" },
+          { label: "Retaining Walls", href: "/commercial/retaining-walls/" },
+          { label: "Structural Repair", href: "/commercial/structural-repair/" },
+          { label: "Specialty Services", href: "/commercial/specialty/" },
+        ],
+      },
+    ],
+    feature: {
+      /* Deliberate promotion slot through October */
+      kicker: "",
+      title: "Multifamily Due Diligence",
+      desc: "Pre-acquisition foundation and structural assessments, starting free on select buildings.",
+      href: "/commercial/due-diligence-walks/",
+      cta: "See the assessments",
+    },
+  },
+  {
     label: "Residential", href: "/residential/",
     columns: [
       {
@@ -145,47 +186,6 @@ const NAV: NavEntry[] = [
       desc: "Elevation readings mapped across your foundation, and a written report before anyone talks price.",
       href: "/contact/",
       cta: "Schedule yours",
-    },
-  },
-  {
-    label: "Commercial", href: "/commercial/",
-    columns: [
-      {
-        num: "01", title: "Structural", links: [
-          /* Legacy URL by spec; NEVER the clean path */
-          { label: "Multifamily & Apartments", href: "/commercial/multifamily/" },
-          { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/", hub: true },
-          { label: "Steel Piers", href: "/commercial/foundation-repair/steel-piers/" },
-          { label: "Underpinning", href: "/commercial/foundation-repair/underpinning/" },
-          { label: "Tilt Wall", href: "/commercial/tilt-wall/" },
-        ],
-      },
-      {
-        num: "02", title: "Concrete", links: [
-          { label: "Concrete Lifting & Warehouse Floors", href: "/commercial/concrete-lifting/", hub: true },
-          { label: "Warehouse Floor Leveling", href: "/commercial/concrete-lifting/warehouse-floor-leveling/" },
-          { label: "Poly Injection", href: "/commercial/concrete-lifting/polyurethane-foam-injection/" },
-          { label: "Slab Repair", href: "/commercial/concrete-construction/slab-repair/" },
-          { label: "Concrete Construction", href: "/commercial/concrete-construction/" },
-        ],
-      },
-      {
-        num: "03", title: "Site & Specialty", links: [
-          { label: "Drainage", href: "/commercial/drainage/", hub: true },
-          { label: "French Drains", href: "/commercial/drainage/french-drains/" },
-          { label: "Retaining Walls", href: "/commercial/retaining-walls/" },
-          { label: "Structural Repair", href: "/commercial/structural-repair/" },
-          { label: "Specialty Services", href: "/commercial/specialty/" },
-        ],
-      },
-    ],
-    feature: {
-      /* Deliberate promotion slot through October */
-      kicker: "",
-      title: "Multifamily Due Diligence",
-      desc: "Pre-acquisition foundation and structural assessments, starting free on select buildings.",
-      href: "/commercial/due-diligence-walks/",
-      cta: "See the assessments",
     },
   },
   {
@@ -606,7 +606,18 @@ function DHero() {
           </div>
           <div style={{ display: "flex", justifyContent: "flex-end" }}><DQuickCard /></div>
         </div>
-        <div className="d-fork">
+      </div>
+    </section>
+  );
+}
+
+
+/* ---------- 3b · AUDIENCE TILES (relocated below the trust bar, run v2 B) ---------- */
+function DForkTiles() {
+  return (
+    <section className="tex-dark" style={{ padding: "44px 0" }}>
+      <div className="wrap">
+        <div className="d-fork" style={{ marginBottom: 0 }}>
           <DPath cls="d-fork-res" tag="Residential" title="Cracks, sticking doors, uneven floors?"
             body="Start with a free inspection that includes a mapped elevation survey of your foundation."
             cta="Residential Services" href="/residential/" />
@@ -618,7 +629,7 @@ function DHero() {
             cta="New Construction" href="/new-construction/" />
           <DPath cls="d-fork-quote" quote tag="Fast track" title="Quote / Call Now"
             body="Talk to our team or start a free foundation check request."
-            cta="Start Now" href="#contact" />
+            cta="Start Now" href="/request/" />
         </div>
       </div>
     </section>
@@ -1192,13 +1203,14 @@ export default function DirectionD() {
       <DNav />
       <DHero />
       <DTrustBar />
+      <DForkTiles />
       <DCommercial />
+      <DResidential />
       <DNewConstruction />
       <DPierPath />
       <DPierSystems />
       <DHonesty />
       <DWork />
-      <DResidential />
       <DContact />
       <DFooter />
     </div>

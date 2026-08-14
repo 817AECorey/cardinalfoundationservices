@@ -50,13 +50,6 @@ function NHero() {
             <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
               Commercial concrete, tilt-wall, builder work, and earthwork as a dedicated pathway, not a repair add-on. Engineering and concrete under one roof, which helps in tough approval environments.
             </p>
-            <p style={{ color: "#fff", fontSize: 15, fontWeight: 700, margin: "0 0 28px", display: "flex", alignItems: "center", gap: 10 }}>
-              <Check s={16} c="var(--red)" /> Every scope is reviewed by a licensed Professional Engineer.
-            </p>
-            <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-              <Btn variant="red" arrow="ur" href="#n-services" onClick={(e) => { e.preventDefault(); dScroll("n-services"); }}>Browse New Construction Services</Btn>
-              <Btn variant="ghost" arrow="none" href={PHONE_TEL}><Phone s={15} c="#fff" /> {PHONE}</Btn>
-            </div>
           </div>
           <div style={{ display: "flex", justifyContent: "flex-end" }}><NScopeCard /></div>
         </div>
@@ -346,8 +339,8 @@ export default function NewConstructionPage() {
       <DNav />
       <NHero />
       <DTrustBar />
-      <NIntro />
       <NServices />
+      <NIntro />
       <NProcess />
       <DPierSystems />
       <NClients />
