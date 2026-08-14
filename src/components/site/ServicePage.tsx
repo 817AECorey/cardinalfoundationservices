@@ -162,22 +162,33 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
               </span>
             ))}
           </div>
-          {d.kicker && <Kicker color="#fff">{geoKicker(d.kicker, tree)}</Kicker>}
-          <h1 className="disp" style={{ fontSize: 54, margin: "20px 0 0", color: "#fff", maxWidth: 820 }}>{d.h1}</h1>
-          {d.intro.map((p) => (
-            <p key={p.slice(0, 40)} style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.6, margin: "22px 0 0", maxWidth: 720, fontWeight: 500 }}>{p}</p>
-          ))}
-          <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 30 }}>
-            <Btn variant="red" arrow="ur" href="/request/">{d.ctaLabel}</Btn>
-            <Btn variant="ghost" arrow="none" href={PHONE_TEL}><Phone s={15} c="#fff" /> {PHONE}</Btn>
-          </div>
-          {d.heroImage?.contain && (
-            /* diagrams render uncropped on a light panel instead of as a cover background */
-            <div style={{ marginTop: 34, background: "#fff", padding: 18 }}>
-              <img src={d.heroImage.src} alt={d.heroImage.alt} width={d.heroImage.width} height={d.heroImage.height}
-                style={{ width: "100%", height: "auto", maxHeight: 480, objectFit: "contain", display: "block" }} />
-            </div>
-          )}
+          {(() => {
+            const heroText = (
+              <div>
+                {d.kicker && <Kicker color="#fff">{geoKicker(d.kicker, tree)}</Kicker>}
+                <h1 className="disp" style={{ fontSize: 54, margin: "20px 0 0", color: "#fff", maxWidth: 820 }}>{d.h1}</h1>
+                {d.intro.map((p) => (
+                  <p key={p.slice(0, 40)} style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.6, margin: "22px 0 0", maxWidth: 720, fontWeight: 500 }}>{p}</p>
+                ))}
+                <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 30 }}>
+                  <Btn variant="red" arrow="ur" href="/request/">{d.ctaLabel}</Btn>
+                  <Btn variant="ghost" arrow="none" href={PHONE_TEL}><Phone s={15} c="#fff" /> {PHONE}</Btn>
+                </div>
+              </div>
+            );
+            if (!d.heroImage?.contain) return heroText;
+            /* diagram pages: standard two-column hero (text left, framed
+               light media panel right), diagram uncropped via contain */
+            return (
+              <div className="c-hero">
+                {heroText}
+                <div style={{ background: "#fff", padding: 16, boxShadow: "0 30px 70px rgba(0,0,0,.5)" }}>
+                  <img src={d.heroImage.src} alt={d.heroImage.alt} width={d.heroImage.width} height={d.heroImage.height}
+                    style={{ width: "100%", height: "auto", maxHeight: 440, objectFit: "contain", display: "block" }} />
+                </div>
+              </div>
+            );
+          })()}
         </div>
       </section>
 
