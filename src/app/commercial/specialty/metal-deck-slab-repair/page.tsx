@@ -9,12 +9,14 @@ export const metadata: Metadata = {
   description:
     "Engineered repair of metal deck and pan-pour slab systems across Fort Worth and DFW: delamination mapping, selective demolition, steel treatment, high-bond restoration, and waterproofing protection.",
   alternates: { canonical: "/commercial/specialty/metal-deck-slab-repair/" },
+  openGraph: { images: [{ url: "/images/metal-deck-slab-repair.webp", width: 1536, height: 1024 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Metal Deck Slab Repair" }],
   kicker: "Specialty Structural · Fort Worth & DFW",
   h1: "Metal Deck and Pan-Pour Slab Repair",
+  heroImage: { src: "/images/metal-deck-slab-repair.webp", alt: "Metal deck slab during commercial repair work", width: 1536, height: 1024 },
   intro: [
     "Cardinal Foundation Services specializes in engineered repair of metal deck and pan-pour slab systems across Fort Worth and the DFW metroplex, restoring the structural integrity of elevated concrete slabs while extending service life and preventing future deterioration. Metal deck and pan-pour slabs are common structural systems across parking garages, roof decks, mezzanines, industrial floors, and multi-story commercial buildings throughout North Texas. Over time, these elevated slabs show cracking, delamination, and spalling, usually tied to moisture intrusion and steel corrosion within the concrete or deck pan below.",
   ],

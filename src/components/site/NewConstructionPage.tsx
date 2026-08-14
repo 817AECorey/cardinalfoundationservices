@@ -31,7 +31,7 @@ function NHero() {
   return (
     <section style={{ position: "relative", background: "var(--ink)", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0 }}>
-        <Img label="New construction concrete pour at a Texas jobsite" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1700&q=80" style={{ height: "100%" }} />
+        <Img label="Rebar mat over vapor barrier prepared for a new construction foundation pour" src="/images/new-construction-foundation-rebar-vapor-barrier.webp" style={{ height: "100%" }} />
       </div>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,12,12,.92) 0%, rgba(12,12,12,.6) 45%, rgba(12,12,12,.92) 100%)" }} />
       <div className="d-blueprint" style={{ opacity: .45 }} />
@@ -178,7 +178,7 @@ function NIntro() {
 
 /* ---------- SERVICES GRID (links to individual pages) ---------- */
 const N_SERVICES = [
-  { n: "01", t: "Commercial Concrete", d: "Structural slab pours, building pads, and site concrete for new commercial shells.", items: ["Structural Slab Pours", "Building Pads", "Site Paving", "Foundations"], img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80", feature: true },
+  { n: "01", t: "Commercial Concrete", d: "Structural slab pours, building pads, and site concrete for new commercial shells.", items: ["Structural Slab Pours", "Building Pads", "Site Paving", "Foundations"], img: "/images/finished-concrete-foundation-slab.webp", feature: true },
   { n: "02", t: "Tilt-Wall Construction", d: "Panel fabrication and erection for warehouse and industrial shells.", items: ["Panel Fabrication", "Panel Erection", "Warehouse & Industrial Shells"], img: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&q=80" },
   { n: "03", t: "Builder Work & Additions", d: "Specialized structural work for builders and developers. Custom residential, additions, and builder piers.", items: ["Builder Piers", "Additions", "Custom Homes"], img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80" },
   { n: "04", t: "Earthwork & Grading", d: "Site preparation, grading, and developer infrastructure that sets the foundation up correctly.", items: ["Cut & Fill", "Site Grading", "Soil Preparation", "Developer Infrastructure"], img: "https://images.unsplash.com/photo-1473621038790-b778b4750efe?w=900&q=80" },

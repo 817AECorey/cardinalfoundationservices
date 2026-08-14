@@ -9,12 +9,14 @@ export const metadata: Metadata = {
   description:
     "Balcony repair throughout Fort Worth and DFW: structural concrete repair, waterproofing and membranes, railing anchor repair, and large-scale multifamily and HOA remediation.",
   alternates: { canonical: "/commercial/specialty/balcony-repair/" },
+  openGraph: { images: [{ url: "/images/balcony-structural-repair.webp", width: 1536, height: 1024 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Balcony Repair" }],
   kicker: "Specialty Structural · Fort Worth & DFW",
   h1: "Balcony Repair and Concrete Restoration",
+  heroImage: { src: "/images/balcony-structural-repair.webp", alt: "Balcony structure during commercial repair work", width: 1536, height: 1024 },
   intro: [
     "Balconies in North Texas experience heavy wear from weather exposure, drainage failures, structural movement, and moisture penetration, making them one of the most common elevated structures to fail in multifamily and commercial buildings. Cardinal Foundation Services delivers balcony repair throughout Fort Worth and the DFW metroplex, restoring safety, structural capacity, and long-term durability. Balcony deterioration is more than cosmetic: it can compromise load-bearing integrity and create liability for property owners. Our repair methods are built to safety codes, HOA requirements, and commercial building standards.",
   ],

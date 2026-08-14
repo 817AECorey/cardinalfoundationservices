@@ -10,13 +10,14 @@ export const metadata: Metadata = {
   description:
     "Pressed concrete pilings for DFW homes: the region's most common and most economical repair pier, pressed to resistance using the structure's own weight. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/concrete-pressed-piers/" },
+  openGraph: { images: [{ url: "/images/concrete-pressed-piers-installed-fort-worth.webp", width: 1280, height: 1706 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Foundation Repair", href: "/residential/foundation-repair/" }, { label: "Concrete Pressed Piers" }],
   kicker: "Residential Foundation Repair · DFW",
   h1: "Concrete Pressed Piers",
-  heroImage: { src: "/images/concrete-pressed-piling-installation-fort-worth.webp", alt: "Concrete pressed piling installation beneath a residential foundation", width: 1400, height: 788 },
+  heroImage: { src: "/images/concrete-pressed-piers-installed-fort-worth.webp", alt: "Concrete pressed piers installed beneath a Fort Worth home foundation", width: 1280, height: 1706 },
   intro: [
     "Pressed concrete pilings are the most common repair pier in North Texas for a simple reason: for lighter homes on lots where soil resistance is reached at decent bearing depth, they deliver stability at the lowest installed cost. Cardinal installs concrete pressed piers across Dallas-Fort Worth and the Houston area as one of five pier systems, and the inspection findings, not a house preference, decide when they are the right call.",
   ],

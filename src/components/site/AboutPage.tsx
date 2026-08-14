@@ -86,12 +86,14 @@ const A_OWNERS = [
     name: "Daneel Nortier, PE",
     role: "Owner / Engineer",
     label: "Photo of Daneel Nortier, PE",
+    photo: "/images/daneel-nortier-pe-owner.webp",
     bio: "Licensed Texas Professional Engineer since 2012 (License #113157, verifiable on the TBPELS public roster), with a degree from New Mexico State University and structural experience across Texas, Oklahoma, and Arkansas. Daneel's structural engineer's review and report can be added to any inspection as a verification tier.",
   },
   {
     name: "Josh Lavelle",
     role: "Owner",
     label: "Photo of Josh Lavelle",
+    photo: "/images/josh-lavelle-owner.webp",
     bio: "A Mechanical Engineering graduate of Missouri University of Science and Technology, in the industry since 2020. Josh leads implementation and production, bringing strong project management and a fresh perspective to every project type.",
   },
 ];
@@ -108,7 +110,11 @@ function ATeam() {
           {A_OWNERS.map((o) => (
             <div key={o.name} style={{ border: "1px solid var(--line)", background: "#fff", display: "flex", flexDirection: "column" }}>
               <div style={{ position: "relative", height: 340 }}>
-                <PhotoSlot label={o.label} style={{ position: "absolute", inset: 0 }} />
+                {o.photo ? (
+                  <Img label={o.label} src={o.photo} style={{ position: "absolute", inset: 0, height: "100%" }} />
+                ) : (
+                  <PhotoSlot label={o.label} style={{ position: "absolute", inset: 0 }} />
+                )}
               </div>
               <div style={{ padding: "26px 28px 28px", borderTop: "3px solid var(--red)" }}>
                 <h3 className="disp" style={{ fontSize: 26, color: "var(--ink)" }}>{o.name}</h3>

@@ -565,7 +565,7 @@ function DHero() {
   return (
     <section style={{ position: "relative", background: "var(--ink)", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0 }}>
-        <Img label="Commercial or structural jobsite, crew and equipment" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1700&q=80" style={{ height: "100%" }} />
+        <Img label="Drilling rig and crew installing commercial foundation piers" src="/images/commercial-foundation-drilling-rig-crew.webp" style={{ height: "100%" }} />
       </div>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,12,12,.9) 0%, rgba(12,12,12,.55) 44%, rgba(12,12,12,.9) 100%)" }} />
       <div className="d-blueprint" style={{ opacity: .45 }} />

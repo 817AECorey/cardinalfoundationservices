@@ -10,12 +10,14 @@ export const metadata: Metadata = {
   description:
     "Structural foundation repair, concrete leveling, and balcony repair for Possum Kingdom Lake properties: lake homes, slopes, and structures that need real engineering attention.",
   alternates: { canonical: "/locations/possum-kingdom-lake/" },
+  openGraph: { images: [{ url: "/images/possum-kingdom-lake-foundation-repair.webp", width: 1200, height: 799 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Locations", href: "/locations/" }, { label: "Possum Kingdom Lake" }],
   kicker: "Locations · Possum Kingdom Lake",
   h1: "Foundation and Structural Repair at Possum Kingdom Lake, Texas",
+  heroImage: { src: "/images/possum-kingdom-lake-foundation-repair.webp", alt: "Foundation repair project at Possum Kingdom Lake", width: 1200, height: 799 },
   intro: [
     "Possum Kingdom Lake properties combine everything that makes structural work interesting: slopes, water, rock transitioning to soil, and homes built to reach the view. Cardinal serves PK Lake property owners with structural foundation repair, concrete leveling, and balcony and elevated-structure repair, bringing engineering-backed scopes to a market where guesswork gets expensive fast.",
   ],

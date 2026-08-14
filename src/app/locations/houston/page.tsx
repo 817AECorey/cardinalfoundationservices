@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Foundation repair for Houston-area homes in Katy, Sugar Land, Pearland, Friendswood, Kingwood, and surrounding communities. Free inspection report with a mapped elevation survey and a written quote in one business day.",
   alternates: { canonical: "/locations/houston/" },
+  openGraph: { images: [{ url: "/images/houston-area-pier-installation-multifamily.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

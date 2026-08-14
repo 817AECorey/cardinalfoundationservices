@@ -9,12 +9,14 @@ export const metadata: Metadata = {
   description:
     "Parking garage concrete and structural repair across DFW: deck repair, slab settlement, beam and column repair, expansion joints, and structural reinforcement for multi-level parking structures.",
   alternates: { canonical: "/commercial/specialty/parking-garage-repair/" },
+  openGraph: { images: [{ url: "/images/parking-garage-concrete-structural-repair.webp", width: 1600, height: 1066 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Parking Garage Repair" }],
   kicker: "Specialty Structural · DFW",
   h1: "Parking Garage Concrete and Structural Repair",
+  heroImage: { src: "/images/parking-garage-concrete-structural-repair.webp", alt: "Parking garage concrete during structural repair work", width: 1600, height: 1066 },
   intro: [
     "Cardinal Foundation Services provides parking garage concrete and structural repair for commercial properties across the Dallas-Fort Worth metroplex, including Dallas, Fort Worth, Arlington, Irving, Grand Prairie, Coppell, Carrollton, and Plano. Parking garages are high-load, high-traffic structures that require specialized repair solutions. Cracked concrete, settlement, and structural deterioration can lead to safety hazards, liability concerns, and costly closures. Our services are engineered specifically for multi-level parking garages, parking decks, and concrete parking structures.",
   ],

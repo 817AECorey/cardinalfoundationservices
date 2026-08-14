@@ -24,6 +24,12 @@ export const metadata: Metadata = {
     siteName: "Cardinal Foundation Services",
     locale: "en_US",
     type: "website",
+    images: [{ url: "/images/og-default.png", width: 1200, height: 630 }],
+  },
+  twitter: { card: "summary_large_image" },
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/icon.png", type: "image/png" }],
+    apple: "/apple-touch-icon.png",
   },
 };
 

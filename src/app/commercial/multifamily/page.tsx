@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Foundation repair for apartment communities and multifamily properties in DFW and Texas. Documented projects in Carrollton, Lewisville, Baytown, and Austin. Phased around residents. Request an assessment.",
   alternates: { canonical: "/commercial/multifamily/" },
+  openGraph: { images: [{ url: "/images/multifamily-foundation-repair-exterior.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

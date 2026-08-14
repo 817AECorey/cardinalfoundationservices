@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Earthwork, lot grading, and soil conditioning for builders, developers, and property owners in DFW. Site prep from the contractor that repairs what bad grading causes.",
   alternates: { canonical: "/new-construction/earthwork-grading/" },
+  openGraph: { images: [{ url: "/images/earthwork-grading-building-pad.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

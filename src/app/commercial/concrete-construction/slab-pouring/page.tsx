@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Commercial slab pouring in DFW: reinforced structural slabs for warehouses, retail, office, and industrial facilities, with subgrade preparation built for North Texas expansive clay. Request engineered bids.",
   alternates: { canonical: "/commercial/concrete-construction/slab-pouring/" },
+  openGraph: { images: [{ url: "/images/slab-pouring-formed-foundation.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {
@@ -22,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is commercial slab pouring?",
+      img: { src: "/images/commercial-slab-pouring.webp", alt: "Commercial slab pour in progress" },
       paras: [
         "Commercial slab pouring involves preparing the subgrade, installing reinforcement, and placing engineered concrete systems designed for heavy-load environments. Unlike residential flatwork, commercial slabs must meet structural tolerances and often integrate with deep foundation systems. We coordinate slab installation with commercial foundation repair or drilled pier systems when required for site stability.",
       ],

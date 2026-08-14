@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Commercial foam injection in DFW: high-density structural polyurethane fills voids, stabilizes subgrade soils, and lifts settled slabs with precision, without large-scale demolition. Request an assessment.",
   alternates: { canonical: "/commercial/concrete-lifting/polyurethane-foam-injection/" },
+  openGraph: { images: [{ url: "/images/polyurethane-foam-injection-port-commercial.webp", width: 1200, height: 1600 }], },
 };
 
 const data: ServicePageData = {

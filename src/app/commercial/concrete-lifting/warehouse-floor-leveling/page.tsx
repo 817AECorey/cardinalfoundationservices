@@ -7,13 +7,14 @@ export const metadata: Metadata = {
   description:
     "Warehouse floor leveling and slab foundation repair around active operations in Dallas-Fort Worth. Void fill, polyurethane lifting, engineered scope, minimal downtime.",
   alternates: { canonical: "/commercial/concrete-lifting/warehouse-floor-leveling/" },
+  openGraph: { images: [{ url: "/images/warehouse-floor-leveling-industrial.webp", width: 1600, height: 1066 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Lifting", href: "/commercial/concrete-lifting/" }, { label: "Warehouse Floor Leveling" }],
   kicker: "Industrial · Dallas-Fort Worth",
   h1: "Warehouse Floor Leveling in Dallas-Fort Worth",
-  heroImage: { src: "/images/warehouse-floor-leveling-industrial.webp", alt: "Industrial warehouse floor during slab leveling", width: 1200, height: 1600 },
+  heroImage: { src: "/images/warehouse-floor-leveling-industrial.webp", alt: "Industrial warehouse floor prepared for concrete leveling", width: 1600, height: 1066 },
   intro: [
     "An uneven warehouse floor is a forklift problem, a racking problem, a safety problem, and eventually a structural problem. Cardinal levels warehouse and industrial floors across Dallas-Fort Worth, corrects the voids and settlement underneath them, and does it around your operations rather than instead of them.",
   ],

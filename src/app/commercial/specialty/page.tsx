@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description:
     "Specialty Structural Services for commercial properties across Dallas-Fort Worth: parking garages, lube pits, metal deck slabs, balconies, lightweight concrete, historical buildings, waterproofing, waters of the US compliance, erosion work, and emergency shoring. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/specialty/" },
+  openGraph: { images: [{ url: "/images/specialty-structural-materials-staged.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

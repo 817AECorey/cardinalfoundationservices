@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Pre-acquisition foundation and structural due diligence for multifamily and commercial properties in DFW and Texas. Free inspection report on select buildings, then Type A or Type B property-wide analysis.",
   alternates: { canonical: "/commercial/due-diligence-walks/" },
+  openGraph: { images: [{ url: "/images/due-diligence-multifamily-pool-courtyard.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

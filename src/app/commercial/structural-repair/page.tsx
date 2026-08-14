@@ -9,13 +9,14 @@ export const metadata: Metadata = {
   description:
     "Commercial and industrial structural repair and reinforcement across DFW: load-bearing walls, beams and columns, structural steel, concrete, and tilt-wall structural repair. Engineered for real load conditions.",
   alternates: { canonical: "/commercial/structural-repair/" },
+  openGraph: { images: [{ url: "/images/commercial-structural-repair.webp", width: 1600, height: 1066 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Structural Repair" }],
   kicker: "Commercial & Industrial · DFW",
   h1: "Commercial Structural Repair and Reinforcement",
-  heroImage: { src: "/images/structural-repair-stair-multifamily.webp", alt: "Structural repair underway at a multifamily stair", width: 1600, height: 1200 },
+  heroImage: { src: "/images/commercial-structural-repair.webp", alt: "Commercial structural repair work in progress", width: 1600, height: 1066 },
   intro: [
     "Cardinal Foundation Services specializes in commercial and industrial structural repair and reinforcement for properties across the Dallas-Fort Worth metroplex, including Dallas, Fort Worth, Arlington, Irving, Grand Prairie, Coppell, Carrollton, and Plano. Structural issues in commercial buildings can impact safety, code compliance, and long-term asset value. Our team delivers engineered structural solutions designed for real load conditions, not cosmetic fixes, for warehouses, industrial facilities, multifamily properties, hotels, retail centers, and parking structures.",
   ],

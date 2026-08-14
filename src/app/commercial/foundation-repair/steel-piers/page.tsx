@@ -11,13 +11,14 @@ export const metadata: Metadata = {
   description:
     "Steel pier systems for commercial and multifamily structures in DFW: deep driven support for heavy loads, installed around active operations. Documented projects. Request an engineered assessment.",
   alternates: { canonical: "/commercial/foundation-repair/steel-piers/" },
+  openGraph: { images: [{ url: "/images/commercial-steel-pier-access-pit.webp", width: 1280, height: 960 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/" }, { label: "Steel Piers" }],
   kicker: "Commercial Foundation Repair · DFW",
   h1: "Steel Piers for Commercial Structures",
-  heroImage: { src: "/images/steel-pier-installation-multifamily-crew.webp", alt: "Cardinal crew installing piers at an occupied multifamily property", width: 1600, height: 1200 },
+  heroImage: { src: "/images/commercial-steel-pier-access-pit.webp", alt: "Interior access pit prepared for commercial steel pier installation", width: 1280, height: 960 },
   intro: [
     "Commercial structures put loads on foundations that pressed pilings were never sized for. Steel piers, driven in sections to refusal on load-bearing strata, deliver the depth and capacity that hotels, multifamily buildings, retail structures, and industrial facilities require, and they install in confined, occupied, operating conditions where larger equipment cannot go.",
   ],

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Fort Worth's engineer-owned foundation repair and concrete contractor: piers, slab lifting, drainage, pier and beam, and commercial structural work. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/locations/fort-worth/" },
+  openGraph: { images: [{ url: "/images/fort-worth-residential-foundation-repair.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "Hybrid pier systems for DFW homes: concrete pilings combined with steel components to buy depth and capacity at less than full steel's cost. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/hybrid-piers/" },
+  openGraph: { images: [{ url: "/images/hybrid-pier-system-foundation-repair.webp", width: 1600, height: 946 }], },
 };
 
 const data: ServicePageData = {

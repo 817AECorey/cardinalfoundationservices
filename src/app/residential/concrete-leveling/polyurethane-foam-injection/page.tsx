@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "Sunken driveway, patio, or interior slab? Polyurethane foam injection lifts settled concrete back to level in hours. Clean, fast slab lifting for DFW homes.",
   alternates: { canonical: "/residential/concrete-leveling/polyurethane-foam-injection/" },
+  openGraph: { images: [{ url: "/images/polyurethane-foam-injection-slab-lifting.webp", width: 1400, height: 1005 }], },
 };
 
 const data: ServicePageData = {

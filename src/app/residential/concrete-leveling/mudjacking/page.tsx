@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Mudjacking lifts sunken driveways, patios, and walkways back to level with a proven, economical slurry method. Concrete leveling for DFW homes. Free evaluation.",
   alternates: { canonical: "/residential/concrete-leveling/mudjacking/" },
+  openGraph: { images: [{ url: "/images/mudjacking-slab-leveling-process.webp", width: 1400, height: 767 }], },
 };
 
 const data: ServicePageData = {

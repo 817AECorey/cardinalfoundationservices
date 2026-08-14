@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Concrete flatwork for DFW: new slabs, driveways, patios, walkways, and stamped decorative concrete, poured by the contractor that understands the soil underneath. Request a quote.",
   alternates: { canonical: "/new-construction/concrete-flatwork/" },
+  openGraph: { images: [{ url: "/images/concrete-flatwork-forms-stamped.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {
@@ -22,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Concrete slabs",
+      img: { src: "/images/grade-beam-forms-new-foundation.webp", alt: "Formed grade beams ready for a new foundation pour" },
       paras: [
         "New slabs for garages, shops, additions, and outbuildings, poured over properly prepared and compacted base with reinforcement matched to use. Site soil in North Texas is expansive clay, and slab longevity is decided in the prep: grading, moisture conditioning, base, and drainage away from the pour.",
       ],

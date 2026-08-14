@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Commercial Concrete Construction & Repair for commercial properties across Dallas-Fort Worth: slab pouring, slab repair, expansion joint and mastic repair, and structural crack repair. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/concrete-construction/" },
+  openGraph: { images: [{ url: "/images/concrete-construction-slab-forms-rebar.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

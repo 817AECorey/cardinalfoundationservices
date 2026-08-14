@@ -7,13 +7,14 @@ export const metadata: Metadata = {
   description:
     "Tilt wall panel repair, stabilization, and construction for warehouses and commercial buildings across DFW and Texas. Engineered scope, self-performed crews. Request an assessment.",
   alternates: { canonical: "/commercial/tilt-wall/" },
+  openGraph: { images: [{ url: "/images/tilt-wall-panel-joint-separation.webp", width: 1440, height: 1920 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Tilt Wall" }],
   kicker: "Commercial & Industrial · Texas",
   h1: "Tilt Wall Repair and Stabilization in Texas",
-  heroImage: { src: "/images/tilt-wall-panel-interior.webp", alt: "Interior tilt-wall panels during assessment", width: 1200, height: 1600 },
+  heroImage: { src: "/images/tilt-wall-panel-joint-separation.webp", alt: "Tilt wall panel joint separation documented during a structural evaluation", width: 1440, height: 1920 },
   intro: [
     "Tilt wall panels carry enormous loads on relatively narrow footings, which makes them sensitive to the foundation and soil conditions beneath them. When panels rotate, separate at joints, or crack, the cause usually lives below grade: settlement, erosion, or drainage failure at the panel line. Cardinal provides tilt wall repair, stabilization, and construction support for warehouses, distribution centers, and commercial buildings across Dallas-Fort Worth and, for larger projects, across Texas.",
   ],

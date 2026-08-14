@@ -13,7 +13,6 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Foundation Repair", href: "/residential/foundation-repair/" }, { label: "Post-Tension Slab Repair" }],
   kicker: "Residential Foundation Repair · DFW",
   h1: "Post-Tension Slab and Cable Repair",
-  heroImage: { src: "/images/post-tension-slab-cable-repair-fort-worth.webp", alt: "Post-tension slab edge and cable anchor during repair", width: 1000, height: 1000 },
   intro: [
     "Many North Texas homes built since the 1990s sit on post-tension slabs: concrete foundations reinforced with steel cables tensioned after the pour, which compress the slab and help it resist our expansive clay. When a post-tension foundation settles, cracks, or a cable issue is suspected, the repair has to respect the system, because cutting or drilling a tensioned slab in the wrong place is dangerous and expensive. Cardinal repairs post-tension foundations across Dallas-Fort Worth and the Houston area with methods planned around the tendons.",
   ],

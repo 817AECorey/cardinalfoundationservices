@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Concrete lifting and leveling for municipal flatwork: parks, sidewalks, public squares, and public buildings across DFW. Engineer-owned, large-scale efficiency, budget-conscious. Request an assessment.",
   alternates: { canonical: "/commercial/concrete-lifting/municipal/" },
+  openGraph: { images: [{ url: "/images/municipal-sidewalk-concrete-repair.webp", width: 1200, height: 1600 }], },
 };
 
 const data: ServicePageData = {

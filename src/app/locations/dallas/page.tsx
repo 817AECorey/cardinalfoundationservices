@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "Foundation repair for Dallas homes and commercial properties: piers, slab lifting, drainage, and structural work across Dallas and nearby communities. Free residential inspection report with a mapped elevation survey.",
   alternates: { canonical: "/locations/dallas/" },
+  openGraph: { images: [{ url: "/images/dallas-area-foundation-crew.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

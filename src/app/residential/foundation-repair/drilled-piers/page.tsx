@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Drilled concrete piers for DFW homes, patios, decks, and additions. Poured-in-place reinforced piers for long-term stability in North Texas soil. Free inspection report.",
   alternates: { canonical: "/residential/foundation-repair/drilled-piers/" },
+  openGraph: { images: [{ url: "/images/drilled-pier-shaft-rebar-fort-worth-texas.webp", width: 1400, height: 788 }], },
 };
 
 const data: ServicePageData = {

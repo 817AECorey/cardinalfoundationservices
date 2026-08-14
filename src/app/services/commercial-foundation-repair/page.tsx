@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "Commercial foundation repair across Dallas-Fort Worth for warehouses, multifamily, retail, hotels, and industrial facilities. Engineered scope, self-performed crews, minimal disruption. Request an assessment.",
   alternates: { canonical: "/services/commercial-foundation-repair/" },
+  openGraph: { images: [{ url: "/images/commercial-foundation-repair-pressed-piers-haltom-city.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

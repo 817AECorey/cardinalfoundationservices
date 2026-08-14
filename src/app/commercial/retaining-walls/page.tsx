@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Commercial Retaining Walls for commercial properties across Dallas-Fort Worth: structural retaining wall repair and tieback anchor systems. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/retaining-walls/" },
+  openGraph: { images: [{ url: "/images/retaining-wall-repair-crew.webp", width: 1600, height: 1200 }], },
 };
 
 const data: ServicePageData = {

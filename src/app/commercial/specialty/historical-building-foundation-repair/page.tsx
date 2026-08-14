@@ -9,12 +9,14 @@ export const metadata: Metadata = {
   description:
     "Foundation repair for historic homes, buildings, churches, and commercial landmarks across Fort Worth, Dallas, and North Texas, balancing engineering with preservation sensitivity.",
   alternates: { canonical: "/commercial/specialty/historical-building-foundation-repair/" },
+  openGraph: { images: [{ url: "/images/historic-building-foundation-restoration-pilot-point.webp", width: 1280, height: 1706 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Historical Building Foundation Repair" }],
   kicker: "Specialty Structural · Fort Worth & Dallas",
   h1: "Historic Building Foundation Repair",
+  heroImage: { src: "/images/historic-building-foundation-restoration-pilot-point.webp", alt: "Equipment staged at a historic Pilot Point building during foundation restoration", width: 1280, height: 1706 },
   intro: [
     "Historic buildings are not just structures: they are stories, symbols, and irreplaceable parts of the community's history. Cardinal Foundation Services specializes in foundation repair for historical homes, buildings, churches, and commercial landmarks across Fort Worth, Dallas, and the surrounding North Texas region, bringing a careful balance of engineering and preservation sensitivity to every project. Whether it is a 1920s craftsman bungalow in Fairmount, a historic storefront in downtown Fort Worth, or a Victorian-era property in Old East Dallas, the repair approach is tailored to protect the structure's integrity, appearance, and value.",
   ],

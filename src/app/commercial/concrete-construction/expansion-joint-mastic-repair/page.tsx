@@ -9,12 +9,14 @@ export const metadata: Metadata = {
   description:
     "Commercial expansion joint and mastic repair in DFW: control joint sealing, joint replacement, and semi-rigid fillers that protect slabs from moisture intrusion and structural wear.",
   alternates: { canonical: "/commercial/concrete-construction/expansion-joint-mastic-repair/" },
+  openGraph: { images: [{ url: "/images/expansion-joint-mastic-repair.webp", width: 1600, height: 1066 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Construction", href: "/commercial/concrete-construction/" }, { label: "Expansion Joint & Mastic Repair" }],
   kicker: "Concrete Construction · DFW",
   h1: "Expansion Joint and Mastic Repair",
+  heroImage: { src: "/images/expansion-joint-mastic-repair.webp", alt: "Expansion joint prepared for mastic repair at a commercial property", width: 1600, height: 1066 },
   intro: [
     "Expansion joints and sealants protect commercial concrete systems from moisture intrusion and structural stress. Cardinal Foundation Services provides professional expansion joint and mastic repair across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. Proper joint maintenance prevents water infiltration, slab deterioration, and premature structural wear. In high-traffic commercial environments, joint performance is critical to long-term durability.",
   ],

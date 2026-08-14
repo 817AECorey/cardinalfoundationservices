@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Slab repair for DFW homes: foundation crack repair, sunken slab correction, and settlement repair on conventional and post-tension slabs. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/slab-repair/" },
+  openGraph: { images: [{ url: "/images/settled-concrete-slab-foundation-crack.webp", width: 1400, height: 951 }], },
 };
 
 const data: ServicePageData = {

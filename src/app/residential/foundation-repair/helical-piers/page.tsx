@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Helical pier installation for DFW homes: screw-in steel piers with capacity verified by installation torque, resistant to heave in moisture-rich clay. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/helical-piers/" },
+  openGraph: { images: [{ url: "/images/helical-pier-installation-north-texas.webp", width: 1200, height: 900 }], },
 };
 
 const data: ServicePageData = {

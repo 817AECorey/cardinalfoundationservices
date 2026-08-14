@@ -9,13 +9,14 @@ export const metadata: Metadata = {
   description:
     "Pier and beam and crawl space foundation repair for DFW homes: interior elevation survey, visual crawl inspection, beam and sill replacement, and re-shimming to restore elevation. Free inspection report.",
   alternates: { canonical: "/residential/foundation-repair/pier-and-beam/" },
+  openGraph: { images: [{ url: "/images/pier-and-beam-crawl-space-repair-crew.webp", width: 1200, height: 1600 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Foundation Repair", href: "/residential/foundation-repair/" }, { label: "Pier & Beam" }],
   kicker: "Residential Foundation Repair · DFW",
   h1: "Pier and Beam Foundation Repair",
-  heroImage: { src: "/images/pier-and-beam-crawl-space-repair.webp", alt: "Crawl space beam and pier repair under a pier and beam home", width: 1400, height: 934 },
+  heroImage: { src: "/images/pier-and-beam-crawl-space-repair-crew.webp", alt: "Cardinal crew installing piers beneath a pier and beam home in a crawl space", width: 1200, height: 1600 },
   intro: [
     "Pier and beam and crawl space foundations are their own discipline: wood members, shims, and piers working together above open ground, common in older Dallas-Fort Worth and Houston-area neighborhoods and homes with real character. Cardinal repairs both traditional and complex pier and beam systems, with an inspection process built for what actually fails under these homes.",
   ],

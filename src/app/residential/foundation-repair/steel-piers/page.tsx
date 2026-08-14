@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description:
     "Steel pier foundation repair for DFW homes. Driven to load-bearing strata for deep, lasting support in North Texas expansive clay. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/steel-piers/" },
+  openGraph: { images: [{ url: "/images/steel-pier-installation-fort-worth-tx.webp", width: 1200, height: 800 }], },
 };
 
 const data: ServicePageData = {

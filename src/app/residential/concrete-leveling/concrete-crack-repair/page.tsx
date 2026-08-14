@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description:
     "Concrete crack repair in Fort Worth and DFW: driveways, patios, sidewalks, foundations, and commercial surfaces, repaired and reinforced to prevent further damage. Free evaluation.",
   alternates: { canonical: "/residential/concrete-leveling/concrete-crack-repair/" },
+  openGraph: { images: [{ url: "/images/cracked-driveway-concrete-repair.webp", width: 1600, height: 897 }], },
 };
 
 const data: ServicePageData = {

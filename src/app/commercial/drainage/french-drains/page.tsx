@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Engineered commercial french drain systems in DFW: intercept and redirect groundwater away from foundations, slabs, and retaining walls, sized for commercial water volumes.",
   alternates: { canonical: "/commercial/drainage/french-drains/" },
+  openGraph: { images: [{ url: "/images/french-drain-installation-commercial.webp", width: 1200, height: 1600 }], },
 };
 
 const data: ServicePageData = {

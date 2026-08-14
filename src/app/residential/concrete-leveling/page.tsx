@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Concrete leveling for DFW homes: polyurethane foam slab lifting and mudjacking for sunken driveways, patios, walkways, and interior slabs. Free evaluation.",
   alternates: { canonical: "/residential/concrete-leveling/" },
+  openGraph: { images: [{ url: "/images/polyurethane-foam-injection-slab-lifting.webp", width: 1400, height: 1005 }], },
 };
 
 const data: ServicePageData = {

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Home drainage repair and design in Dallas-Fort Worth: french drains, area drains, grading, and drainage correction that protects your foundation. Free evaluation.",
   alternates: { canonical: "/residential/drainage/" },
+  openGraph: { images: [{ url: "/images/french-drain-installation-fort-worth-texas.webp", width: 1400, height: 1400 }], },
 };
 
 const data: ServicePageData = {

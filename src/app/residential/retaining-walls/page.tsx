@@ -9,19 +9,21 @@ export const metadata: Metadata = {
   description:
     "Retaining wall repair, design, and installation for DFW homes: leaning, cracking, or failing walls corrected at the cause. Free evaluation.",
   alternates: { canonical: "/residential/retaining-walls/" },
+  openGraph: { images: [{ url: "/images/stone-retaining-wall-finished.webp", width: 1200, height: 900 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Retaining Walls" }],
   kicker: "Residential · DFW",
   h1: "Retaining Wall Repair and Design",
-  heroImage: { src: "/images/retaining-wall-construction-fort-worth.webp", alt: "Retaining wall construction at a residential property", width: 1200, height: 796 },
+  heroImage: { src: "/images/stone-retaining-wall-finished.webp", alt: "Finished dry stack stone retaining wall on a residential lawn", width: 1200, height: 900 },
   intro: [
     "A retaining wall that leans, bulges, or cracks is losing its argument with the soil behind it, and in North Texas that argument is usually about water. Cardinal repairs, designs, and installs residential retaining walls across Dallas-Fort Worth and the Houston area, treating the wall and the pressure behind it as one problem, because fixing the wall without relieving the load rebuilds the failure.",
   ],
   sections: [
     {
       h2: "Retaining wall repair",
+      img: { src: "/images/retaining-wall-construction-crew.webp", alt: "Crew member placing stone during retaining wall construction" },
       paras: [
         "Leaning and rotation, stair-step cracking in block and stone, bulging faces, failed footings, and walls undermined by erosion. Repair scopes are matched to the failure mode: drainage relief behind the wall, footing repair, structural reinforcement, partial rebuilds, and, where loads justify it, engineered solutions drawn from our commercial tieback work. The evaluation identifies why the wall failed, and the fix addresses that, not just the appearance.",
       ],
