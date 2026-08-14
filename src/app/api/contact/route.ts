@@ -160,7 +160,7 @@ export async function POST(request: NextRequest) {
   ].filter((l) => l !== null);
 
   try {
-    const { error } = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: `Cardinal Website <${FROM_EMAIL}>`,
       to: [to],
       replyTo: email && isEmail(email) ? email : undefined,
@@ -168,6 +168,8 @@ export async function POST(request: NextRequest) {
       text: lines.join("\n"),
     });
     if (error) throw new Error(JSON.stringify(error));
+    console.log(`[contact] sent ok resend_id=${data?.id ?? "unknown"} lead=${lead} source=${source}`);
+    await store({ type: "sent", resendId: data?.id ?? null, ...record });
     return Response.json({ ok: true });
   } catch (err) {
     // 2) Send failure: record it durably and alert.
