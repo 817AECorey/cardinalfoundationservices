@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   description:
     "Earthwork, lot grading, and soil conditioning for builders, developers, and property owners in DFW. Site prep from the contractor that repairs what bad grading causes.",
   alternates: { canonical: "/new-construction/earthwork-grading/" },
-  openGraph: { images: [{ url: "/images/earthwork-grading-building-pad.webp", width: 1600, height: 1200 }], },
+  openGraph: { images: [{ url: "/images/site-grading-telehandler-building-pad.webp", width: 1280, height: 1706 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "New Construction", href: "/new-construction/" }, { label: "Earthwork & Grading" }],
   kicker: "New Construction · DFW",
   h1: "Earthwork, Grading, and Soil Conditioning",
-  heroImage: { src: "/images/earthwork-grading-building-pad.webp", alt: "Graded pad with forms set for a new foundation", width: 1600, height: 1200 },
+  heroImage: { src: "/images/site-grading-telehandler-building-pad.webp", alt: "Telehandler on a graded building pad during site preparation", width: 1280, height: 1706 },
   intro: [
     "Every foundation problem we repair started as a dirt decision. Grading that drains toward the structure, uncompacted fill, unconditioned expansive clay: the repair industry runs on site work done wrong. Cardinal performs earthwork, grading, and soil conditioning across DFW for builders, developers, and property owners, with the bias of a company that spends the other half of its week fixing what bad site work causes.",
   ],
@@ -33,6 +33,7 @@ const data: ServicePageData = {
     },
     {
       h2: "For builders and developers",
+      img: { src: "/images/earthwork-grading-building-pad.webp", alt: "Graded building pad with forms set for a new foundation" },
       paras: [
         "Site work, piers, foundations, and concrete under one engineered scope and one self-performing contractor: fewer handoffs, fewer places for the dirt to be somebody else's problem. Engineering oversight runs through scoping and sign-off, which travels well in approval conversations. Deliverable is engineered bids with documentation.",
       ],

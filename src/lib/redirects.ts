@@ -7,6 +7,8 @@
    Keys are stored WITHOUT trailing slash; the proxy normalizes lookups. */
 
 export const REDIRECTS_301: Record<string, string> = {
+  // KC page retired (wave 3): out-of-market ranking page removed
+  "/kansas-city-foundation-repair": "/",
   // top-level / company
   "/services": "/",
   "/about-us": "/about/",

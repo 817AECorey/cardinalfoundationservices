@@ -113,7 +113,16 @@ section { position: relative; }
 .dirD .d-nav-links { gap: 20px; }
 @media (max-width: 1280px) {
   .hdr-email { display: none; }
-  .dirD .d-nav-links { gap: 16px; }
+  .dirD .d-nav-links { gap: 12px; }
+  .dirD .d-nav-links .nav-trigger { font-size: 11.5px !important; letter-spacing: .03em !important; }
+  .dirD .d-nav-links .btn { font-size: 11.5px !important; padding: 10px 13px !important; }
+  .dirD .d-nav-links .phone-link { font-size: 13px !important; }
+}
+/* 981-1152: phone number yields so the CTA button never clips */
+@media (max-width: 1152px) {
+  .hdr-wrap { padding: 0 24px; }
+  .dirD .d-nav-links { gap: 10px; }
+  .dirD .d-nav-links .phone-link { display: none; }
 }
 @media (max-width: 860px) {
   .hdr-wrap { padding: 0 22px; }
@@ -211,9 +220,15 @@ section { position: relative; }
   .dirD .d-burger { display: flex; }
   .dirD .d-mobile.open { display: block; }
   .d-3, .d-2, .d-honesty, .d-contact { grid-template-columns: 1fr !important; }
+  .d-2 > *, .d-3 > *, .d-honesty > *, .d-contact > * { min-width: 0; }
+  .kicker { flex-wrap: wrap; }
   .d-5 { grid-template-columns: 1fr 1fr !important; }
   .dirD h1 { font-size: 44px !important; }
   .d-hero { grid-template-columns: 1fr; gap: 30px; }
+  /* grid items must be shrinkable below the quick-card's 380px min-content,
+     or the hero column overflows narrow viewports (390px clipping) */
+  .d-hero > div, .c-hero > div { min-width: 0; }
+  .d-fork > * { min-width: 0; }
   .d-fork { grid-template-columns: 1fr 1fr; }
   .d-fork .d-fork-quote { display: flex !important; }
   .d-fork-res { order: 1; }
@@ -225,6 +240,7 @@ section { position: relative; }
   .wrap { padding: 0 22px; }
 }
 @media (max-width: 560px) {
+  .d-hero .btn, .c-hero .btn { white-space: normal; text-align: center; }
   .d-trust { grid-template-columns: repeat(2, 1fr); }
   .d-trust > div { border-left: none; }
   .d-trust > div:nth-child(2n) { border-left: 1px solid rgba(255,255,255,.1); }

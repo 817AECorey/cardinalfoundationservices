@@ -121,11 +121,11 @@ function Faq({ faqs, title }: { faqs: [string, string][]; title: string }) {
         <div className="rf-faq">
           {faqs.map(([q, a], i) => (
             <div key={q} style={{ border: "1px solid var(--line)", background: open === i ? "var(--bone)" : "#fff" }}>
-              <button onClick={() => setOpen(open === i ? -1 : i)} style={{ width: "100%", textAlign: "left", background: "none", border: 0, padding: "20px 22px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, cursor: "pointer" }}>
+              <button onClick={() => setOpen(open === i ? -1 : i)} aria-expanded={open === i} aria-controls={`svc-faq-${i}`} style={{ width: "100%", textAlign: "left", background: "none", border: 0, padding: "20px 22px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12, cursor: "pointer" }}>
                 <span className="disp" style={{ fontSize: 17, color: "var(--ink)", lineHeight: 1.15 }}>{q}</span>
                 <span className="disp" style={{ fontSize: 20, color: "var(--red)", flexShrink: 0 }}>{open === i ? "–" : "+"}</span>
               </button>
-              {open === i && <p style={{ color: "var(--muted)", fontSize: 14.5, lineHeight: 1.6, fontWeight: 500, padding: "0 22px 22px", margin: 0 }}>{a}</p>}
+              <p id={`svc-faq-${i}`} hidden={open !== i} style={{ color: "var(--muted)", fontSize: 14.5, lineHeight: 1.6, fontWeight: 500, padding: "0 22px 22px", margin: 0 }}>{a}</p>
             </div>
           ))}
         </div>

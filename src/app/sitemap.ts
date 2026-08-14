@@ -81,8 +81,6 @@ const PATHS: { path: string; priority: number }[] = [
   { path: "/projects/multifamily-foundation-repair-carrollton-tx/", priority: 0.6 },
   { path: "/projects/restaurant-foundation-repair-foam-injection/", priority: 0.6 },
   { path: "/projects/commercial-foundation-stabilization-creekside-erosion-repair/", priority: 0.6 },
-  /* Kansas City: sitemap ONLY, never nav or footer, per the addendum */
-  { path: "/kansas-city-foundation-repair/", priority: 0.4 },
   { path: "/projects/", priority: 0.7 },
   { path: "/about/", priority: 0.6 },
   { path: "/contact/", priority: 0.6 },

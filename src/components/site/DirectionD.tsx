@@ -111,6 +111,11 @@ const NAV: NavEntry[] = [
           { label: "Foundation Repair", href: "/residential/foundation-repair/", hub: true },
           { label: "Steel Piers", href: "/residential/foundation-repair/steel-piers/" },
           { label: "Drilled Piers", href: "/residential/foundation-repair/drilled-piers/" },
+          { label: "Pressed Piers", href: "/residential/foundation-repair/concrete-pressed-piers/" },
+          { label: "Helical Piers", href: "/residential/foundation-repair/helical-piers/" },
+          { label: "Hybrid Piers", href: "/residential/foundation-repair/hybrid-piers/" },
+          { label: "Pier & Beam", href: "/residential/foundation-repair/pier-and-beam/" },
+          { label: "Slab Repair", href: "/residential/foundation-repair/slab-repair/" },
           { label: "Post-Tension Slab Repair", href: "/residential/foundation-repair/post-tension-slab-repair/" },
         ],
       },
@@ -119,12 +124,14 @@ const NAV: NavEntry[] = [
           { label: "Concrete Leveling", href: "/residential/concrete-leveling/", hub: true },
           { label: "Concrete Slab Lifting (Poly)", href: "/residential/concrete-leveling/polyurethane-foam-injection/" },
           { label: "Mudjacking", href: "/residential/concrete-leveling/mudjacking/" },
+          { label: "Crack Repair", href: "/residential/concrete-leveling/concrete-crack-repair/" },
         ],
       },
       {
         num: "03", title: "Drainage & Walls", links: [
           { label: "Drainage", href: "/residential/drainage/", hub: true },
           { label: "French Drains", href: "/residential/drainage/french-drains/" },
+          { label: "Area Drains", href: "/residential/drainage/area-drains/" },
           { label: "Retaining Walls", href: "/residential/retaining-walls/" },
         ],
       },
@@ -143,7 +150,10 @@ const NAV: NavEntry[] = [
       {
         num: "01", title: "Structural", links: [
           /* Legacy URL by spec; NEVER the clean path */
+          { label: "Multifamily & Apartments", href: "/commercial/multifamily/" },
           { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/", hub: true },
+          { label: "Steel Piers", href: "/commercial/foundation-repair/steel-piers/" },
+          { label: "Underpinning", href: "/commercial/foundation-repair/underpinning/" },
           { label: "Tilt Wall", href: "/commercial/tilt-wall/" },
         ],
       },
@@ -151,13 +161,17 @@ const NAV: NavEntry[] = [
         num: "02", title: "Concrete", links: [
           { label: "Concrete Lifting & Warehouse Floors", href: "/commercial/concrete-lifting/", hub: true },
           { label: "Warehouse Floor Leveling", href: "/commercial/concrete-lifting/warehouse-floor-leveling/" },
+          { label: "Poly Injection", href: "/commercial/concrete-lifting/polyurethane-foam-injection/" },
+          { label: "Slab Repair", href: "/commercial/concrete-construction/slab-repair/" },
           { label: "Concrete Construction", href: "/commercial/concrete-construction/" },
         ],
       },
       {
         num: "03", title: "Site & Specialty", links: [
           { label: "Drainage", href: "/commercial/drainage/", hub: true },
+          { label: "French Drains", href: "/commercial/drainage/french-drains/" },
           { label: "Retaining Walls", href: "/commercial/retaining-walls/" },
+          { label: "Structural Repair", href: "/commercial/structural-repair/" },
           { label: "Specialty Services", href: "/commercial/specialty/" },
         ],
       },
@@ -655,15 +669,15 @@ function DCommercial() {
                   </li>
                 ))}
               </ul>
-              <div style={{ marginTop: 16, display: "flex", alignItems: "center", gap: 8, fontWeight: 800, fontSize: 12, letterSpacing: ".08em", textTransform: "uppercase", color: i === 0 ? "#fff" : "var(--red)" }}>
-                View service <Arrow s={14} c={i === 0 ? "#fff" : "var(--red)"} />
+              <div style={{ marginTop: 16, display: "flex", alignItems: "center", gap: 8, fontWeight: 800, fontSize: 12, letterSpacing: ".08em", textTransform: "uppercase", color: i === 0 ? "#fff" : "var(--red-bright)" }}>
+                View service <Arrow s={14} c={i === 0 ? "#fff" : "var(--red-bright)"} />
               </div>
             </a>
           ))}
           <a href="/commercial/" className="lift" style={{ background: "var(--ink-2)", border: "1px dashed rgba(255,255,255,.22)", padding: "28px 26px", display: "flex", flexDirection: "column", justifyContent: "center", minHeight: 250 }}>
             <h3 className="disp" style={{ color: "#fff", fontSize: 21, lineHeight: 1.06 }}>See all commercial services</h3>
             <p style={{ color: "#a8a8a8", fontSize: 13.5, lineHeight: 1.5, margin: "12px 0 16px" }}>Browse every commercial scope we self-perform across Texas.</p>
-            <span style={{ display: "flex", alignItems: "center", gap: 8, fontWeight: 800, fontSize: 12, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--red)" }}>All services <Arrow s={14} c="var(--red)" /></span>
+            <span style={{ display: "flex", alignItems: "center", gap: 8, fontWeight: 800, fontSize: 12, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--red-bright)" }}>All services <Arrow s={14} c="var(--red-bright)" /></span>
           </a>
         </div>
         <p style={{ color: "#8a8a8a", fontSize: 13, fontWeight: 500, marginTop: 22 }}>Workmanship warranty, terms vary by service.</p>
@@ -1047,52 +1061,86 @@ export function DFooter() {
   const cols: { h: string; l: [string, string][] }[] = [
     {
       h: "Residential", l: [
+        ["Residential Services", "/residential/"],
         ["Foundation Repair", "/residential/foundation-repair/"],
         ["Steel Piers", "/residential/foundation-repair/steel-piers/"],
         ["Drilled Piers", "/residential/foundation-repair/drilled-piers/"],
+        ["Pressed Piers", "/residential/foundation-repair/concrete-pressed-piers/"],
+        ["Helical Piers", "/residential/foundation-repair/helical-piers/"],
+        ["Hybrid Piers", "/residential/foundation-repair/hybrid-piers/"],
+        ["Pier & Beam", "/residential/foundation-repair/pier-and-beam/"],
+        ["Slab Repair", "/residential/foundation-repair/slab-repair/"],
         ["Post-Tension Slab Repair", "/residential/foundation-repair/post-tension-slab-repair/"],
         ["Concrete Leveling", "/residential/concrete-leveling/"],
         ["Concrete Slab Lifting (Poly)", "/residential/concrete-leveling/polyurethane-foam-injection/"],
         ["Mudjacking", "/residential/concrete-leveling/mudjacking/"],
+        ["Crack Repair", "/residential/concrete-leveling/concrete-crack-repair/"],
         ["Drainage", "/residential/drainage/"],
         ["French Drains", "/residential/drainage/french-drains/"],
+        ["Area Drains", "/residential/drainage/area-drains/"],
         ["Retaining Walls", "/residential/retaining-walls/"],
       ],
     },
     {
       h: "Commercial", l: [
+        ["Commercial Services", "/commercial/"],
         /* Legacy hub URL first, by spec */
         ["Commercial Foundation Repair", "/services/commercial-foundation-repair/"],
         ["Commercial Steel Piers", "/commercial/foundation-repair/steel-piers/"],
+        ["Drilled Piers", "/commercial/foundation-repair/drilled-piers/"],
+        ["Helical Piers & Tiebacks", "/commercial/foundation-repair/helical-piers-tiebacks/"],
+        ["Hybrid Piers", "/commercial/foundation-repair/hybrid-piers/"],
+        ["Post-Tension Repair", "/commercial/foundation-repair/post-tension-repair/"],
+        ["Underpinning", "/commercial/foundation-repair/underpinning/"],
+        ["Structural Repair", "/commercial/structural-repair/"],
         ["Tilt Wall", "/commercial/tilt-wall/"],
         ["Concrete Lifting", "/commercial/concrete-lifting/"],
         ["Warehouse Floor Leveling", "/commercial/concrete-lifting/warehouse-floor-leveling/"],
+        ["Poly Injection", "/commercial/concrete-lifting/polyurethane-foam-injection/"],
+        ["Commercial Mudjacking", "/commercial/concrete-lifting/mudjacking/"],
+        ["Municipal Concrete Leveling", "/commercial/concrete-lifting/municipal/"],
         ["Concrete Construction", "/commercial/concrete-construction/"],
+        ["Slab Pouring", "/commercial/concrete-construction/slab-pouring/"],
+        ["Commercial Slab Repair", "/commercial/concrete-construction/slab-repair/"],
+        ["Structural Crack Repair", "/commercial/concrete-construction/structural-crack-repair/"],
+        ["Expansion Joint & Mastic", "/commercial/concrete-construction/expansion-joint-mastic-repair/"],
         ["Drainage", "/commercial/drainage/"],
+        ["Commercial French Drains", "/commercial/drainage/french-drains/"],
+        ["Perimeter Drainage", "/commercial/drainage/perimeter-drainage/"],
         ["Retaining Walls", "/commercial/retaining-walls/"],
-        ["Specialty Services", "/commercial/specialty/"],
+        ["Retaining Wall Repair", "/commercial/retaining-walls/structural-repair/"],
+        ["Tieback Anchors", "/commercial/retaining-walls/tieback-anchors/"],
         ["Multifamily", "/commercial/multifamily/"],
         ["Multifamily Due Diligence", "/commercial/due-diligence-walks/"],
       ],
     },
     {
-      h: "New Construction + Locations", l: [
+      h: "Specialty + New Construction", l: [
+        ["Specialty Services", "/commercial/specialty/"],
+        ["Parking Garage Repair", "/commercial/specialty/parking-garage-repair/"],
+        ["Balcony Repair", "/commercial/specialty/balcony-repair/"],
+        ["Metal Deck Slab Repair", "/commercial/specialty/metal-deck-slab-repair/"],
+        ["Lube Pit Foundation Repair", "/commercial/specialty/lube-pit-foundation-repair/"],
+        ["Lightweight Concrete Repair", "/commercial/specialty/lightweight-concrete-repair/"],
+        ["Historic Building Foundations", "/commercial/specialty/historical-building-foundation-repair/"],
+        ["Commercial Waterproofing", "/commercial/specialty/waterproofing/"],
+        ["WOTUS Contracting", "/commercial/specialty/waters-of-the-us/"],
         ["New Construction", "/new-construction/"],
         ["Concrete Flatwork", "/new-construction/concrete-flatwork/"],
         ["Earthwork & Grading", "/new-construction/earthwork-grading/"],
-        ["Fort Worth", "/locations/fort-worth/"],
-        ["Dallas", "/locations/dallas/"],
-        ["Houston", "/locations/houston/"],
-        ["Possum Kingdom Lake", "/locations/possum-kingdom-lake/"],
-        ["Service Areas", "/locations/"],
       ],
     },
     {
-      h: "Company", l: [
+      h: "Company + Locations", l: [
         ["About", "/about/"],
         ["Projects", "/projects/"],
         ["Contact", "/contact/"],
         ["Resources: Pier Systems Compared", "/resources/pier-systems-explained/"],
+        ["Service Areas", "/locations/"],
+        ["Fort Worth", "/locations/fort-worth/"],
+        ["Dallas", "/locations/dallas/"],
+        ["Houston", "/locations/houston/"],
+        ["Possum Kingdom Lake", "/locations/possum-kingdom-lake/"],
         ["Privacy Policy", "/privacy-policy/"],
       ],
     },
@@ -1113,6 +1161,10 @@ export function DFooter() {
             {c.l.map(([x, href]) => <Link key={href} href={href} style={{ display: "block", color: "#cfcfcf", fontWeight: 500, padding: "6px 0", fontSize: 14 }}>{x}</Link>)}
           </div>
         ))}
+      </div>
+      <div className="wrap" style={{ padding: "26px 40px 0" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <a href="https://www.bbb.org/us/tx/fort-worth/profile/foundation-repair/cardinal-foundation-services-0825-1000232923/#sealclick" target="_blank" rel="nofollow noopener"><img src="https://seal-austin.bbb.org/seals/blue-seal-250-52-bbb-1000232923.png" width="250" height="52" loading="lazy" style={{ border: 0 }} alt="Cardinal Foundation Services BBB Business Review" /></a>
       </div>
       <div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "22px 40px", color: "#7d7d7d", fontSize: 13, fontWeight: 500, flexWrap: "wrap", gap: 10 }}>
         <span>Cardinal Foundation Services, LLC · 803 Forest Ridge Dr, Suite #205, Bedford, TX 76022 · <a href={PHONE_TEL} style={{ color: "#9a9a9a" }}>{PHONE}</a> · Engineer-owned and operated. Transferable workmanship warranty, terms vary by service.</span>
