@@ -77,7 +77,7 @@ function WFeature() {
             </div>
             <div style={{ marginTop: "auto", display: "flex", gap: 12, flexWrap: "wrap" }}>
               <Btn variant="red" arrow="right" href={p.href}>Read the case study</Btn>
-              <Btn variant="ghost" arrow="none" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Discuss a similar project</Btn>
+              <Btn variant="ghost" arrow="none" href="/request/">Discuss a similar project</Btn>
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@ function WCta() {
           <p style={{ color: "rgba(255,255,255,.92)", fontWeight: 500, fontSize: 16, marginTop: 8 }}>Free, no-obligation inspection. Commercial, residential, or new construction.</p>
         </div>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-          <button onClick={() => dScroll("contact")} className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>Request an inspection <Arrow s={15} /></button>
+          <a href="/request/" className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>Request an inspection <Arrow s={15} /></a>
           <a className="btn" href={PHONE_TEL} style={{ background: "transparent", color: "#fff", border: "2px solid rgba(255,255,255,.55)" }}><Phone s={14} c="#fff" /> {PHONE}</a>
         </div>
       </div>

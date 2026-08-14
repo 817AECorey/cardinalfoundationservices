@@ -24,7 +24,7 @@ function leadFor(property: string): string {
   return "Residential";
 }
 
-function KContactForm() {
+export function KContactForm() {
   const router = useRouter();
   const [property, setProperty] = useState("");
   const [name, setName] = useState("");

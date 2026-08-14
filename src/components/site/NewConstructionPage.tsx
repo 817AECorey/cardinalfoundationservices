@@ -239,7 +239,7 @@ function NProcess() {
             <Kicker>Plans to pour</Kicker>
             <h2 className="disp" style={{ fontSize: 48, marginTop: 16, color: "var(--ink)" }}>Three steps to engineered bids</h2>
           </div>
-          <Btn variant="outline" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Scope a project</Btn>
+          <Btn variant="outline" arrow="ur" href="/request/">Scope a project</Btn>
         </div>
         <div className="d-3" style={{ gap: 22 }}>
           {N_STEPS.map((s) => (
@@ -247,7 +247,7 @@ function NProcess() {
               <div className="disp" style={{ fontSize: 46, color: "var(--gray-2)" }}>{s.n}</div>
               <h3 className="disp" style={{ color: "var(--ink)", fontSize: 22, margin: "10px 0 12px", lineHeight: 1.05 }}>{s.t}</h3>
               <p style={{ color: "var(--muted)", fontSize: 15, lineHeight: 1.55, fontWeight: 500, marginBottom: 16 }}>{s.d}</p>
-              <a href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}
+              <a href="/request/"
                 className="over" style={{ marginTop: "auto", display: "inline-flex", alignItems: "center", gap: 6, color: "var(--red)", fontSize: 11 }}>
                 Scope a project <Arrow s={13} c="var(--red)" />
               </a>
@@ -330,7 +330,7 @@ function NCtaBand() {
           <p style={{ color: "rgba(255,255,255,.92)", fontWeight: 500, fontSize: 16, marginTop: 8 }}>Send the plans and get engineered bids from a self-performing contractor.</p>
         </div>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-          <button onClick={() => dScroll("contact")} className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>Scope a project <Arrow s={15} /></button>
+          <a href="/request/" className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>Scope a project <Arrow s={15} /></a>
           <a className="btn" href={PHONE_TEL} style={{ background: "transparent", color: "#fff", border: "2px solid rgba(255,255,255,.55)" }}><Phone s={14} c="#fff" /> {PHONE}</a>
         </div>
       </div>

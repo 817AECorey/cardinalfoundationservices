@@ -38,6 +38,13 @@ const data: ServicePageData = {
       ],
     },
   ],
+  childCards: [
+    { t: "French Drains", d: "Subsurface interception that carries water away from the foundation before the soil saturates.", href: "/residential/drainage/french-drains/" },
+    { t: "Area Drains", d: "Surface collection for yards, patios, and low spots where water stands after rain.", href: "/residential/drainage/area-drains/" },
+    { t: "Root Barriers", d: "Below-grade dividers that stop trees from drawing foundation soil moisture unevenly.", href: "/residential/drainage/root-barriers/" },
+    { t: "Sump Pumps", d: "Basins, pumps, and discharge routing for lots where gravity cannot carry the water out.", href: "/residential/drainage/sump-pumps/" },
+    { t: "Hydrostatic Testing", d: "Diagnostic testing that tells you whether under-slab plumbing is changing your foundation soil.", href: "/residential/drainage/hydrostatic-testing/" },
+  ],
   related: [
     ["French Drains", "/residential/drainage/french-drains/"],
     ["Foundation Repair", "/residential/foundation-repair/"],

@@ -34,7 +34,7 @@ export type ServicePageData = {
   intro: string[];
   /* Optional hero photo (image insertion pass). Renders only when provided;
      pages without one keep the approved text-only hero untouched. */
-  heroImage?: { src: string; alt: string; width: number; height: number };
+  heroImage?: { src: string; alt: string; width: number; height: number; contain?: boolean };
   sections: Section[];
   /* hub pages: linked child cards composed from each child page's opening (do not invent services) */
   childCards?: { t: string; d: string; href: string }[];
@@ -144,7 +144,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {/* HERO — when the page has real project media, it fills the hero
          behind the same gradient treatment as the residential hub */}
       <section style={{ position: "relative", background: "var(--ink)", overflow: "hidden" }}>
-        {d.heroImage && (
+        {d.heroImage && !d.heroImage.contain && (
           <>
             <div style={{ position: "absolute", inset: 0 }}>
               <Img label={d.heroImage.alt} src={d.heroImage.src} style={{ height: "100%" }} />
@@ -168,9 +168,16 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
             <p key={p.slice(0, 40)} style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.6, margin: "22px 0 0", maxWidth: 720, fontWeight: 500 }}>{p}</p>
           ))}
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 30 }}>
-            <Btn variant="red" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>{d.ctaLabel}</Btn>
+            <Btn variant="red" arrow="ur" href="/request/">{d.ctaLabel}</Btn>
             <Btn variant="ghost" arrow="none" href={PHONE_TEL}><Phone s={15} c="#fff" /> {PHONE}</Btn>
           </div>
+          {d.heroImage?.contain && (
+            /* diagrams render uncropped on a light panel instead of as a cover background */
+            <div style={{ marginTop: 34, background: "#fff", padding: 18 }}>
+              <img src={d.heroImage.src} alt={d.heroImage.alt} width={d.heroImage.width} height={d.heroImage.height}
+                style={{ width: "100%", height: "auto", maxHeight: 480, objectFit: "contain", display: "block" }} />
+            </div>
+          )}
         </div>
       </section>
 

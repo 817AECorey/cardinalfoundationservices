@@ -132,7 +132,10 @@ const NAV: NavEntry[] = [
           { label: "Drainage", href: "/residential/drainage/", hub: true },
           { label: "French Drains", href: "/residential/drainage/french-drains/" },
           { label: "Area Drains", href: "/residential/drainage/area-drains/" },
+          { label: "Root Barriers", href: "/residential/drainage/root-barriers/" },
+          { label: "Sump Pumps", href: "/residential/drainage/sump-pumps/" },
           { label: "Retaining Walls", href: "/residential/retaining-walls/" },
+          { label: "Financing", href: "/financing/" },
         ],
       },
     ],
@@ -412,7 +415,7 @@ export function DNav() {
             <a className="phone-link" href={PHONE_TEL} style={{ color: "var(--ink)", fontSize: 15, whiteSpace: "nowrap" }}>
               <Phone s={14} c="var(--red)" /> {PHONE}
             </a>
-            <Btn variant="red" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }} style={{ padding: "11px 16px", fontSize: 12.5 }}>Free Foundation Check</Btn>
+            <Btn variant="red" arrow="ur" href="/request/" style={{ padding: "11px 16px", fontSize: 12.5 }}>Free Foundation Check</Btn>
           </nav>
           <button className="d-burger" onClick={() => setMobileOpen((o) => !o)} aria-label="Menu" aria-expanded={mobileOpen}
             style={{ background: "none", border: 0, padding: 8, flexDirection: "column", gap: 5, cursor: "pointer" }}>
@@ -468,7 +471,7 @@ export function DNav() {
         </div>
         <div className="m-pin">
           <a href={PHONE_TEL} style={{ flex: 1, background: "var(--ink-2)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "16px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}><Phone s={15} c="#fff" /> Call</a>
-          <a href="#contact" onClick={(e) => { e.preventDefault(); setMobileOpen(false); dScroll("contact"); }} style={{ flex: 1.4, background: "var(--red)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "16px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}>Free Foundation Check <Arrow s={15} c="#fff" /></a>
+          <a href="/request/" style={{ flex: 1.4, background: "var(--red)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "16px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}>Free Foundation Check <Arrow s={15} c="#fff" /></a>
         </div>
       </div>
     </header>
@@ -480,7 +483,7 @@ export function DMobileCTABar() {
   return (
     <div className="mobile-cta">
       <a href={PHONE_TEL} style={{ flex: 1, background: "var(--ink)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "15px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}><Phone s={15} c="#fff" /> Call</a>
-      <a href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }} style={{ flex: 1.4, background: "var(--red)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "15px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}>Free Foundation Check <Arrow s={15} c="#fff" /></a>
+      <a href="/request/" style={{ flex: 1.4, background: "var(--red)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "15px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}>Free Foundation Check <Arrow s={15} c="#fff" /></a>
     </div>
   );
 }
@@ -597,7 +600,7 @@ function DHero() {
               <Check s={16} c="var(--red)" /> Owned and operated with a licensed Professional Engineer.
             </p>
             <div className="fade-up" style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-              <Btn variant="red" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Schedule a Free Foundation Check</Btn>
+              <Btn variant="red" arrow="ur" href="/request/">Schedule a Free Foundation Check</Btn>
               <Btn variant="ghost" arrow="none" href={PHONE_TEL}><Phone s={15} c="#fff" /> {PHONE}</Btn>
             </div>
           </div>
@@ -739,7 +742,7 @@ export function DPierPath() {
           ))}
         </div>
         <div style={{ display: "flex", justifyContent: "center", marginTop: 34 }}>
-          <Btn variant="outline" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Book an inspection</Btn>
+          <Btn variant="outline" arrow="ur" href="/request/">Book an inspection</Btn>
         </div>
       </div>
     </section>
@@ -797,7 +800,7 @@ function DHonesty() {
             <p style={{ color: "#3a3a3a", fontSize: 17.5, lineHeight: 1.6, fontWeight: 500, marginBottom: 28 }}>
               When monitoring or drainage correction is the honest answer, that is the answer you get.
             </p>
-            <Btn variant="outline" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Book a free inspection</Btn>
+            <Btn variant="outline" arrow="ur" href="/request/">Book a free inspection</Btn>
           </div>
         </div>
       </div>
@@ -888,7 +891,7 @@ function DResidential() {
           ))}
         </div>
         <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 30, alignItems: "center" }}>
-          <Btn variant="red" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Book a free home inspection</Btn>
+          <Btn variant="red" arrow="ur" href="/request/">Book a free home inspection</Btn>
           <span style={{ color: "var(--muted)", fontWeight: 600, fontSize: 14, display: "flex", alignItems: "center", gap: 8 }}>
             <Check s={15} /> Financing available &nbsp;·&nbsp; Quote in one business day
           </span>
@@ -912,7 +915,7 @@ function DCtaBand() {
             <h3 className="disp" style={{ color: "#fff", fontSize: 26, lineHeight: 1.05 }}>{x.t}</h3>
             <p style={{ color: "rgba(255,255,255,.9)", fontWeight: 500, margin: "10px 0 20px", fontSize: 15.5 }}>{x.d}</p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <button onClick={() => dScroll("contact")} className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>{x.cta} <Arrow s={15} /></button>
+              <a href="/request/" className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>{x.cta} <Arrow s={15} /></a>
               <a className="btn" href={PHONE_TEL} style={{ background: "transparent", color: "#fff", border: "2px solid rgba(255,255,255,.55)" }}><Phone s={14} c="#fff" /> {PHONE}</a>
             </div>
           </div>
@@ -1078,7 +1081,11 @@ export function DFooter() {
         ["Drainage", "/residential/drainage/"],
         ["French Drains", "/residential/drainage/french-drains/"],
         ["Area Drains", "/residential/drainage/area-drains/"],
+        ["Root Barriers", "/residential/drainage/root-barriers/"],
+        ["Sump Pumps", "/residential/drainage/sump-pumps/"],
+        ["Hydrostatic Testing", "/residential/drainage/hydrostatic-testing/"],
         ["Retaining Walls", "/residential/retaining-walls/"],
+        ["Financing", "/financing/"],
       ],
     },
     {
@@ -1135,6 +1142,9 @@ export function DFooter() {
         ["About", "/about/"],
         ["Projects", "/projects/"],
         ["Contact", "/contact/"],
+        ["Request an Inspection", "/request/"],
+        ["Warranty", "/warranty/"],
+        ["Financing", "/financing/"],
         ["Resources: Pier Systems Compared", "/resources/pier-systems-explained/"],
         ["Service Areas", "/locations/"],
         ["Fort Worth", "/locations/fort-worth/"],

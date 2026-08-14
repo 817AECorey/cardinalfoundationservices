@@ -16,7 +16,7 @@ Company facts: Cardinal Foundation Services, LLC. Fort Worth, TX. (972) 656-8251
 - [Post-tension slab repair](https://cardinalfoundationservices.com/residential/foundation-repair/post-tension-slab-repair/)
 - [Pier and beam repair](https://cardinalfoundationservices.com/residential/foundation-repair/pier-and-beam/)
 - [Concrete leveling](https://cardinalfoundationservices.com/residential/concrete-leveling/): [poly slab lifting](https://cardinalfoundationservices.com/residential/concrete-leveling/polyurethane-foam-injection/), [mudjacking](https://cardinalfoundationservices.com/residential/concrete-leveling/mudjacking/), [crack repair](https://cardinalfoundationservices.com/residential/concrete-leveling/concrete-crack-repair/)
-- [Drainage](https://cardinalfoundationservices.com/residential/drainage/): [french drains](https://cardinalfoundationservices.com/residential/drainage/french-drains/), [area drains](https://cardinalfoundationservices.com/residential/drainage/area-drains/)
+- [Drainage](https://cardinalfoundationservices.com/residential/drainage/): [french drains](https://cardinalfoundationservices.com/residential/drainage/french-drains/), [area drains](https://cardinalfoundationservices.com/residential/drainage/area-drains/), [root barriers](https://cardinalfoundationservices.com/residential/drainage/root-barriers/), [sump pumps](https://cardinalfoundationservices.com/residential/drainage/sump-pumps/), [hydrostatic testing](https://cardinalfoundationservices.com/residential/drainage/hydrostatic-testing/)
 - [Retaining walls](https://cardinalfoundationservices.com/residential/retaining-walls/)
 
 ## Commercial services (DFW; larger and specialty projects statewide)
@@ -58,3 +58,6 @@ Company facts: Cardinal Foundation Services, LLC. Fort Worth, TX. (972) 656-8251
 
 - [About](https://cardinalfoundationservices.com/about/)
 - [Contact](https://cardinalfoundationservices.com/contact/)
+- [Request an inspection](https://cardinalfoundationservices.com/request/)
+- [Warranty](https://cardinalfoundationservices.com/warranty/)
+- [Financing](https://cardinalfoundationservices.com/financing/)

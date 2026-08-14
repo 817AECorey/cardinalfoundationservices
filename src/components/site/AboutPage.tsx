@@ -39,7 +39,7 @@ function AHero() {
               Cardinal Foundation Services is a foundation repair and commercial concrete contractor headquartered in Fort Worth, Texas, serving homeowners, commercial property owners, and builders across DFW and Texas. The company is co-owned by Josh Lavelle and Daneel Nortier, PE, a licensed Texas Professional Engineer since 2012 (License #113157, verifiable on the TBPELS public roster), and the team brings more than 35 years of combined experience across residential repair, commercial structural work, and new construction.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-              <Btn variant="red" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Request an Inspection</Btn>
+              <Btn variant="red" arrow="ur" href="/request/">Request an Inspection</Btn>
               <Btn variant="ghost" arrow="none" href={PHONE_TEL}><Phone s={15} c="#fff" /> {PHONE}</Btn>
             </div>
           </div>
@@ -261,7 +261,7 @@ function ACta() {
           <p style={{ color: "rgba(255,255,255,.92)", fontWeight: 500, fontSize: 16, marginTop: 8 }}>Free, no-obligation inspection. Commercial, residential, or new construction.</p>
         </div>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-          <button onClick={() => dScroll("contact")} className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>Request an inspection <Arrow s={15} /></button>
+          <a href="/request/" className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>Request an inspection <Arrow s={15} /></a>
           <a className="btn" href={PHONE_TEL} style={{ background: "transparent", color: "#fff", border: "2px solid rgba(255,255,255,.55)" }}><Phone s={14} c="#fff" /> {PHONE}</a>
         </div>
       </div>

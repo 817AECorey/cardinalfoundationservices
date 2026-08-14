@@ -339,7 +339,7 @@ function RCtaBand() {
           <p style={{ color: "rgba(255,255,255,.92)", fontWeight: 500, fontSize: 16, marginTop: 8 }}>Book a free, no-pressure inspection from an engineer-led team.</p>
         </div>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-          <button onClick={() => dScroll("contact")} className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>Book a free home inspection <Arrow s={15} /></button>
+          <a href="/request/" className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>Book a free home inspection <Arrow s={15} /></a>
           <a className="btn" href={PHONE_TEL} style={{ background: "transparent", color: "#fff", border: "2px solid rgba(255,255,255,.55)" }}><Phone s={14} c="#fff" /> {PHONE}</a>
         </div>
       </div>

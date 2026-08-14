@@ -51,7 +51,7 @@ function RfHero() {
               <Check s={16} c="var(--red)" /> Inspected by an engineer, not a commissioned salesperson.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-              <Btn variant="red" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Book a Free Home Inspection</Btn>
+              <Btn variant="red" arrow="ur" href="/request/">Book a Free Home Inspection</Btn>
               <Btn variant="ghost" arrow="none" href={PHONE_TEL}><Phone s={15} c="#fff" /> {PHONE}</Btn>
             </div>
           </div>
@@ -234,7 +234,7 @@ function RfHonesty() {
           <p style={{ color: "#3a3a3a", fontSize: 17, lineHeight: 1.6, fontWeight: 500, marginBottom: 28 }}>
             If seasonal movement is all we find, we will tell you what to watch and send you on your way. If repair is warranted, you get an engineered plan and a written quote within one business day.
           </p>
-          <Btn variant="outline" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Book a free inspection</Btn>
+          <Btn variant="outline" arrow="ur" href="/request/">Book a free inspection</Btn>
         </div>
       </div>
     </section>
