@@ -45,7 +45,7 @@ function NHero() {
           <div>
             <Kicker color="#fff">Builders &amp; Developers · DFW &amp; Houston</Kicker>
             <h1 className="disp" style={{ fontSize: 60, margin: "20px 0 0", color: "#fff" }}>
-              New construction concrete, <span style={{ color: "var(--red)" }}>engineered and self-performed.</span>
+              New construction concrete, engineered and self-performed.
             </h1>
             <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
               Commercial concrete, tilt-wall, builder work, and earthwork as a dedicated pathway, not a repair add-on. Engineering and concrete under one roof, which helps in tough approval environments.
@@ -227,7 +227,7 @@ function NServices() {
 /* ---------- PROCESS: PLANS TO POUR (replaces the repair Pier Path) ---------- */
 const N_STEPS = [
   { n: "01", t: "Send Us the Plans", d: "Send plans and specs. We take off quantities, flag structural questions early, and walk the site when it helps the number." },
-  { n: "02", t: "An Engineered Bid", d: "A clear, documented scope and engineered bid, with the engineering answered up front instead of surfacing later as change orders." },
+  { n: "02", t: "An Engineered Bid", d: "A clear, documented scope and engineered bids, with the engineering answered up front instead of surfacing later as change orders." },
   { n: "03", t: "Self-Performed on Schedule", d: "Our own crews do the work and coordinate with your other trades, and we verify against spec before handoff." },
 ];
 function NProcess() {
@@ -237,7 +237,7 @@ function NProcess() {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 16, marginBottom: 44 }}>
           <div>
             <Kicker>Plans to pour</Kicker>
-            <h2 className="disp" style={{ fontSize: 48, marginTop: 16, color: "var(--ink)" }}>Three steps to an engineered bid</h2>
+            <h2 className="disp" style={{ fontSize: 48, marginTop: 16, color: "var(--ink)" }}>Three steps to engineered bids</h2>
           </div>
           <Btn variant="outline" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Scope a project</Btn>
         </div>
@@ -327,7 +327,7 @@ function NCtaBand() {
       <div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 26, flexWrap: "wrap" }}>
         <div>
           <h2 className="disp" style={{ color: "#fff", fontSize: 34, lineHeight: 1.05 }}>Building something new?</h2>
-          <p style={{ color: "rgba(255,255,255,.92)", fontWeight: 500, fontSize: 16, marginTop: 8 }}>Send the plans and get an engineered bid from a self-performing contractor.</p>
+          <p style={{ color: "rgba(255,255,255,.92)", fontWeight: 500, fontSize: 16, marginTop: 8 }}>Send the plans and get engineered bids from a self-performing contractor.</p>
         </div>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
           <button onClick={() => dScroll("contact")} className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>Scope a project <Arrow s={15} /></button>
@@ -352,7 +352,6 @@ export default function NewConstructionPage() {
       <DPierSystems />
       <NClients />
       <NWhy />
-      <NCtaBand />
       <DContact />
       <DFooter />
     </div>

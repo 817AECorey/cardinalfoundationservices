@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Concrete Leveling" }],
-  kicker: "Concrete Leveling · DFW",
+  kicker: "DFW & Houston",
   h1: "Concrete Leveling for Homes in DFW",
   heroImage: { src: "/images/polyurethane-foam-injection-slab-lifting.webp", alt: "Rendering of polyurethane foam injection lifting a settled concrete slab", width: 1400, height: 1005 },
   intro: [

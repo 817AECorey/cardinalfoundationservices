@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-foundation-repair-contractors/hybrid-pier-system-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Hybrid Pier System Contractors in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Hybrid Pier System Contractors in DFW | Cardinal" },
   description:
     "Commercial hybrid pier systems in DFW: drilled and helical piers combined into one engineered stabilization plan for variable soils and large commercial footprints. Request an assessment.",
   alternates: { canonical: "/commercial/foundation-repair/hybrid-piers/" },

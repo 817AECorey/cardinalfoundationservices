@@ -6,7 +6,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    coverage drawn from the approved residential drainage content). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Area Drain Installation & Repair in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Area Drain Installation & Repair in DFW | Cardinal" },
   description:
     "Area and surface drains for DFW homes: collect standing water from yards, patios, and low spots before it reaches your foundation. Free drainage evaluation.",
   alternates: { canonical: "/residential/drainage/area-drains/" },

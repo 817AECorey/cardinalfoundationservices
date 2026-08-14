@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Locations", href: "/locations/" }, { label: "Houston" }],
   kicker: "Foundation Repair · Greater Houston",
-  h1: "Foundation Repair in the Houston Area",
+  h1: "Foundation Repair in the Houston Area, Texas",
   heroImage: { src: "/images/houston-area-pier-installation-multifamily.webp", alt: "Pier sections staged at a Houston-area multifamily property", width: 1600, height: 1200 },
   intro: [
     "Houston-area homes sit on some of the most active clay soil in Texas, and the symptoms read the same across the metro: stair-step cracks in brick, doors and windows that stick, floors going out of level, gaps opening around frames. Cardinal Foundation Services provides foundation repair for homeowners across the Houston area, bringing the same engineer-owned, inspection-first approach we built in Fort Worth to Gulf Coast clay.",

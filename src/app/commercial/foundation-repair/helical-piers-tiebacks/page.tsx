@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-foundation-repair-contractors/helical-piers-tieback-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Helical Piers & Tieback Contractors in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Helical Piers & Tieback Contractors in DFW | Cardinal" },
   description:
     "Engineered helical pier and tieback systems in DFW: deep foundation support and lateral anchoring for commercial structures and retaining walls, with torque-monitored installation. Request an assessment.",
   alternates: { canonical: "/commercial/foundation-repair/helical-piers-tiebacks/" },

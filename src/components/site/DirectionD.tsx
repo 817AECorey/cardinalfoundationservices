@@ -41,7 +41,10 @@ export const D_CITIES = ["Fort Worth", "Dallas", "Arlington", "Plano", "Frisco",
 /* Credibility bar per content/14. The 4.9 Google rating appears as visible
    text only, NEVER as review markup; TODO: link it to the Google Business
    Profile once the GBP URL is provided. */
-const D_TRUSTBAR = ["BBB A+", "4.9 on Google · 39 Reviews", "Licensed PE Ownership", "AAGD / TAB / ASA Member", "Transferable Workmanship Warranty", "Free Foundation Check"];
+export const GOOGLE_RATING = "4.9 \u2605 on Google";
+export const GOOGLE_REVIEWS_URL = "https://share.google/h26ZNieW3Lfqdk5WL";
+
+const D_TRUSTBAR = ["BBB A+", GOOGLE_RATING, "Licensed PE Ownership", "AAGD / TAB / ASA Member", "Transferable Workmanship Warranty", "Free Foundation Check"];
 
 const D_COMMERCIAL: { n: string; t: string; d: string; items: string[]; href?: string }[] = [
   { n: "01", t: "Commercial Foundation Repair", d: "Engineered pier systems for warehouses, retail, and structural buildings.", items: ["Helical Piers & Tiebacks", "Drilled Piers", "Hybrid Pier Systems", "Underpinning", "Post-Tension Repair"], href: "/services/commercial-foundation-repair/" },
@@ -57,8 +60,8 @@ const D_NEWCON = [
 ];
 const D_STEPS = [
   { n: "01", t: "Free On-Site Assessment", d: "An engineer-led team inspects the structure and soil. An inspection determines the cause before anything is recommended." },
-  { n: "02", t: "Engineered Plan & Documented Quote", d: "You receive an engineered plan of repair and a documented quote for the scope: a written quote for homes, an engineered bid for commercial work." },
-  { n: "03", t: "Turn-Key Repair, Verified", d: "Our own crews self-perform the full scope on schedule, and we verify the work before we leave the site." },
+  { n: "02", t: "Engineered Plan & Documented Quote", d: "You will receive an engineered plan from one of our foundation experts, including a quote for the repairs." },
+  { n: "03", t: "Turn-Key Repairs", d: "Our own crews self-perform the full scope on schedule, and we verify the work before we leave the site." },
 ];
 const D_PIERS: [string, string][] = [
   ["Concrete Pressed Piers", "Proven stability for slab foundations."],
@@ -159,7 +162,7 @@ const NAV: NavEntry[] = [
     ],
     feature: {
       /* Deliberate promotion slot through October */
-      kicker: "Aug-Oct budget season",
+      kicker: "",
       title: "Multifamily Due Diligence",
       desc: "Pre-acquisition foundation and structural assessments, starting free on select buildings.",
       href: "/commercial/due-diligence-walks/",
@@ -257,7 +260,7 @@ function MegaPanel({ entry, open, onKeyDown, panelRef }: { entry: NavEntry; open
           ))}
           {entry.feature && (
             <div className="mega-feature">
-              <span className="mono mega-kicker" style={{ marginBottom: 6 }}>{entry.feature.kicker}</span>
+              {entry.feature.kicker && <span className="mono mega-kicker" style={{ marginBottom: 6 }}>{entry.feature.kicker}</span>}
               <span className="title">{entry.feature.title}</span>
               <span className="desc">{entry.feature.desc}</span>
               <a className="go" href={entry.feature.href} data-col={entry.columns?.length ?? 0} data-idx={0} tabIndex={open ? 0 : -1}>
@@ -269,7 +272,7 @@ function MegaPanel({ entry, open, onKeyDown, panelRef }: { entry: NavEntry; open
       </div>
       <div className="mega-foot">
         <div className="wrap mega-foot-in">
-          <span className="mono trust"><b>4.9 on Google</b> / 39 reviews / <b>Transferable workmanship warranty</b></span>
+          <span className="mono trust"><a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener" style={{ color: "inherit" }}><b>{GOOGLE_RATING}</b></a> / <b>Transferable workmanship warranty</b></span>
           <Link className="mono recent" href="/projects/" tabIndex={open ? 0 : -1}>View recent projects -&gt;</Link>
         </div>
       </div>
@@ -433,7 +436,7 @@ export function DNav() {
                   ))}
                   {m.feature && (
                     <Link href={m.feature.href} onClick={() => setMobileOpen(false)} style={{ margin: "12px 0 4px 14px", border: "1px solid var(--red)", padding: "12px 14px", color: "#fff", fontWeight: 800, fontSize: 14 }}>
-                      <span className="mono m-kicker" style={{ display: "block", marginBottom: 4 }}>{m.feature.kicker}</span>
+                      {m.feature.kicker && <span className="mono m-kicker" style={{ display: "block", marginBottom: 4 }}>{m.feature.kicker}</span>}
                       {m.feature.title}
                     </Link>
                   )}
@@ -569,7 +572,7 @@ function DHero() {
           <div>
             <Kicker color="#fff">Fort Worth, Texas · Serving DFW and Texas</Kicker>
             <h1 className="disp fade-up" style={{ fontSize: 62, margin: "20px 0 0", color: "#fff" }}>
-              Foundation Repair in <span style={{ color: "var(--red)" }}>Dallas-Fort Worth &amp; Houston</span>
+              Foundation Repair in Dallas-Fort Worth &amp; Houston
             </h1>
             <p className="fade-up" style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
               Residential, commercial, and new construction foundation and concrete work across Texas. Engineered scope, self-performed crews, and an inspection that gives you data before anyone gives you a price.
@@ -585,17 +588,14 @@ function DHero() {
           <div style={{ display: "flex", justifyContent: "flex-end" }}><DQuickCard /></div>
         </div>
         <div className="d-fork">
-          <DPath cls="d-fork-res" primary tag="Homeowner" title="Cracks, sticking doors, uneven floors?"
+          <DPath cls="d-fork-res" tag="Residential" title="Cracks, sticking doors, uneven floors?"
             body="Start with a free inspection that includes a mapped elevation survey of your foundation."
-            market="Serving DFW & the Houston area"
             cta="Residential Services" href="/residential/" />
           <DPath cls="d-fork-com" tag="Commercial / Property Manager" title="Protecting a commercial asset?"
             body="Warehouses, multifamily, retail, hotels. Engineered assessments, phased work around operations, documented scope."
-            market="DFW & statewide Texas"
             cta="Commercial Services" href="/commercial/" />
           <DPath cls="d-fork-new" tag="New Construction / Builder" title="Building something new?"
             body="Piers, foundations, earthwork, and concrete for builders and developers, engineering and concrete under one roof."
-            market="Dallas-Fort Worth area"
             cta="New Construction" href="/new-construction/" />
           <DPath cls="d-fork-quote" quote tag="Fast track" title="Quote / Call Now"
             body="Talk to our team or start a free foundation check request."
@@ -614,7 +614,11 @@ export function DTrustBar() {
         {D_TRUSTBAR.map((t) => (
           <div key={t}>
             <Check s={16} c="var(--red)" />
-            <span className="over" style={{ color: "#e3e1de", fontSize: 11, letterSpacing: ".06em", lineHeight: 1.5 }}>{t}</span>
+            {t === GOOGLE_RATING ? (
+              <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener" className="over" style={{ color: "#e3e1de", fontSize: 11, letterSpacing: ".06em", lineHeight: 1.5 }}>{t}</a>
+            ) : (
+              <span className="over" style={{ color: "#e3e1de", fontSize: 11, letterSpacing: ".06em", lineHeight: 1.5 }}>{t}</span>
+            )}
           </div>
         ))}
       </div>
@@ -708,20 +712,18 @@ export function DPierPath() {
             <Kicker>The Pier Path</Kicker>
             <h2 className="disp" style={{ fontSize: 48, marginTop: 16, color: "var(--ink)" }}>Three steps to a clear quote</h2>
           </div>
-          <Btn variant="outline" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Book an inspection</Btn>
         </div>
         <div className="d-3" style={{ gap: 22 }}>
           {D_STEPS.map((s) => (
             <div key={s.n} style={{ background: "#fff", padding: "32px 30px 28px", borderTop: "3px solid var(--red)", display: "flex", flexDirection: "column" }}>
               <div className="disp" style={{ fontSize: 46, color: "var(--gray-2)" }}>{s.n}</div>
               <h3 className="disp" style={{ color: "var(--ink)", fontSize: 22, margin: "10px 0 12px", lineHeight: 1.05 }}>{s.t}</h3>
-              <p style={{ color: "var(--muted)", fontSize: 15, lineHeight: 1.55, fontWeight: 500, marginBottom: 16 }}>{s.d}</p>
-              <a href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}
-                className="over" style={{ marginTop: "auto", display: "inline-flex", alignItems: "center", gap: 6, color: "var(--red)", fontSize: 11 }}>
-                Book an inspection <Arrow s={13} c="var(--red)" />
-              </a>
+              <p style={{ color: "var(--muted)", fontSize: 15, lineHeight: 1.55, fontWeight: 500 }}>{s.d}</p>
             </div>
           ))}
+        </div>
+        <div style={{ display: "flex", justifyContent: "center", marginTop: 34 }}>
+          <Btn variant="outline" arrow="ur" href="#contact" onClick={(e) => { e.preventDefault(); dScroll("contact"); }}>Book an inspection</Btn>
         </div>
       </div>
     </section>
@@ -763,7 +765,7 @@ function DHonesty() {
               <Img label="The Principal Engineer on a jobsite" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" style={{ height: "100%" }} />
             </div>
             <div style={{ position: "absolute", left: 0, bottom: 0, right: 0, background: "linear-gradient(0deg, rgba(15,15,15,.92), transparent)", padding: "40px 26px 22px" }}>
-              <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 6 }}>Meet the engineer</div>
+              <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 6 }}>Meet the owner &amp; principal engineer</div>
               <div className="disp" style={{ color: "#fff", fontSize: 22 }}>Owner &amp; Principal Engineer</div>
               <div style={{ color: "#cfcfcf", fontWeight: 600, fontSize: 13, marginTop: 4 }}>Licensed PE since 2012</div>
             </div>
@@ -816,7 +818,7 @@ function DWork() {
             TODO: link this text to the Google Business Profile when the GBP URL is provided. */}
         <div style={{ marginTop: 36, border: "1px dashed rgba(255,255,255,.25)", padding: "28px 32px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 20, flexWrap: "wrap" }}>
           <div>
-            <div className="disp" style={{ color: "#fff", fontSize: 24 }}>4.9 on Google · 39 reviews</div>
+            <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener"><div className="disp" style={{ color: "#fff", fontSize: 24 }}>{GOOGLE_RATING}</div></a>
             <p style={{ color: "#cfcfcf", fontWeight: 500, fontSize: 15, maxWidth: 620, lineHeight: 1.55, marginTop: 8 }}>
               Read our verified reviews on our Google Business Profile.
             </p>
@@ -1111,7 +1113,7 @@ export function DFooter() {
         ))}
       </div>
       <div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "22px 40px", color: "#7d7d7d", fontSize: 13, fontWeight: 500, flexWrap: "wrap", gap: 10 }}>
-        <span>Cardinal Foundation Services, LLC · Fort Worth, TX · <a href={PHONE_TEL} style={{ color: "#9a9a9a" }}>{PHONE}</a> · Engineer-owned and operated. Transferable workmanship warranty, terms vary by service.</span>
+        <span>Cardinal Foundation Services, LLC · 803 Forest Ridge Dr, Suite #205, Bedford, TX 76022 · <a href={PHONE_TEL} style={{ color: "#9a9a9a" }}>{PHONE}</a> · Engineer-owned and operated. Transferable workmanship warranty, terms vary by service.</span>
         <span>© 2026 Cardinal Foundation Services, LLC. All rights reserved.</span>
       </div>
     </footer>
@@ -1133,7 +1135,6 @@ export default function DirectionD() {
       <DHonesty />
       <DWork />
       <DResidential />
-      <DCtaBand />
       <DContact />
       <DFooter />
     </div>

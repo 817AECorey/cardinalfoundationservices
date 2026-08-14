@@ -39,7 +39,7 @@ const data: ServicePageData = {
       h2: "Documented commercial steel pier work",
       paras: [
         "Our portfolio includes steel pier installation supporting a working hotel structure and the N Stemmons steel pier project, both documented with conditions, scope, and results. Deep excavation, real loads, buildings that stayed in business while we worked under them.",
-        "The deliverable on any commercial steel pier project is an engineered bid: pier layout, the reasoning behind it, and documentation suitable for ownership review. Work carries a workmanship warranty, terms vary by service.",
+        "The deliverable on any commercial steel pier project is engineered bids: pier layout, the reasoning behind it, and documentation suitable for ownership review. Work carries a workmanship warranty, terms vary by service.",
       ],
     },
   ],

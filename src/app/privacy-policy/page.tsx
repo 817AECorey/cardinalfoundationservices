@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 const SECTIONS: [string, string[]][] = [
   ["Information we collect", [
     "When you request an inspection, assessment, or quote through our website forms or by phone, we collect the information you provide: your name, phone number, email address, property city or ZIP, the service you are asking about, and any project details you choose to share.",
+    "If you provide a phone number, we may contact you about your request by phone call or SMS/text message; message and data rates may apply, and you can opt out of texts at any time by replying STOP.",
     "Like most websites, we also collect standard technical information such as pages visited and general analytics data used to understand how the site is used.",
   ]],
   ["How we use it", [

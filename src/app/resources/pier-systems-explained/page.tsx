@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Resources" }, { label: "Pier Systems Compared" }],
-  kicker: "Resources · Plain comparison",
+  kicker: "Plain comparison",
   h1: "Foundation Pier Systems Compared",
   intro: [
     "A foundation pier is a support installed beneath a structure to carry its weight down to soil that does not move. The main systems used in Texas are pressed concrete pilings, steel piers, drilled piers, helical piers, and hybrid combinations. They differ in how they are installed, how deep they reach, what they cost relative to each other, and which structures and soils they fit. This guide compares them plainly. No system is best for every building; the soil, the load, and the access decide.",

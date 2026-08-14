@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-concrete-installation-repair-contractors/commercial-slab-pouring-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Slab Pouring Contractors in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Slab Pouring Contractors in DFW | Cardinal" },
   description:
-    "Commercial slab pouring in DFW: reinforced structural slabs for warehouses, retail, office, and industrial facilities, with subgrade preparation built for North Texas expansive clay. Request an engineered bid.",
+    "Commercial slab pouring in DFW: reinforced structural slabs for warehouses, retail, office, and industrial facilities, with subgrade preparation built for North Texas expansive clay. Request engineered bids.",
   alternates: { canonical: "/commercial/concrete-construction/slab-pouring/" },
 };
 

@@ -277,7 +277,6 @@ export default function AboutPage() {
       <APaths />
       <ACreds />
       <ACrews />
-      <ACta />
       <DContact />
       <DFooter />
     </div>

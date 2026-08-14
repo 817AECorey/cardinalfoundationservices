@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Service Areas" }],
-  kicker: "Service Areas",
+  kicker: "",
   h1: "Where We Work",
   intro: [
     "Cardinal Foundation Services is headquartered in Fort Worth, Texas. We serve the Dallas-Fort Worth Metroplex for residential and commercial foundation, concrete, and structural work; the Houston area for residential foundation repair; and take larger commercial and specialty structural projects across Texas.",

@@ -6,7 +6,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    Entity name corrected to Cardinal Foundation Services per hard rule. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Underpinning Contractors in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Underpinning Contractors in DFW | Cardinal" },
   description:
     "Engineered commercial underpinning in DFW: load transfer to deeper competent soil for warehouses, offices, retail, municipal, and industrial buildings experiencing settlement. Request an assessment.",
   alternates: { canonical: "/commercial/foundation-repair/underpinning/" },

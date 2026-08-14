@@ -20,7 +20,7 @@ const data: ServicePageData = {
   heroImage: { src: "/images/commercial-concrete-lifting-parking-lot.webp", alt: "Crew lifting settled concrete in a commercial parking lot", width: 1600, height: 1200 },
   intro: [
     "Commercial slab lifting, void fill, warehouse floor leveling, polyurethane injection, mudjacking, and municipal concrete leveling across Dallas-Fort Worth, scoped from an engineered assessment and executed by Cardinal's own crews around your operations. Each service below carries its own page with scope detail and documented project links.",
-    "Every scope starts with the structural read: conditions, probable root cause, and a documented engineered bid ownership can review. Work carries a workmanship warranty, terms vary by service.",
+    "Every scope starts with the structural read: conditions, probable root cause, and documented engineered bids ownership can review. Work carries a workmanship warranty, terms vary by service.",
   ],
   sections: [],
   childCards: [

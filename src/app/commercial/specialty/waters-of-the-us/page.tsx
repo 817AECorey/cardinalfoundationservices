@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/waters-of-the-us-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Waters of the United States (WOTUS) Contractors in Texas | Cardinal" },
+  title: { absolute: "Waters of the US (WOTUS) Contractors in Texas | Cardinal" },
   description:
     "WOTUS contractors in Texas: Section 404/401 permitting, Clean Water Act compliance, stormwater and spill prevention, and infrastructure construction near wetlands, streams, and flood zones.",
   alternates: { canonical: "/commercial/specialty/waters-of-the-us/" },
@@ -42,8 +42,8 @@ const data: ServicePageData = {
     ["New Construction", "/new-construction/"],
   ],
   faqs: [
-    ["What is considered a WOTUS in Texas?", "WOTUS includes streams, wetlands, rivers, lakes, intermittent tributaries, and other surface waters that fall under federal Clean Water Act jurisdiction."],
-    ["Do I need a permit to build near a stream or wetland?", "Yes. Construction that impacts or disturbs a WOTUS typically requires Section 404/401 permits from the U.S. Army Corps of Engineers and state-level water quality certifications."],
+    ["What is considered a WOTUS in Texas?", "Depending on current federal rules and site-specific conditions, WOTUS can include streams, wetlands, rivers, lakes, and certain tributaries that fall under Clean Water Act jurisdiction. Whether a specific water body is jurisdictional is determined case by case."],
+    ["Do I need a permit to build near a stream or wetland?", "It depends on whether the water body is jurisdictional under current federal rules. Construction that impacts a jurisdictional WOTUS typically requires Section 404/401 permits from the U.S. Army Corps of Engineers and state-level water quality certifications; a jurisdictional determination establishes what applies to your site."],
   ],
   ctaLabel: "Request an assessment",
   ctaHeading: "Project touching regulated water?",

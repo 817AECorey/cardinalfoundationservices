@@ -33,7 +33,7 @@ const data: ServicePageData = {
     {
       h2: "For builders and developers",
       paras: [
-        "Site work, piers, foundations, and concrete under one engineered scope and one self-performing contractor: fewer handoffs, fewer places for the dirt to be somebody else's problem. Engineering oversight runs through scoping and sign-off, which travels well in approval conversations. Deliverable is an engineered bid with documentation.",
+        "Site work, piers, foundations, and concrete under one engineered scope and one self-performing contractor: fewer handoffs, fewer places for the dirt to be somebody else's problem. Engineering oversight runs through scoping and sign-off, which travels well in approval conversations. Deliverable is engineered bids with documentation.",
       ],
     },
     {

@@ -13,25 +13,40 @@ const PROVIDER = {
   url: BASE,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Fort Worth",
+    streetAddress: "803 Forest Ridge Dr, Suite #205",
+    addressLocality: "Bedford",
     addressRegion: "TX",
+    postalCode: "76022",
     addressCountry: "US",
   },
 };
 
-/* LocalBusiness entity schema. NO AggregateRating/review markup, per spec.
-   TODO(BLOCKED): populate sameAs with the client's Facebook, Instagram,
-   LinkedIn, and YouTube profile URLs when provided. */
+/* LocalBusiness entity schema. NO AggregateRating/review markup, per spec. */
 export function localBusinessJsonLd() {
   return {
     "@context": "https://schema.org",
     ...PROVIDER,
+    /* geo is city-level for Bedford pending an exact pin for the suite */
+    geo: { "@type": "GeoCoordinates", latitude: 32.844, longitude: -97.143 },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "07:00",
+      closes: "18:00",
+    },
+    logo: BASE + "/cardinal-logo.png",
     areaServed: [
       { "@type": "Place", name: "Dallas-Fort Worth" },
       { "@type": "Place", name: "Houston" },
       { "@type": "Place", name: "Texas" },
     ],
-    sameAs: [] as string[], // TODO(BLOCKED): Facebook, Instagram, LinkedIn, YouTube URLs
+    sameAs: [
+      "https://www.instagram.com/cardinalfoundationservices/",
+      "https://www.facebook.com/CardinalFoundationServices/",
+      "https://www.youtube.com/@CardinalFoundationServices",
+      "https://www.tiktok.com/@cardinalfoundationservic",
+      "https://www.linkedin.com/company/cardinal-foundation-services/",
+    ],
   };
 }
 

@@ -4,7 +4,7 @@ import NewConstructionPage from "@/components/site/NewConstructionPage";
 export const metadata: Metadata = {
   title: "New Construction Concrete & Tilt-Wall in DFW & Houston",
   description:
-    "Engineer-owned new construction concrete, tilt-wall, builder work, and earthwork for builders and developers across DFW and the Houston area. Engineering and concrete under one roof. Send plans for an engineered bid.",
+    "Engineer-owned new construction concrete, tilt-wall, builder work, and earthwork for builders and developers across DFW and the Houston area. Engineering and concrete under one roof. Send plans for engineered bids.",
   alternates: { canonical: "/new-construction/" },
   openGraph: {
     title: "New Construction Concrete & Tilt-Wall | Cardinal Foundation Services",

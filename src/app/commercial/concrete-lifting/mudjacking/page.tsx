@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-concrete-lifting-stabilization-contractors/commercial-mudjacking-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Mudjacking Contractors in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Mudjacking Contractors in DFW | Cardinal" },
   description:
     "Commercial mudjacking in DFW: controlled slurry injection that lifts and stabilizes settled parking lots, drive lanes, sidewalks, and large exterior slabs. Request an assessment.",
   alternates: { canonical: "/commercial/concrete-lifting/mudjacking/" },

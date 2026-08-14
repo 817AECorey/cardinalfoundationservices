@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/foundation-repair-fort-worth/pier-and-beam-foundation-repair/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Pier & Beam Foundation Repair in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Pier & Beam Foundation Repair in DFW | Cardinal" },
   description:
     "Pier and beam and crawl space foundation repair for DFW homes: interior elevation survey, visual crawl inspection, beam and sill replacement, and re-shimming to restore elevation. Free inspection report.",
   alternates: { canonical: "/residential/foundation-repair/pier-and-beam/" },

@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/foundation-repair-fort-worth/slab-repair-fort-worth/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Slab Foundation Repair in Fort Worth & DFW | Cardinal Foundation Services" },
+  title: { absolute: "Slab Foundation Repair in Fort Worth & DFW | Cardinal" },
   description:
     "Slab repair for DFW homes: foundation crack repair, sunken slab correction, and settlement repair on conventional and post-tension slabs. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/slab-repair/" },

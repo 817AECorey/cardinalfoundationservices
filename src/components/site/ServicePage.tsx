@@ -162,7 +162,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
               </span>
             ))}
           </div>
-          <Kicker color="#fff">{geoKicker(d.kicker, tree)}</Kicker>
+          {d.kicker && <Kicker color="#fff">{geoKicker(d.kicker, tree)}</Kicker>}
           <h1 className="disp" style={{ fontSize: 54, margin: "20px 0 0", color: "#fff", maxWidth: 820 }}>{d.h1}</h1>
           {d.intro.map((p) => (
             <p key={p.slice(0, 40)} style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.6, margin: "22px 0 0", maxWidth: 720, fontWeight: 500 }}>{p}</p>
@@ -313,19 +313,6 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
       {/* FAQ (visible accordion + matching FAQPage markup) */}
       {d.faqs.length > 0 && <FaqJsonLd faqs={d.faqs} />}
       {d.faqs.length > 0 && <Faq faqs={d.faqs} title={d.faqTitle ?? "Frequently asked questions"} />}
-      {/* CTA BAND */}
-      <section style={{ background: "var(--red)", padding: "54px 0" }}>
-        <div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 26, flexWrap: "wrap" }}>
-          <div>
-            <h2 className="disp" style={{ color: "#fff", fontSize: 34, lineHeight: 1.05 }}>{d.ctaHeading ?? "Start with an engineer."}</h2>
-            {d.ctaSub && <p style={{ color: "rgba(255,255,255,.92)", fontWeight: 500, fontSize: 16, marginTop: 8 }}>{d.ctaSub}</p>}
-          </div>
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <button onClick={() => dScroll("contact")} className="btn" style={{ background: "#fff", color: "var(--ink)", border: 0 }}>{d.ctaLabel} <Arrow s={15} /></button>
-            <a className="btn" href={PHONE_TEL} style={{ background: "transparent", color: "#fff", border: "2px solid rgba(255,255,255,.55)" }}><Phone s={14} c="#fff" /> {PHONE}</a>
-          </div>
-        </div>
-      </section>
       <DContact />
       <DFooter />
     </div>

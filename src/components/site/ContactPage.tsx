@@ -110,7 +110,7 @@ export default function ContactPage() {
               <div className="over" style={{ color: "var(--red)", marginBottom: 10 }}>Email</div>
               <a href={`mailto:${EMAIL}`} style={{ color: "var(--ink)", fontWeight: 700, fontSize: 15, wordBreak: "break-all" }}>{EMAIL}</a>
               <div className="over" style={{ color: "var(--red)", margin: "20px 0 10px" }}>Headquarters</div>
-              <div style={{ color: "var(--muted)", fontWeight: 600, lineHeight: 1.5 }}>Fort Worth, Texas, serving DFW, the Houston area, and Texas.</div>
+              <div style={{ color: "var(--muted)", fontWeight: 600, lineHeight: 1.5 }}>803 Forest Ridge Dr, Suite #205<br />Bedford, TX 76022<br />Fort Worth based, serving DFW, the Houston area, and Texas.</div>
               <div style={{ display: "flex", gap: 16, marginTop: 20, flexWrap: "wrap" }}>
                 {["Free residential inspection", "No obligation"].map((t) => (
                   <span key={t} style={{ display: "flex", alignItems: "center", gap: 7, fontWeight: 700, fontSize: 13, color: "var(--ink)" }}><Check s={15} c="var(--red)" />{t}</span>

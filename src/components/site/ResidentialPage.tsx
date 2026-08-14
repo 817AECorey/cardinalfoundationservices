@@ -43,7 +43,7 @@ function RHero() {
           <div>
             <Kicker color="#fff">Specialized Residential · DFW &amp; Houston</Kicker>
             <h1 className="disp" style={{ fontSize: 60, margin: "20px 0 0", color: "#fff" }}>
-              Residential foundation repair, <span style={{ color: "var(--red)" }}>engineered and self-performed.</span>
+              Residential foundation repair, engineered and self-performed.
             </h1>
             <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
               We take the large, complicated repairs that call for specialized crews. Complex structural issues, big retaining walls, concrete lifting, and custom homes across DFW and the Houston area. An inspection determines the cause before anything is recommended.
@@ -133,7 +133,7 @@ function RInspectCard() {
           style={{ justifyContent: "center", width: "100%", marginTop: 2, opacity: ready && !busy ? 1 : .55, cursor: ready && !busy ? "pointer" : "not-allowed" }}>
           {busy ? "Sending…" : "Request Free Inspection"} <Arrow s={15} />
         </button>
-        <div style={{ textAlign: "center", fontSize: 12, fontWeight: 600, color: "var(--muted)" }}>Financing available · Quote in one business day</div>
+        <div style={{ textAlign: "center", fontSize: 12, fontWeight: 600, color: "var(--muted)" }}>You&apos;ll receive a mapped elevation survey and quote within one business day.</div>
         <TCPA />
       </div>
     </form>
@@ -252,6 +252,9 @@ function RSigns() {
               </div>
             </div>
           ))}
+        </div>
+        <div style={{ display: "flex", justifyContent: "center", marginTop: 30 }}>
+          <Btn variant="outline" arrow="none" href={PHONE_TEL}><Phone s={15} /> {PHONE}</Btn>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-concrete-lifting-stabilization-contractors/polyurethane-foam-injection-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Polyurethane Foam Injection in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Polyurethane Foam Injection in DFW | Cardinal" },
   description:
     "Commercial foam injection in DFW: high-density structural polyurethane fills voids, stabilizes subgrade soils, and lifts settled slabs with precision, without large-scale demolition. Request an assessment.",
   alternates: { canonical: "/commercial/concrete-lifting/polyurethane-foam-injection/" },

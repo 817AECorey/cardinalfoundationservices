@@ -42,7 +42,7 @@ function RfHero() {
           <div>
             <Kicker color="#fff">Specialized residential · DFW &amp; Houston</Kicker>
             <h1 className="disp" style={{ fontSize: 58, margin: "20px 0 0", color: "#fff" }}>
-              Residential foundation repair for <span style={{ color: "var(--red)" }}>homes of every size.</span>
+              Residential foundation repair for homes of every size.
             </h1>
             <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
               Large, structural, and full-scope residential repairs. Multi-symptom movement, big elevation changes, and homes other contractors refer out. An engineer inspects your home, and the same company performs the repair.
@@ -109,7 +109,7 @@ function RfQuickCard() {
     <form onSubmit={onSubmit} style={{ background: "#fff", width: "100%", maxWidth: 380, boxShadow: "0 30px 70px rgba(0,0,0,.5)" }}>
       <div style={{ background: "var(--red)", color: "#fff", padding: "15px 22px" }}>
         <div className="disp" style={{ fontSize: 19 }}>Book a Free Inspection</div>
-        <div style={{ fontSize: 12.5, fontWeight: 600, opacity: .92, marginTop: 2 }}>Free, no obligation. Quote in one business day.</div>
+        <div style={{ fontSize: 12.5, fontWeight: 600, opacity: .92, marginTop: 2 }}>You&apos;ll receive a mapped elevation survey and quote within one business day.</div>
       </div>
       <div style={{ padding: "20px 22px 22px", display: "flex", flexDirection: "column", gap: 11 }}>
         <input type="text" tabIndex={-1} autoComplete="off" aria-hidden="true" value={website} onChange={(e) => setWebsite(e.target.value)} style={{ position: "absolute", left: "-9999px", width: 1, height: 1 }} />
@@ -200,6 +200,9 @@ function RfSigns() {
             </div>
           ))}
         </div>
+        <div style={{ display: "flex", justifyContent: "center", marginTop: 30 }}>
+          <Btn variant="outline" arrow="none" href={PHONE_TEL}><Phone s={15} /> {PHONE}</Btn>
+        </div>
       </div>
     </section>
   );
@@ -215,7 +218,7 @@ function RfHonesty() {
             <Img label="The Principal Engineer inspecting a home" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=900&q=80" style={{ height: "100%" }} />
           </div>
           <div style={{ position: "absolute", left: 0, bottom: 0, right: 0, background: "linear-gradient(0deg, rgba(15,15,15,.92), transparent)", padding: "40px 26px 22px" }}>
-            <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 6 }}>Meet the engineer</div>
+            <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 6 }}>Meet the owner &amp; principal engineer</div>
             <div className="disp" style={{ color: "#fff", fontSize: 22 }}>Owner &amp; Principal Engineer</div>
             <div style={{ color: "#cfcfcf", fontWeight: 600, fontSize: 13, marginTop: 4 }}>Licensed PE since 2012</div>
           </div>

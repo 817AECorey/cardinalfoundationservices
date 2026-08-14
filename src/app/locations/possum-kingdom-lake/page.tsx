@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Locations", href: "/locations/" }, { label: "Possum Kingdom Lake" }],
   kicker: "Locations · Possum Kingdom Lake",
-  h1: "Foundation and Structural Repair at Possum Kingdom Lake",
+  h1: "Foundation and Structural Repair at Possum Kingdom Lake, Texas",
   intro: [
     "Possum Kingdom Lake properties combine everything that makes structural work interesting: slopes, water, rock transitioning to soil, and homes built to reach the view. Cardinal serves PK Lake property owners with structural foundation repair, concrete leveling, and balcony and elevated-structure repair, bringing engineering-backed scopes to a market where guesswork gets expensive fast.",
   ],

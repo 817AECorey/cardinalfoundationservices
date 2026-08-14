@@ -6,7 +6,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    Old copy's award/superlative claims removed per hard rules. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Concrete Crack Repair in Fort Worth & DFW | Cardinal Foundation Services" },
+  title: { absolute: "Concrete Crack Repair in Fort Worth & DFW | Cardinal" },
   description:
     "Concrete crack repair in Fort Worth and DFW: driveways, patios, sidewalks, foundations, and commercial surfaces, repaired and reinforced to prevent further damage. Free evaluation.",
   alternates: { canonical: "/residential/concrete-leveling/concrete-crack-repair/" },

@@ -20,7 +20,7 @@ const data: ServicePageData = {
   heroImage: { src: "/images/retaining-wall-repair-crew.webp", alt: "Crew working at a stone retaining wall during repair", width: 1600, height: 1200 },
   intro: [
     "Commercial structural retaining wall repair and tieback anchor systems across Dallas-Fort Worth, scoped from an engineered assessment and executed by Cardinal's own crews around your operations. Each service below carries its own page with scope detail and documented project links.",
-    "Every scope starts with the structural read: conditions, probable root cause, and a documented engineered bid ownership can review. Work carries a workmanship warranty, terms vary by service.",
+    "Every scope starts with the structural read: conditions, probable root cause, and documented engineered bids ownership can review. Work carries a workmanship warranty, terms vary by service.",
   ],
   sections: [],
   childCards: [

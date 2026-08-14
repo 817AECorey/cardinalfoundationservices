@@ -39,7 +39,7 @@ function CHero() {
           <div>
             <Kicker color="#fff">Commercial &amp; Industrial · Texas</Kicker>
             <h1 className="disp" style={{ fontSize: 60, margin: "20px 0 0", color: "#fff" }}>
-              Commercial foundation repair, <span style={{ color: "var(--red)" }}>engineered and self-performed.</span>
+              Commercial foundation repair, engineered and self-performed.
             </h1>
             <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
               Warehouses, retail centers, multifamily, and industrial buildings settle for reasons an inspection can identify. We assess the structure and soil, engineer the plan of repair, and our own crews carry it out around your operations.
@@ -251,6 +251,9 @@ function CSigns() {
             </div>
           ))}
         </div>
+        <div style={{ display: "flex", justifyContent: "center", marginTop: 30 }}>
+          <Btn variant="outline" arrow="none" href={PHONE_TEL}><Phone s={15} /> {PHONE}</Btn>
+        </div>
       </div>
     </section>
   );
@@ -350,7 +353,6 @@ export default function CommercialPage() {
       <DPierSystems />
       <CIndustries />
       <CWhy />
-      <CCtaBand />
       <DContact />
       <DFooter />
     </div>

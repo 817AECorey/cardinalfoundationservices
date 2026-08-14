@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Multifamily" }],
-  kicker: "Multifamily · DFW & Texas",
+  kicker: "DFW & Texas",
   h1: "Multifamily Foundation Repair",
   heroImage: { src: "/images/multifamily-foundation-repair-exterior.webp", alt: "Multifamily building during exterior foundation repair", width: 1600, height: 1200 },
   intro: [

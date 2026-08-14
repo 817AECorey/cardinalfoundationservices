@@ -45,7 +45,7 @@ function WHero() {
         </div>
         <Kicker color="#fff">Portfolio · Evidence system</Kicker>
         <h1 className="disp" style={{ fontSize: 58, margin: "20px 0 0", color: "#fff", maxWidth: 760 }}>
-          Projects and <span style={{ color: "var(--red)" }}>Case Studies</span>
+          Our Work
         </h1>
         <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 0", maxWidth: 680, fontWeight: 500 }}>
           Every project here is documented the same way: what we found, what we recommended and why, how the work was executed, and what the result was. That standard exists because proof beats promises, especially from a company you have not hired yet. Filter by project type, or start with the ones that match your property.
@@ -69,7 +69,7 @@ function WFeature() {
             <PhotoSlot label={p.t + ". Real before and after jobsite photos"} style={{ position: "absolute", inset: 0 }} />
           </Link>
           <div style={{ background: "var(--ink)", color: "#fff", padding: "42px 40px", display: "flex", flexDirection: "column" }}>
-            <span className="over" style={{ color: "var(--red)", fontSize: 11 }}>{p.cat} · {p.loc}</span>
+            <span className="over" style={{ color: "var(--red)", fontSize: 11 }}>{p.loc}</span>
             <h2 className="disp" style={{ fontSize: 32, margin: "14px 0 14px", lineHeight: 1.05 }}>{p.t}</h2>
             <p style={{ color: "#b8b8b8", fontSize: 15.5, lineHeight: 1.6, marginBottom: 20 }}>{p.d}</p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 26 }}>
@@ -107,7 +107,7 @@ function WGallery() {
             <a href={p.href} key={p.t} className="lift" style={{ border: "1px solid var(--line)", background: "#fff", display: "flex", flexDirection: "column" }}>
               <PhotoSlot label={p.t + ". Real jobsite photo"} style={{ height: 200 }} />
               <div style={{ padding: "22px 24px 24px", display: "flex", flexDirection: "column", flex: 1 }}>
-                <span className="over" style={{ color: "var(--red)", fontSize: 10.5 }}>{p.cat} · {p.loc}</span>
+                <span className="over" style={{ color: "var(--red)", fontSize: 10.5 }}>{p.loc}</span>
                 <h3 className="disp" style={{ fontSize: 19, margin: "10px 0 10px", lineHeight: 1.1, color: "var(--ink)" }}>{p.t}</h3>
                 <p style={{ color: "var(--muted)", fontSize: 13.5, lineHeight: 1.55, fontWeight: 500, marginBottom: 14 }}>{p.d}</p>
                 <div style={{ marginTop: "auto", display: "flex", flexWrap: "wrap", gap: 6 }}>
@@ -180,7 +180,6 @@ export default function OurWorkPage() {
       <WFeature />
       <WGallery />
       <WHow />
-      <WCta />
       <DContact />
       <DFooter />
     </div>

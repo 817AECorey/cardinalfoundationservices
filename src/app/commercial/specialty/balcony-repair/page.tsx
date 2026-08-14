@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/balcony-repair-fort-worth/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Balcony Repair & Concrete Restoration in Fort Worth & DFW | Cardinal" },
+  title: { absolute: "Balcony Repair & Concrete Restoration in DFW | Cardinal" },
   description:
     "Balcony repair throughout Fort Worth and DFW: structural concrete repair, waterproofing and membranes, railing anchor repair, and large-scale multifamily and HOA remediation.",
   alternates: { canonical: "/commercial/specialty/balcony-repair/" },

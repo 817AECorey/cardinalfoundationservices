@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-foundation-repair-contractors/post-tension-repair-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Post-Tension Repair Contractors in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Post-Tension Repair Contractors in DFW | Cardinal" },
   description:
     "Engineered commercial post-tension slab repair in DFW: tendon investigation, replacement and re-anchoring, and structural crack repair for offices, retail, parking structures, warehouses, and industrial slabs.",
   alternates: { canonical: "/commercial/foundation-repair/post-tension-repair/" },

@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-foundation-repair-contractors/drilled-pier-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Drilled Pier Contractors in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Drilled Pier Contractors in DFW | Cardinal" },
   description:
     "Engineered drilled pier installation in DFW: deep foundation shafts for warehouses, offices, industrial, and municipal structures, for new construction and retrofit stabilization. Request an assessment.",
   alternates: { canonical: "/commercial/foundation-repair/drilled-piers/" },
