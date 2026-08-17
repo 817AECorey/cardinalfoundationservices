@@ -12,7 +12,9 @@ import { JsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 type Project = {
   /* real CompanyCam photos for the fixed 3-slot gallery; slots without one stay grey */
-  photos?: { src: string; alt: string }[]; title: string; cat: string; loc: string; highlights: [string, string][]; description: string[] };
+  photos?: { src: string; alt: string }[];
+  /* optional photo hero: renders the sitewide cover-plus-gradient hero pattern */
+  hero?: { src: string; alt: string }; title: string; cat: string; loc: string; highlights: [string, string][]; description: string[] };
 
 const PROJECTS: Record<string, Project> = {
   "tilt-wall-foundation-drainage-restoration": {
@@ -108,6 +110,12 @@ const PROJECTS: Record<string, Project> = {
     ],
   },
   "multi-family-foundation-repair-in-austin-tx": {
+    hero: { src: "/images/project-austin-hero.webp", alt: "Multifamily foundation repair project in Austin, Texas" },
+    photos: [
+      { src: "/images/project-austin-01.webp", alt: "Multifamily foundation repair project in Austin, Texas (photo 1)" },
+      { src: "/images/project-austin-02.webp", alt: "Multifamily foundation repair project in Austin, Texas (photo 2)" },
+      { src: "/images/project-austin-03.webp", alt: "Multifamily foundation repair project in Austin, Texas (photo 3)" },
+    ],
     title: "Multifamily Foundation Repair in Austin",
     cat: "Multifamily", loc: "Austin, TX",
     highlights: [
@@ -141,6 +149,12 @@ const PROJECTS: Record<string, Project> = {
     ],
   },
   "restaurant-foundation-repair-foam-injection": {
+    hero: { src: "/images/project-restaurant-hero.webp", alt: "Polyurethane foam injection at the restaurant foundation repair project" },
+    photos: [
+      { src: "/images/project-restaurant-01.webp", alt: "Polyurethane foam injection at the restaurant foundation repair project (photo 1)" },
+      { src: "/images/project-restaurant-02.webp", alt: "Polyurethane foam injection at the restaurant foundation repair project (photo 2)" },
+      { src: "/images/project-restaurant-03.webp", alt: "Polyurethane foam injection at the restaurant foundation repair project (photo 3)" },
+    ],
     title: "Restaurant Foundation Repair & Foam Injection",
     cat: "Commercial", loc: "DFW, TX",
     highlights: [
@@ -154,6 +168,12 @@ const PROJECTS: Record<string, Project> = {
     ],
   },
   "commercial-foundation-stabilization-creekside-erosion-repair": {
+    hero: { src: "/images/project-creekside-hero.webp", alt: "Foundation stabilization and erosion repair at the Creekside commercial property" },
+    photos: [
+      { src: "/images/project-creekside-01.webp", alt: "Foundation stabilization and erosion repair at the Creekside commercial property (photo 1)" },
+      { src: "/images/project-creekside-02.webp", alt: "Foundation stabilization and erosion repair at the Creekside commercial property (photo 2)" },
+      { src: "/images/project-creekside-03.webp", alt: "Foundation stabilization and erosion repair at the Creekside commercial property (photo 3)" },
+    ],
     title: "Commercial Foundation Stabilization & Creekside Erosion Repair",
     cat: "Commercial", loc: "DFW, TX",
     highlights: [
@@ -194,7 +214,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <span id="top" />
         <DNav />
         <section style={{ position: "relative", background: "var(--ink)", overflow: "hidden" }}>
-          <div className="d-blueprint" style={{ opacity: .5 }} />
+          {p.hero && (
+            <>
+              <div style={{ position: "absolute", inset: 0 }}>
+                <Img label={p.hero.alt} src={p.hero.src} style={{ height: "100%" }} />
+              </div>
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,12,12,.92) 0%, rgba(12,12,12,.6) 45%, rgba(12,12,12,.92) 100%)" }} />
+            </>
+          )}
+          <div className="d-blueprint" style={{ opacity: p.hero ? .45 : .5 }} />
           <div className="wrap" style={{ position: "relative", zIndex: 2, paddingTop: 26, paddingBottom: 56 }}>
             <div className="c-crumb over" style={{ fontSize: 11, color: "#9a9a9a", marginBottom: 26 }}>
               <Link href="/" style={{ color: "#9a9a9a" }}>Home</Link>

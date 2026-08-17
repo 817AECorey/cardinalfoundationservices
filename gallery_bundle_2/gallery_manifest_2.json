@@ -1,0 +1,86 @@
+[
+ {
+  "file": "project-restaurant-hero.webp",
+  "kb": 188,
+  "page": "/projects/restaurant-foundation-repair-foam-injection/",
+  "slot": "hero",
+  "alt": "Polyurethane foam injection at the restaurant foundation repair project"
+ },
+ {
+  "file": "project-restaurant-01.webp",
+  "kb": 192,
+  "page": "/projects/restaurant-foundation-repair-foam-injection/",
+  "slot": "gallery-1",
+  "alt": "Polyurethane foam injection at the restaurant foundation repair project (photo 1)"
+ },
+ {
+  "file": "project-restaurant-02.webp",
+  "kb": 188,
+  "page": "/projects/restaurant-foundation-repair-foam-injection/",
+  "slot": "gallery-2",
+  "alt": "Polyurethane foam injection at the restaurant foundation repair project (photo 2)"
+ },
+ {
+  "file": "project-restaurant-03.webp",
+  "kb": 191,
+  "page": "/projects/restaurant-foundation-repair-foam-injection/",
+  "slot": "gallery-3",
+  "alt": "Polyurethane foam injection at the restaurant foundation repair project (photo 3)"
+ },
+ {
+  "file": "project-creekside-hero.webp",
+  "kb": 193,
+  "page": "/projects/commercial-foundation-stabilization-creekside-erosion-repair/",
+  "slot": "hero",
+  "alt": "Foundation stabilization and erosion repair at the Creekside commercial property"
+ },
+ {
+  "file": "project-creekside-01.webp",
+  "kb": 166,
+  "page": "/projects/commercial-foundation-stabilization-creekside-erosion-repair/",
+  "slot": "gallery-1",
+  "alt": "Foundation stabilization and erosion repair at the Creekside commercial property (photo 1)"
+ },
+ {
+  "file": "project-creekside-02.webp",
+  "kb": 181,
+  "page": "/projects/commercial-foundation-stabilization-creekside-erosion-repair/",
+  "slot": "gallery-2",
+  "alt": "Foundation stabilization and erosion repair at the Creekside commercial property (photo 2)"
+ },
+ {
+  "file": "project-creekside-03.webp",
+  "kb": 174,
+  "page": "/projects/commercial-foundation-stabilization-creekside-erosion-repair/",
+  "slot": "gallery-3",
+  "alt": "Foundation stabilization and erosion repair at the Creekside commercial property (photo 3)"
+ },
+ {
+  "file": "project-austin-hero.webp",
+  "kb": 192,
+  "page": "/projects/multi-family-foundation-repair-in-austin-tx/",
+  "slot": "hero",
+  "alt": "Multifamily foundation repair project in Austin, Texas"
+ },
+ {
+  "file": "project-austin-01.webp",
+  "kb": 175,
+  "page": "/projects/multi-family-foundation-repair-in-austin-tx/",
+  "slot": "gallery-1",
+  "alt": "Multifamily foundation repair project in Austin, Texas (photo 1)"
+ },
+ {
+  "file": "project-austin-02.webp",
+  "kb": 182,
+  "page": "/projects/multi-family-foundation-repair-in-austin-tx/",
+  "slot": "gallery-2",
+  "alt": "Multifamily foundation repair project in Austin, Texas (photo 2)"
+ },
+ {
+  "file": "project-austin-03.webp",
+  "kb": 187,
+  "page": "/projects/multi-family-foundation-repair-in-austin-tx/",
+  "slot": "gallery-3",
+  "alt": "Multifamily foundation repair project in Austin, Texas (photo 3)"
+ }
+]
