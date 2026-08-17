@@ -7,6 +7,31 @@
    Keys are stored WITHOUT trailing slash; the proxy normalizes lookups. */
 
 export const REDIRECTS_301: Record<string, string> = {
+  // ---- Alias redirect gap (launch blocker fix, external audit + probe):
+  // short legacy URLs alive on the old site but absent from the sitemap-
+  // derived manifest. Each points DIRECTLY at its final destination.
+  "/steel-piers": "/residential/foundation-repair/steel-piers/",
+  "/helical-piers": "/residential/foundation-repair/helical-piers/",
+  "/concrete-pressed-piers": "/residential/foundation-repair/concrete-pressed-piers/",
+  "/mudjacking": "/residential/concrete-leveling/mudjacking/",
+  "/polyurethane-foam-injection": "/residential/concrete-leveling/polyurethane-foam-injection/",
+  "/foundation-repair-fort-worth": "/residential/foundation-repair/",
+  "/commercial-foundation-repair": "/services/commercial-foundation-repair/",
+  "/foundation-repair-houston": "/locations/houston/",
+  "/drainage": "/residential/drainage/",
+  "/hybrid-piers": "/residential/foundation-repair/hybrid-piers/",
+  "/pier-and-beam": "/residential/foundation-repair/pier-and-beam/",
+  "/slab-repair": "/residential/foundation-repair/slab-repair/",
+  "/foundation-repair": "/residential/foundation-repair/",
+  "/concrete-leveling": "/commercial/concrete-lifting/municipal/",
+  "/tilt-wall": "/commercial/tilt-wall/",
+  "/post-tension": "/commercial/foundation-repair/post-tension-repair/",
+  "/underpinning": "/commercial/foundation-repair/underpinning/",
+  "/warehouse-floor-leveling": "/commercial/concrete-lifting/warehouse-floor-leveling/",
+  "/commercial-concrete": "/commercial/concrete-construction/slab-repair/",
+  // discovery net (probe of the live old site): /retaining-wall/ 301s to
+  // the retaining-wall-design legacy URL; resolved to its final page
+  "/retaining-wall": "/residential/retaining-walls/",
   // KC page retired (wave 3): out-of-market ranking page removed
   "/kansas-city-foundation-repair": "/",
   // top-level / company
