@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Arrow, Phone } from "./icons";
-import { Btn, Kicker, PhotoSlot, dScroll, PHONE, PHONE_TEL } from "./primitives";
+import { Btn, Kicker, PhotoSlot, Img, dScroll, PHONE, PHONE_TEL } from "./primitives";
 import { DNav, DTrustBar, DContact, DFooter } from "./DirectionD";
 
 /* ============================================================
@@ -19,15 +19,15 @@ import { DNav, DTrustBar, DContact, DFooter } from "./DirectionD";
 /* The nine documented case studies, snapshot-parity carryover; each card
    links to its full case-study page under /projects/{slug}/. */
 const W_CATS = ["All", "Commercial", "Multifamily", "Industrial"];
-type WProject = { t: string; cat: string; loc: string; scope: string[]; d: string; href: string; feature?: boolean };
+type WProject = { t: string; cat: string; loc: string; scope: string[]; d: string; href: string; feature?: boolean; img?: string };
 const W_PROJECTS: WProject[] = [
-  { t: "Tilt Wall Foundation & Drainage Restoration", cat: "Commercial", loc: "Dallas, TX", scope: ["Tilt Wall", "Foam Injection", "Drainage"], d: "Tilt wall panels lifted and stabilized, interior slabs foam-lifted, and stormwater drainage corrected at a modern commercial space.", href: "/projects/tilt-wall-foundation-drainage-restoration/", feature: true },
-  { t: "Steel Piers at N Stemmons", cat: "Commercial", loc: "Dallas, TX", scope: ["Steel Piers 50+ ft", "French Drain", "Post-Tension Repair"], d: "Hotel foundation restored with steel piers driven 50+ feet, a perimeter french drain, and post-tension cables spliced and re-tensioned.", href: "/projects/steel-piers-n-stemmons/" },
-  { t: "Diplomat Drive: Industrial Poly Lift & Void Fill", cat: "Industrial", loc: "DFW, TX", scope: ["Poly Injection", "Void Filling", "Slab Lift"], d: "Sunken industrial office floors lifted back to level with precision polyurethane injection, no invasive demolition.", href: "/projects/diplomat-drive-polyurethane-injection-industrial-foundation-lift-void-fill/" },
-  { t: "Baytown Multifamily Foundation Repair", cat: "Multifamily", loc: "Baytown, TX", scope: ["Piers 30-35 ft", "Capital Restoration"], d: "Capital-expenditure foundation repair with piers designed to regional soil, restoring an aging community to modern condition.", href: "/projects/baytown-multi-family/" },
-  { t: "Lewisville Multifamily: 850+ Steel Piers", cat: "Multifamily", loc: "Lewisville, TX", scope: ["850+ Steel Piers", "Drainage", "Plumbing Verified"], d: "Lender-driven repair for sale and refinance: 850+ piers, drainage stabilization, and post-lift plumbing verification in one month.", href: "/projects/lewisville-tx-multi-family-pier-stabilization-foundation-lifting-and-drainage-repair/" },
+  { t: "Tilt Wall Foundation & Drainage Restoration", cat: "Commercial", loc: "Dallas, TX", scope: ["Tilt Wall", "Foam Injection", "Drainage"], d: "Tilt wall panels lifted and stabilized, interior slabs foam-lifted, and stormwater drainage corrected at a modern commercial space.", href: "/projects/tilt-wall-foundation-drainage-restoration/", img: "/images/project-tiltresto-02.webp", feature: true },
+  { t: "Steel Piers at N Stemmons", cat: "Commercial", loc: "Dallas, TX", scope: ["Steel Piers 50+ ft", "French Drain", "Post-Tension Repair"], d: "Hotel foundation restored with steel piers driven 50+ feet, a perimeter french drain, and post-tension cables spliced and re-tensioned.", href: "/projects/steel-piers-n-stemmons/", img: "/images/project-stemmons-04.webp" },
+  { t: "Diplomat Drive: Industrial Poly Lift & Void Fill", cat: "Industrial", loc: "DFW, TX", scope: ["Poly Injection", "Void Filling", "Slab Lift"], d: "Sunken industrial office floors lifted back to level with precision polyurethane injection, no invasive demolition.", href: "/projects/diplomat-drive-polyurethane-injection-industrial-foundation-lift-void-fill/", img: "/images/project-diplomat-01.webp" },
+  { t: "Baytown Multifamily Foundation Repair", cat: "Multifamily", loc: "Baytown, TX", scope: ["Piers 30-35 ft", "Capital Restoration"], d: "Capital-expenditure foundation repair with piers designed to regional soil, restoring an aging community to modern condition.", href: "/projects/baytown-multi-family/", img: "/images/project-baytown-01.webp" },
+  { t: "Lewisville Multifamily: 850+ Steel Piers", cat: "Multifamily", loc: "Lewisville, TX", scope: ["850+ Steel Piers", "Drainage", "Plumbing Verified"], d: "Lender-driven repair for sale and refinance: 850+ piers, drainage stabilization, and post-lift plumbing verification in one month.", href: "/projects/lewisville-tx-multi-family-pier-stabilization-foundation-lifting-and-drainage-repair/", img: "/images/project-lewisville-01.webp" },
   { t: "Multifamily Foundation Repair, Austin", cat: "Multifamily", loc: "Austin, TX", scope: ["Steel Piers", "Hillside", "Cast-Iron Coordination"], d: "High-volume pier installation on a hillside property, coordinated around aging cast-iron plumbing and occupied units.", href: "/projects/multi-family-foundation-repair-in-austin-tx/" },
-  { t: "Multifamily Foundation Repair, Carrollton", cat: "Multifamily", loc: "Carrollton, TX", scope: ["Targeted Repairs", "Custom Drainage", "Occupied Units"], d: "Foundation and drainage renovation on highly expansive soils, sequenced vacant-units-first around residents.", href: "/projects/multifamily-foundation-repair-carrollton-tx/" },
+  { t: "Multifamily Foundation Repair, Carrollton", cat: "Multifamily", loc: "Carrollton, TX", scope: ["Targeted Repairs", "Custom Drainage", "Occupied Units"], d: "Foundation and drainage renovation on highly expansive soils, sequenced vacant-units-first around residents.", href: "/projects/multifamily-foundation-repair-carrollton-tx/", img: "/images/project-carrollton-01.webp" },
   { t: "Restaurant Foundation Repair & Foam Injection", cat: "Commercial", loc: "DFW, TX", scope: ["Hybrid Piers", "Foam Injection", "Zero Interruptions"], d: "Hybrid piers at perimeter walls and a clean interior slab lift, scheduled around an active drive-thru with no business interruptions.", href: "/projects/restaurant-foundation-repair-foam-injection/" },
   { t: "Creekside Erosion & Foundation Stabilization", cat: "Commercial", loc: "DFW, TX", scope: ["Piers to Bedrock", "Plumbing Repair", "Mudjacking"], d: "Office building beside an eroding creek stabilized with piers pressed to bedrock at 10,000 PSI, plus plumbing repair and void fill.", href: "/projects/commercial-foundation-stabilization-creekside-erosion-repair/" },
 ];
@@ -66,7 +66,7 @@ function WFeature() {
         </div>
         <div className="w-feature" style={{ border: "1px solid var(--line)" }}>
           <Link href={p.href} style={{ position: "relative", minHeight: 400, display: "block" }}>
-            <PhotoSlot label={p.t + ". Real before and after jobsite photos"} style={{ position: "absolute", inset: 0 }} />
+            {p.img ? <Img label={p.t + ". Jobsite photo from this project"} src={p.img} style={{ position: "absolute", inset: 0, height: "100%" }} /> : <PhotoSlot label={p.t + ". Real before and after jobsite photos"} style={{ position: "absolute", inset: 0 }} />}
           </Link>
           <div style={{ background: "var(--ink)", color: "#fff", padding: "42px 40px", display: "flex", flexDirection: "column" }}>
             <span className="over" style={{ color: "var(--red)", fontSize: 11 }}>{p.loc}</span>
@@ -105,7 +105,7 @@ function WGallery() {
         <div className="w-grid">
           {list.map((p) => (
             <a href={p.href} key={p.t} className="lift" style={{ border: "1px solid var(--line)", background: "#fff", display: "flex", flexDirection: "column" }}>
-              <PhotoSlot label={p.t + ". Real jobsite photo"} style={{ height: 200 }} />
+              {p.img ? <Img label={p.t + ". Jobsite photo from this project"} src={p.img} style={{ height: 200 }} /> : <PhotoSlot label={p.t + ". Real jobsite photo"} style={{ height: 200 }} />}
               <div style={{ padding: "22px 24px 24px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <span className="over" style={{ color: "var(--red)", fontSize: 10.5 }}>{p.loc}</span>
                 <h3 className="disp" style={{ fontSize: 19, margin: "10px 0 10px", lineHeight: 1.1, color: "var(--ink)" }}>{p.t}</h3>
