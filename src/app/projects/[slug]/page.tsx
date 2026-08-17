@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { PhotoSlot, Kicker } from "@/components/site/primitives";
+import { PhotoSlot, Img, Kicker } from "@/components/site/primitives";
 import { DNav, DTrustBar, DContact, DFooter } from "@/components/site/DirectionD";
 import ProjectCta from "./project-cta";
 import { JsonLd, breadcrumbJsonLd } from "@/lib/schema";
@@ -10,10 +10,17 @@ import { JsonLd, breadcrumbJsonLd } from "@/lib/schema";
    portfolio. Each documents conditions found, methods used, and results.
    Superlative claims from old copy removed per hard rules; facts kept. */
 
-type Project = { title: string; cat: string; loc: string; highlights: [string, string][]; description: string[] };
+type Project = {
+  /* real CompanyCam photos for the fixed 3-slot gallery; slots without one stay grey */
+  photos?: { src: string; alt: string }[]; title: string; cat: string; loc: string; highlights: [string, string][]; description: string[] };
 
 const PROJECTS: Record<string, Project> = {
   "tilt-wall-foundation-drainage-restoration": {
+    photos: [
+      { src: "/images/project-tiltresto-01.webp", alt: "Tilt wall panel and interior conditions at the restoration project (photo 1)" },
+      { src: "/images/project-tiltresto-02.webp", alt: "Tilt wall panel and interior conditions at the restoration project (photo 2)" },
+      { src: "/images/project-tiltresto-03.webp", alt: "Tilt wall panel and interior conditions at the restoration project (photo 3)" },
+    ],
     title: "Tilt Wall Foundation & Drainage Restoration",
     cat: "Commercial", loc: "Dallas, TX",
     highlights: [
@@ -28,6 +35,11 @@ const PROJECTS: Record<string, Project> = {
     ],
   },
   "steel-piers-n-stemmons": {
+    photos: [
+      { src: "/images/project-stemmons-01.webp", alt: "Steel pier installation at the N Stemmons hotel property (photo 1)" },
+      { src: "/images/project-stemmons-02.webp", alt: "Steel pier installation at the N Stemmons hotel property (photo 2)" },
+      { src: "/images/project-stemmons-03.webp", alt: "Steel pier installation at the N Stemmons hotel property (photo 3)" },
+    ],
     title: "Steel Piers at N Stemmons",
     cat: "Commercial", loc: "Dallas, TX",
     highlights: [
@@ -41,6 +53,11 @@ const PROJECTS: Record<string, Project> = {
     ],
   },
   "diplomat-drive-polyurethane-injection-industrial-foundation-lift-void-fill": {
+    photos: [
+      { src: "/images/project-diplomat-01.webp", alt: "Polyurethane injection and void fill at the Diplomat Drive industrial facility (photo 1)" },
+      { src: "/images/project-diplomat-02.webp", alt: "Polyurethane injection and void fill at the Diplomat Drive industrial facility (photo 2)" },
+      { src: "/images/project-diplomat-03.webp", alt: "Polyurethane injection and void fill at the Diplomat Drive industrial facility (photo 3)" },
+    ],
     title: "Diplomat Drive: Industrial Polyurethane Lift & Void Fill",
     cat: "Industrial", loc: "DFW, TX",
     highlights: [
@@ -54,6 +71,11 @@ const PROJECTS: Record<string, Project> = {
     ],
   },
   "baytown-multi-family": {
+    photos: [
+      { src: "/images/project-baytown-01.webp", alt: "Concrete pier installation at the Baytown multifamily property (photo 1)" },
+      { src: "/images/project-baytown-02.webp", alt: "Concrete pier installation at the Baytown multifamily property (photo 2)" },
+      { src: "/images/project-baytown-03.webp", alt: "Concrete pier installation at the Baytown multifamily property (photo 3)" },
+    ],
     title: "Baytown Multifamily Foundation Repair",
     cat: "Multifamily", loc: "Baytown, TX",
     highlights: [
@@ -67,6 +89,11 @@ const PROJECTS: Record<string, Project> = {
     ],
   },
   "lewisville-tx-multi-family-pier-stabilization-foundation-lifting-and-drainage-repair": {
+    photos: [
+      { src: "/images/project-lewisville-01.webp", alt: "Steel pier stabilization and drainage repair at the Lewisville multifamily property (photo 1)" },
+      { src: "/images/project-lewisville-02.webp", alt: "Steel pier stabilization and drainage repair at the Lewisville multifamily property (photo 2)" },
+      { src: "/images/project-lewisville-03.webp", alt: "Steel pier stabilization and drainage repair at the Lewisville multifamily property (photo 3)" },
+    ],
     title: "Lewisville Multifamily: Pier Stabilization, Foundation Lifting & Drainage",
     cat: "Multifamily", loc: "Lewisville, TX",
     highlights: [
@@ -95,6 +122,11 @@ const PROJECTS: Record<string, Project> = {
     ],
   },
   "multifamily-foundation-repair-carrollton-tx": {
+    photos: [
+      { src: "/images/project-carrollton-01.webp", alt: "Property documentation at the Carrollton multifamily foundation repair project (photo 1)" },
+      { src: "/images/project-carrollton-02.webp", alt: "Property documentation at the Carrollton multifamily foundation repair project (photo 2)" },
+      { src: "/images/project-carrollton-03.webp", alt: "Property documentation at the Carrollton multifamily foundation repair project (photo 3)" },
+    ],
     title: "Multifamily Foundation Repair in Carrollton",
     cat: "Multifamily", loc: "Carrollton, TX",
     highlights: [
@@ -198,9 +230,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             ))}
             <h2 className="disp" style={{ fontSize: 30, margin: "34px 0 18px", color: "var(--ink)" }}>Project gallery</h2>
             <div className="c-svc">
-              {[1, 2, 3].map((n) => (
-                <PhotoSlot key={n} label={`${p.title}. Real jobsite photo ${n}`} style={{ height: 220 }} />
-              ))}
+              {[1, 2, 3].map((n) => {
+                const photo = p.photos?.[n - 1];
+                return photo ? (
+                  <Img key={n} label={photo.alt} src={photo.src} style={{ height: 220 }} />
+                ) : (
+                  <PhotoSlot key={n} label={`${p.title}. Real jobsite photo ${n}`} style={{ height: 220 }} />
+                );
+              })}
             </div>
           </div>
         </section>
