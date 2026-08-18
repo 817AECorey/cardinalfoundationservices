@@ -19,6 +19,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What the warranty covers",
+      noMedia: true,
       paras: [
         "A workmanship warranty covers the quality of the work we perform: the installation itself, done to the engineered scope you approved. Because foundation repair, drainage, concrete, and structural services behave differently over time, the coverage terms differ by service. Rather than one vague blanket promise, every written scope you receive includes the specific warranty terms that apply to that work.",
         "If something covered by your warranty needs attention, you call us and we address it. The documentation you received with your scope is the reference for what applies.",
@@ -26,6 +27,7 @@ const data: ServicePageData = {
     },
     {
       h2: "What transferable means for home sales",
+      noMedia: true,
       paras: [
         "When a home with warranted work sells, the remaining warranty can transfer to the new owner. For sellers, documented repairs with a transferable warranty answer the question every buyer and inspector asks about past foundation work. For buyers, it means the workmanship protection continues rather than dying at closing.",
         "Transfer details are part of the written terms provided with the original scope. If you are buying or selling a home with Cardinal work and want the paperwork verified, contact us and we will walk through it with you.",
@@ -33,6 +35,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Getting your terms in writing",
+      noMedia: true,
       paras: [
         "Every quote and engineered bid we issue states the warranty terms for that scope. Nothing is left to a handshake. If you have questions about coverage on a past or upcoming project, ask your Cardinal representative or call the office.",
       ],

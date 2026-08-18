@@ -37,6 +37,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Steel Piers vs. Concrete Piers",
+      noMedia: true,
       paras: [
         "The most common comparison homeowners ask about, and the honest version is short: steel piers go deeper and carry more; pressed concrete pilings cost less and are often sufficient.",
         "Pressed concrete pilings are pushed into the ground until soil resistance stops them, which in much of North Texas can mean stopping within or near the active clay zone. For lighter homes on lots where that resistance point is decent bearing soil, they perform well at the lowest installed cost, which is why they are the region's most common repair pier.",
@@ -54,6 +55,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Questions this comparison cannot answer",
+      noMedia: true,
       paras: [
         "Which system your building needs. That depends on measured elevations, soil behavior at your site, structure weight, and access, and it is exactly what a foundation check determines. Sometimes the finding is that no pier system is needed at all, and drainage correction or monitoring is the honest scope. Cardinal installs every system above, residential and commercial, so the recommendation follows the findings rather than the inventory.",
       ],

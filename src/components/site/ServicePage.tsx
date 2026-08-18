@@ -24,6 +24,8 @@ export type Section = {
   parasAfter?: string[];
   /* real project photo for the section's media slot; placeholder shows when absent */
   img?: { src: string; alt: string; pos?: string };
+  /* conceptual/comparison sections with no honest photo: full-width text, no media column */
+  noMedia?: boolean;
   steps?: [string, string][]; // numbered what-to-expect style
   table?: { head: string[]; rows: string[][]; note?: string };
 };
@@ -212,6 +214,21 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
             <h2 className="disp" style={{ fontSize: 42, margin: "10px 0 18px", color: "var(--ink)", maxWidth: 760 }}>{s.h2}</h2>
           </>
         );
+        if (proseOnly && s.noMedia) {
+          return (
+            <section key={s.h2} style={{ background: si % 2 ? "var(--bone)" : "var(--paper)", padding: "84px 0", borderBottom: "1px solid var(--line)" }}>
+              <div className="wrap">
+                {heading}
+                {s.paras?.map((p) => (
+                  <p key={p.slice(0, 40)} className="lead" style={{ maxWidth: 820, marginBottom: 16 }}>{p}</p>
+                ))}
+                {s.parasAfter?.map((p) => (
+                  <p key={p.slice(0, 40)} className="lead" style={{ maxWidth: 820, margin: "16px 0 0" }}>{p}</p>
+                ))}
+              </div>
+            </section>
+          );
+        }
         if (proseOnly) {
           return (
             <section key={s.h2} style={{ background: si % 2 ? "var(--bone)" : "var(--paper)", padding: "84px 0", borderBottom: "1px solid var(--line)" }}>

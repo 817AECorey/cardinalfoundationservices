@@ -51,12 +51,14 @@ const data: ServicePageData = {
     },
     {
       h2: "Why a foundation-specific review",
+      noMedia: true,
       paras: [
         "General property condition reports flag foundation symptoms; they rarely diagnose them. In North Texas, expansive clay makes the difference between cosmetic settlement and progressive movement a soil-and-drainage question, and pricing that wrong on a multifamily portfolio is expensive in either direction. Cardinal has completed multifamily foundation repairs in Carrollton, Lewisville, Baytown, and Austin, documented in our project records, and a licensed Professional Engineer co-owns the company.",
       ],
     },
     {
       h2: "Timing",
+      noMedia: true,
       paras: [
         "Multifamily and private equity budget cycles concentrate in August through October. Free select-building inspections scheduled ahead of that window feed your capital plan instead of trailing it.",
       ],

@@ -44,6 +44,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Why homeowners finance foundation repair",
+      noMedia: true,
       paras: [
         "Foundation movement does not improve on its own, and drainage or structural causes tend to compound. Financing lets you address the cause on the engineering timeline rather than the savings timeline. The inspection is free either way, and sometimes the honest finding is that you do not need a repair at all.",
       ],
