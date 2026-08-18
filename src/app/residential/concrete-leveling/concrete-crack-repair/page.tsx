@@ -33,6 +33,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Crack repair and the cause behind it",
+      img: { src: "/images/foundation-crack-repair-brick.webp", alt: "Foundation crack repair on a brick wall" },
       paras: [
         "A crack is a symptom before it is a problem. Where cracking traces to settlement, the evaluation says so, because sealing a crack over moving soil only reschedules it: pairing crack repair with slab lifting or foundation work is often the durable answer. Where the crack is cosmetic or seasonal, we say that too. Residential work carries a transferable workmanship warranty, terms vary by service, with financing available and a written quote within one business day of evaluation.",
       ],

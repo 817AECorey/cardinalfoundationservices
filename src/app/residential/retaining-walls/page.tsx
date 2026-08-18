@@ -30,6 +30,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Retaining wall design and installation",
+      img: { src: "/images/retaining-wall-design-installation.webp", alt: "Retaining wall design and installation" },
       paras: [
         "New walls for grade changes, erosion control, and landscape structure, designed for the soil pressure and water they will actually face. Every design considers drainage first, weep paths, backfill, and where the collected water goes, because a wall built without a water plan has a countdown running.",
         "Residential work carries a transferable workmanship warranty, terms vary by service, with financing available and a written quote within one business day of evaluation.",

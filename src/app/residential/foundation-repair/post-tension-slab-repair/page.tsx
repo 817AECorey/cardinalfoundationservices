@@ -28,6 +28,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Why post-tension repair is its own discipline",
+      img: { src: "/images/post-tension-cable-slab-repair.webp", alt: "Post-tension cable and rebar in a slab" },
       paras: [
         "A post-tension slab is a system under load. Repairs begin by locating tendons, understanding the original design intent, and planning pier placement and any penetration around them. Engineering oversight runs through our scoping and sign-off, and a licensed Professional Engineer co-owns the company, which is the right backdrop for a repair category where guesswork is genuinely hazardous.",
         "The inspection includes mapped elevation readings across the slab and notated findings, so the recommendation is built on data. Sometimes that recommendation is monitoring rather than repair. When work is recommended, you receive a written quote within one business day, financing is available, and work carries a transferable workmanship warranty, terms vary by service.",

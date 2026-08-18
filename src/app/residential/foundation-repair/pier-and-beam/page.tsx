@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How we inspect a pier and beam home",
+      img: { src: "/images/pier-and-beam-crawlspace-repair.webp", alt: "Pier and beam crawl space foundation repair" },
       paras: [
         "The inspection includes an interior elevation survey and a visual crawl underneath the home, checking for warped or twisted beams, wood rot, misaligned piers and sonotubes, and standing water. Crawl space moisture is often the story behind the symptoms, which is why the drainage picture is part of the same look.",
       ],

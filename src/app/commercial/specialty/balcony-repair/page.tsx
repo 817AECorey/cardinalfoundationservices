@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What causes balcony damage?",
+      img: { src: "/images/balcony-concrete-repair.webp", alt: "Balcony concrete repair" },
       paras: [
         "Poor drainage or clogged scuppers, failed waterproof membranes, standing water leading to spalling and corrosion, cracked or delaminated concrete, rusted railing bases compromising safety, and UV damage, freeze-thaw cycles, and age. We evaluate the balcony as a complete system, slab, substrate, waterproofing, guardrails, and load paths, so repairs address root causes rather than symptoms.",
       ],

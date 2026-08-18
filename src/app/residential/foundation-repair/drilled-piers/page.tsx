@@ -21,6 +21,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How drilled piers work",
+      img: { src: "/images/commercial-drilled-pier-drilling-rig.webp", alt: "Drilling rig installing drilled piers" },
       paras: [
         "Unlike driven systems, drilled piers are constructed in the ground rather than pushed into it. The drilled shaft allows steel-reinforced concrete to be formed at a controlled depth and diameter, sized to the load above it. In stable strata below the active clay layer, that produces a high-capacity support with excellent long-term performance, which is why drilled piers are also a mainstay of new construction across Texas.",
       ],

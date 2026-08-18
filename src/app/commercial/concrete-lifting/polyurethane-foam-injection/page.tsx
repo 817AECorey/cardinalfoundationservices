@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is polyurethane foam injection?",
+      img: { src: "/images/commercial-polyurethane-floor-injection.webp", alt: "Commercial polyurethane floor injection" },
       paras: [
         "Polyurethane injection is a slab stabilization process where expanding structural foam is injected beneath concrete to fill voids and restore elevation. The material expands, compacts loose soil, and increases load-bearing support. In DFW's expansive clay conditions, void formation and soil washout are common contributors to slab settlement, and foam injection addresses both elevation correction and subgrade reinforcement.",
       ],

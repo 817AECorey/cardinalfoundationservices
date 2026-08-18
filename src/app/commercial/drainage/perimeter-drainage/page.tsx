@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is foundation perimeter drainage?",
+      img: { src: "/images/foundation-perimeter-drainage-2.webp", alt: "Foundation perimeter drainage system" },
       paras: [
         "Foundation perimeter drainage consists of engineered subsurface drain systems installed along the outer edge of commercial foundations and slabs. These systems collect excess groundwater before it can reach structural footings or slab edges and safely redirect it away from the building. In DFW's expansive clay soils, proper perimeter drainage is critical to preventing the soil expansion and contraction cycles that cause foundation settlement and slab cracking. Our systems are designed specifically for commercial properties and integrate with existing foundation repair and concrete stabilization projects.",
       ],

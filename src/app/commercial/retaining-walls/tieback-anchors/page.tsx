@@ -21,6 +21,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What are retaining wall tieback anchors?",
+      img: { src: "/images/retaining-wall-tieback-anchor.webp", alt: "Retaining wall tieback anchor hardware" },
       paras: [
         "Retaining wall tiebacks, often helical anchor systems, are installed behind a retaining wall and embedded into stable soil layers. The anchor applies lateral resistance, counteracting the hydrostatic pressure and soil load that cause wall displacement. In DFW's expansive clay soils, tiebacks are frequently used to stabilize walls affected by moisture cycles and poor drainage.",
       ],

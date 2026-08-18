@@ -31,6 +31,7 @@ const data: ServicePageData = {
     },
     {
       h2: "When pressed piers fit, and when they do not",
+      img: { src: "/images/concrete-pressed-piers-installed.webp", alt: "Concrete pressed piers installed at a home foundation" },
       paras: [
         "Pressed pilings perform well under lighter structures on shallower active soils. Where the active clay zone runs deep or the structure is heavy, they can stop within soil that still moves with the weather, which is when steel, drilled, or helical systems earn their higher cost. The comparison guide covers the trade-offs plainly, and every recommendation follows the mapped elevation data from your free inspection report. When work is recommended: written quote within one business day, financing available, transferable workmanship warranty, terms vary by service.",
       ],

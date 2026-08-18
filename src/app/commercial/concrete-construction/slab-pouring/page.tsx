@@ -39,6 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where commercial slabs are used",
+      img: { src: "/images/commercial-concrete-slab-pouring-crew.webp", alt: "Crew pouring a commercial concrete slab" },
       paras: [
         "Warehouses and distribution centers, retail developments, office buildings, industrial facilities, municipal structures, and multi-tenant commercial projects, with engineered reinforcement planning, coordination with contractors and engineers, and a long-term durability focus.",
       ],

@@ -24,6 +24,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How foam lifting works",
+      img: { src: "/images/polyurethane-foam-injection-lift.webp", alt: "Polyurethane foam injection lifting a slab" },
       paras: [
         "Small injection ports are drilled through the settled slab. Structural polyurethane is injected beneath it, where it expands, fills the voids that let the slab drop, and lifts the concrete back toward level. The foam cures in minutes, is engineered to bear load, and does not wash out the way soil does. Compared with tearing out and repouring, foam lifting is faster, cleaner, far less disruptive, and preserves the concrete you already have.",
       ],

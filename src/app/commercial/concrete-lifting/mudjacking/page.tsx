@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is commercial mudjacking?",
+      img: { src: "/images/commercial-mudjacking-interior-slab.webp", alt: "Commercial mudjacking on an interior slab" },
       paras: [
         "Mudjacking involves pumping a cementitious slurry beneath a slab to fill voids and restore elevation. This method is commonly used on parking lots, large flatwork areas, and commercial exterior slabs. Proper evaluation determines whether mudjacking or foam injection is most appropriate.",
       ],

@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is structural concrete crack repair?",
+      img: { src: "/images/structural-concrete-crack-repair.webp", alt: "Structural concrete crack repair" },
       paras: [
         "Structural crack repair restores load capacity and structural continuity in commercial concrete systems. In DFW, expansive soil conditions often contribute to slab movement and cracking. Our methods include epoxy injection, reinforcement strategies, and coordination with commercial foundation repair when settlement is identified.",
       ],

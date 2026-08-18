@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How mudjacking works",
+      img: { src: "/images/mudjacking-slab-leveling-process-2.webp", alt: "Mudjacking process leveling a concrete slab" },
       paras: [
         "Ports are drilled through the settled slab, and the slurry is pumped beneath it under controlled pressure. The material fills the voids that allowed the drop, then lifts the slab toward level. Once cured, the slurry forms a dense, stable base under the concrete. The slab you already paid for goes back to work, at a fraction of replacement cost.",
       ],

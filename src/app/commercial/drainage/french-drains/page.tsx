@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is a commercial french drain system?",
+      img: { src: "/images/commercial-french-drain-gravel.webp", alt: "Commercial french drain gravel trench" },
       paras: [
         "A french drain consists of a perforated pipe installed within a gravel-filled trench designed to collect and redirect groundwater away from structural elements. In commercial settings, these systems are engineered to handle larger water volumes and integrate with site grading and stormwater flow paths. Properly installed french drains help reduce hydrostatic pressure and minimize moisture-related soil expansion beneath slabs and foundations.",
       ],

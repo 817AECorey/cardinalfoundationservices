@@ -21,6 +21,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How a french drain works",
+      img: { src: "/images/french-drain-gravel-installation.webp", alt: "French drain gravel installation" },
       paras: [
         "Water follows the path of least resistance. A french drain creates that path on purpose: a trench cut across the water's route, filter fabric and gravel to admit water while keeping soil out, and perforated pipe pitched to carry the collected water to a safe discharge point away from the home. Done correctly, the system works silently for years. Done poorly, with wrong pitch, missing fabric, or no real discharge plan, it clogs or simply relocates the problem, which is why design matters as much as digging.",
       ],

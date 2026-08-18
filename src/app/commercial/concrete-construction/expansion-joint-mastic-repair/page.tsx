@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is expansion joint and mastic repair?",
+      img: { src: "/images/expansion-joint-mastic-sealant.webp", alt: "Expansion joint mastic sealant application" },
       paras: [
         "Expansion joints allow concrete to expand and contract with temperature and moisture changes. When sealants deteriorate or fail, moisture intrusion can accelerate slab damage and subgrade erosion. Commercial joint repair restores watertight protection and structural flexibility.",
       ],

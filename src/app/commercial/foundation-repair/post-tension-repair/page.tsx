@@ -21,6 +21,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is post-tension repair?",
+      img: { src: "/images/commercial-post-tension-repair.webp", alt: "Commercial post-tension repair" },
       paras: [
         "Post-tension slabs use tensioned steel tendons embedded within concrete to increase strength and reduce cracking. When tendons fail, slabs may deflect, crack, or lose load capacity. Commercial repair involves locating compromised tendons, performing safe de-tensioning procedures when necessary, replacing or re-anchoring cables, and restoring slab integrity under engineered oversight.",
       ],

@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What causes metal deck and pan-pour damage?",
+      img: { src: "/images/metal-deck-slab-repair-crew.webp", alt: "Crew repairing a metal deck slab" },
       paras: [
         "Pan-pours deteriorate for several key reasons: moisture intrusion from above or below, steel deck corrosion causing concrete delamination, chloride exposure in parking structures, failed joints and waterproofing membranes, and heavy traffic loads with long-term fatigue. As corrosion expands inside the slab, the topping begins to separate from the metal deck, creating delaminated hollow areas, cracking, or visible spalling.",
       ],

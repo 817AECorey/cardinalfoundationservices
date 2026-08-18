@@ -24,6 +24,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How area drains work",
+      img: { src: "/images/area-drain-installation.webp", alt: "Area drain installation" },
       paras: [
         "Grated inlets are set at the low points where water actually collects, connected by solid pipe pitched to carry the collected water to a safe discharge point away from the home. The design starts with how your lot sheds water: where it enters, where it stalls, and where it can legitimately go. Area drains handle surface water; where water is moving through the soil itself, a french drain intercepts it, and many yards need both working together.",
       ],

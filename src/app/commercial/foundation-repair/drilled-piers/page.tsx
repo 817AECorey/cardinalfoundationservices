@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What are drilled piers?",
+      img: { src: "/images/commercial-drilled-pier-rig.webp", alt: "Commercial drilled pier installation" },
       paras: [
         "Drilled piers are deep foundation elements created by drilling a shaft to design depth and filling it with reinforced concrete. The pier transfers structural load to competent soil or bearing strata deeper below grade, helping reduce differential settlement and structural movement. They are widely used in commercial construction and stabilization where surface soils cannot reliably support long-term load demands.",
       ],

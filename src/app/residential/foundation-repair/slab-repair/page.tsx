@@ -31,6 +31,7 @@ const data: ServicePageData = {
     },
     {
       h2: "How slab repair is scoped",
+      img: { src: "/images/foundation-slab-crack-repair.webp", alt: "Slab foundation crack being repaired" },
       paras: [
         "The free inspection report includes elevation readings mapped across the slab and notated findings, so the recommendation follows what the foundation is actually doing rather than what a crack looks like. Where movement is structural, pier systems restore support; where the slab has settled over failed soil, lifting corrects elevation; where a crack is seasonal, we say so. When work is recommended: written quote within one business day, financing available, transferable workmanship warranty, terms vary by service.",
       ],

@@ -21,6 +21,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Warehouse slab foundation repair, not just surface leveling",
+      img: { src: "/images/warehouse-floor-leveling-interior.webp", alt: "Warehouse floor leveling interior" },
       paras: [
         "Sunken or rocking slab panels usually mean the soil beneath has eroded, compacted, or washed out, leaving voids that grow under traffic loads. Grinding high spots or topping low ones treats the symptom. Our approach treats the support: polyurethane injection lifts settled panels and fills voids with structural foam, restoring bearing under the slab. Where movement traces to the foundation or drainage, the scope says so, because releveling a floor over an unresolved washout is money spent twice.",
       ],

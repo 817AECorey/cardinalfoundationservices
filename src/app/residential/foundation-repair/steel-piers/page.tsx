@@ -27,6 +27,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How steel piers work",
+      img: { src: "/images/foundation-steel-pier-installation-pit.webp", alt: "Steel pier installation at a foundation repair job" },
       paras: [
         "Sections of steel pipe are hydraulically driven beneath the foundation, one on top of the next, until they reach soil or strata capable of carrying the load, commonly far deeper than pressed concrete pilings typically reach in our area. Depth is the point: North Texas expansive clay swells when wet and shrinks in drought, and a pier that terminates inside that active zone moves with it. Steel driven below it does not. The home is then lifted toward level and the piers carry the load on strata that does not cycle with the weather.",
       ],
