@@ -77,6 +77,7 @@ const PATHS: { path: string; priority: number }[] = [
   { path: "/request/", priority: 0.7 },
   { path: "/warranty/", priority: 0.5 },
   { path: "/financing/", priority: 0.6 },
+  { path: "/stamped-concrete-contractor-fort-worth/", priority: 0.7 },
   { path: "/residential/concrete-leveling/concrete-crack-repair/", priority: 0.6 },
   { path: "/projects/tilt-wall-foundation-drainage-restoration/", priority: 0.6 },
   { path: "/projects/steel-piers-n-stemmons/", priority: 0.6 },

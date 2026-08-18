@@ -127,7 +127,7 @@ export const REDIRECTS_301: Record<string, string> = {
   "/grading": "/new-construction/earthwork-grading/",
   "/concrete-slab-contractors-fort-worth": "/new-construction/concrete-flatwork/",
   "/concrete-slabe-contractors-fort-worth": "/new-construction/concrete-flatwork/",
-  "/stamped-concrete-contractor-fort-worth": "/new-construction/concrete-flatwork/",
+  // /stamped-concrete-contractor-fort-worth now serves its own ranking page (200)
 
   // locations
   "/services/foundation-repair-houston": "/locations/houston/",

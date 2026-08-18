@@ -1096,6 +1096,7 @@ export function DFooter() {
         ["Sump Pumps", "/residential/drainage/sump-pumps/"],
         ["Hydrostatic Testing", "/residential/drainage/hydrostatic-testing/"],
         ["Retaining Walls", "/residential/retaining-walls/"],
+        ["Stamped Concrete", "/stamped-concrete-contractor-fort-worth/"],
         ["Financing", "/financing/"],
       ],
     },

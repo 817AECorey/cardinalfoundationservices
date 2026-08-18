@@ -184,7 +184,7 @@ function RServices() {
             <h2 className="disp" style={{ color: "#fff", fontSize: 50, marginTop: 16 }}>The repairs that call for specialized crews</h2>
           </div>
           <p style={{ color: "#bdbdbd", fontWeight: 500, lineHeight: 1.55 }}>
-            Four service lines, one contractor. We focus on large, complex, full-scope residential work rather than small routine jobs. Select a service for details on how the work is engineered and installed.
+            Four service lines, one contractor. We focus on large, complex, full-scope residential work rather than small routine jobs. Select a service for details on how the work is engineered and installed. We also install <Link href="/stamped-concrete-contractor-fort-worth/" style={{ color: "var(--red)", fontWeight: 700 }}>Stamped Concrete</Link> patios, driveways, and pool decks in Fort Worth.
           </p>
         </div>
         <div className="r-svc">
