@@ -42,6 +42,7 @@ const data: ServicePageData = {
     },
     {
       h2: "For owners, managers, and buyers",
+      img: { src: "/images/project-lewisville-04.webp", alt: "Foundation repair in progress at a multifamily property" },
       paras: [
         "Owners and managers get engineered bids with documented reasoning, immediate-versus-monitor honesty, and work executed by our own crews. Acquisition teams evaluating a property should start with our multifamily foundation and structural due diligence service, which is built for the deal timeline. Work carries a workmanship warranty, terms vary by service.",
       ],
