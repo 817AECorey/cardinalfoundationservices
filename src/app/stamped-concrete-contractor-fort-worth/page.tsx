@@ -17,12 +17,14 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Stamped Concrete" }],
   kicker: "Stamped Concrete · Fort Worth",
   h1: "Transform Your Space",
+  heroImage: { src: "/images/stamped-concrete-patios-fort-worth.webp", alt: "Stamped concrete patio with a decorative pattern", width: 1000, height: 1000 },
   intro: [
     "Elevate your property's aesthetic with Cardinal Foundation Services, your trusted stamped concrete contractor in Fort Worth. We specialize in creating high-quality, decorative stamped concrete surfaces that blend beauty with functionality, perfect for patios, driveways, pool decks, and more.",
   ],
   sections: [
     {
       h2: "Premier Stamped Concrete Contractor in Fort Worth, Texas",
+      img: { src: "/images/stamped-concrete-finished.webp", alt: "Stamping mat being applied to fresh concrete during a stamped concrete installation" },
       paras: [
         "Stamped concrete offers a durable and versatile alternative to traditional paving methods, allowing for a range of textures and patterns that mimic more expensive materials like stone, brick, or wood. At Cardinal Foundation Services, we provide custom solutions that cater to your unique style and property requirements.",
       ],

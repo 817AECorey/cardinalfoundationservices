@@ -234,10 +234,26 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         return (
         <section key={s.h2} style={{ background: si % 2 ? "var(--bone)" : "var(--paper)", padding: "84px 0", borderBottom: "1px solid var(--line)" }}>
           <div className="wrap">
-            {heading}
-            {s.paras?.map((p) => (
-              <p key={p.slice(0, 40)} className="lead" style={{ maxWidth: 820, marginBottom: 16 }}>{p}</p>
-            ))}
+            {s.img ? (
+              /* mixed section with real media: text + framed image in the
+                 standard two-column split, structured content below */
+              <div className="c-2" style={{ marginBottom: 26 }}>
+                <div>
+                  {heading}
+                  {s.paras?.map((p) => (
+                    <p key={p.slice(0, 40)} className="lead" style={{ marginBottom: 16 }}>{p}</p>
+                  ))}
+                </div>
+                {media}
+              </div>
+            ) : (
+              <>
+                {heading}
+                {s.paras?.map((p) => (
+                  <p key={p.slice(0, 40)} className="lead" style={{ maxWidth: 820, marginBottom: 16 }}>{p}</p>
+                ))}
+              </>
+            )}
             {s.bullets && (
               <div className="c-signs" style={{ marginTop: 26 }}>
                 {s.bullets.map((b, bi) => (
