@@ -253,13 +253,15 @@ section { position: relative; }
 .c-hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
 .c-svc { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .c-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: center; }
-.c-signs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.c-signs { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 14px; }
+/* hairlines moved from container background to the cards themselves so
+   empty trailing grid cells render nothing instead of a grey box */
+.c-signs > * { border: 1px solid var(--line); }
 .c-ind { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
 .c-scope { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 @media (max-width: 980px) {
   .c-hero, .c-2 { grid-template-columns: 1fr; gap: 30px; }
   .c-svc { grid-template-columns: 1fr; }
-  .c-signs { grid-template-columns: 1fr; }
   .c-ind { grid-template-columns: 1fr 1fr; }
   .c-scope { grid-template-columns: 1fr 1fr; }
   .c-page h1 { font-size: 44px !important; }
