@@ -40,6 +40,13 @@ const D_URGENCY = ["Active damage / urgent", "Within the month", "Planning / bud
 export const DFW_CITIES = ["Fort Worth", "Dallas", "Arlington", "Plano", "Frisco", "McKinney", "Denton", "Keller", "Grapevine", "Mansfield", "Carrollton", "Lewisville", "Irving", "Garland", "Richardson", "Grand Prairie", "Allen", "Flower Mound", "Prosper", "Celina", "Little Elm", "Melissa", "Bedford", "Euless", "Hurst", "North Richland Hills", "Burleson", "Southlake", "Colleyville", "Rockwall", "Wylie", "Weatherford", "Midlothian"];
 export const HOUSTON_CITIES = ["Houston", "Katy", "Sugar Land", "The Woodlands", "Pearland", "Cypress"];
 export const D_CITIES = [...DFW_CITIES, ...HOUSTON_CITIES];
+/* cities with live location pages render as links wherever chips appear */
+export const CITY_LINKS: Record<string, string> = {
+  "Fort Worth": "/locations/fort-worth/",
+  Dallas: "/locations/dallas/",
+  Houston: "/locations/houston/",
+  "Possum Kingdom Lake": "/locations/possum-kingdom-lake/",
+};
 /* Credibility bar per content/14. The 4.9 Google rating appears as visible
    text only, NEVER as review markup; TODO: link it to the Google Business
    Profile once the GBP URL is provided. */
@@ -177,6 +184,7 @@ const NAV: NavEntry[] = [
           { label: "Sump Pumps", href: "/residential/drainage/sump-pumps/" },
           { label: "Retaining Walls", href: "/residential/retaining-walls/" },
           { label: "Financing", href: "/financing/" },
+          { label: "Warranty", href: "/warranty/" },
         ],
       },
     ],
@@ -517,9 +525,9 @@ function DQuickCard() {
   }
 
   return (
-    <form onSubmit={onSubmit} style={{ background: "#fff", width: "100%", maxWidth: 380, boxShadow: "0 30px 70px rgba(0,0,0,.5)" }}>
+    <form onSubmit={onSubmit} style={{ background: "#fff", width: "100%", maxWidth: 380, minHeight: 670, boxShadow: "0 30px 70px rgba(0,0,0,.5)" }}>
       <div style={{ background: "var(--red)", color: "#fff", padding: "15px 22px" }}>
-        <div className="disp" style={{ fontSize: 19 }}>Schedule a Free Foundation Check</div>
+        <div className="disp" style={{ fontSize: 19 }}>Schedule a free, no-obligation inspection or assessment</div>
         <div style={{ fontSize: 12.5, fontWeight: 600, opacity: .92, marginTop: 2 }}>Free, no-obligation inspection</div>
       </div>
       <div style={{ padding: "20px 22px 22px", display: "flex", flexDirection: "column", gap: 11 }}>
@@ -527,7 +535,7 @@ function DQuickCard() {
         <div style={{ display: "flex", border: "2px solid var(--ink)" }}>
           {D_LEADS.map((x) => (
             <button type="button" key={x} onClick={() => { setLead(x); setService(""); }}
-              className="disp" style={{ flex: 1, padding: "10px 4px", fontSize: 11.5, border: 0, cursor: "pointer", background: lead === x ? "var(--ink)" : "#fff", color: lead === x ? "#fff" : "var(--ink)", whiteSpace: "nowrap" }}>{x === "New Construction" ? "New Const." : x}</button>
+              className="disp" style={{ flex: 1, padding: "10px 4px", fontSize: 11.5, border: 0, cursor: "pointer", background: lead === x ? "var(--ink)" : "#fff", color: lead === x ? "#fff" : "var(--ink)", whiteSpace: "normal" }}>{x}</button>
           ))}
         </div>
         <select className="form-input" aria-label="Service" value={service} onChange={(e) => setService(e.target.value)} style={{ color: service ? "#222" : "#5d5b58" }}>
@@ -541,7 +549,7 @@ function DQuickCard() {
         {err && <div style={{ color: "var(--red)", fontSize: 13, fontWeight: 600 }}>{err}</div>}
         <button type="submit" className="btn btn-red" disabled={!ready || busy}
           style={{ justifyContent: "center", width: "100%", marginTop: 2, opacity: ready && !busy ? 1 : .55, cursor: ready && !busy ? "pointer" : "not-allowed" }}>
-          {busy ? "Sending…" : lead === "Residential" ? "Schedule Free Foundation Check" : "Request an Assessment"} <Arrow s={15} />
+          {busy ? "Sending…" : "Submit"} <Arrow s={15} />
         </button>
         <div style={{ textAlign: "center", fontSize: 12, fontWeight: 600, color: "var(--muted)" }}>
           Engineer-owned · Fort Worth, TX{lead === "Residential" && " · Written quote in one business day"}
@@ -595,9 +603,6 @@ function DHero() {
             </h1>
             <p className="fade-up" style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 14px", maxWidth: 560, fontWeight: 500 }}>
               From commercial and residential foundation repair to new construction and concrete work, we deliver expert solutions and self-performed workmanship backed by local knowledge and engineer-owned service you can trust.
-            </p>
-            <p className="fade-up" style={{ color: "#fff", fontSize: 15, fontWeight: 700, margin: "0 0 28px", display: "flex", alignItems: "center", gap: 10 }}>
-              <Check s={16} c="var(--red)" /> Owned and operated with a licensed Professional Engineer.
             </p>
             <div className="fade-up" style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Btn variant="red" arrow="ur" href="/request/">Schedule a Free Foundation Check</Btn>
@@ -977,7 +982,7 @@ export function DQuoteForm() {
             <div style={{ display: "flex", border: "2px solid var(--ink)", maxWidth: 460, marginBottom: 20 }}>
               {D_LEADS.map((x) => (
                 <button key={x} type="button" onClick={() => { set("lead", x); set("service", ""); }} className="disp"
-                  style={{ flex: 1, padding: "11px 6px", fontSize: 12.5, border: 0, cursor: "pointer", background: d.lead === x ? "var(--ink)" : "#fff", color: d.lead === x ? "#fff" : "var(--ink)", whiteSpace: "nowrap" }}>{x === "New Construction" ? "New Const." : x}</button>
+                  style={{ flex: 1, padding: "11px 6px", fontSize: 12.5, border: 0, cursor: "pointer", background: d.lead === x ? "var(--ink)" : "#fff", color: d.lead === x ? "#fff" : "var(--ink)", whiteSpace: "normal" }}>{x}</button>
               ))}
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
@@ -1027,7 +1032,7 @@ export function DQuoteForm() {
         <span className="over" style={{ color: "var(--muted)" }}>Step {step + 1} of 3</span>
         {step < 2
           ? <button type="button" onClick={() => canNext && setStep((s) => s + 1)} className="btn btn-red" disabled={!canNext} style={{ border: 0, opacity: canNext ? 1 : .5, cursor: canNext ? "pointer" : "not-allowed" }}>Continue <Arrow s={15} /></button>
-          : <button type="button" onClick={onSubmit} className="btn btn-red" disabled={!canNext || busy} style={{ border: 0, opacity: canNext && !busy ? 1 : .5, cursor: canNext && !busy ? "pointer" : "not-allowed" }}>{busy ? "Sending…" : "Submit request"} <Arrow s={15} /></button>}
+          : <button type="button" onClick={onSubmit} className="btn btn-red" disabled={!canNext || busy} style={{ border: 0, opacity: canNext && !busy ? 1 : .5, cursor: canNext && !busy ? "pointer" : "not-allowed" }}>{busy ? "Sending…" : "Submit"} <Arrow s={15} /></button>}
       </div>
       {step === 2 && <div style={{ padding: "0 34px 20px" }}><TCPA /></div>}
     </div>
@@ -1052,7 +1057,7 @@ export function DContact() {
             <div style={{ fontWeight: 600, marginBottom: 18 }}>Mon–Fri · 7:00a to 6:00p</div>
             <div className="over" style={{ color: "#9a9a9a", marginBottom: 10 }}>Service area · Fort Worth based, serving Texas</div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "7px 8px" }}>
-              {D_CITIES.map((c) => <span key={c} style={{ border: "1px solid rgba(255,255,255,.18)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "#e3e1de" }}>{c}</span>)}
+              {D_CITIES.map((c) => CITY_LINKS[c] ? <a key={c} href={CITY_LINKS[c]} style={{ border: "1px solid rgba(255,255,255,.18)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "#e3e1de", cursor: "pointer" }}>{c}</a> : <span key={c} style={{ border: "1px solid rgba(255,255,255,.18)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "#e3e1de" }}>{c}</span>)}
             </div>
             <div style={{ display: "flex", gap: 16, marginTop: 22, flexWrap: "wrap" }}>
               {["Free inspection", "No obligation"].map((x) => (

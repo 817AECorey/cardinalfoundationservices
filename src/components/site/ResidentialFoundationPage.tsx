@@ -108,7 +108,7 @@ function RfQuickCard() {
   return (
     <form onSubmit={onSubmit} style={{ background: "#fff", width: "100%", maxWidth: 380, boxShadow: "0 30px 70px rgba(0,0,0,.5)" }}>
       <div style={{ background: "var(--red)", color: "#fff", padding: "15px 22px" }}>
-        <div className="disp" style={{ fontSize: 19 }}>Book a Free Inspection</div>
+        <div className="disp" style={{ fontSize: 19 }}>Schedule a free, no-obligation inspection or assessment</div>
         <div style={{ fontSize: 12.5, fontWeight: 600, opacity: .92, marginTop: 2 }}>You&apos;ll receive a mapped elevation survey and quote within one business day.</div>
       </div>
       <div style={{ padding: "20px 22px 22px", display: "flex", flexDirection: "column", gap: 11 }}>
@@ -124,7 +124,7 @@ function RfQuickCard() {
         {err && <div style={{ color: "var(--red)", fontSize: 13, fontWeight: 600 }}>{err}</div>}
         <button type="submit" className="btn btn-red" disabled={!ready || busy}
           style={{ justifyContent: "center", width: "100%", marginTop: 2, opacity: ready && !busy ? 1 : .55, cursor: ready && !busy ? "pointer" : "not-allowed" }}>
-          {busy ? "Sending…" : "Book Free Inspection"} <Arrow s={15} />
+          {busy ? "Sending…" : "Submit"} <Arrow s={15} />
         </button>
         <div style={{ textAlign: "center", fontSize: 12, fontWeight: 600, color: "var(--muted)" }}>Engineer-owned · Financing available</div>
         <TCPA />
@@ -226,7 +226,7 @@ function RfHonesty() {
         <div>
           <Kicker>The honest difference</Kicker>
           <h2 className="disp" style={{ fontSize: 44, margin: "16px 0 18px", color: "var(--ink)" }}>
-            Sometimes the right answer is <span style={{ color: "var(--red)" }}>&quot;you don&apos;t need a repair.&quot;</span>
+            Sometimes the right answer is &quot;you don&apos;t need a repair.&quot;
           </h2>
           <p style={{ color: "#3a3a3a", fontSize: 17, lineHeight: 1.6, fontWeight: 500, marginBottom: 14 }}>
             Foundation repair is stressful because homeowners rarely know who to trust. Here, the person who inspects your home is an engineer, not a commissioned salesperson. The recommendation is based on what the structure and soil are actually doing.

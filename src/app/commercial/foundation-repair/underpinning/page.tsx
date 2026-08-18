@@ -17,7 +17,7 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/" }, { label: "Underpinning" }],
   kicker: "Commercial Foundation Repair · DFW",
   h1: "Commercial Underpinning in Dallas-Fort Worth",
-  heroImage: { src: "/images/underpinning-crew-structural-support.webp", alt: "Crew performing underpinning work beneath an existing structure", width: 1600, height: 2133 },
+  heroImage: { src: "/images/underpinning-crew-structural-support.webp", alt: "Crew performing underpinning work beneath an existing structure", width: 1600, height: 2133, pos: "50% 25%" },
   intro: [
     "When commercial foundations lose support due to soil movement or structural loading changes, underpinning restores stability by transferring weight to deeper, competent soil layers. Cardinal Foundation Services provides engineered commercial underpinning across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities, for warehouses, office buildings, retail centers, municipal facilities, and industrial properties experiencing settlement or load redistribution.",
   ],

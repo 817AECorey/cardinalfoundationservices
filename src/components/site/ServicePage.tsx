@@ -23,7 +23,7 @@ export type Section = {
   bullets?: Bullet[];
   parasAfter?: string[];
   /* real project photo for the section's media slot; placeholder shows when absent */
-  img?: { src: string; alt: string };
+  img?: { src: string; alt: string; pos?: string };
   steps?: [string, string][]; // numbered what-to-expect style
   table?: { head: string[]; rows: string[][]; note?: string };
 };
@@ -34,7 +34,7 @@ export type ServicePageData = {
   intro: string[];
   /* Optional hero photo (image insertion pass). Renders only when provided;
      pages without one keep the approved text-only hero untouched. */
-  heroImage?: { src: string; alt: string; width: number; height: number; contain?: boolean };
+  heroImage?: { src: string; alt: string; width: number; height: number; contain?: boolean; pos?: string };
   sections: Section[];
   /* hub pages: linked child cards composed from each child page's opening (do not invent services) */
   childCards?: { t: string; d: string; href: string }[];
@@ -147,7 +147,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         {d.heroImage && !d.heroImage.contain && (
           <>
             <div style={{ position: "absolute", inset: 0 }}>
-              <Img label={d.heroImage.alt} src={d.heroImage.src} style={{ height: "100%" }} />
+              <Img label={d.heroImage.alt} src={d.heroImage.src} style={{ height: "100%", objectPosition: d.heroImage.pos }} />
             </div>
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,12,12,.92) 0%, rgba(12,12,12,.6) 45%, rgba(12,12,12,.92) 100%)" }} />
           </>
@@ -202,7 +202,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         const media = (
           <div style={{ position: "relative", minHeight: 340 }}>
             <div style={{ position: "absolute", inset: 0 }}>
-              <Img label={s.img?.alt ?? s.h2} src={s.img?.src} style={{ height: "100%" }} />
+              <Img label={s.img?.alt ?? s.h2} src={s.img?.src} style={{ height: "100%", objectPosition: s.img?.pos }} />
             </div>
           </div>
         );
@@ -299,7 +299,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
             <div style={{ maxWidth: 620, marginBottom: 34 }}>
               <Kicker>Services in this category</Kicker>
             </div>
-            <div className="c-svc">
+            <div className="c-svc" style={d.childCards.length === 4 ? { gridTemplateColumns: "repeat(2, 1fr)" } : undefined}>
               {d.childCards.map((c) => (
                 <Link href={c.href} key={c.href} className="lift" style={{ background: "var(--ink-2)", color: "#fff", padding: "28px 26px", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column", minHeight: 200 }}>
                   <h3 className="disp" style={{ fontSize: 21, marginBottom: 10, lineHeight: 1.06 }}>{c.t}</h3>

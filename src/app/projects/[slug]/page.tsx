@@ -58,7 +58,7 @@ const PROJECTS: Record<string, Project> = {
     photos: [
       { src: "/images/project-diplomat-01.webp", alt: "Polyurethane injection and void fill at the Diplomat Drive industrial facility (photo 1)" },
       { src: "/images/project-diplomat-02.webp", alt: "Polyurethane injection and void fill at the Diplomat Drive industrial facility (photo 2)" },
-      { src: "/images/project-diplomat-03.webp", alt: "Polyurethane injection and void fill at the Diplomat Drive industrial facility (photo 3)" },
+      { src: "/images/project-diplomat-04.webp", alt: "Polyurethane injection hoses and ports along the building base at the industrial facility" },
     ],
     title: "Diplomat Drive: Industrial Polyurethane Lift & Void Fill",
     cat: "Industrial", loc: "DFW, TX",

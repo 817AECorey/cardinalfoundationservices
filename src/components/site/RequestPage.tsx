@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Check } from "./icons";
 import { Kicker, PHONE, PHONE_TEL } from "./primitives";
-import { DNav, DTrustBar, DFooter, DFW_CITIES, HOUSTON_CITIES } from "./DirectionD";
+import { DNav, DTrustBar, DFooter, DFW_CITIES, HOUSTON_CITIES, CITY_LINKS } from "./DirectionD";
 import { KContactForm } from "./ContactPage";
 
 /* ============================================================
@@ -50,7 +50,9 @@ export default function RequestPage() {
               <div className="over" style={{ color: "var(--red)", marginBottom: 10 }}>Service area</div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {[...DFW_CITIES, ...HOUSTON_CITIES].map((c) => (
-                  <span key={c} style={{ border: "1px solid var(--line)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "var(--muted)" }}>{c}</span>
+                  CITY_LINKS[c]
+                    ? <a key={c} href={CITY_LINKS[c]} style={{ border: "1px solid var(--line)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "var(--muted)", cursor: "pointer" }}>{c}</a>
+                    : <span key={c} style={{ border: "1px solid var(--line)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "var(--muted)" }}>{c}</span>
                 ))}
               </div>
               <p style={{ color: "var(--muted)", fontSize: 13.5, fontWeight: 500, marginTop: 16, marginBottom: 0 }}>Not on the list? Ask. We take on the right projects across Texas.</p>

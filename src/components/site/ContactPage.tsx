@@ -53,7 +53,7 @@ export function KContactForm() {
 
   return (
     <form onSubmit={onSubmit} style={{ background: "#fff", border: "1px solid var(--line)", padding: "30px 32px 26px" }}>
-      <h3 className="disp" style={{ fontSize: 24, marginBottom: 18, color: "var(--ink)" }}>Send the form, we get you scheduled</h3>
+      <h3 className="disp" style={{ fontSize: 24, marginBottom: 18, color: "var(--ink)" }}>Schedule a free, no-obligation inspection or assessment</h3>
       <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" value={website} onChange={(e) => setWebsite(e.target.value)} style={{ position: "absolute", left: "-9999px", width: 1, height: 1 }} />
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
         <input className="form-input" aria-label="Name" placeholder="Name *" required value={name} onChange={(e) => setName(e.target.value)} />
@@ -69,7 +69,7 @@ export function KContactForm() {
       {err && <p style={{ color: "var(--red)", fontSize: 13, fontWeight: 600, marginTop: 12 }}>{err}</p>}
       <button type="submit" className="btn btn-red" disabled={!ready || busy}
         style={{ justifyContent: "center", width: "100%", marginTop: 16, opacity: ready && !busy ? 1 : .55, cursor: ready && !busy ? "pointer" : "not-allowed" }}>
-        {busy ? "Sending…" : "Send"} <Arrow s={15} />
+        {busy ? "Sending…" : "Submit"} <Arrow s={15} />
       </button>
       <div style={{ marginTop: 10 }}><TCPA /></div>
     </form>

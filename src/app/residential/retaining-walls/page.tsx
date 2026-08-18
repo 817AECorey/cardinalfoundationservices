@@ -23,7 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Retaining wall repair",
-      img: { src: "/images/retaining-wall-construction-crew.webp", alt: "Crew member placing stone during retaining wall construction" },
+      img: { src: "/images/retaining-wall-construction-crew.webp", alt: "Crew member placing stone during retaining wall construction", pos: "50% 15%" },
       paras: [
         "Leaning and rotation, stair-step cracking in block and stone, bulging faces, failed footings, and walls undermined by erosion. Repair scopes are matched to the failure mode: drainage relief behind the wall, footing repair, structural reinforcement, partial rebuilds, and, where loads justify it, engineered solutions drawn from our commercial tieback work. The evaluation identifies why the wall failed, and the fix addresses that, not just the appearance.",
       ],

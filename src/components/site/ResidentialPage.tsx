@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Arrow, Phone, Check } from "./icons";
 import { Btn, Kicker, Img, TCPA, dScroll, PHONE, PHONE_TEL } from "./primitives";
-import { DNav, DTrustBar, DPierPath, DPierSystems, DContact, DFooter, submitLead, DFW_CITIES, HOUSTON_CITIES } from "./DirectionD";
+import { DNav, DTrustBar, DPierPath, DPierSystems, DContact, DFooter, submitLead, DFW_CITIES, HOUSTON_CITIES, CITY_LINKS } from "./DirectionD";
 
 /* ============================================================
    RESIDENTIAL — top-level inner page.
@@ -104,7 +104,7 @@ function RInspectCard() {
   return (
     <form onSubmit={onSubmit} style={{ background: "#fff", width: "100%", maxWidth: 380, boxShadow: "0 30px 70px rgba(0,0,0,.5)" }}>
       <div style={{ background: "var(--red)", color: "#fff", padding: "15px 22px" }}>
-        <div className="disp" style={{ fontSize: 19 }}>Book a Free Inspection</div>
+        <div className="disp" style={{ fontSize: 19 }}>Schedule a free, no-obligation inspection or assessment</div>
         <div style={{ fontSize: 12.5, fontWeight: 600, opacity: .92, marginTop: 2 }}>Free, no-obligation, engineer-led</div>
       </div>
       <div style={{ padding: "20px 22px 22px", display: "flex", flexDirection: "column", gap: 11 }}>
@@ -124,7 +124,7 @@ function RInspectCard() {
         {err && <div style={{ color: "var(--red)", fontSize: 13, fontWeight: 600 }}>{err}</div>}
         <button type="submit" className="btn btn-red" disabled={!ready || busy}
           style={{ justifyContent: "center", width: "100%", marginTop: 2, opacity: ready && !busy ? 1 : .55, cursor: ready && !busy ? "pointer" : "not-allowed" }}>
-          {busy ? "Sending…" : "Request Free Inspection"} <Arrow s={15} />
+          {busy ? "Sending…" : "Submit"} <Arrow s={15} />
         </button>
         <div style={{ textAlign: "center", fontSize: 12, fontWeight: 600, color: "var(--muted)" }}>You&apos;ll receive a mapped elevation survey and quote within one business day.</div>
         <TCPA />
@@ -202,9 +202,6 @@ function RServices() {
                     </li>
                   ))}
                 </ul>
-                <div style={{ marginTop: 16, display: "flex", alignItems: "center", gap: 8, fontWeight: 800, fontSize: 12, letterSpacing: ".08em", textTransform: "uppercase", color: s.feature ? "#fff" : "var(--red)" }}>
-                  View service <Arrow s={14} c={s.feature ? "#fff" : "var(--red)"} />
-                </div>
               </div>
             </a>
           ))}
@@ -274,7 +271,9 @@ function RServiceArea() {
               <h3 className="disp" style={{ fontSize: 20, color: "var(--ink)", marginBottom: 16 }}>{h}</h3>
               <div className="r-area">
                 {(cities as string[]).map((c) => (
-                  <span key={c} style={{ border: "1px solid var(--line)", padding: "6px 12px", fontSize: 13, fontWeight: 600, color: "var(--ink)" }}>{c}</span>
+                  CITY_LINKS[c]
+                    ? <a key={c} href={CITY_LINKS[c]} style={{ border: "1px solid var(--line)", padding: "6px 12px", fontSize: 13, fontWeight: 600, color: "var(--ink)", cursor: "pointer" }}>{c}</a>
+                    : <span key={c} style={{ border: "1px solid var(--line)", padding: "6px 12px", fontSize: 13, fontWeight: 600, color: "var(--ink)" }}>{c}</span>
                 ))}
               </div>
             </div>
