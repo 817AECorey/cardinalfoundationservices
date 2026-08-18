@@ -73,10 +73,10 @@ const D_PIERS: [string, string][] = [
   ["Hybrid Piers", "A blend of strength, depth, and cost control."],
 ];
 const D_WORK = [
-  { t: "Tilt-Wall Foundation & Drainage Restoration", scope: "Commercial · Foundation + Drainage", img: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1100&q=80" },
-  { t: "Industrial Polyurethane Lift & Void Fill", scope: "Industrial · Concrete Lifting", img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80" },
-  { t: "Multifamily Foundation Repair", scope: "Multifamily · DFW", img: "https://images.unsplash.com/photo-1597047084897-51e81819a499?w=900&q=80" },
-  { t: "Steel Pier Installation", scope: "Foundation · Steel Piers", img: "https://images.unsplash.com/photo-1473621038790-b778b4750efe?w=900&q=80" },
+  { t: "Tilt-Wall Foundation & Drainage Restoration", scope: "Commercial · Foundation + Drainage", img: "/images/project-tiltresto-02.webp", href: "/projects/tilt-wall-foundation-drainage-restoration/" },
+  { t: "Industrial Polyurethane Lift & Void Fill", scope: "Industrial · Concrete Lifting", img: "/images/project-diplomat-01.webp", href: "/projects/diplomat-drive-polyurethane-injection-industrial-foundation-lift-void-fill/" },
+  { t: "Multifamily Foundation Repair", scope: "Multifamily · DFW", img: "/images/project-baytown-01.webp", href: "/projects/baytown-multi-family/" },
+  { t: "Steel Pier Installation", scope: "Foundation · Steel Piers", img: "/images/project-stemmons-04.webp", href: "/projects/steel-piers-n-stemmons/" },
 ];
 const D_RES: { t: string; items: string[]; href?: string }[] = [
   { t: "Complex Structural Repair", items: ["Multi-symptom failures", "Engineered pier plans"], href: "/residential/foundation-repair/" },
@@ -835,7 +835,7 @@ function DWork() {
         </div>
         <div className="d-workscroll">
           {D_WORK.map((p) => (
-            <a href="#" key={p.t} className="lift" style={{ background: "var(--ink-2)", border: "1px solid rgba(255,255,255,.06)", display: "flex", flexDirection: "column" }}>
+            <a href={p.href} key={p.t} className="lift" style={{ background: "var(--ink-2)", border: "1px solid rgba(255,255,255,.06)", display: "flex", flexDirection: "column" }}>
               <Img label={p.t + ". Real jobsite photo"} src={p.img} h={180} />
               <div style={{ padding: "20px 22px 22px" }}>
                 <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 8 }}>{p.scope}</div>
