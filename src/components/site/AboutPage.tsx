@@ -45,11 +45,10 @@ function AHero() {
           </div>
           <div style={{ position: "relative", minHeight: 420 }}>
             <div style={{ position: "absolute", inset: 0 }}>
-              <Img label="Daneel and Josh together on a jobsite" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1000&q=80" style={{ height: "100%" }} />
+              <Img label="Cracked brick foundation corner on a Fort Worth home in need of repair" src="/images/foundation-repair-fort-worth-cracked-brick.webp" style={{ height: "100%" }} />
             </div>
             <div style={{ position: "absolute", left: 0, bottom: 0, background: "var(--red)", color: "#fff", padding: "18px 24px", maxWidth: 320 }}>
-              <div className="disp" style={{ fontSize: 19 }}>Daneel Nortier, PE &amp; Josh Lavelle</div>
-              <div style={{ fontSize: 13, fontWeight: 600, marginTop: 4, opacity: .92 }}>Owners · Fort Worth, TX</div>
+              <div className="disp" style={{ fontSize: 19 }}>Foundation Repair Experts Serving DFW</div>
             </div>
           </div>
         </div>
@@ -111,7 +110,7 @@ function ATeam() {
             <div key={o.name} style={{ border: "1px solid var(--line)", background: "#fff", display: "flex", flexDirection: "column" }}>
               <div style={{ position: "relative", height: 340 }}>
                 {o.photo ? (
-                  <Img label={o.label} src={o.photo} style={{ position: "absolute", inset: 0, height: "100%" }} />
+                  <Img label={o.label} src={o.photo} style={{ position: "absolute", inset: 0, height: "100%", objectPosition: "50% 20%" }} />
                 ) : (
                   <PhotoSlot label={o.label} style={{ position: "absolute", inset: 0 }} />
                 )}
@@ -232,7 +231,10 @@ function ACrews() {
       <div className="wrap c-2">
         <div style={{ position: "relative", minHeight: 400 }}>
           <div style={{ position: "absolute", inset: 0 }}>
-            <Img label="A Cardinal crew on site" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1000&q=80" style={{ height: "100%" }} />
+            <Img label="Skid steer performing foundation work at a new construction home" src="/images/foundation-work-new-construction-home-skid-steer.webp" style={{ height: "100%" }} />
+          </div>
+          <div style={{ position: "absolute", left: 0, bottom: 0, background: "var(--red)", color: "#fff", padding: "18px 24px", maxWidth: 320 }}>
+            <div className="disp" style={{ fontSize: 19 }}>Foundation &amp; New Construction Work Across DFW</div>
           </div>
         </div>
         <div>
