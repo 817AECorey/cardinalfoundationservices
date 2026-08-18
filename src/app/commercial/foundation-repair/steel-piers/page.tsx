@@ -32,12 +32,14 @@ const data: ServicePageData = {
     },
     {
       h2: "Installed around your operations",
+      img: { src: "/images/pier-hole-hydraulic-ram-commercial.webp", alt: "Hydraulic ram set in a pier hole cut at a slab edge" },
       paras: [
         "Steel pier installation is compact work: pit excavation at each location, hydraulic driving, lift, and closure. That footprint suits occupied properties, and scopes are phased by building, wing, or schedule window so tenants and operations continue. Our crews self-perform the installation, and elevations are documented before and after for ownership records.",
       ],
     },
     {
       h2: "Documented commercial steel pier work",
+      img: { src: "/images/project-stemmons-06.webp", alt: "Crew member working in a hand-dug pier excavation along a building exterior" },
       paras: [
         "Our portfolio includes steel pier installation supporting a working hotel structure and the N Stemmons steel pier project, both documented with conditions, scope, and results. Deep excavation, real loads, buildings that stayed in business while we worked under them.",
         "The deliverable on any commercial steel pier project is engineered bids: pier layout, the reasoning behind it, and documentation suitable for ownership review. Work carries a workmanship warranty, terms vary by service.",

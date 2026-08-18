@@ -47,6 +47,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Proof, not promises",
+      img: { src: "/images/commercial-foundation-drilling-rig-crew.webp", alt: "Drilling rig and crew installing foundation piers" },
       paras: [
         "Cardinal's commercial portfolio includes tilt wall stabilization and drainage restoration, industrial polyurethane lifting and void fill, steel pier installation for hospitality structures, and multifamily foundation repair in Carrollton, Lewisville, Baytown, and Austin. Recent projects are documented with conditions found, methods selected, and results, so you can evaluate the work before you contact us.",
         "Engineering oversight runs through our process, from scoping through final sign-off, and a licensed Professional Engineer co-owns the company. We put that in the proof column rather than the headline: what matters on your project is that the scope is engineered, documented, and executed as specified. Work is backed by a workmanship warranty, and terms vary by service.",

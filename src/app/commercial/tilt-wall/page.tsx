@@ -34,18 +34,21 @@ const data: ServicePageData = {
     },
     {
       h2: "Documented tilt wall work",
+      img: { src: "/images/project-tiltresto-04.webp", alt: "Sealed joint between two tilt-wall concrete panels after repair" },
       paras: [
         "Our portfolio includes a tilt wall foundation and drainage restoration project you can review in detail: conditions found, the engineered repair, and the drainage correction that protects the result. That documentation standard applies to every commercial project we take.",
       ],
     },
     {
       h2: "Construction support",
+      img: { src: "/images/project-tiltresto-05.webp", alt: "Interior tilt-wall panels in a warehouse bay" },
       paras: [
         "For new tilt wall projects, Cardinal supports builders and GCs with foundations, pier drilling, earthwork, and concrete flatwork. One engineered scope, one self-performed crew, from pad to panels.",
       ],
     },
     {
       h2: "Why Cardinal on tilt wall",
+      img: { src: "/images/project-tiltresto-07.webp", alt: "Tilt-wall panel wall and slab edge inside a warehouse during repair work" },
       paras: [
         "The structural read comes first. A licensed Professional Engineer co-owns the company and engineering oversight runs through scoping and sign-off, which matters on wall systems where a wrong diagnosis is expensive. Our crews self-perform the repair, and work around active operations is planned into the scope. Work is backed by a workmanship warranty, and terms vary by service.",
       ],

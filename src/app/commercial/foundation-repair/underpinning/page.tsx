@@ -24,6 +24,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is commercial underpinning?",
+      img: { src: "/images/project-stemmons-07.webp", alt: "Steel pier pipe sections staged along a perimeter excavation at a building wall" },
       paras: [
         "Underpinning is the process of strengthening and stabilizing an existing foundation by extending its depth or redistributing its load. In commercial settings, this often involves installing drilled piers, helical piers, or hybrid systems beneath load-bearing elements. It is commonly used when structural settlement affects columns, grade beams, or slab systems.",
       ],
@@ -39,6 +40,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where underpinning is used",
+      img: { src: "/images/commercial-foundation-drilling-rig-crew.webp", alt: "Drilling rig and crew installing foundation piers" },
       paras: [
         "Warehouses and distribution centers, office buildings, retail developments, industrial facilities, and parking structures. We serve businesses in Fort Worth, Dallas, Arlington, Irving, Grand Prairie, Plano, Garland, Mesquite, Grapevine, Mansfield, and surrounding DFW metroplex cities, with an engineered load-transfer strategy, coordination with engineers and GCs, and DFW soil condition experience behind every scope.",
       ],
