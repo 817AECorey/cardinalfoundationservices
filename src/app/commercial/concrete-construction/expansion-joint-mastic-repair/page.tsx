@@ -39,7 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where joint and mastic repair is used",
-      img: { src: "/images/expansion-joint-sealant-application.webp", alt: "Sealant being applied to a concrete expansion joint" },
+      img: { src: "/images/expansion-joint-sealant-application.webp", alt: "Applying mastic sealant to an expansion joint" },
       paras: [
         "Warehouses and distribution centers, retail and shopping plazas, office buildings, parking structures, industrial facilities, and municipal and government buildings, with high-traffic slab performance, DFW climate durability planning, and long-term moisture protection in the scope.",
       ],
