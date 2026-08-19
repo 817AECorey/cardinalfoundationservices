@@ -32,6 +32,7 @@ const data: ServicePageData = {
     },
     {
       h2: "What the free inspection report includes",
+      img: { src: "/images/houston-multifamily-foundation-jobsite.webp", alt: "Foundation repair jobsite at a Houston-area multifamily property" },
       paras: [
         "Every inspection produces a written report: elevation readings mapped as a topographical survey of your foundation, so you can see exactly which areas have moved and by how much, plus notated visual findings inside and out. You leave with data about your home, not just a sales number. If repair is recommended, the written quote arrives within one business day. If it is not, we say so: sometimes the right answer is that you do not need a repair.",
       ],

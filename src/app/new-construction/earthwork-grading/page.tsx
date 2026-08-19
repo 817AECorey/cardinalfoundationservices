@@ -40,6 +40,7 @@ const data: ServicePageData = {
     },
     {
       h2: "For property owners",
+      img: { src: "/images/earthwork-site-finishing-crew.webp", alt: "Crew finishing graded site work at a construction pad" },
       paras: [
         "If water stands against your house or your lot slopes the wrong way, regrading is often the highest-value fix on the property, and it pairs naturally with drainage design. Residential regrading carries a transferable workmanship warranty, terms vary by service.",
       ],

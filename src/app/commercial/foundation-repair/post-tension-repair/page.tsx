@@ -37,6 +37,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where post-tension systems are used",
+      img: { src: "/images/post-tension-slab-cable-system.webp", alt: "Post-tension cable system exposed at a concrete slab" },
       paras: [
         "Office buildings, retail centers, parking structures, industrial facilities, warehouses, and multi-tenant developments. Serving Fort Worth, Dallas, Arlington, Irving, Grand Prairie, Plano, Garland, Mesquite, Grapevine, Mansfield, and surrounding DFW metroplex cities.",
       ],

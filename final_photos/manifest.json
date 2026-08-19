@@ -1,0 +1,40 @@
+[
+ {
+  "page": "/new-construction/earthwork-grading/",
+  "slot_label": "For property owners",
+  "file": "earthwork-site-finishing-crew.webp",
+  "alt": "Site finishing work on a new construction project",
+  "kb": 137,
+  "src": "worker-using-power-trowel-machine-construction-site.jpeg"
+ },
+ {
+  "page": "/commercial/foundation-repair/post-tension-repair/",
+  "slot_label": "Where post-tension systems are used",
+  "file": "post-tension-slab-cable-system.webp",
+  "alt": "Post-tension slab cable system",
+  "kb": 186,
+  "src": "post-tension-slab-repair-fort-worth.png"
+ },
+ {
+  "page": "/commercial/concrete-construction/expansion-joint-mastic-repair/",
+  "slot_label": "Where joint and mastic repair is used",
+  "file": "expansion-joint-sealant-application.webp",
+  "alt": "Applying mastic sealant to an expansion joint",
+  "kb": 163,
+  "src": "expansion-joint__0.jpg"
+ },
+ {
+  "page": "/residential/drainage/area-drains/",
+  "slot_label": "Area drains and your foundation",
+  "file": "area-drain-grate-foundation.webp",
+  "alt": "Area drain grate at a home foundation",
+  "kb": 155,
+  "src": "drainage-around-house-drain-water-front-door-pebbles-water-drainage-drain-floor-scaled.jpg"
+ },
+ {
+  "page": "/locations/houston/",
+  "slot_label": "What the free inspection report includes",
+  "file": "houston-multifamily-foundation-jobsite.webp",
+  "alt": "Foundation work at a Houston multifamily property"
+ }
+]
