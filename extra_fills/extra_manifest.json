@@ -1,0 +1,44 @@
+[
+ {
+  "page": "/new-construction/concrete-flatwork/",
+  "slot_label": "Driveways, patios, and walkways",
+  "file": "nc-flatwork-driveways.webp",
+  "alt": "Driveway and flatwork concrete repair",
+  "kb": 67
+ },
+ {
+  "page": "/new-construction/concrete-flatwork/",
+  "slot_label": "Stamped and decorative concrete",
+  "file": "nc-flatwork-stamped.webp",
+  "alt": "Stamped and decorative concrete patio",
+  "kb": 137
+ },
+ {
+  "page": "/locations/possum-kingdom-lake/",
+  "slot_label": "Balcony and elevated structure repair",
+  "file": "pk-balcony-repair.webp",
+  "alt": "Balcony and elevated structure repair at Possum Kingdom Lake",
+  "kb": 98
+ },
+ {
+  "page": "/locations/possum-kingdom-lake/",
+  "slot_label": "Concrete leveling",
+  "file": "pk-concrete-leveling.webp",
+  "alt": "Concrete leveling at Possum Kingdom Lake",
+  "kb": 138
+ },
+ {
+  "page": "/locations/possum-kingdom-lake/",
+  "slot_label": "Structural foundation repair",
+  "file": "pk-structural-repair.webp",
+  "alt": "Structural foundation repair",
+  "kb": 105
+ },
+ {
+  "page": "/residential/foundation-repair/pier-and-beam/",
+  "slot_label": "How the repair works",
+  "file": "pier-beam-repair-works.webp",
+  "alt": "Pier and beam foundation repair in progress",
+  "kb": 103
+ }
+]

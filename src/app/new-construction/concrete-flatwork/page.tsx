@@ -30,12 +30,14 @@ const data: ServicePageData = {
     },
     {
       h2: "Driveways, patios, and walkways",
+      img: { src: "/images/nc-flatwork-driveways.webp", alt: "Driveway and flatwork concrete repair" },
       paras: [
         "Replacement and new construction, from single-approach driveways to full outdoor living flatwork. If your existing concrete has settled rather than failed, concrete lifting is often the smarter spend, and we will tell you which side of that line your project sits on, since we do both.",
       ],
     },
     {
       h2: "Stamped and decorative concrete",
+      img: { src: "/images/nc-flatwork-stamped.webp", alt: "Stamped and decorative concrete patio" },
       paras: [
         "Stamped finishes for patios, walkways, and pool surrounds: pattern and color options that dress up the surface without compromising the pour underneath. Decorative concrete follows the same rule as structural concrete here, prep first, pretty second.",
       ],

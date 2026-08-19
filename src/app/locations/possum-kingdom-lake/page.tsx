@@ -38,6 +38,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Balcony and elevated structure repair",
+      img: { src: "/images/pk-balcony-repair.webp", alt: "Balcony and elevated structure repair at Possum Kingdom Lake" },
       paras: [
         "Decks and balconies reaching for the water carry real loads on posts and connections that weather hard at the lake. We repair and restore elevated structures with the same structural seriousness as foundations, because a balcony failure is not a cosmetic event.",
         "Every project starts with an evaluation, and the recommendation follows the findings. Residential work carries a transferable workmanship warranty, terms vary by service.",
