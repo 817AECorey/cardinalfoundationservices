@@ -1,0 +1,191 @@
+[
+ {
+  "page": "/",
+  "slot_label": "The Principal Engineer on a jobsite",
+  "file": "hub-engineer-jobsite.webp",
+  "alt": "A Cardinal crew member working on a foundation job site",
+  "kb": 172
+ },
+ {
+  "page": "/residential/foundation-repair/",
+  "slot_label": "The Principal Engineer inspecting a home",
+  "file": "hub-engineer-inspection.webp",
+  "alt": "Foundation inspection and structural assessment in progress",
+  "kb": 114
+ },
+ {
+  "page": "/residential/drainage/",
+  "slot_label": "Drainage and your foundation",
+  "file": "hub-drainage-foundation.webp",
+  "alt": "Foundation drainage system installation",
+  "kb": 167
+ },
+ {
+  "page": "/commercial/",
+  "slot_label": "Commercial Foundation Repair. Jobsite photo",
+  "file": "commhub-foundation.webp",
+  "alt": "Commercial drilled pier foundation repair",
+  "kb": 285
+ },
+ {
+  "page": "/commercial/",
+  "slot_label": "Concrete Lifting & Floor Leveling. Jobsite photo",
+  "file": "commhub-lifting.webp",
+  "alt": "Commercial concrete lifting and floor leveling",
+  "kb": 170
+ },
+ {
+  "page": "/commercial/",
+  "slot_label": "Commercial Concrete & Tilt-Wall. Jobsite photo",
+  "file": "commhub-tiltwall.webp",
+  "alt": "Commercial concrete and tilt-wall work",
+  "kb": 146
+ },
+ {
+  "page": "/commercial/",
+  "slot_label": "Structural Retaining Walls. Jobsite photo",
+  "file": "commhub-retaining.webp",
+  "alt": "Commercial structural retaining wall",
+  "kb": 178
+ },
+ {
+  "page": "/commercial/",
+  "slot_label": "Commercial Drainage & Stormwater. Jobsite photo",
+  "file": "commhub-drainage.webp",
+  "alt": "Commercial drainage and site work",
+  "kb": 167
+ },
+ {
+  "page": "/commercial/",
+  "slot_label": "Earthwork & Site Grading. Jobsite photo",
+  "file": "commhub-earthwork.webp",
+  "alt": "Commercial earthwork and site grading",
+  "kb": 200
+ },
+ {
+  "page": "/commercial/",
+  "slot_label": "Crew installing piers at an occupied commercial property",
+  "file": "commhub-crew.webp",
+  "alt": "Crew working at a commercial foundation job site",
+  "kb": 78
+ },
+ {
+  "page": "/residential/",
+  "slot_label": "Complex Structural Repair. Jobsite photo",
+  "file": "reshub-structural.webp",
+  "alt": "Complex residential structural repair",
+  "kb": 93
+ },
+ {
+  "page": "/residential/",
+  "slot_label": "Large Retaining Walls. Jobsite photo",
+  "file": "reshub-retaining.webp",
+  "alt": "Large residential retaining wall",
+  "kb": 157
+ },
+ {
+  "page": "/residential/",
+  "slot_label": "Concrete Lifting & Leveling. Jobsite photo",
+  "file": "reshub-lifting.webp",
+  "alt": "Residential concrete lifting and leveling",
+  "kb": 117
+ },
+ {
+  "page": "/residential/",
+  "slot_label": "Large & Custom Home Foundations. Jobsite photo",
+  "file": "reshub-custom.webp",
+  "alt": "Custom home foundation work",
+  "kb": 106
+ },
+ {
+  "page": "/residential/",
+  "slot_label": "Crew installing piers at a Texas home",
+  "file": "reshub-crew.webp",
+  "alt": "Crew installing piers",
+  "kb": 166
+ },
+ {
+  "page": "/new-construction/",
+  "slot_label": "Tilt-Wall Construction. Jobsite photo",
+  "file": "nchub-tiltwall.webp",
+  "alt": "Tilt-wall construction",
+  "kb": 146
+ },
+ {
+  "page": "/new-construction/",
+  "slot_label": "Builder Work & Additions. Jobsite photo",
+  "file": "nchub-builder.webp",
+  "alt": "Builder work and additions",
+  "kb": 200
+ },
+ {
+  "page": "/new-construction/",
+  "slot_label": "Earthwork & Grading. Jobsite photo",
+  "file": "nchub-earthwork.webp",
+  "alt": "Earthwork and site grading",
+  "kb": 174
+ },
+ {
+  "page": "/new-construction/",
+  "slot_label": "Tilt-wall panel erection at a new construction site",
+  "file": "nchub-panel.webp",
+  "alt": "Tilt-wall panel erection at a new construction site",
+  "kb": 171
+ },
+ {
+  "page": "/locations/houston/",
+  "slot_label": "Communities we serve",
+  "file": "loc-houston-communities.webp",
+  "alt": "Communities served across the Houston area",
+  "kb": 169
+ },
+ {
+  "page": "/locations/houston/",
+  "slot_label": "Commercial and multifamily",
+  "file": "loc-houston-multifamily.webp",
+  "alt": "Commercial and multifamily foundation work in Houston",
+  "kb": 41
+ },
+ {
+  "page": "/locations/fort-worth/",
+  "slot_label": "Residential foundation repair in Fort Worth",
+  "file": "loc-fw-residential.webp",
+  "alt": "Residential foundation repair in Fort Worth",
+  "kb": 164
+ },
+ {
+  "page": "/locations/fort-worth/",
+  "slot_label": "Commercial, structural, and new construction",
+  "file": "loc-fw-commercial.webp",
+  "alt": "Commercial and structural work in Fort Worth",
+  "kb": 105
+ },
+ {
+  "page": "/locations/dallas/",
+  "slot_label": "Residential foundation repair in Dallas",
+  "file": "loc-dallas-residential.webp",
+  "alt": "Residential foundation repair in Dallas",
+  "kb": 106
+ },
+ {
+  "page": "/locations/dallas/",
+  "slot_label": "Commercial and structural work in Dallas",
+  "file": "loc-dallas-commercial.webp",
+  "alt": "Commercial and structural work in Dallas",
+  "kb": 167
+ },
+ {
+  "page": "/locations/possum-kingdom-lake/",
+  "slot_label": "Structural foundation repair",
+  "file": "loc-pk-structural.webp",
+  "alt": "Structural foundation repair at Possum Kingdom Lake",
+  "kb": 179
+ },
+ {
+  "page": "/locations/possum-kingdom-lake/",
+  "slot_label": "Concrete leveling",
+  "file": "loc-pk-leveling.webp",
+  "alt": "Concrete leveling at Possum Kingdom Lake",
+  "kb": 169
+ }
+]

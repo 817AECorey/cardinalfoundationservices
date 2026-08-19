@@ -25,6 +25,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Communities we serve",
+      img: { src: "/images/loc-houston-communities.webp", alt: "Communities served across the Houston area" },
       paras: [
         "Katy, Sugar Land, Missouri City, Pearland, Friendswood, Kingwood, Spring, Cypress, Meyerland, and Bellaire, along with surrounding Houston-area neighborhoods. If you are near these communities and unsure whether we cover you, call and we will tell you straight.",
       ],
@@ -56,6 +57,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Commercial and multifamily",
+      img: { src: "/images/loc-houston-multifamily.webp", alt: "Commercial and multifamily foundation work in Houston" },
       paras: [
         "Cardinal also performs commercial and multifamily foundation work in the Houston region, including a completed multifamily project in Baytown documented in our portfolio. Commercial inquiries route to an engineered assessment rather than the residential inspection path.",
       ],

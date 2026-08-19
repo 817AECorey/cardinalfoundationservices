@@ -32,6 +32,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Drainage and your foundation",
+      img: { src: "/images/hub-drainage-foundation.webp", alt: "Foundation drainage system installation" },
       paras: [
         "Water pooling at a foundation edge, a chronically damp side yard, or soil pulling away from the slab in summer are the early chapters of the cracks-and-sticking-doors story. Correcting drainage is often the highest-value work we do: it treats the cause, it costs less than structural repair, and in some cases it is the honest recommendation instead of piers. If your foundation is already showing symptoms, an inspection with mapped elevation readings tells you whether drainage correction, structural repair, or both is the right scope.",
         "Work is backed by a transferable workmanship warranty, terms vary by service, and financing is available for residential projects.",

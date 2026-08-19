@@ -168,11 +168,11 @@ function RIntro() {
 }
 
 /* ---------- SERVICES GRID (links to individual pages) ---------- */
-const R_SERVICES: { n: string; t: string; d: string; items: string[]; img: string; feature?: boolean; href?: string }[] = [
-  { n: "01", t: "Complex Structural Repair", d: "Multi-symptom failures and engineered pier plans for homes with more than one thing going on.", items: ["Foundation Settlement", "Engineered Pier Plans", "Pier & Beam Repair", "Multi-Symptom Failures"], img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80", feature: true, href: "/residential/foundation-repair" },
-  { n: "02", t: "Large Retaining Walls", d: "Tieback anchors, structural rebuilds, and replacement for walls that hold back real load.", items: ["Tieback Anchors", "Structural Rebuilds", "Wall Replacement"], img: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=900&q=80" },
-  { n: "03", t: "Concrete Lifting & Leveling", d: "Settled slabs, driveways, and pool decks raised back to grade with polyurethane foam or mudjacking.", items: ["House Lifting", "Driveways & Pool Decks", "Slab Lifting", "Void Filling"], img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80" },
-  { n: "04", t: "Large & Custom Home Foundations", d: "Foundation work for large and custom homes, where the repair has to respect the house.", items: ["Pier & Beam", "Slab Foundations", "Custom Home Repair"], img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" },
+const R_SERVICES: { n: string; t: string; d: string; items: string[]; img: string; imgAlt?: string; feature?: boolean; href?: string }[] = [
+  { n: "01", t: "Complex Structural Repair", d: "Multi-symptom failures and engineered pier plans for homes with more than one thing going on.", items: ["Foundation Settlement", "Engineered Pier Plans", "Pier & Beam Repair", "Multi-Symptom Failures"], img: "/images/reshub-structural.webp", imgAlt: "Complex residential structural repair", feature: true, href: "/residential/foundation-repair" },
+  { n: "02", t: "Large Retaining Walls", d: "Tieback anchors, structural rebuilds, and replacement for walls that hold back real load.", items: ["Tieback Anchors", "Structural Rebuilds", "Wall Replacement"], img: "/images/reshub-retaining.webp", imgAlt: "Large residential retaining wall" },
+  { n: "03", t: "Concrete Lifting & Leveling", d: "Settled slabs, driveways, and pool decks raised back to grade with polyurethane foam or mudjacking.", items: ["House Lifting", "Driveways & Pool Decks", "Slab Lifting", "Void Filling"], img: "/images/reshub-lifting.webp", imgAlt: "Residential concrete lifting and leveling" },
+  { n: "04", t: "Large & Custom Home Foundations", d: "Foundation work for large and custom homes, where the repair has to respect the house.", items: ["Pier & Beam", "Slab Foundations", "Custom Home Repair"], img: "/images/reshub-custom.webp", imgAlt: "Custom home foundation work" },
 ];
 function RServices() {
   return (
@@ -190,7 +190,7 @@ function RServices() {
         <div className="r-svc">
           {R_SERVICES.map((s) => (
             <a href={s.href ?? "#"} key={s.t} className="lift" style={{ background: s.feature ? "var(--red)" : "var(--ink-2)", color: "#fff", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column" }}>
-              <Img label={s.t + ". Jobsite photo"} src={s.img} h={158} />
+              <Img label={s.imgAlt ?? s.t + ". Jobsite photo"} src={s.img} h={158} />
               <div style={{ padding: "24px 26px 26px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <span className="disp" style={{ fontSize: 14, color: s.feature ? "rgba(255,255,255,.7)" : "var(--red)" }}>{s.n}</span>
                 <h3 className="disp" style={{ fontSize: 21, margin: "10px 0 10px", lineHeight: 1.06 }}>{s.t}</h3>
@@ -313,7 +313,7 @@ function RWhy() {
         </div>
         <div style={{ position: "relative", minHeight: 430 }}>
           <div style={{ position: "absolute", inset: 0 }}>
-            <Img label="Crew installing piers at a Texas home" src="https://images.unsplash.com/photo-1597047084897-51e81819a499?w=1000&q=80" style={{ height: "100%" }} />
+            <Img label="Crew installing piers" src="/images/reshub-crew.webp" style={{ height: "100%" }} />
           </div>
         </div>
       </div>

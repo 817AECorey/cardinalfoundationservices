@@ -24,12 +24,14 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Structural foundation repair",
+      img: { src: "/images/loc-pk-structural.webp", alt: "Structural foundation repair at Possum Kingdom Lake" },
       paras: [
         "Lake homes settle differently: sloped lots, cut-and-fill pads, and moisture patterns that change from the road side to the water side of the same house. Repairs draw on the full pier toolbox, steel, drilled, helical, and pressed systems, selected from what the site actually presents. Helical piers earn their keep on slopes and limited-access lake lots.",
       ],
     },
     {
       h2: "Concrete leveling",
+      img: { src: "/images/loc-pk-leveling.webp", alt: "Concrete leveling at Possum Kingdom Lake" },
       paras: [
         "Settled driveways on grade, patios and lakeside flatwork, and walkway sections lifted back to level with foam injection or mudjacking, matched to the slab and access.",
       ],

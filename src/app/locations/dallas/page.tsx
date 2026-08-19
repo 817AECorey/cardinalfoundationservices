@@ -24,6 +24,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Residential foundation repair in Dallas",
+      img: { src: "/images/loc-dallas-residential.webp", alt: "Residential foundation repair in Dallas" },
       paras: [
         "Stair-step brick cracks, sticking doors, sloping floors, and gaps at frames are the Dallas classics, and older neighborhoods with pier and beam homes add crawl space repair to the list. Every free inspection report includes elevation readings mapped across your foundation and notated visual findings, so the recommendation is built on data, and sometimes the honest recommendation is that you do not need a repair. When work is recommended: written quote within one business day, financing available, and a transferable workmanship warranty, terms vary by service.",
         "Common Dallas services: steel piers and pressed concrete pilings, drilled and helical piers, pier and beam repair, slab repair on conventional and post-tension foundations, concrete slab lifting for driveways and patios, french drains and drainage design, and root barriers where mature trees are working on foundation soils.",
@@ -31,6 +32,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Commercial and structural work in Dallas",
+      img: { src: "/images/loc-dallas-commercial.webp", alt: "Commercial and structural work in Dallas" },
       paras: [
         "Dallas commercial properties, from warehouses along the corridors to multifamily communities and retail centers, are served through our commercial division: engineered assessments, phased execution around operations, and documented scope for ownership. Our portfolio includes the N Stemmons steel pier project and multifamily repairs in nearby Carrollton and Lewisville.",
       ],

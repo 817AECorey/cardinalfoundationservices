@@ -165,12 +165,12 @@ function CIntro() {
 
 /* ---------- SERVICES GRID (links to individual pages) ---------- */
 const C_SERVICES = [
-  { n: "01", t: "Commercial Foundation Repair", d: "Engineered pier systems that stabilize settling slabs and structural foundations.", items: ["Helical Piers", "Drilled Piers", "Steel & Hybrid Piers", "Underpinning", "Post-Tension Repair"], img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80", feature: true },
-  { n: "02", t: "Concrete Lifting & Floor Leveling", d: "Settled warehouse slabs and commercial floors raised back to grade with polyurethane foam or mudjacking.", items: ["Warehouse Slab Foundation Repair", "Concrete Leveling", "Slab Lifting", "Void Filling"], img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80" },
-  { n: "03", t: "Commercial Concrete & Tilt-Wall", d: "Structural slab pours, tilt-wall panel work, and structural crack repair.", items: ["Structural Slab Pours", "Tilt-Wall Panels", "Structural Crack Repair", "Expansion Joints"], img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80" },
-  { n: "04", t: "Structural Retaining Walls", d: "Tieback anchors and structural wall work that manage load, slope, and lateral pressure.", items: ["Tieback Anchors", "Structural Wall Repair", "Wall Replacement"], img: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=900&q=80" },
-  { n: "05", t: "Commercial Drainage & Stormwater", d: "Water management that protects the slab, footings, and building envelope.", items: ["French Drains", "Perimeter Drainage", "Stormwater Management", "Grading"], img: "https://images.unsplash.com/photo-1565610222536-ef125c59da2e?w=900&q=80" },
-  { n: "06", t: "Earthwork & Site Grading", d: "Site preparation and grading that corrects how water moves across the property.", items: ["Cut & Fill", "Site Grading", "Soil Preparation"], img: "https://images.unsplash.com/photo-1473621038790-b778b4750efe?w=900&q=80" },
+  { n: "01", t: "Commercial Foundation Repair", d: "Engineered pier systems that stabilize settling slabs and structural foundations.", items: ["Helical Piers", "Drilled Piers", "Steel & Hybrid Piers", "Underpinning", "Post-Tension Repair"], img: "/images/commhub-foundation.webp", imgAlt: "Commercial drilled pier foundation repair", feature: true },
+  { n: "02", t: "Concrete Lifting & Floor Leveling", d: "Settled warehouse slabs and commercial floors raised back to grade with polyurethane foam or mudjacking.", items: ["Warehouse Slab Foundation Repair", "Concrete Leveling", "Slab Lifting", "Void Filling"], img: "/images/commhub-lifting.webp", imgAlt: "Commercial concrete lifting and floor leveling" },
+  { n: "03", t: "Commercial Concrete & Tilt-Wall", d: "Structural slab pours, tilt-wall panel work, and structural crack repair.", items: ["Structural Slab Pours", "Tilt-Wall Panels", "Structural Crack Repair", "Expansion Joints"], img: "/images/commhub-tiltwall.webp", imgAlt: "Commercial concrete and tilt-wall work" },
+  { n: "04", t: "Structural Retaining Walls", d: "Tieback anchors and structural wall work that manage load, slope, and lateral pressure.", items: ["Tieback Anchors", "Structural Wall Repair", "Wall Replacement"], img: "/images/commhub-retaining.webp", imgAlt: "Commercial structural retaining wall" },
+  { n: "05", t: "Commercial Drainage & Stormwater", d: "Water management that protects the slab, footings, and building envelope.", items: ["French Drains", "Perimeter Drainage", "Stormwater Management", "Grading"], img: "/images/commhub-drainage.webp", imgAlt: "Commercial drainage and site work" },
+  { n: "06", t: "Earthwork & Site Grading", d: "Site preparation and grading that corrects how water moves across the property.", items: ["Cut & Fill", "Site Grading", "Soil Preparation"], img: "/images/commhub-earthwork.webp", imgAlt: "Commercial earthwork and site grading" },
 ];
 function CServices() {
   return (
@@ -188,7 +188,7 @@ function CServices() {
         <div className="c-svc">
           {C_SERVICES.map((s) => (
             <a href="#" key={s.t} className="lift" style={{ background: s.feature ? "var(--red)" : "var(--ink-2)", color: "#fff", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column" }}>
-              <Img label={s.t + ". Jobsite photo"} src={s.img} h={158} />
+              <Img label={s.imgAlt ?? s.t + ". Jobsite photo"} src={s.img} h={158} />
               <div style={{ padding: "24px 26px 26px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <span className="disp" style={{ fontSize: 14, color: s.feature ? "rgba(255,255,255,.7)" : "var(--red)" }}>{s.n}</span>
                 <h3 className="disp" style={{ fontSize: 21, margin: "10px 0 10px", lineHeight: 1.06 }}>{s.t}</h3>
@@ -302,7 +302,7 @@ function CWhy() {
         </div>
         <div style={{ position: "relative", minHeight: 430 }}>
           <div style={{ position: "absolute", inset: 0 }}>
-            <Img label="Crew installing piers at an occupied commercial property" src="https://images.unsplash.com/photo-1597047084897-51e81819a499?w=1000&q=80" style={{ height: "100%" }} />
+            <Img label="Crew working at a commercial foundation job site" src="/images/commhub-crew.webp" style={{ height: "100%" }} />
           </div>
         </div>
       </div>

@@ -797,7 +797,7 @@ function DHonesty() {
         <div className="d-honesty">
           <div style={{ position: "relative", minHeight: 380 }}>
             <div style={{ position: "absolute", inset: 0 }}>
-              <Img label="The Principal Engineer on a jobsite" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80" style={{ height: "100%" }} />
+              <Img label="A Cardinal crew member working on a foundation job site" src="/images/hub-engineer-jobsite.webp" style={{ height: "100%" }} />
             </div>
             <div style={{ position: "absolute", left: 0, bottom: 0, right: 0, background: "linear-gradient(0deg, rgba(15,15,15,.92), transparent)", padding: "40px 26px 22px" }}>
               <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 6 }}>Meet the owner &amp; principal engineer</div>

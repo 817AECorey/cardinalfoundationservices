@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Residential foundation repair in Fort Worth",
+      img: { src: "/images/loc-fw-residential.webp", alt: "Residential foundation repair in Fort Worth" },
       paras: [
         "From pier and beam homes near the city's core to newer post-tension slabs across the growing north side, Fort Worth houses show movement in familiar ways: brick cracks, sticking doors and windows, floors out of level, and driveways settling at the approach. The free inspection report includes elevation readings mapped across your foundation and notated findings, so you see what has moved before anyone talks price. Sometimes the right answer is that you do not need a repair. When you do: written quote within one business day, financing available, transferable workmanship warranty, terms vary by service.",
         "Fort Worth services: steel piers, pressed concrete pilings, drilled and helical piers, pier and beam and crawl space repair, slab and post-tension repair, concrete slab lifting and mudjacking, french drains and full drainage design, root barriers, and retaining walls.",
@@ -30,6 +31,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Commercial, structural, and new construction",
+      img: { src: "/images/loc-fw-commercial.webp", alt: "Commercial and structural work in Fort Worth" },
       paras: [
         "Fort Worth commercial properties are served by the same crews that built our commercial portfolio: warehouse floor leveling, tilt wall repair, multifamily work, and specialty structural services, with engineered assessments and documented scope. Builders and developers work with our new construction division for piers, foundations, earthwork, and concrete, with engineering and concrete under one roof, which matters in Fort Worth's approval environment.",
       ],
