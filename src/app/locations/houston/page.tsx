@@ -39,6 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Already have a quote from another company?",
+      noMedia: true,
       paras: [
         "Bring it. Second opinions are a normal part of how Houston homeowners buy foundation repair, and our mapped elevation survey gives you an independent data point to weigh any proposal against, including pier counts. There is no charge and no pressure attached to looking.",
       ],

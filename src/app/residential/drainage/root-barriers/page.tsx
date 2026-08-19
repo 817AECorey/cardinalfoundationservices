@@ -20,6 +20,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How tree roots affect foundation soil",
+      noMedia: true,
       paras: [
         "A large tree can pull hundreds of gallons of water from the soil in a hot week, and it pulls hardest from the moist soil under and beside a slab. In expansive clay, that localized drying shrinks the soil and lets the foundation edge settle seasonally, then rebound when the rain returns. The symptom pattern is often cyclical: doors that stick in late summer and free up in winter, cracks that open and close with the seasons.",
       ],
@@ -37,6 +38,7 @@ const data: ServicePageData = {
     },
     {
       h2: "How installation works",
+      noMedia: true,
       paras: [
         "A trench is cut between the tree and the foundation to design depth, a solid barrier panel is set vertically, and the trench is backfilled. Roots that previously ran toward the slab are redirected deeper and away. Installation is typically a one-to-two-day scope with minimal disturbance to the yard, and it pairs naturally with drainage corrections when the evaluation calls for both.",
       ],

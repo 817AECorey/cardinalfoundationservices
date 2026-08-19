@@ -19,6 +19,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What the test is",
+      noMedia: true,
       paras: [
         "The drain system is temporarily plugged at the main cleanout and filled with water to slab level. If the water level holds, the lines under the slab are tight. If it drops, water is leaving the system somewhere beneath the house, and further isolation testing narrows down where. It is a diagnostic, not a repair: the result is information about what is happening under the slab.",
       ],

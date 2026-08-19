@@ -19,6 +19,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Basins, pumps, and discharge routing",
+      noMedia: true,
       paras: [
         "A sump system has three parts that have to be designed together. The basin collects water from area drains, french drains, or surface flow, sized so the pump is not cycling constantly. The pump is matched to the volume and the lift the lot actually requires. And the discharge line carries the water to a point where it leaves the property for good, not back into the same saturated soil beside the foundation.",
         "The discharge is where undersized installs fail. Water pumped ten feet away in clay soil comes right back. Routing, check valves, and freeze-conscious discharge placement are part of the design, not afterthoughts.",

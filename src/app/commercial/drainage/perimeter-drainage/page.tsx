@@ -39,6 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where foundation perimeter drainage is used",
+      noMedia: true,
       paras: [
         "Warehouses and distribution centers, office buildings and corporate campuses, retail centers, industrial facilities, municipal and government buildings, and multi-tenant developments, with engineered subsurface solutions, integration with foundation and slab stabilization, and coordination with engineers and general contractors.",
       ],
