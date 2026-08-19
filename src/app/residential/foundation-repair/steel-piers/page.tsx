@@ -34,6 +34,7 @@ const data: ServicePageData = {
     },
     {
       h2: "When steel is the right call, and when it is not",
+      img: { src: "/images/residential-steel-piers-fill1.webp", alt: "When steel is the right call, and when it is not" },
       paras: [
         "Steel piers are generally the premium option: highest capacity, greatest depth, strongest fit for heavier homes, additions, and soils with deep active zones. They are not automatically the right call for every home. Lighter structures on shallower active soils are often well served by concrete pressed piers at lower cost, and some conditions call for drilled or helical systems. Our recommendation follows the inspection findings, and sometimes the right answer is that you do not need a repair at all.",
         "For a direct comparison, see Steel Piers vs. Concrete Piers in our pier systems guide.",
@@ -41,6 +42,7 @@ const data: ServicePageData = {
     },
     {
       h2: "What the inspection includes",
+      img: { src: "/images/residential-steel-piers-fill2.webp", alt: "What the inspection includes" },
       paras: [
         "Every Cardinal inspection includes elevation readings across your foundation, mapped so you can see which areas have moved and by how much, along with notated visual findings. You leave with data about your home, not just a number. If repair is recommended, you receive a written quote within one business day, financing is available, and the work is backed by a transferable workmanship warranty, terms vary by service.",
       ],

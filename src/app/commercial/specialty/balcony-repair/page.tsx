@@ -40,6 +40,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where we perform balcony repairs",
+      img: { src: "/images/commercial-specialty-balcony-repair-fill1.webp", alt: "balcony repair work" },
       paras: [
         "Multifamily apartments, condominiums and townhomes, commercial mixed-use properties, hotels and hospitality structures, and office buildings with exterior walkways. Serving Fort Worth, Dallas, Arlington, Irving, Grapevine, Weatherford, and the greater DFW metroplex, with minimal disruption to operations and clear communication, safety planning, and documentation.",
       ],

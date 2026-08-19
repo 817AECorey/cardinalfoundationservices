@@ -45,6 +45,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Foam or mudjacking?",
+      img: { src: "/images/residential-leveling-polyurethane-foam-injection-fill1.webp", alt: "Foam or mudjacking?" },
       paras: [
         "Both lift settled concrete. Foam is lighter, faster-curing, and injects through smaller ports; mudjacking uses a traditional slurry and can be the economical fit for certain slabs. We install both, and the recommendation follows the slab, the soil, and your budget rather than a house preference. See the mudjacking page for the comparison.",
         "Residential work is backed by a transferable workmanship warranty, terms vary by service, with financing available and a written quote within one business day of your evaluation.",

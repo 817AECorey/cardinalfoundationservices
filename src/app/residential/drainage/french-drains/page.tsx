@@ -28,6 +28,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Installed by foundation people",
+      img: { src: "/images/residential-drainage-french-drains-fill1.webp", alt: "Installed by foundation people" },
       paras: [
         "Cardinal installs french drains as part of complete drainage design because we see what bad drainage does to foundations every week. That perspective changes the design: where the water is coming from, what it is doing to the soil supporting your home, whether the drain alone solves it, and whether grading, area drains, or a root barrier belongs in the same scope. If your foundation already shows symptoms, the evaluation includes what the water has done, not just where it goes.",
         "We also repair existing french drains: clogged systems, crushed or root-invaded pipe, failed discharge, and drains that were never pitched to work.",

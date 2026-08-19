@@ -39,6 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Mudjacking or foam?",
+      img: { src: "/images/residential-leveling-mudjacking-fill1.webp", alt: "Mudjacking or foam?" },
       paras: [
         "Mudjacking uses a heavier traditional slurry and larger ports; polyurethane foam is lighter, cures in minutes, and uses smaller ports at a higher material cost. One is not universally better. Slab condition, soil, access, and budget pick the method, and since Cardinal installs both, the recommendation is about your slab rather than our truck. The foam page covers the other side of the comparison.",
         "As with all lifting work: if the settlement is being driven by drainage failure or foundation movement, the evaluation identifies it, because the durable fix addresses the cause.",

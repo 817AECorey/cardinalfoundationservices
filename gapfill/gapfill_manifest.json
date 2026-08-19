@@ -1,0 +1,178 @@
+[
+ {
+  "page": "/residential/foundation-repair/steel-piers/",
+  "slot_label": "When steel is the right call, and when it is not",
+  "file": "residential-steel-piers-fill1.webp",
+  "alt": "When steel is the right call, and when it is not",
+  "kb": 171,
+  "src": "steel-pier-repair-fort-worth.png"
+ },
+ {
+  "page": "/residential/foundation-repair/steel-piers/",
+  "slot_label": "What the inspection includes",
+  "file": "residential-steel-piers-fill2.webp",
+  "alt": "What the inspection includes",
+  "kb": 47,
+  "src": "steel-pier-repair-fort-worth-texas.png"
+ },
+ {
+  "page": "/commercial/concrete-lifting/warehouse-floor-leveling/",
+  "slot_label": "Related conditions we correct",
+  "file": "commercial-lifting-warehouse-floor-leveling-fill1.webp",
+  "alt": "Related conditions we correct",
+  "kb": 69,
+  "src": "3d-rendering-warehouse-trolley-platform-trolley-factory.jpg"
+ },
+ {
+  "page": "/residential/foundation-repair/drilled-piers/",
+  "slot_label": "What the inspection includes",
+  "file": "residential-drilled-piers-fill1.webp",
+  "alt": "What the inspection includes",
+  "kb": 149,
+  "src": "drilled-pier-foundation-repair-fort-worth.png"
+ },
+ {
+  "page": "/residential/concrete-leveling/polyurethane-foam-injection/",
+  "slot_label": "Foam or mudjacking?",
+  "file": "residential-leveling-polyurethane-foam-injection-fill1.webp",
+  "alt": "Foam or mudjacking?",
+  "kb": 167,
+  "src": "Commercial-Polyurethane-Foam-Injection.jpg"
+ },
+ {
+  "page": "/residential/concrete-leveling/mudjacking/",
+  "slot_label": "Mudjacking or foam?",
+  "file": "residential-leveling-mudjacking-fill1.webp",
+  "alt": "Mudjacking or foam?",
+  "kb": 173,
+  "src": "commercial-mudjacking-contractors.jpg"
+ },
+ {
+  "page": "/residential/drainage/french-drains/",
+  "slot_label": "Installed by foundation people",
+  "file": "residential-drainage-french-drains-fill1.webp",
+  "alt": "Installed by foundation people",
+  "kb": 180,
+  "src": "drainage-around-house-drain-water-front-door-pebbles-water-drainage-drain-floor-scaled.jpg"
+ },
+ {
+  "page": "/new-construction/concrete-flatwork/",
+  "slot_label": "Who this serves",
+  "file": "new-construction-flatwork-fill1.webp",
+  "alt": "Who this serves",
+  "kb": 177,
+  "src": "construction-workers-are-pouring-concrete-mix-while-preparing-foundation-slab-works-day-scaled.jpg"
+ },
+ {
+  "page": "/commercial/foundation-repair/drilled-piers/",
+  "slot_label": "Where drilled piers are used",
+  "file": "commercial-drilled-piers-fill1.webp",
+  "alt": "drilled piers work",
+  "kb": 149,
+  "src": "drilled-pier-foundation-repair-fort-worth.png"
+ },
+ {
+  "page": "/commercial/foundation-repair/helical-piers-tiebacks/",
+  "slot_label": "Where helical systems are used",
+  "file": "commercial-helical-piers-tiebacks-fill1.webp",
+  "alt": "helical piers tiebacks work",
+  "kb": 189,
+  "src": "helical-pier-repair-fort-worth-texas.png"
+ },
+ {
+  "page": "/commercial/foundation-repair/hybrid-piers/",
+  "slot_label": "Where hybrid pier systems are used",
+  "file": "commercial-hybrid-piers-fill1.webp",
+  "alt": "hybrid piers work",
+  "kb": 53,
+  "src": "hybrid-pier-foundation-repair-fort-worth-tx.png"
+ },
+ {
+  "page": "/commercial/concrete-lifting/polyurethane-foam-injection/",
+  "slot_label": "Where foam injection is used",
+  "file": "commercial-lifting-polyurethane-foam-injection-fill1.webp",
+  "alt": "polyurethane foam injection work",
+  "kb": 181,
+  "src": "warehouse-foam-injection.jpg"
+ },
+ {
+  "page": "/commercial/concrete-lifting/mudjacking/",
+  "slot_label": "Where commercial mudjacking is used",
+  "file": "commercial-lifting-mudjacking-fill1.webp",
+  "alt": "mudjacking work",
+  "kb": 197,
+  "src": "mudjacking-flatwork-dfw.jpg"
+ },
+ {
+  "page": "/commercial/concrete-construction/structural-crack-repair/",
+  "slot_label": "Where concrete crack repair is used",
+  "file": "commercial-construction-structural-crack-repair-fill1.webp",
+  "alt": "structural crack repair work",
+  "kb": 187,
+  "src": "crack-concrete-wall-destruction-wall-from-t.jpg"
+ },
+ {
+  "page": "/commercial/drainage/french-drains/",
+  "slot_label": "Where commercial french drains are used",
+  "file": "commercial-drainage-french-drains-fill1.webp",
+  "alt": "french drains work",
+  "kb": 180,
+  "src": "drainage-around-house-drain-water-front-door-pebbles-water-drainage-drain-floor-scaled.jpg"
+ },
+ {
+  "page": "/commercial/retaining-walls/structural-repair/",
+  "slot_label": "Where structural retaining wall repair is used",
+  "file": "commercial-retaining-walls-structural-repair-fill1.webp",
+  "alt": "Commercial structural retaining wall repair",
+  "kb": 188,
+  "src": "crack-concrete-wall-destruction-wall-from-t.jpg"
+ },
+ {
+  "page": "/commercial/retaining-walls/tieback-anchors/",
+  "slot_label": "Where retaining wall tiebacks are used",
+  "file": "commercial-retaining-walls-tieback-anchors-fill1.webp",
+  "alt": "Retaining wall tieback anchor installation",
+  "kb": 108,
+  "src": "helical-pier-repair-fort-worth-texas.png"
+ },
+ {
+  "page": "/commercial/specialty/metal-deck-slab-repair/",
+  "slot_label": "Where we typically work",
+  "file": "commercial-specialty-metal-deck-slab-repair-fill1.webp",
+  "alt": "metal deck slab repair work",
+  "kb": 124,
+  "src": "metal-deck-pan-pour-slab-repair.png"
+ },
+ {
+  "page": "/commercial/specialty/balcony-repair/",
+  "slot_label": "Where we perform balcony repairs",
+  "file": "commercial-specialty-balcony-repair-fill1.webp",
+  "alt": "balcony repair work",
+  "kb": 162,
+  "src": "Before-and-after-repair-on-elevated-lightweight-concrete-walkway.png"
+ },
+ {
+  "page": "/commercial/specialty/lightweight-concrete-repair/",
+  "slot_label": "Where we typically work",
+  "file": "commercial-specialty-lightweight-repair-fill1.webp",
+  "alt": "lightweight concrete repair work",
+  "kb": 162,
+  "src": "Before-and-after-repair-on-elevated-lightweight-concrete-walkway.png"
+ },
+ {
+  "page": "/residential/foundation-repair/hybrid-piers/",
+  "slot_label": "When a hybrid system is the right call",
+  "file": "residential-hybrid-piers-fill1.webp",
+  "alt": "When a hybrid system is the right call",
+  "kb": 53,
+  "src": "hybrid-pier-foundation-repair-fort-worth-tx.png"
+ },
+ {
+  "page": "/commercial/specialty/historical-building-foundation-repair/",
+  "slot_label": "How we work on historic structures",
+  "file": "commercial-specialty-historical-fill1.webp",
+  "alt": "Historic building foundation repair in Dallas",
+  "kb": 185,
+  "src": "historical-old-red"
+ }
+]

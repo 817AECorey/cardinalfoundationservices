@@ -44,6 +44,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Who this serves",
+      img: { src: "/images/new-construction-flatwork-fill1.webp", alt: "Who this serves" },
       paras: [
         "Homeowners upgrading or replacing exterior concrete, builders who need a flatwork sub that shows up with engineering literacy, and commercial projects routed through our commercial slab pouring service. Written quotes for residential projects, engineered bids for builder and commercial work; workmanship warranty applies, terms vary by service.",
       ],

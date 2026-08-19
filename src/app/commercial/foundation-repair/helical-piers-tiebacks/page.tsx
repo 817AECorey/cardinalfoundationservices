@@ -39,6 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where helical systems are used",
+      img: { src: "/images/commercial-helical-piers-tiebacks-fill1.webp", alt: "helical piers tiebacks work" },
       paras: [
         "Warehouses and distribution centers, retail centers and office buildings, multifamily developments, industrial facilities, municipal structures, retaining walls and sloped sites, and parking structures. Helical systems often work in coordination with commercial foundation repair and our commercial retaining wall services, with minimal vibration and site disruption. Serving Fort Worth, Dallas, Arlington, Irving, Grand Prairie, Plano, Garland, Mesquite, Grapevine, Mansfield, and surrounding DFW metroplex cities.",
       ],

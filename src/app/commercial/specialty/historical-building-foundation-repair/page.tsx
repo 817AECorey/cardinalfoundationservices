@@ -41,6 +41,7 @@ const data: ServicePageData = {
     },
     {
       h2: "How we work on historic structures",
+      img: { src: "/images/commercial-specialty-historical-fill1.webp", alt: "Historic building foundation repair in Dallas" },
       paras: [
         "Preservation-minded planning that avoids damaging original materials, experience with Texas clay and how it interacts with pier and beam systems and early construction methods, collaboration with architects, preservationists, and historical consultants when needed, familiarity with local historic ordinances, and clean, discreet work sites that respect the property and its neighborhood.",
       ],

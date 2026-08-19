@@ -31,6 +31,7 @@ const data: ServicePageData = {
     },
     {
       h2: "When a hybrid system is the right call",
+      img: { src: "/images/residential-hybrid-piers-fill1.webp", alt: "When a hybrid system is the right call" },
       paras: [
         "Homes on moderately deep active clay, structures a bit too heavy for pressed pilings alone, and repairs where budget matters but bearing depth cannot be compromised. Like every system we install, the selection follows the mapped elevation data and soil behavior from your free inspection, and engineered scopes sometimes mix pier types across a single foundation where conditions vary. When work is recommended: written quote within one business day, financing available, transferable workmanship warranty, terms vary by service.",
       ],

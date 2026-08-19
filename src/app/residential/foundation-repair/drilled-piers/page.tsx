@@ -40,6 +40,7 @@ const data: ServicePageData = {
     },
     {
       h2: "What the inspection includes",
+      img: { src: "/images/residential-drilled-piers-fill1.webp", alt: "What the inspection includes" },
       paras: [
         "Elevation readings mapped across the foundation so you can see what has moved, notated visual findings, and a clear recommendation. If work is recommended, the written quote arrives within one business day, financing is available, and the work carries a transferable workmanship warranty, terms vary by service.",
       ],

@@ -39,6 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where drilled piers are used",
+      img: { src: "/images/commercial-drilled-piers-fill1.webp", alt: "drilled piers work" },
       paras: [
         "Warehouses and distribution centers, office buildings and corporate campuses, retail developments, industrial and manufacturing facilities, municipal and government buildings, and parking structures and elevated slabs. Where lateral pressure or wall movement is involved, projects may also integrate helical tieback systems or coordinate with our commercial retaining wall work. Serving Fort Worth, Dallas, Arlington, Irving, Grand Prairie, Plano, Garland, Mesquite, Grapevine, Mansfield, and surrounding DFW metroplex cities.",
       ],

@@ -39,6 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where commercial french drains are used",
+      img: { src: "/images/commercial-drainage-french-drains-fill1.webp", alt: "french drains work" },
       paras: [
         "Warehouses and distribution centers, office buildings and corporate campuses, retail centers, industrial facilities, municipal and government buildings, and multi-tenant commercial developments, with engineered subsurface solutions and a long-term moisture control strategy.",
       ],

@@ -37,6 +37,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where hybrid pier systems are used",
+      img: { src: "/images/commercial-hybrid-piers-fill1.webp", alt: "hybrid piers work" },
       paras: [
         "Warehouses and distribution centers, retail developments, office campuses, industrial facilities, and municipal buildings, with soil-specific stabilization planning and engineered deep foundation integration. Serving Fort Worth, Dallas, Arlington, Irving, Grand Prairie, Plano, Garland, Mesquite, Grapevine, Mansfield, and surrounding DFW metroplex cities.",
       ],

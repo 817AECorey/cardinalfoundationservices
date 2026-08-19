@@ -37,6 +37,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where structural retaining wall repair is used",
+      img: { src: "/images/commercial-retaining-walls-structural-repair-fill1.webp", alt: "Commercial structural retaining wall repair" },
       paras: [
         "Commercial developments, office parks, retail centers, industrial facilities, municipal and government projects, and multi-tenant commercial sites, with engineered repair methods and soil-and-drainage-focused correction.",
       ],

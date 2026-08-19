@@ -41,6 +41,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where we typically work",
+      img: { src: "/images/commercial-specialty-metal-deck-slab-repair-fill1.webp", alt: "metal deck slab repair work" },
       paras: [
         "Parking garages and podium decks, retail and mixed-use elevated slabs, roof deck topping slabs, industrial mezzanines and catwalks, and medical, education, and office buildings. Serving Fort Worth, Dallas, Arlington, Irving, Grapevine, Weatherford, and the greater DFW metroplex, with repair plans tailored to the building's use and engineering requirements and minimal operational disruption.",
       ],

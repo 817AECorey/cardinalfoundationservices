@@ -39,6 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where concrete crack repair is used",
+      img: { src: "/images/commercial-construction-structural-crack-repair-fill1.webp", alt: "structural crack repair work" },
       paras: [
         "Warehouses, retail centers, office buildings, industrial facilities, parking structures, and municipal buildings, with engineered crack repair methods, DFW soil movement knowledge, and an integrated stabilization approach.",
       ],

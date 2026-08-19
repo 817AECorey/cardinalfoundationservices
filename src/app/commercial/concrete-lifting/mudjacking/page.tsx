@@ -39,6 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where commercial mudjacking is used",
+      img: { src: "/images/commercial-lifting-mudjacking-fill1.webp", alt: "mudjacking work" },
       paras: [
         "Parking lots, commercial drive lanes, sidewalk systems, and large exterior slabs. Projects may coordinate with commercial concrete lifting or integrate with drainage correction when water washout is identified. Serving Fort Worth, Dallas, Arlington, Irving, Grand Prairie, Plano, Garland, Mesquite, Grapevine, Mansfield, and surrounding DFW metroplex cities.",
       ],

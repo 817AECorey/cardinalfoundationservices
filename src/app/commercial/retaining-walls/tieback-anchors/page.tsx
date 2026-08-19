@@ -37,6 +37,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where retaining wall tiebacks are used",
+      img: { src: "/images/commercial-retaining-walls-tieback-anchors-fill1.webp", alt: "Retaining wall tieback anchor installation" },
       paras: [
         "Commercial office parks, retail centers and shopping plazas, industrial facilities, multi-tenant developments, and municipal projects, with engineered anchor installation and minimal reconstruction required.",
       ],
