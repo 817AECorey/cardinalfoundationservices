@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Commercial foundation repair, concrete lifting, tilt wall, drainage, and structural services for DFW and Texas. Engineered assessments, self-performed crews, work phased around operations.",
   alternates: { canonical: "/commercial/" },
   openGraph: {
+    images: [{ url: "/images/commhub-hero.webp", width: 1800, height: 1008 }],
     title: "Commercial Foundation and Concrete Services | Cardinal Foundation Services",
     description:
       "Commercial foundation repair, concrete lifting, tilt wall, drainage, and structural services for DFW and Texas.",

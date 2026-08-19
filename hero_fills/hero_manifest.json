@@ -1,0 +1,16 @@
+[
+ {
+  "page": "/commercial/",
+  "slot_label": "Commercial foundation repair in progress. Pier installation at a warehouse",
+  "file": "commhub-hero.webp",
+  "alt": "Commercial tilt-wall building under construction",
+  "kb": 68
+ },
+ {
+  "page": "/residential/",
+  "slot_label": "Residential foundation repair in progress. Pier installation at a Texas home",
+  "file": "reshub-hero.webp",
+  "alt": "Residential foundation pier installation",
+  "kb": 173
+ }
+]

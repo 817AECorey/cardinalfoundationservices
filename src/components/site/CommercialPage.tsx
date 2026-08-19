@@ -25,7 +25,7 @@ function CHero() {
   return (
     <section style={{ position: "relative", background: "var(--ink)", overflow: "hidden" }}>
       <div style={{ position: "absolute", inset: 0 }}>
-        <Img label="Commercial foundation repair in progress. Pier installation at a warehouse" src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1700&q=80" style={{ height: "100%" }} />
+        <Img label="Commercial foundation repair in progress. Pier installation at a warehouse" src="/images/commhub-hero.webp" style={{ height: "100%" }} />
       </div>
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,12,12,.92) 0%, rgba(12,12,12,.6) 45%, rgba(12,12,12,.92) 100%)" }} />
       <div className="d-blueprint" style={{ opacity: .45 }} />
