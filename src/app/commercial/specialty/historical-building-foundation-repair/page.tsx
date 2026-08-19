@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Why historic buildings require specialized foundation repair",
+      img: { src: "/images/historic-building-foundation-repair-dfw.webp", alt: "Historic building foundation repair in DFW" },
       paras: [
         "Many historical buildings in Fort Worth and Dallas were constructed long before modern drainage systems, concrete slabs, and soil stabilization techniques. Over time, shifting clay soils, moisture intrusion, and outdated construction methods can compromise their foundations. Common issues we resolve include uneven floors and sagging beams, cracked plaster and separating walls, doors and windows that will not open properly, rotting wood beams or rusted metal supports, crumbling mortar or displaced bricks, and settling or leaning piers.",
       ],

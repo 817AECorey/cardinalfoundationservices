@@ -21,6 +21,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Common lightweight slab failures we repair",
+      img: { src: "/images/lightweight-concrete-walkway-repair.webp", alt: "Elevated lightweight concrete walkway repair" },
       paras: [
         "Cracking and delamination from structural movement, moisture intrusion causing soft spots, spalling, and corrosion, fire-rated lightweight assemblies losing performance due to damage, topping slab separation from substrate or metal decking, surface wear, pitting, and abrasion, and failure from HVAC leaks, balcony drainage, or poor waterproofing. Each problem requires a tailored approach that does not compromise the structural integrity or the fire rating of the assembly.",
       ],

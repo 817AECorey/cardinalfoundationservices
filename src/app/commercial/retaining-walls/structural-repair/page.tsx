@@ -21,6 +21,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What is structural retaining wall repair?",
+      img: { src: "/images/commercial-retaining-wall-reinforcement.webp", alt: "Commercial retaining wall reinforcement" },
       paras: [
         "Structural retaining wall repair involves correcting cracking, displacement, settlement, and lateral pressure damage affecting load-bearing wall systems. In DFW, expansive clay soils and hydrostatic buildup are common contributors to retaining wall distress. Our repairs focus on restoring structural integrity while improving drainage and soil stability to prevent recurrence, with coordination with general contractors and minimal disruption to active operations.",
       ],

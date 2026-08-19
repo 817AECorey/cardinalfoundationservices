@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How helical piers work",
+      img: { src: "/images/helical-pier-foundation-repair.webp", alt: "Helical pier foundation repair" },
       paras: [
         "Each pier is advanced into the soil like a large threaded anchor, with capacity verified by installation torque as it goes. Because the pier is anchored rather than resting on resistance alone, it resists both settlement and upward soil movement during moisture-rich seasons. Installation is precise, low-vibration, and suited to limited-access sites.",
       ],

@@ -31,6 +31,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Who we work with",
+      img: { src: "/images/waters-of-the-us-construction.webp", alt: "Waters of the United States construction site" },
       paras: [
         "Developers, municipalities, energy companies, engineers, landowners, and contractors involved in land development near wetlands or streams, industrial or commercial projects near WOTUS boundaries, oil and gas sites, energy infrastructure, and utility lines, roads, bridges, and flood control systems, and detention and retention ponds near regulated waterways. From permitting to final inspection, the scope is managed to help avoid fines, delays, or environmental violations.",
       ],

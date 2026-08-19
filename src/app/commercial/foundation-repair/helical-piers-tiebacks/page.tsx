@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What are helical piers and tiebacks?",
+      img: { src: "/images/helical-pier-tieback.webp", alt: "Helical pier and tieback system" },
       paras: [
         "Helical piers are steel shafts with helical plates that are torque-driven into stable bearing soils to support vertical structural loads. Tiebacks, also called helical anchors, resist lateral earth pressure on retaining walls and foundation walls. These systems are commonly used in commercial applications where precision load capacity and minimal disruption are required.",
       ],

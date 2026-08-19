@@ -34,6 +34,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Commercial and industrial service facilities",
+      img: { src: "/images/commercial-lube-pit-foundation-repair.webp", alt: "Commercial lube pit foundation repair" },
       paras: [
         "We provide commercial lube pit foundation repair for dealerships, quick-lube centers, and service garages across DFW, stabilizing pit walls and floors while minimizing disruption to daily operations.",
         "For fleet maintenance facilities, transportation hubs, and heavy-equipment service operations, our team works efficiently to reduce downtime and maintain safe working conditions. Lube pit repairs require experience with below-grade structures and confined service environments; every repair is based on site conditions, soil behavior, and the structural loading around the pit and service bay.",

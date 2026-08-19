@@ -24,6 +24,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "How hybrid piers work",
+      img: { src: "/images/hybrid-pier-system-repair.webp", alt: "Hybrid pier system foundation repair" },
       paras: [
         "A hybrid pier stacks steel components with precast concrete sections in one driven support, reaching deeper than pressed concrete typically achieves while keeping material cost below an all-steel drive. The result lands between pressed and steel systems in both depth and price, which is exactly the gap it exists to fill.",
       ],

@@ -32,6 +32,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Why waterproofing matters in DFW",
+      img: { src: "/images/commercial-waterproofing.webp", alt: "Commercial waterproofing work" },
       paras: [
         "In the Dallas-Fort Worth region, expansive clay soils and unpredictable rainfall make commercial waterproofing critical. Unchecked water intrusion can lead to foundation settling and structural cracks, mold, mildew, and air quality issues, costly damage to interior finishes and equipment, and regulatory and insurance complications.",
         "We work with commercial general contractors, property developers and real estate investors, industrial facility owners, architects and civil engineers, and public sector and municipal projects.",

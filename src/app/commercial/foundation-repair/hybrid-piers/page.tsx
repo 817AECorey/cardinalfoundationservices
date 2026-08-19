@@ -21,6 +21,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "What are hybrid pier systems?",
+      img: { src: "/images/hybrid-pier-system-repair.webp", alt: "Hybrid pier system foundation repair" },
       paras: [
         "Hybrid pier systems integrate multiple deep foundation methods into one engineered stabilization plan. They are commonly used in warehouses, retail centers, industrial buildings, and large-scale commercial developments where soil conditions differ across the structure. By customizing pier type based on load demand and soil depth, hybrid systems provide targeted stabilization and long-term structural performance.",
       ],

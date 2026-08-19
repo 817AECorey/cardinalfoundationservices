@@ -34,6 +34,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Commercial and industrial parking structures",
+      img: { src: "/images/commercial-parking-garage-structural-repair.webp", alt: "Commercial parking garage structural repair" },
       paras: [
         "We provide parking garage concrete and structural repair for office buildings, retail centers, hospitals, hotels, and mixed-use developments across DFW. Repairs restore safety, extend service life, and reduce liability.",
         "For industrial campuses, logistics centers, and high-capacity vehicle operations, our team works efficiently to minimize disruptions and maintain access. All repairs are engineered to support vehicle traffic, multi-level loading, and ongoing facility use, with recommendations based on structural evaluation, load requirements, and long-term performance.",
