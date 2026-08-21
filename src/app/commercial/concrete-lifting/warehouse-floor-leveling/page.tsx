@@ -38,7 +38,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Related conditions we correct",
-      img: { src: "/images/commercial-lifting-warehouse-floor-leveling-fill1.webp", alt: "Related conditions we correct" },
+      img: { src: "/images/warehouse-related-v2.webp", alt: "Commercial slab repair in progress" },
       paras: [
         "Expansion joint and mastic failures, slab cracking at panel joints, dock and approach settlement, and drainage conditions feeding water under the slab. Where floors meet tilt wall panels, we assess both, because panel-line movement and floor settlement often share a cause.",
         "Work is backed by a workmanship warranty, and terms vary by service. The scope you receive is engineered bids with the reasoning documented.",

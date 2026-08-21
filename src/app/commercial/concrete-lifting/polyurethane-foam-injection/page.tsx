@@ -39,7 +39,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where foam injection is used",
-      img: { src: "/images/commercial-lifting-polyurethane-foam-injection-fill1.webp", alt: "polyurethane foam injection work" },
+      img: { src: "/images/foam-where-v2.webp", alt: "Interior slab repair with foam injection" },
       paras: [
         "Warehouses and distribution centers, retail centers, office buildings, industrial facilities, loading docks, and parking lots. Foam injection projects often coordinate with warehouse floor leveling and commercial foundation repair when deeper settlement is identified. Serving Fort Worth, Dallas, Arlington, Irving, Grand Prairie, Plano, Garland, Mesquite, Grapevine, Mansfield, and surrounding DFW metroplex cities.",
       ],

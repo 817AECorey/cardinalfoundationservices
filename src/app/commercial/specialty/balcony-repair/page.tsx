@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   description:
     "Balcony repair across DFW, Houston, and Texas: structural concrete repair, waterproofing and membranes, railing anchor repair, and large-scale multifamily and HOA remediation.",
   alternates: { canonical: "/commercial/specialty/balcony-repair/" },
-  openGraph: { images: [{ url: "/images/balcony-structural-repair.webp", width: 1536, height: 1024 }], },
+  openGraph: { images: [{ url: "/images/balcony-secondary-v2.webp", width: 1536, height: 1024 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Balcony Repair" }],
   kicker: "Specialty Structural · Fort Worth & DFW",
   h1: "Balcony Repair and Concrete Restoration",
-  heroImage: { src: "/images/balcony-structural-repair.webp", alt: "Balcony structure during commercial repair work", width: 1536, height: 1024 },
+  heroImage: { src: "/images/balcony-secondary-v2.webp", alt: "Multifamily balcony structure", width: 1536, height: 1024 },
   intro: [
     "Balconies in North Texas experience heavy wear from weather exposure, drainage failures, structural movement, and moisture penetration, making them one of the most common elevated structures to fail in multifamily and commercial buildings. Cardinal Foundation Services delivers balcony repair throughout Fort Worth and the DFW metroplex, restoring safety, structural capacity, and long-term durability. Balcony deterioration is more than cosmetic: it can compromise load-bearing integrity and create liability for property owners. Our repair methods are built to safety codes, HOA requirements, and commercial building standards.",
   ],
@@ -40,7 +40,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where we perform balcony repairs",
-      img: { src: "/images/commercial-specialty-balcony-repair-fill1.webp", alt: "balcony repair work" },
+      img: { src: "/images/balcony-where-v2.webp", alt: "Balcony concrete restoration with lift access" },
       paras: [
         "Multifamily apartments, condominiums and townhomes, commercial mixed-use properties, hotels and hospitality structures, and office buildings with exterior walkways. Serving Fort Worth, Dallas, Arlington, Irving, Grapevine, Weatherford, and the greater DFW metroplex, with minimal disruption to operations and clear communication, safety planning, and documentation.",
       ],

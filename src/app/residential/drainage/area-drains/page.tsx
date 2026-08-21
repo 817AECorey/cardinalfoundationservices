@@ -31,7 +31,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Area drains and your foundation",
-      img: { src: "/images/area-drain-grate-foundation.webp", alt: "Area drain grate at a home foundation" },
+      img: { src: "/images/areadrain-v2.webp", alt: "Channel drain protecting a foundation" },
       paras: [
         "Standing water beside a slab feeds the swell side of the expansive clay cycle, and a low spot that never dries writes that moisture imbalance directly into the foundation. Correcting surface collection is often one of the most cost-effective protections a property can buy. If your foundation is already showing symptoms, the evaluation covers what the water has done, not just where it pools. Residential drainage work carries a transferable workmanship warranty, terms vary by service, with financing available.",
       ],

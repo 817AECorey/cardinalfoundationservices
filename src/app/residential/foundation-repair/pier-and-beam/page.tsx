@@ -30,7 +30,7 @@ const data: ServicePageData = {
     },
     {
       h2: "How the repair works",
-      img: { src: "/images/pier-beam-repair-works.webp", alt: "Pier and beam foundation repair in progress" },
+      img: { src: "/images/pierbeam-diagram-v2.webp", alt: "Pier and beam foundation diagram" },
       paras: [
         "The repair process is targeted and precise: defective wood members are replaced, and the sunken or affected areas of the foundation are reset and re-shimmed to restore elevation. Where piers themselves have failed or settled, new supports are added, and where moisture is driving the deterioration, drainage correction is scoped alongside the structural work so the repair is not rebuilt by the same water. When work is recommended: written quote within one business day, financing available, transferable workmanship warranty, terms vary by service.",
       ],

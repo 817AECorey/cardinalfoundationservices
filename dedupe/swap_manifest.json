@@ -1,0 +1,156 @@
+[
+ {
+  "page": "/commercial/",
+  "swap_slot": "Concrete Lifting & Floor Leveling box (currently tilt-wall bldg repeat)",
+  "file": "commhub-lifting-v2.webp",
+  "alt": "Leveled municipal concrete after lifting",
+  "kb": 165
+ },
+ {
+  "page": "/commercial/",
+  "swap_slot": "Commercial Drainage & Stormwater box (currently tilt-wall bldg repeat)",
+  "file": "commhub-drainage-v2.webp",
+  "alt": "Commercial drainage gravel channel",
+  "kb": 181
+ },
+ {
+  "page": "/commercial/",
+  "swap_slot": "Structural Retaining Walls box (currently drilling-rig repeat)",
+  "file": "commhub-retaining-v2.webp",
+  "alt": "Stone retaining wall construction",
+  "kb": 176
+ },
+ {
+  "page": "/commercial/concrete-construction/expansion-joint-mastic-repair/",
+  "swap_slot": "Where joint and mastic repair is used",
+  "file": "expansion-joint-where-v2.webp",
+  "alt": "Concrete sidewalk joint deterioration",
+  "kb": 146
+ },
+ {
+  "page": "/commercial/concrete-construction/structural-crack-repair/",
+  "swap_slot": "Where concrete crack repair is used",
+  "file": "crack-where-v2.webp",
+  "alt": "Structural crack in a masonry wall",
+  "kb": 164
+ },
+ {
+  "page": "/commercial/concrete-construction/structural-crack-repair/",
+  "swap_slot": "secondary crack image",
+  "file": "crack-secondary-v2.webp",
+  "alt": "Cracked concrete surface close-up",
+  "kb": 159
+ },
+ {
+  "page": "/commercial/concrete-lifting/mudjacking/",
+  "swap_slot": "Where commercial mudjacking is used",
+  "file": "mudjacking-where-v2.webp",
+  "alt": "Leveled concrete slab after mudjacking",
+  "kb": 43
+ },
+ {
+  "page": "/commercial/concrete-lifting/mudjacking/",
+  "swap_slot": "secondary mudjacking image",
+  "file": "mudjacking-crew-v2.webp",
+  "alt": "Mudjacking crew and pump at a property",
+  "kb": 175
+ },
+ {
+  "page": "/commercial/concrete-lifting/polyurethane-foam-injection/",
+  "swap_slot": "Where foam injection is used",
+  "file": "foam-where-v2.webp",
+  "alt": "Interior slab repair with foam injection",
+  "kb": 142
+ },
+ {
+  "page": "/commercial/drainage/perimeter-drainage/",
+  "swap_slot": "secondary perimeter image",
+  "file": "perimeter-secondary-v2.webp",
+  "alt": "Perimeter drain system cutaway",
+  "kb": 164
+ },
+ {
+  "page": "/commercial/foundation-repair/helical-piers-tiebacks/",
+  "swap_slot": "Where helical systems are used",
+  "file": "helical-where-v2.webp",
+  "alt": "Installed helical pier heads",
+  "kb": 188
+ },
+ {
+  "page": "/commercial/specialty/balcony-repair/",
+  "swap_slot": "Where we perform balcony repairs",
+  "file": "balcony-where-v2.webp",
+  "alt": "Balcony concrete restoration with lift access",
+  "kb": 109
+ },
+ {
+  "page": "/commercial/specialty/balcony-repair/",
+  "swap_slot": "secondary balcony image",
+  "file": "balcony-secondary-v2.webp",
+  "alt": "Multifamily balcony structure",
+  "kb": 172
+ },
+ {
+  "page": "/commercial/specialty/lightweight-concrete-repair/",
+  "swap_slot": "Where we typically work",
+  "file": "lightweight-where-v2.webp",
+  "alt": "Crew repairing elevated lightweight slab",
+  "kb": 136
+ },
+ {
+  "page": "/commercial/specialty/metal-deck-slab-repair/",
+  "swap_slot": "lead metal deck image",
+  "file": "metaldeck-lead-v2.webp",
+  "alt": "Crew screeding a metal deck pour",
+  "kb": 25
+ },
+ {
+  "page": "/residential/foundation-repair/helical-piers/",
+  "swap_slot": "lead helical image",
+  "file": "helical-where-v2.webp",
+  "alt": "Installed helical pier heads",
+  "kb": 188
+ },
+ {
+  "page": "/residential/foundation-repair/pier-and-beam/",
+  "swap_slot": "second inspect image",
+  "file": "pierbeam-diagram-v2.webp",
+  "alt": "Pier and beam foundation diagram",
+  "kb": 17
+ },
+ {
+  "page": "/residential/foundation-repair/slab-repair/",
+  "swap_slot": "lead slab image",
+  "file": "crack-secondary-v2.webp",
+  "alt": "Cracked concrete slab close-up",
+  "kb": 159
+ },
+ {
+  "page": "/residential/foundation-repair/steel-piers/",
+  "swap_slot": "What the inspection includes / second steel image",
+  "file": "steel-diagram-v2.webp",
+  "alt": "Steel pier system cutaway diagram",
+  "kb": 184
+ },
+ {
+  "page": "/residential/foundation-repair/steel-piers/",
+  "swap_slot": "third steel image",
+  "file": "steel-bracket-v2.webp",
+  "alt": "Steel pier bracket installation",
+  "kb": 178
+ },
+ {
+  "page": "/residential/drainage/area-drains/",
+  "swap_slot": "Area drains and your foundation (grate repeat)",
+  "file": "areadrain-v2.webp",
+  "alt": "Channel drain protecting a foundation",
+  "kb": 182
+ },
+ {
+  "page": "/commercial/concrete-lifting/warehouse-floor-leveling/",
+  "swap_slot": "Related conditions we correct",
+  "file": "warehouse-related-v2.webp",
+  "alt": "Commercial slab repair in progress",
+  "kb": 44
+ }
+]

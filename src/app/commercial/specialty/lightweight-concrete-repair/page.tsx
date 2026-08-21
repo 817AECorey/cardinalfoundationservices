@@ -38,7 +38,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Where we typically work",
-      img: { src: "/images/commercial-specialty-lightweight-repair-fill1.webp", alt: "lightweight concrete repair work" },
+      img: { src: "/images/lightweight-where-v2.webp", alt: "Crew repairing elevated lightweight slab" },
       paras: [
         "Multifamily balconies, breezeways and elevated walkways, parking structure ramps and decks, commercial corridors, mezzanines and elevated floors, and attached condo and apartment decks. Serving Fort Worth, Dallas, Arlington, Irving, Grapevine, Weatherford, and the greater DFW metroplex, with code-compliant repairs and minimal disruption to residents and tenants.",
       ],
