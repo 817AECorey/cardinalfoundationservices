@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-retaining-wall-contractors/retaining-wall-tieback-anchor-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Retaining Wall Tieback Anchor Contractors in DFW | Cardinal" },
+  title: { absolute: "Retaining Wall Tieback Anchor Contractors in DFW & Houston | Cardinal" },
   description:
-    "Commercial retaining wall tieback anchors in DFW: deep anchoring systems that resist lateral earth pressure and restore wall alignment without full reconstruction.",
+    "Commercial retaining wall tieback anchors across DFW, Houston, and Texas: deep anchoring systems that resist lateral earth pressure and restore wall alignment without full reconstruction.",
   alternates: { canonical: "/commercial/retaining-walls/tieback-anchors/" },
 };
 
@@ -16,7 +16,7 @@ const data: ServicePageData = {
   kicker: "Commercial Retaining Walls · DFW",
   h1: "Retaining Wall Tieback Anchor Systems",
   intro: [
-    "When commercial retaining walls begin to lean, bow, or shift due to lateral soil pressure, tieback anchor systems provide engineered stabilization. Cardinal Foundation Services installs commercial retaining wall tieback anchors across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. Tiebacks are deep anchoring systems designed to resist horizontal earth pressure and restore wall alignment without full reconstruction, commonly used in large commercial developments where retaining wall movement threatens structural integrity or adjacent infrastructure.",
+    "When commercial retaining walls begin to lean, bow, or shift due to lateral soil pressure, tieback anchor systems provide engineered stabilization. Cardinal Foundation Services installs commercial retaining wall tieback anchors across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. Tiebacks are deep anchoring systems designed to resist horizontal earth pressure and restore wall alignment without full reconstruction, commonly used in large commercial developments where retaining wall movement threatens structural integrity or adjacent infrastructure.",
   ],
   sections: [
     {

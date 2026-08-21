@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-foundation-repair-contractors/post-tension-repair-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Post-Tension Repair Contractors in DFW | Cardinal" },
+  title: { absolute: "Commercial Post-Tension Repair Contractors in DFW & Houston | Cardinal" },
   description:
-    "Engineered commercial post-tension slab repair in DFW: tendon investigation, replacement and re-anchoring, and structural crack repair for offices, retail, parking structures, warehouses, and industrial slabs.",
+    "Engineered commercial post-tension slab repair across DFW, Houston, and Texas: tendon investigation, replacement and re-anchoring, and structural crack repair for offices, retail, parking structures, warehouses, and industrial slabs.",
   alternates: { canonical: "/commercial/foundation-repair/post-tension-repair/" },
 };
 
@@ -16,7 +16,7 @@ const data: ServicePageData = {
   kicker: "Commercial Foundation Repair · DFW",
   h1: "Commercial Post-Tension Slab Repair",
   intro: [
-    "Post-tension slab systems are widely used in commercial construction across North Texas. When cables fail, corrode, or lose tension, structural performance can decline rapidly. Cardinal Foundation Services provides engineered post-tension repair across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities, restoring structural integrity in commercial slabs used in warehouses, office buildings, retail centers, parking structures, and industrial facilities.",
+    "Post-tension slab systems are widely used in commercial construction across North Texas. When cables fail, corrode, or lose tension, structural performance can decline rapidly. Cardinal Foundation Services provides engineered post-tension repair across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide, restoring structural integrity in commercial slabs used in warehouses, office buildings, retail centers, parking structures, and industrial facilities.",
   ],
   sections: [
     {

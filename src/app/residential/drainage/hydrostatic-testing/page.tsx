@@ -3,7 +3,7 @@ import ServicePage, { type ServicePageData } from "@/components/site/ServicePage
 import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Hydrostatic Plumbing Testing in DFW | Cardinal",
+  title: "Hydrostatic Plumbing Testing in DFW",
   description:
     "What a hydrostatic test is, when a foundation inspection recommends one, and how under-slab plumbing leaks relate to foundation movement in DFW clay soils.",
   alternates: { canonical: "/residential/drainage/hydrostatic-testing/" },

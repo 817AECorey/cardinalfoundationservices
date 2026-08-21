@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/parking-garage-concrete-structural-repair/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Parking Garage Concrete & Structural Repair in DFW | Cardinal" },
+  title: { absolute: "Parking Garage Concrete & Structural Repair in DFW & Houston | Cardinal" },
   description:
-    "Parking garage concrete and structural repair across DFW: deck repair, slab settlement, beam and column repair, expansion joints, and structural reinforcement for multi-level parking structures.",
+    "Parking garage concrete and structural repair across DFW, Houston, and Texas: deck repair, slab settlement, beam and column repair, expansion joints, and structural reinforcement for multi-level parking structures.",
   alternates: { canonical: "/commercial/specialty/parking-garage-repair/" },
   openGraph: { images: [{ url: "/images/parking-garage-concrete-structural-repair.webp", width: 1600, height: 1066 }], },
 };

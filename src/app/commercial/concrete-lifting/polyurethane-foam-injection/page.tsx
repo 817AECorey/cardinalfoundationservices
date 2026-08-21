@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-concrete-lifting-stabilization-contractors/polyurethane-foam-injection-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Polyurethane Foam Injection in DFW | Cardinal" },
+  title: { absolute: "Commercial Polyurethane Foam Injection in DFW & Houston | Cardinal" },
   description:
-    "Commercial foam injection in DFW: high-density structural polyurethane fills voids, stabilizes subgrade soils, and lifts settled slabs with precision, without large-scale demolition. Request an assessment.",
+    "Commercial foam injection across DFW, Houston, and Texas: high-density structural polyurethane fills voids, stabilizes subgrade soils, and lifts settled slabs with precision, without large-scale demolition. Request an assessment.",
   alternates: { canonical: "/commercial/concrete-lifting/polyurethane-foam-injection/" },
   openGraph: { images: [{ url: "/images/polyurethane-foam-injection-port-commercial.webp", width: 1200, height: 1600 }], },
 };
@@ -18,7 +18,7 @@ const data: ServicePageData = {
   h1: "Commercial Polyurethane Foam Injection",
   heroImage: { src: "/images/polyurethane-foam-injection-port-commercial.webp", alt: "Polyurethane injection equipment set on commercial concrete", width: 1200, height: 1600 },
   intro: [
-    "Soil voids beneath commercial slabs can lead to settlement, cracking, and operational disruption. Cardinal Foundation Services provides engineered polyurethane foam injection across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. High-density structural polyurethane fills voids, stabilizes subgrade soils, and lifts settled commercial slabs with precision control, allowing rapid stabilization without large-scale demolition, which suits active warehouses, retail facilities, and industrial properties.",
+    "Soil voids beneath commercial slabs can lead to settlement, cracking, and operational disruption. Cardinal Foundation Services provides engineered polyurethane foam injection across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. High-density structural polyurethane fills voids, stabilizes subgrade soils, and lifts settled commercial slabs with precision control, allowing rapid stabilization without large-scale demolition, which suits active warehouses, retail facilities, and industrial properties.",
   ],
   sections: [
     {

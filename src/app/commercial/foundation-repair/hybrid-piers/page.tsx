@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-foundation-repair-contractors/hybrid-pier-system-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Hybrid Pier System Contractors in DFW | Cardinal" },
+  title: { absolute: "Hybrid Pier System Contractors in DFW & Houston | Cardinal" },
   description:
-    "Commercial hybrid pier systems in DFW: drilled and helical piers combined into one engineered stabilization plan for variable soils and large commercial footprints. Request an assessment.",
+    "Commercial hybrid pier systems across DFW, Houston, and Texas: drilled and helical piers combined into one engineered stabilization plan for variable soils and large commercial footprints. Request an assessment.",
   alternates: { canonical: "/commercial/foundation-repair/hybrid-piers/" },
 };
 
@@ -16,7 +16,7 @@ const data: ServicePageData = {
   kicker: "Commercial Foundation Repair · DFW",
   h1: "Hybrid Pier Systems for Commercial Buildings",
   intro: [
-    "Commercial buildings across North Texas often experience settlement in varying zones due to inconsistent soil conditions. When a single deep foundation system is not sufficient across an entire footprint, hybrid pier systems provide engineered flexibility. Cardinal Foundation Services installs commercial hybrid pier systems across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. Hybrid systems combine drilled piers and helical piers to address site-specific load requirements and soil variability, allowing precise stabilization where needed while maintaining cost efficiency across large commercial properties.",
+    "Commercial buildings across North Texas often experience settlement in varying zones due to inconsistent soil conditions. When a single deep foundation system is not sufficient across an entire footprint, hybrid pier systems provide engineered flexibility. Cardinal Foundation Services installs commercial hybrid pier systems across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. Hybrid systems combine drilled piers and helical piers to address site-specific load requirements and soil variability, allowing precise stabilization where needed while maintaining cost efficiency across large commercial properties.",
   ],
   sections: [
     {

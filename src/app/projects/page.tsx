@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "Documented foundation and structural projects across Texas: tilt wall, multifamily, industrial, steel piers, and commercial repairs with conditions found, methods used, and results.",
   alternates: { canonical: "/projects/" },
   openGraph: {
+    images: [{ url: "/images/project-austin-hero.webp" }],
     title: "Projects and Case Studies | Cardinal Foundation Services",
     description:
       "Documented foundation and structural projects across Texas, with conditions found, methods used, and results.",

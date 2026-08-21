@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 export const metadata: Metadata = {
   title: { absolute: "Tilt Wall Repair & Construction in Texas | Cardinal" },
   description:
-    "Tilt wall panel repair, stabilization, and construction for warehouses and commercial buildings across DFW and Texas. Engineered scope, self-performed crews. Request an assessment.",
+    "Tilt wall panel repair, stabilization, and construction for warehouses and commercial buildings across DFW, Houston, and Texas. Engineered scope, self-performed crews. Request an assessment.",
   alternates: { canonical: "/commercial/tilt-wall/" },
   openGraph: { images: [{ url: "/images/tilt-wall-panel-joint-separation.webp", width: 1440, height: 1920 }], },
 };

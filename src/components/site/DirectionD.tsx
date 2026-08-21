@@ -41,6 +41,16 @@ export const DFW_CITIES = ["Fort Worth", "Dallas", "Arlington", "Plano", "Frisco
 export const HOUSTON_CITIES = ["Houston", "Katy", "Sugar Land", "The Woodlands", "Pearland", "Cypress"];
 export const D_CITIES = [...DFW_CITIES, ...HOUSTON_CITIES];
 /* cities with live location pages render as links wherever chips appear */
+export const PHONE_HOUSTON = "(346) 230-4771";
+export const PHONE_HOUSTON_TEL = "tel:+13462304771";
+/* the Houston location page carries its own tracked number on every
+   phone surface; everywhere else uses the DFW default */
+export function usePagePhone() {
+  const pathname = usePathname();
+  const houston = pathname?.startsWith("/locations/houston");
+  return { phone: houston ? PHONE_HOUSTON : PHONE, tel: houston ? PHONE_HOUSTON_TEL : PHONE_TEL };
+}
+
 export const CITY_LINKS: Record<string, string> = {
   "Fort Worth": "/locations/fort-worth/",
   Dallas: "/locations/dallas/",
@@ -308,6 +318,7 @@ function MegaPanel({ entry, open, onKeyDown, panelRef }: { entry: NavEntry; open
 }
 
 export function DNav() {
+  const { phone: pagePhone, tel: pagePhoneTel } = usePagePhone();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const pathname = usePathname();
@@ -420,8 +431,8 @@ export function DNav() {
                 >{m.label}</Link>
               )
             ))}
-            <a className="phone-link" href={PHONE_TEL} style={{ color: "var(--ink)", fontSize: 15, whiteSpace: "nowrap" }}>
-              <Phone s={14} c="var(--red)" /> {PHONE}
+            <a className="phone-link" href={pagePhoneTel} style={{ color: "var(--ink)", fontSize: 15, whiteSpace: "nowrap" }}>
+              <Phone s={14} c="var(--red)" /> {pagePhone}
             </a>
             <Btn variant="red" arrow="ur" href="/request/" style={{ padding: "11px 16px", fontSize: 12.5 }}>Free Foundation Check</Btn>
           </nav>
@@ -473,12 +484,12 @@ export function DNav() {
               <Link key={m.label} href={m.href} onClick={() => setMobileOpen(false)} className="disp" style={{ display: "block", color: "#fff", fontSize: 22, padding: "14px 0", borderBottom: "1px solid rgba(255,255,255,.1)" }}>{m.label}</Link>
             )
           ))}
-          <a className="phone-link" href={PHONE_TEL} style={{ color: "#fff", fontSize: 18, margin: "18px 0", display: "inline-flex" }}>
-            <Phone s={16} c="var(--red)" /> {PHONE}
+          <a className="phone-link" href={pagePhoneTel} style={{ color: "#fff", fontSize: 18, margin: "18px 0", display: "inline-flex" }}>
+            <Phone s={16} c="var(--red)" /> {pagePhone}
           </a>
         </div>
         <div className="m-pin">
-          <a href={PHONE_TEL} style={{ flex: 1, background: "var(--ink-2)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "16px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}><Phone s={15} c="#fff" /> Call</a>
+          <a href={pagePhoneTel} style={{ flex: 1, background: "var(--ink-2)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "16px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}><Phone s={15} c="#fff" /> Call</a>
           <a href="/request/" style={{ flex: 1.4, background: "var(--red)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "16px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}>Free Foundation Check <Arrow s={15} c="#fff" /></a>
         </div>
       </div>
@@ -488,9 +499,10 @@ export function DNav() {
 
 /* ---------- sticky mobile call bar (spec section 8) ---------- */
 export function DMobileCTABar() {
+  const { tel: pagePhoneTel } = usePagePhone();
   return (
     <div className="mobile-cta">
-      <a href={PHONE_TEL} style={{ flex: 1, background: "var(--ink)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "15px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}><Phone s={15} c="#fff" /> Call</a>
+      <a href={pagePhoneTel} style={{ flex: 1, background: "var(--ink)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "15px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}><Phone s={15} c="#fff" /> Call</a>
       <a href="/request/" style={{ flex: 1.4, background: "var(--red)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "15px", fontFamily: "var(--display)", fontWeight: 800, textTransform: "uppercase", letterSpacing: ".04em", fontSize: 14 }}>Free Foundation Check <Arrow s={15} c="#fff" /></a>
     </div>
   );
@@ -1040,6 +1052,7 @@ export function DQuoteForm() {
 }
 
 export function DContact() {
+  const { phone: pagePhone, tel: pagePhoneTel } = usePagePhone();
   return (
     <section id="contact" className="tex-light" style={{ padding: "90px 0" }}>
       <div className="wrap">
@@ -1050,7 +1063,7 @@ export function DContact() {
           <DQuoteForm />
           <div style={{ background: "var(--ink)", color: "#fff", padding: "36px 34px", display: "flex", flexDirection: "column" }}>
             <div className="over" style={{ color: "var(--red)" }}>Speak to our team</div>
-            <a href={PHONE_TEL} className="disp" style={{ color: "#fff", fontSize: 32, margin: "10px 0 4px", display: "block" }}>{PHONE}</a>
+            <a href={pagePhoneTel} className="disp" style={{ color: "#fff", fontSize: 32, margin: "10px 0 4px", display: "block" }}>{pagePhone}</a>
             <a href={`mailto:${EMAIL}`} style={{ color: "#cfcfcf", fontWeight: 600, fontSize: 14 }}>{EMAIL}</a>
             <div style={{ height: 1, background: "rgba(255,255,255,.14)", margin: "22px 0" }} />
             <div className="over" style={{ color: "#9a9a9a", marginBottom: 10 }}>Hours</div>
@@ -1077,6 +1090,7 @@ export function DContact() {
    Field Notes, remaining location pages, /locations/ index) enter this
    footer the moment they ship. Kansas City page appears in NO footer. */
 export function DFooter() {
+  const { phone: pagePhone, tel: pagePhoneTel } = usePagePhone();
   const cols: { h: string; l: [string, string][] }[] = [
     {
       h: "Residential", l: [
@@ -1180,7 +1194,7 @@ export function DFooter() {
           <p style={{ color: "#9a9a9a", fontWeight: 500, lineHeight: 1.6, marginTop: 18, maxWidth: 280 }}>
             Engineer-owned and operated. Turn-key residential, commercial, and new construction foundation and concrete services across Texas. Transferable workmanship warranty, terms vary by service.
           </p>
-          <a className="phone-link" href={PHONE_TEL} style={{ color: "#fff", fontSize: 17, marginTop: 18, display: "inline-flex" }}><Phone s={15} c="var(--red)" /> {PHONE}</a>
+          <a className="phone-link" href={pagePhoneTel} style={{ color: "#fff", fontSize: 17, marginTop: 18, display: "inline-flex" }}><Phone s={15} c="var(--red)" /> {pagePhone}</a>
         </div>
         {cols.map((c) => (
           <div key={c.h}>
@@ -1194,7 +1208,7 @@ export function DFooter() {
         <a href="https://www.bbb.org/us/tx/fort-worth/profile/foundation-repair/cardinal-foundation-services-0825-1000232923/#sealclick" target="_blank" rel="nofollow noopener"><img src="https://seal-austin.bbb.org/seals/blue-seal-250-52-bbb-1000232923.png" width="250" height="52" loading="lazy" style={{ border: 0 }} alt="Cardinal Foundation Services BBB Business Review" /></a>
       </div>
       <div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "22px 40px", color: "#7d7d7d", fontSize: 13, fontWeight: 500, flexWrap: "wrap", gap: 10 }}>
-        <span>Cardinal Foundation Services, LLC · 803 Forest Ridge Dr, Suite #205, Bedford, TX 76022 · <a href={PHONE_TEL} style={{ color: "#9a9a9a" }}>{PHONE}</a> · Engineer-owned and operated. Transferable workmanship warranty, terms vary by service.</span>
+        <span>Cardinal Foundation Services, LLC · 803 Forest Ridge Dr, Suite #205, Bedford, TX 76022 · <a href={pagePhoneTel} style={{ color: "#9a9a9a" }}>{pagePhone}</a> · Engineer-owned and operated. Transferable workmanship warranty, terms vary by service.</span>
         <span>© 2026 Cardinal Foundation Services, LLC. All rights reserved.</span>
       </div>
     </footer>

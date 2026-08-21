@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/lightweight-concrete-repair-fort-worth/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Lightweight Concrete Repair for Elevated Slabs in DFW | Cardinal" },
+  title: { absolute: "Lightweight Concrete Repair for Elevated Slabs in DFW & Houston | Cardinal" },
   description:
-    "Lightweight concrete repair throughout Fort Worth and DFW: cracking, delamination, moisture damage, and fire-rated assembly restoration for multifamily and commercial elevated slabs.",
+    "Lightweight concrete repair across DFW, Houston, and Texas: cracking, delamination, moisture damage, and fire-rated assembly restoration for multifamily and commercial elevated slabs.",
   alternates: { canonical: "/commercial/specialty/lightweight-concrete-repair/" },
 };
 

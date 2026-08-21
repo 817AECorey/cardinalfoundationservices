@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-retaining-wall-contractors/structural-retaining-wall-repair-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Structural Retaining Wall Repair Contractors in DFW | Cardinal" },
+  title: { absolute: "Structural Retaining Wall Repair Contractors in DFW & Houston | Cardinal" },
   description:
-    "Engineered commercial retaining wall repair in DFW: stabilize, reinforce, and restore wall systems, addressing both the visible distress and the soil or drainage causes behind it.",
+    "Engineered commercial retaining wall repair across DFW, Houston, and Texas: stabilize, reinforce, and restore wall systems, addressing both the visible distress and the soil or drainage causes behind it.",
   alternates: { canonical: "/commercial/retaining-walls/structural-repair/" },
 };
 
@@ -16,7 +16,7 @@ const data: ServicePageData = {
   kicker: "Commercial Retaining Walls · DFW",
   h1: "Commercial Retaining Wall Repair",
   intro: [
-    "Retaining wall failure can compromise site grading, drainage, and structural safety. Cardinal Foundation Services provides engineered commercial retaining wall repair across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. We stabilize, reinforce, and restore retaining wall systems used in commercial developments, industrial properties, and municipal infrastructure. Our approach addresses both visible wall distress and the underlying soil or drainage causes contributing to movement.",
+    "Retaining wall failure can compromise site grading, drainage, and structural safety. Cardinal Foundation Services provides engineered commercial retaining wall repair across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. We stabilize, reinforce, and restore retaining wall systems used in commercial developments, industrial properties, and municipal infrastructure. Our approach addresses both visible wall distress and the underlying soil or drainage causes contributing to movement.",
   ],
   sections: [
     {

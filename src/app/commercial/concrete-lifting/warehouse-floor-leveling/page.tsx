@@ -3,7 +3,7 @@ import ServicePage, { type ServicePageData } from "@/components/site/ServicePage
 import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "Warehouse Floor Leveling & Slab Repair in DFW | Cardinal" },
+  title: { absolute: "Warehouse Floor Leveling & Slab Repair in DFW & Houston | Cardinal" },
   description:
     "Warehouse floor leveling and slab foundation repair around active operations in Dallas-Fort Worth. Void fill, polyurethane lifting, engineered scope, minimal downtime.",
   alternates: { canonical: "/commercial/concrete-lifting/warehouse-floor-leveling/" },

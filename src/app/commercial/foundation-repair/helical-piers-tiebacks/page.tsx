@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-foundation-repair-contractors/helical-piers-tieback-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Helical Piers & Tieback Contractors in DFW | Cardinal" },
+  title: { absolute: "Helical Piers & Tieback Contractors in DFW & Houston | Cardinal" },
   description:
-    "Engineered helical pier and tieback systems in DFW: deep foundation support and lateral anchoring for commercial structures and retaining walls, with torque-monitored installation. Request an assessment.",
+    "Engineered helical pier and tieback systems across DFW, Houston, and Texas: deep foundation support and lateral anchoring for commercial structures and retaining walls, with torque-monitored installation. Request an assessment.",
   alternates: { canonical: "/commercial/foundation-repair/helical-piers-tiebacks/" },
   openGraph: { images: [{ url: "/images/helical-piers-tieback-installation.webp", width: 1600, height: 900 }], },
 };
@@ -18,7 +18,7 @@ const data: ServicePageData = {
   h1: "Helical Piers and Tieback Systems",
   heroImage: { src: "/images/helical-piers-tieback-installation.webp", alt: "Helical pier and tieback installation at a commercial site", width: 1600, height: 900 },
   intro: [
-    "Soil movement and lateral pressure are two of the most common causes of commercial structural instability across North Texas. Cardinal Foundation Services provides engineered helical pier and tieback systems across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. Helical systems are deep foundation and anchoring solutions that stabilize structures experiencing settlement or lateral wall movement, transferring loads to stable soil layers and providing long-term structural reinforcement without full demolition.",
+    "Soil movement and lateral pressure are two of the most common causes of commercial structural instability across North Texas. Cardinal Foundation Services provides engineered helical pier and tieback systems across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. Helical systems are deep foundation and anchoring solutions that stabilize structures experiencing settlement or lateral wall movement, transferring loads to stable soil layers and providing long-term structural reinforcement without full demolition.",
   ],
   sections: [
     {

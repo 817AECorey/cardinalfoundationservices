@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-concrete-lifting-stabilization-contractors/commercial-mudjacking-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Mudjacking Contractors in DFW | Cardinal" },
+  title: { absolute: "Commercial Mudjacking Contractors in DFW & Houston | Cardinal" },
   description:
-    "Commercial mudjacking in DFW: controlled slurry injection that lifts and stabilizes settled parking lots, drive lanes, sidewalks, and large exterior slabs. Request an assessment.",
+    "Commercial mudjacking across DFW, Houston, and Texas: controlled slurry injection that lifts and stabilizes settled parking lots, drive lanes, sidewalks, and large exterior slabs. Request an assessment.",
   alternates: { canonical: "/commercial/concrete-lifting/mudjacking/" },
   openGraph: { images: [{ url: "/images/commercial-mudjacking-slab-leveling.webp", width: 1600, height: 1200 }], },
 };
@@ -18,7 +18,7 @@ const data: ServicePageData = {
   h1: "Commercial Mudjacking",
   heroImage: { src: "/images/commercial-mudjacking-slab-leveling.webp", alt: "Commercial slab during mudjacking and leveling", width: 1600, height: 1200 },
   intro: [
-    "When large commercial slabs settle due to soil washout or compaction failure, mudjacking can provide an effective stabilization solution. Cardinal Foundation Services provides commercial mudjacking across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. Mudjacking uses a controlled slurry mixture injected beneath concrete to lift and stabilize settled slab systems. While polyurethane systems are often preferred for precision work, mudjacking remains viable for certain large-scale commercial applications.",
+    "When large commercial slabs settle due to soil washout or compaction failure, mudjacking can provide an effective stabilization solution. Cardinal Foundation Services provides commercial mudjacking across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. Mudjacking uses a controlled slurry mixture injected beneath concrete to lift and stabilize settled slab systems. While polyurethane systems are often preferred for precision work, mudjacking remains viable for certain large-scale commercial applications.",
   ],
   sections: [
     {

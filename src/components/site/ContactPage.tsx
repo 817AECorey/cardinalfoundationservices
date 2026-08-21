@@ -104,7 +104,8 @@ export default function ContactPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
             <div style={{ background: "var(--ink)", color: "#fff", padding: "28px 30px" }}>
               <div className="over" style={{ color: "var(--red)", marginBottom: 8 }}>Phone</div>
-              <a href={PHONE_TEL} className="disp" style={{ color: "#fff", fontSize: 28, display: "block" }}>{PHONE}</a>
+              <a href={PHONE_TEL} className="disp" style={{ color: "#fff", fontSize: 24, display: "block" }}>DFW: {PHONE}</a>
+              <a href="tel:+13462304771" className="disp" style={{ color: "#fff", fontSize: 24, display: "block", marginTop: 8 }}>Houston: (346) 230-4771</a>
             </div>
             <div style={{ border: "1px solid var(--line)", padding: "26px 28px" }}>
               <div className="over" style={{ color: "var(--red)", marginBottom: 10 }}>Email</div>

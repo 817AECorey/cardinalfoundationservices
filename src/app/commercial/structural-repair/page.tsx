@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-structural-repair/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Structural Repair & Reinforcement in DFW | Cardinal" },
+  title: { absolute: "Commercial Structural Repair & Reinforcement in DFW & Houston | Cardinal" },
   description:
-    "Commercial and industrial structural repair and reinforcement across DFW: load-bearing walls, beams and columns, structural steel, concrete, and tilt-wall structural repair. Engineered for real load conditions.",
+    "Commercial and industrial structural repair and reinforcement across DFW, Houston, and Texas: load-bearing walls, beams and columns, structural steel, concrete, and tilt-wall structural repair. Engineered for real load conditions.",
   alternates: { canonical: "/commercial/structural-repair/" },
   openGraph: { images: [{ url: "/images/commercial-structural-repair.webp", width: 1600, height: 1066 }], },
 };

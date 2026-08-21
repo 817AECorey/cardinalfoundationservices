@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/metal-deck-slab-repair-fort-worth/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Metal Deck & Pan-Pour Slab Repair in Fort Worth & DFW | Cardinal" },
+  title: { absolute: "Metal Deck & Pan-Pour Slab Repair in DFW & Houston | Cardinal" },
   description:
-    "Engineered repair of metal deck and pan-pour slab systems across Fort Worth and DFW: delamination mapping, selective demolition, steel treatment, high-bond restoration, and waterproofing protection.",
+    "Engineered repair of metal deck and pan-pour slab systems across DFW, Houston, and Texas: delamination mapping, selective demolition, steel treatment, high-bond restoration, and waterproofing protection.",
   alternates: { canonical: "/commercial/specialty/metal-deck-slab-repair/" },
   openGraph: { images: [{ url: "/images/metal-deck-slab-repair.webp", width: 1536, height: 1024 }], },
 };

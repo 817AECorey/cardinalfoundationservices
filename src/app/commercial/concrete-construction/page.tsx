@@ -8,9 +8,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    cards then. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Concrete Construction & Repair in DFW | Cardinal" },
+  title: { absolute: "Commercial Concrete Construction & Repair in DFW & Houston | Cardinal" },
   description:
-    "Commercial Concrete Construction & Repair for commercial properties across Dallas-Fort Worth: slab pouring, slab repair, expansion joint and mastic repair, and structural crack repair. Engineered scope, self-performed crews.",
+    "Commercial Concrete Construction & Repair for commercial properties across DFW, Houston, and Texas: slab pouring, slab repair, expansion joint and mastic repair, and structural crack repair. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/concrete-construction/" },
   openGraph: { images: [{ url: "/images/concrete-construction-slab-forms-rebar.webp", width: 1600, height: 1200 }], },
 };

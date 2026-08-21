@@ -7,9 +7,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    /services/commercial-concrete-slab-repair-fort-worth/. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Concrete Slab Repair & Leveling in DFW | Cardinal" },
+  title: { absolute: "Commercial Concrete Slab Repair & Leveling in DFW & Houston | Cardinal" },
   description:
-    "Commercial concrete slab repair and leveling across DFW: slab lifting, void fill, subgrade stabilization, warehouse and shop floors, and heavy-equipment slab support. Engineered for commercial and industrial environments.",
+    "Commercial concrete slab repair and leveling across DFW, Houston, and Texas: slab lifting, void fill, subgrade stabilization, warehouse and shop floors, and heavy-equipment slab support. Engineered for commercial and industrial environments.",
   alternates: { canonical: "/commercial/concrete-construction/slab-repair/" },
   openGraph: { images: [{ url: "/images/commercial-slab-repair-interior.webp", width: 1200, height: 1600 }], },
 };

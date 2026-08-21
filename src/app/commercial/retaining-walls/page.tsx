@@ -7,9 +7,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    snapshot-parity pass. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Retaining Walls in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Retaining Walls in DFW & Houston | Cardinal Foundation Services" },
   description:
-    "Commercial Retaining Walls for commercial properties across Dallas-Fort Worth: structural retaining wall repair and tieback anchor systems. Engineered scope, self-performed crews.",
+    "Commercial Retaining Walls for commercial properties across DFW, Houston, and Texas: structural retaining wall repair and tieback anchor systems. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/retaining-walls/" },
   openGraph: { images: [{ url: "/images/retaining-wall-repair-crew.webp", width: 1600, height: 1200 }], },
 };

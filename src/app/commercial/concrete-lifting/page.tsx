@@ -7,9 +7,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    municipal enter as their snapshot-parity pages ship. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Concrete Lifting & Stabilization in DFW | Cardinal" },
+  title: { absolute: "Concrete Lifting & Stabilization in DFW & Houston | Cardinal" },
   description:
-    "Concrete Lifting & Stabilization for commercial properties across Dallas-Fort Worth: slab lifting, void fill, warehouse floor leveling, polyurethane injection, mudjacking, and municipal concrete leveling. Engineered scope, self-performed crews.",
+    "Concrete Lifting & Stabilization for commercial properties across DFW, Houston, and Texas: slab lifting, void fill, warehouse floor leveling, polyurethane injection, mudjacking, and municipal concrete leveling. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/concrete-lifting/" },
   openGraph: { images: [{ url: "/images/commercial-concrete-lifting-parking-lot.webp", width: 1600, height: 1200 }], },
 };

@@ -7,9 +7,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    itself never serves a page (301 to the legacy hub); this child path is fine. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Steel Piers in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Steel Piers in DFW & Houston | Cardinal Foundation Services" },
   description:
-    "Steel pier systems for commercial and multifamily structures in DFW: deep driven support for heavy loads, installed around active operations. Documented projects. Request an engineered assessment.",
+    "Steel pier systems for commercial and multifamily structures across DFW, Houston, and Texas: deep driven support for heavy loads, installed around active operations. Documented projects. Request an engineered assessment.",
   alternates: { canonical: "/commercial/foundation-repair/steel-piers/" },
   openGraph: { images: [{ url: "/images/commercial-steel-pier-access-pit.webp", width: 1280, height: 960 }], },
 };

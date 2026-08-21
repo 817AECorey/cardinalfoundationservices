@@ -3,7 +3,7 @@ import ServicePage, { type ServicePageData } from "@/components/site/ServicePage
 import { JsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Foundation Repair Financing | Cardinal",
+  title: "Foundation Repair Financing",
   description:
     "Flexible payment options for residential foundation repair with Cardinal Foundation Services. Simple application, fast decisions, discussed alongside your written scope. Financing subject to credit approval.",
   alternates: { canonical: "/financing/" },

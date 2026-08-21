@@ -6,9 +6,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    Entity name corrected to Cardinal Foundation Services per hard rule. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Underpinning Contractors in DFW | Cardinal" },
+  title: { absolute: "Commercial Underpinning Contractors in DFW & Houston | Cardinal" },
   description:
-    "Engineered commercial underpinning in DFW: load transfer to deeper competent soil for warehouses, offices, retail, municipal, and industrial buildings experiencing settlement. Request an assessment.",
+    "Engineered commercial underpinning across DFW, Houston, and Texas: load transfer to deeper competent soil for warehouses, offices, retail, municipal, and industrial buildings experiencing settlement. Request an assessment.",
   alternates: { canonical: "/commercial/foundation-repair/underpinning/" },
   openGraph: { images: [{ url: "/images/underpinning-crew-structural-support.webp", width: 1600, height: 2133 }], },
 };
@@ -19,7 +19,7 @@ const data: ServicePageData = {
   h1: "Commercial Underpinning in Dallas-Fort Worth",
   heroImage: { src: "/images/underpinning-crew-structural-support.webp", alt: "Crew performing underpinning work beneath an existing structure", width: 1600, height: 2133, pos: "50% 25%" },
   intro: [
-    "When commercial foundations lose support due to soil movement or structural loading changes, underpinning restores stability by transferring weight to deeper, competent soil layers. Cardinal Foundation Services provides engineered commercial underpinning across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities, for warehouses, office buildings, retail centers, municipal facilities, and industrial properties experiencing settlement or load redistribution.",
+    "When commercial foundations lose support due to soil movement or structural loading changes, underpinning restores stability by transferring weight to deeper, competent soil layers. Cardinal Foundation Services provides engineered commercial underpinning across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide, for warehouses, office buildings, retail centers, municipal facilities, and industrial properties experiencing settlement or load redistribution.",
   ],
   sections: [
     {

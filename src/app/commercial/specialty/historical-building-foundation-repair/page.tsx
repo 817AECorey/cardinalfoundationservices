@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/historical-building-foundation-repair/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Historic Building Foundation Repair in DFW | Cardinal" },
+  title: { absolute: "Historic Building Foundation Repair in DFW & Houston | Cardinal" },
   description:
     "Foundation repair for historic homes, buildings, churches, and commercial landmarks across Fort Worth, Dallas, and North Texas, balancing engineering with preservation sensitivity.",
   alternates: { canonical: "/commercial/specialty/historical-building-foundation-repair/" },

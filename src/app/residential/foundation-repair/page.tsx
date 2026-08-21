@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     "Engineer-led residential foundation repair for complex structural movement, large and custom homes, retaining walls, and the jobs other contractors refer out. Free inspection report, written quote in one business day, financing available. Serving DFW and Houston.",
   alternates: { canonical: "/residential/foundation-repair/" },
   openGraph: {
+    images: [{ url: "/images/foundation-repair-pier-installation-fort-worth.webp" }],
     title: "Residential Foundation Repair | Cardinal Foundation Services",
     description:
       "Large, structural, and full-scope residential foundation repairs, inspected by an engineer and self-performed. Serving DFW and the Houston area.",

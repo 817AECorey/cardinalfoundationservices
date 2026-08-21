@@ -6,9 +6,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    (perimeter-drainage, french-drains) ship in the snapshot-parity pass. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Drainage in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Commercial Drainage in DFW & Houston | Cardinal Foundation Services" },
   description:
-    "Commercial Drainage for commercial properties across Dallas-Fort Worth: perimeter drainage systems and commercial french drains that protect structures at the root cause. Engineered scope, self-performed crews.",
+    "Commercial Drainage for commercial properties across DFW, Houston, and Texas: perimeter drainage systems and commercial french drains that protect structures at the root cause. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/drainage/" },
   openGraph: { images: [{ url: "/images/commercial-drainage-gravel-french-drain.webp", width: 1200, height: 1600 }], },
 };

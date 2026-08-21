@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Arrow, Phone, Check } from "./icons";
 import { Btn, Kicker, Img, dScroll, PHONE, PHONE_TEL } from "./primitives";
-import { DNav, DTrustBar, DContact, DFooter } from "./DirectionD";
+import { DNav, DTrustBar, DContact, DFooter, usePagePhone } from "./DirectionD";
 
 /* ============================================================
    SERVICE / CONTENT PAGE TEMPLATE
@@ -137,6 +137,7 @@ function Faq({ faqs, title }: { faqs: [string, string][]; title: string }) {
 }
 
 export default function ServicePage({ data }: { data: ServicePageData }) {
+  const { phone: pagePhone, tel: pagePhoneTel } = usePagePhone();
   const d = data;
   const tree = treeFromCrumbs(d.crumbs);
   return (
@@ -174,7 +175,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
                 ))}
                 <div style={{ display: "flex", gap: 14, flexWrap: "wrap", marginTop: 30 }}>
                   <Btn variant="red" arrow="ur" href="/request/">{d.ctaLabel}</Btn>
-                  <Btn variant="ghost" arrow="none" href={PHONE_TEL}><Phone s={15} c="#fff" /> {PHONE}</Btn>
+                  <Btn variant="ghost" arrow="none" href={pagePhoneTel}><Phone s={15} c="#fff" /> {pagePhone}</Btn>
                 </div>
               </div>
             );

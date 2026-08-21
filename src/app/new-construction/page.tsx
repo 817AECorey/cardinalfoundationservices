@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "Engineer-owned new construction concrete, tilt-wall, builder work, and earthwork for builders and developers across DFW and the Houston area. Engineering and concrete under one roof. Send plans for engineered bids.",
   alternates: { canonical: "/new-construction/" },
   openGraph: {
+    images: [{ url: "/images/new-construction-foundation-rebar-vapor-barrier.webp" }],
     title: "New Construction Concrete & Tilt-Wall | Cardinal Foundation Services",
     description:
       "Engineered, self-performed commercial concrete, tilt-wall, builder work, and earthwork for new builds across DFW and Houston.",

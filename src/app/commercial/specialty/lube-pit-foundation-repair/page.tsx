@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/lube-pit-foundation-repair-dfw/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Lube Pit Foundation Repair in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Lube Pit Foundation Repair in DFW & Houston | Cardinal Foundation Services" },
   description:
-    "Lube pit foundation repair in DFW: below-grade stabilization, pit wall and slab repair, underpinning, and void fill for automotive shops, dealerships, and fleet maintenance facilities, with minimal downtime.",
+    "Lube pit foundation repair across DFW, Houston, and Texas: below-grade stabilization, pit wall and slab repair, underpinning, and void fill for automotive shops, dealerships, and fleet maintenance facilities, with minimal downtime.",
   alternates: { canonical: "/commercial/specialty/lube-pit-foundation-repair/" },
   openGraph: { images: [{ url: "/images/lube-pit-foundation-repair.webp", width: 1536, height: 1024 }], },
 };
@@ -18,7 +18,7 @@ const data: ServicePageData = {
   h1: "Lube Pit Foundation Repair",
   heroImage: { src: "/images/lube-pit-foundation-repair.webp", alt: "Lube pit foundation during commercial repair", width: 1536, height: 1024 },
   intro: [
-    "Lube pits in automotive shops, quick lube centers, dealerships, and fleet maintenance facilities endure constant heavy vehicle loads, fluid spills, vibration, and chemical exposure. Over time this causes settlement, cracking, and structural failure of the pit foundation. Cardinal Foundation Services specializes in lube pit foundation repair across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities, with engineered stabilization and repair solutions that restore structural integrity with minimal downtime to your shop operations.",
+    "Lube pits in automotive shops, quick lube centers, dealerships, and fleet maintenance facilities endure constant heavy vehicle loads, fluid spills, vibration, and chemical exposure. Over time this causes settlement, cracking, and structural failure of the pit foundation. Cardinal Foundation Services specializes in lube pit foundation repair across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide, with engineered stabilization and repair solutions that restore structural integrity with minimal downtime to your shop operations.",
   ],
   sections: [
     {

@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-concrete-installation-repair-contractors/expansion-joint-mastic-repair-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Expansion Joint & Mastic Repair Contractors in DFW | Cardinal" },
+  title: { absolute: "Expansion Joint & Mastic Repair Contractors in DFW & Houston | Cardinal" },
   description:
-    "Commercial expansion joint and mastic repair in DFW: control joint sealing, joint replacement, and semi-rigid fillers that protect slabs from moisture intrusion and structural wear.",
+    "Commercial expansion joint and mastic repair across DFW, Houston, and Texas: control joint sealing, joint replacement, and semi-rigid fillers that protect slabs from moisture intrusion and structural wear.",
   alternates: { canonical: "/commercial/concrete-construction/expansion-joint-mastic-repair/" },
   openGraph: { images: [{ url: "/images/expansion-joint-mastic-repair.webp", width: 1600, height: 1066 }], },
 };
@@ -18,7 +18,7 @@ const data: ServicePageData = {
   h1: "Expansion Joint and Mastic Repair",
   heroImage: { src: "/images/expansion-joint-mastic-repair.webp", alt: "Expansion joint prepared for mastic repair at a commercial property", width: 1600, height: 1066 },
   intro: [
-    "Expansion joints and sealants protect commercial concrete systems from moisture intrusion and structural stress. Cardinal Foundation Services provides professional expansion joint and mastic repair across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. Proper joint maintenance prevents water infiltration, slab deterioration, and premature structural wear. In high-traffic commercial environments, joint performance is critical to long-term durability.",
+    "Expansion joints and sealants protect commercial concrete systems from moisture intrusion and structural stress. Cardinal Foundation Services provides professional expansion joint and mastic repair across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. Proper joint maintenance prevents water infiltration, slab deterioration, and premature structural wear. In high-traffic commercial environments, joint performance is critical to long-term durability.",
   ],
   sections: [
     {

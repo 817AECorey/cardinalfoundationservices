@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-concrete-installation-repair-contractors/commercial-slab-pouring-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Slab Pouring Contractors in DFW | Cardinal" },
+  title: { absolute: "Commercial Slab Pouring Contractors in DFW & Houston | Cardinal" },
   description:
-    "Commercial slab pouring in DFW: reinforced structural slabs for warehouses, retail, office, and industrial facilities, with subgrade preparation built for North Texas expansive clay. Request engineered bids.",
+    "Commercial slab pouring across DFW, Houston, and Texas: reinforced structural slabs for warehouses, retail, office, and industrial facilities, with subgrade preparation built for North Texas expansive clay. Request engineered bids.",
   alternates: { canonical: "/commercial/concrete-construction/slab-pouring/" },
   openGraph: { images: [{ url: "/images/slab-pouring-formed-foundation.webp", width: 1600, height: 1200 }], },
 };
@@ -18,7 +18,7 @@ const data: ServicePageData = {
   h1: "Commercial Slab Pouring",
   heroImage: { src: "/images/slab-pouring-formed-foundation.webp", alt: "Formed foundation prepared for concrete placement", width: 1600, height: 1200 },
   intro: [
-    "Commercial slab systems must be engineered to handle structural loads, equipment traffic, and long-term soil movement. Cardinal Foundation Services provides professional commercial slab pouring across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. From new warehouse slabs to structural foundation slabs for retail, office, and industrial facilities, our team installs reinforced concrete systems built for durability and performance. Proper subgrade preparation and reinforcement are critical in North Texas, where expansive clay soils can impact slab longevity.",
+    "Commercial slab systems must be engineered to handle structural loads, equipment traffic, and long-term soil movement. Cardinal Foundation Services provides professional commercial slab pouring across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. From new warehouse slabs to structural foundation slabs for retail, office, and industrial facilities, our team installs reinforced concrete systems built for durability and performance. Proper subgrade preparation and reinforcement are critical in North Texas, where expansive clay soils can impact slab longevity.",
   ],
   sections: [
     {

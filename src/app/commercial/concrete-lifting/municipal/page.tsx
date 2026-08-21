@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/concrete-leveling-for-cities-and-municipalities/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Concrete Leveling for Cities & Municipalities in DFW | Cardinal" },
+  title: { absolute: "Concrete Leveling for Cities & Municipalities in DFW & Houston | Cardinal" },
   description:
-    "Concrete lifting and leveling for municipal flatwork: parks, sidewalks, public squares, and public buildings across DFW. Engineer-owned, large-scale efficiency, budget-conscious. Request an assessment.",
+    "Concrete lifting and leveling for municipal flatwork: parks, sidewalks, public squares, and public buildings across DFW, Houston, and Texas. Engineer-owned, large-scale efficiency, budget-conscious. Request an assessment.",
   alternates: { canonical: "/commercial/concrete-lifting/municipal/" },
   openGraph: { images: [{ url: "/images/municipal-sidewalk-concrete-repair.webp", width: 1200, height: 1600 }], },
 };

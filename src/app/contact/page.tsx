@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Contact Cardinal Foundation Services: (972) 656-8251 or info@cardinalfoundationservices.com. Free residential foundation inspections across DFW and the Houston area.",
   alternates: { canonical: "/contact/" },
   openGraph: {
+    images: [{ url: "/images/og-default.png" }],
     title: "Contact Cardinal Foundation Services",
     description:
       "Free residential foundation inspections across DFW and the Houston area. Commercial inquiries route to an engineered assessment.",

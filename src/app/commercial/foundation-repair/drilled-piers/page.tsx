@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-foundation-repair-contractors/drilled-pier-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Drilled Pier Contractors in DFW | Cardinal" },
+  title: { absolute: "Commercial Drilled Pier Contractors in DFW & Houston | Cardinal" },
   description:
-    "Engineered drilled pier installation in DFW: deep foundation shafts for warehouses, offices, industrial, and municipal structures, for new construction and retrofit stabilization. Request an assessment.",
+    "Engineered drilled pier installation across DFW, Houston, and Texas: deep foundation shafts for warehouses, offices, industrial, and municipal structures, for new construction and retrofit stabilization. Request an assessment.",
   alternates: { canonical: "/commercial/foundation-repair/drilled-piers/" },
   openGraph: { images: [{ url: "/images/drilled-pier-rig-commercial-installation.webp", width: 1280, height: 1706 }], },
 };
@@ -18,7 +18,7 @@ const data: ServicePageData = {
   h1: "Drilled Piers for Commercial Buildings",
   heroImage: { src: "/images/drilled-pier-rig-commercial-installation.webp", alt: "Drilled pier rig operating at a commercial foundation installation", width: 1280, height: 1706 },
   intro: [
-    "When commercial structures are built on unstable or expansive soils, shallow foundations can settle and create long-term structural risk. Cardinal Foundation Services provides engineered drilled pier installation across DFW, serving Fort Worth, Dallas, and surrounding metroplex cities. Drilled piers, also called drilled shafts or caissons, are a proven deep foundation solution for warehouses, office buildings, industrial facilities, municipal structures, and large commercial developments. In North Texas they are commonly selected when heavy loads require deep, consistent bearing capacity below active clay layers, with installation methods, reinforcement placement, and load-transfer planning coordinated for long-term performance and code compliance.",
+    "When commercial structures are built on unstable or expansive soils, shallow foundations can settle and create long-term structural risk. Cardinal Foundation Services provides engineered drilled pier installation across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. Drilled piers, also called drilled shafts or caissons, are a proven deep foundation solution for warehouses, office buildings, industrial facilities, municipal structures, and large commercial developments. In North Texas they are commonly selected when heavy loads require deep, consistent bearing capacity below active clay layers, with installation methods, reinforcement placement, and load-transfer planning coordinated for long-term performance and code compliance.",
   ],
   sections: [
     {

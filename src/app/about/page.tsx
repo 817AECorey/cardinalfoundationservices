@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Cardinal Foundation Services is an engineer-owned foundation repair and commercial concrete contractor in Fort Worth, TX, serving DFW and Texas with 35+ years of combined team experience.",
   alternates: { canonical: "/about/" },
   openGraph: {
+    images: [{ url: "/images/foundation-repair-fort-worth-cracked-brick.webp" }],
     title: "About Cardinal Foundation Services",
     description:
       "Engineer-owned foundation repair and commercial concrete contractor in Fort Worth, TX, serving DFW and Texas.",

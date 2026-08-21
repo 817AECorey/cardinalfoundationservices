@@ -3,7 +3,7 @@ import ServicePage, { type ServicePageData } from "@/components/site/ServicePage
 import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Sump Pump Installation & Drainage in DFW | Cardinal",
+  title: "Sump Pump Installation & Drainage in DFW",
   description:
     "Sump basins, pumps, and discharge routing for DFW clay-soil drainage. When gravity cannot carry water away from a foundation, a properly designed sump system does.",
   alternates: { canonical: "/residential/drainage/sump-pumps/" },

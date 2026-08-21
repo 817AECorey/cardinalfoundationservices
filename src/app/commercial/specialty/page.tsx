@@ -9,9 +9,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    ship in the snapshot-parity pass. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Specialty Structural Services in DFW | Cardinal" },
+  title: { absolute: "Specialty Structural Services in DFW & Houston | Cardinal" },
   description:
-    "Specialty Structural Services for commercial properties across Dallas-Fort Worth: parking garages, lube pits, metal deck slabs, balconies, lightweight concrete, historical buildings, waterproofing, waters of the US compliance, erosion work, and emergency shoring. Engineered scope, self-performed crews.",
+    "Specialty Structural Services for commercial properties across DFW, Houston, and Texas: parking garages, lube pits, metal deck slabs, balconies, lightweight concrete, historical buildings, waterproofing, waters of the US compliance, erosion work, and emergency shoring. Engineered scope, self-performed crews.",
   alternates: { canonical: "/commercial/specialty/" },
   openGraph: { images: [{ url: "/images/specialty-structural-materials-staged.webp", width: 1600, height: 1200 }], },
 };

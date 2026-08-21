@@ -3,7 +3,7 @@ import ServicePage, { type ServicePageData } from "@/components/site/ServicePage
 import { JsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Transferable Workmanship Warranty | Cardinal",
+  title: "Transferable Workmanship Warranty",
   description:
     "How Cardinal Foundation Services' transferable workmanship warranty works: coverage terms vary by service and are provided in writing with every scope, and the warranty can transfer to a new owner when a home sells.",
   alternates: { canonical: "/warranty/" },

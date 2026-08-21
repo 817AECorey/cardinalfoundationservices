@@ -5,9 +5,9 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/commercial-waterproofing-contractors/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Commercial Waterproofing Contractors in DFW | Cardinal" },
+  title: { absolute: "Commercial Waterproofing Contractors in DFW & Houston | Cardinal" },
   description:
-    "Commercial waterproofing across DFW: foundations, retaining walls, below-grade structures, crack sealing, and plaza, garage, and roof deck protection against water intrusion.",
+    "Commercial waterproofing across DFW, Houston, and Texas: foundations, retaining walls, below-grade structures, crack sealing, and plaza, garage, and roof deck protection against water intrusion.",
   alternates: { canonical: "/commercial/specialty/waterproofing/" },
 };
 
