@@ -69,13 +69,13 @@ const D_COMMERCIAL: { n: string; t: string; d: string; items: string[]; href?: s
   { n: "01", t: "Commercial Foundation Repair", d: "Engineered pier systems for warehouses, retail, and structural buildings.", items: ["Helical Piers & Tiebacks", "Drilled Piers", "Hybrid Pier Systems", "Underpinning", "Post-Tension Repair"], href: "/services/commercial-foundation-repair/" },
   { n: "02", t: "Concrete Lifting & Floor Leveling", d: "Settled warehouse slabs and commercial floors raised back to grade with polyurethane foam or mudjacking. Large areas, minimal downtime.", items: ["Warehouse Slab Foundation Repair", "Concrete Leveling", "Slab Lifting", "Void Filling"], href: "/commercial/concrete-lifting/" },
   { n: "03", t: "Commercial Concrete & Tilt-Wall", d: "Structural slab pours, tilt-wall fabrication, and structural crack repair.", items: ["Slab Pouring", "Tilt-Wall Fabrication", "Structural Crack Repair", "Expansion Joint & Mastic"], href: "/commercial/tilt-wall/" },
-  { n: "04", t: "Structural Retaining Walls", d: "Tieback anchors and structural retaining wall work that manage load and slope.", items: ["Tieback Anchors", "Structural Wall Repair"] },
-  { n: "05", t: "Commercial Drainage & Stormwater", d: "Water management that protects the building envelope and foundation.", items: ["French Drain Systems", "Perimeter Drainage", "Stormwater Management"] },
+  { n: "04", t: "Structural Retaining Walls", href: "/commercial/retaining-walls/", d: "Tieback anchors and structural retaining wall work that manage load and slope.", items: ["Tieback Anchors", "Structural Wall Repair"] },
+  { n: "05", t: "Commercial Drainage & Stormwater", href: "/commercial/drainage/", d: "Water management that protects the building envelope and foundation.", items: ["French Drain Systems", "Perimeter Drainage", "Stormwater Management"] },
 ];
 const D_NEWCON = [
-  { t: "Commercial Concrete & Tilt-Wall", d: "Structural slab pours, panel fabrication, and erection for warehouse and industrial shells." },
-  { t: "Builder Work & Additions", d: "Specialized structural work for builders and developers. Custom residential, additions, and builder piers." },
-  { t: "Earthwork & Grading", d: "Site preparation, grading, and developer infrastructure that sets the foundation up correctly." },
+  { t: "Commercial Concrete & Tilt-Wall", href: "/commercial/concrete-construction/", d: "Structural slab pours, panel fabrication, and erection for warehouse and industrial shells." },
+  { t: "Builder Work & Additions", href: "/new-construction/", d: "Specialized structural work for builders and developers. Custom residential, additions, and builder piers." },
+  { t: "Earthwork & Grading", href: "/new-construction/earthwork-grading/", d: "Site preparation, grading, and developer infrastructure that sets the foundation up correctly." },
 ];
 const D_STEPS = [
   { n: "01", t: "Free On-Site Assessment", d: "An engineer-led team inspects the structure and soil. An inspection determines the cause before anything is recommended." },
@@ -97,8 +97,8 @@ const D_WORK = [
 ];
 const D_RES: { t: string; items: string[]; href?: string }[] = [
   { t: "Complex Structural Repair", items: ["Multi-symptom failures", "Engineered pier plans"], href: "/residential/foundation-repair/" },
-  { t: "Large Retaining Walls", items: ["Tieback anchors", "Structural rebuilds"] },
-  { t: "Large & Custom Homes", items: ["Pier & beam", "Slab foundations"] },
+  { t: "Large Retaining Walls", href: "/residential/retaining-walls/", items: ["Tieback anchors", "Structural rebuilds"] },
+  { t: "Large & Custom Homes", href: "/residential/foundation-repair/", items: ["Pier & beam", "Slab foundations"] },
   { t: "Concrete Lifting & Leveling", items: ["House lifting", "Driveways & pool decks", "Slab lifting"], href: "/residential/concrete-leveling/" },
 ];
 
@@ -149,6 +149,18 @@ const NAV: NavEntry[] = [
           { label: "Retaining Walls", href: "/commercial/retaining-walls/" },
           { label: "Structural Repair", href: "/commercial/structural-repair/" },
           { label: "Specialty Services", href: "/commercial/specialty/" },
+        ],
+      },
+      {
+        num: "04", title: "Specialty", links: [
+          { label: "Historic Building Foundations", href: "/commercial/specialty/historical-building-foundation-repair/" },
+          { label: "Parking Garage Repair", href: "/commercial/specialty/parking-garage-repair/" },
+          { label: "Balcony Repair", href: "/commercial/specialty/balcony-repair/" },
+          { label: "Lube Pit Foundation Repair", href: "/commercial/specialty/lube-pit-foundation-repair/" },
+          { label: "Metal Deck Slab Repair", href: "/commercial/specialty/metal-deck-slab-repair/" },
+          { label: "Lightweight Concrete Repair", href: "/commercial/specialty/lightweight-concrete-repair/" },
+          { label: "Waterproofing", href: "/commercial/specialty/waterproofing/" },
+          { label: "WOTUS Contracting", href: "/commercial/specialty/waters-of-the-us/" },
         ],
       },
     ],
@@ -279,7 +291,7 @@ function MegaPanel({ entry, open, onKeyDown, panelRef }: { entry: NavEntry; open
             {overview.label} <Arrow s={14} c="currentColor" />
           </Link>
         )}
-        <div className="mega-grid" style={entry.columns && entry.columns.length < 3 ? { gridTemplateColumns: `repeat(${entry.columns.length}, 1fr) 320px` } : undefined}>
+        <div className="mega-grid" style={entry.columns && entry.columns.length !== 3 ? { gridTemplateColumns: `repeat(${entry.columns.length}, 1fr) 320px` } : undefined}>
           {entry.columns?.map((col, ci) => (
             <div className="mega-col" key={col.title}>
               <div className="mono mega-kicker"><span className="num">{col.num}</span>{col.title}</div>
@@ -733,7 +745,7 @@ function DNewConstruction() {
         </div>
         <div className="d-3">
           {D_NEWCON.map((c, i) => (
-            <a href="#" key={c.t} className="lift" style={{ background: "var(--ink)", color: "#fff", padding: "30px 28px 26px", display: "flex", flexDirection: "column", minHeight: 210, position: "relative", overflow: "hidden" }}>
+            <a href={c.href} key={c.t} className="lift" style={{ background: "var(--ink)", color: "#fff", padding: "30px 28px 26px", display: "flex", flexDirection: "column", minHeight: 210, position: "relative", overflow: "hidden" }}>
               <div className="d-blueprint" style={{ opacity: .5 }} />
               <span className="disp" style={{ fontSize: 15, color: "var(--red)", position: "relative" }}>{String(i + 1).padStart(2, "0")}</span>
               <h3 className="disp" style={{ fontSize: 22, margin: "12px 0 10px", lineHeight: 1.06, position: "relative" }}>{c.t}</h3>

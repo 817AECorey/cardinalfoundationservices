@@ -88,7 +88,7 @@ export default function Page() {
   return (
     <>
       <JsonLd data={[
-        serviceJsonLd({ name: "Foundation Repair in the Houston Area", serviceType: "Foundation Repair", description: metadata.description!, path: "/locations/houston/", areaServed: ["Houston", "Katy", "Sugar Land", "Missouri City", "Pearland", "Friendswood", "Kingwood", "Spring", "Cypress", "Meyerland", "Bellaire"] }),
+        serviceJsonLd({ name: "Foundation Repair in the Houston Area", serviceType: "Foundation Repair", description: metadata.description!, path: "/locations/houston/", areaServed: ["Houston", "Katy", "Sugar Land", "Missouri City", "Pearland", "Friendswood", "Kingwood", "Spring", "Cypress", "Meyerland", "Bellaire"] , phone: "(346) 230-4771" }),
         breadcrumbJsonLd([{ label: "Home", path: "/" }, { label: "Locations" }, { label: "Houston", path: "/locations/houston/" }]),
       ]} />
       <ServicePage data={data} />

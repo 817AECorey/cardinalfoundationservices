@@ -50,7 +50,7 @@ export function localBusinessJsonLd() {
   };
 }
 
-export function serviceJsonLd(opts: { name: string; description: string; path: string; serviceType?: string; areaServed?: string[] }) {
+export function serviceJsonLd(opts: { name: string; description: string; path: string; serviceType?: string; areaServed?: string[]; phone?: string }) {
   /* areaServed derives from the per-tree footprint (same data as the
      visible "Where we perform this work" component) unless a page passes
      an explicit override (location pages, statewide specialties). */
@@ -63,7 +63,7 @@ export function serviceJsonLd(opts: { name: string; description: string; path: s
     serviceType: opts.serviceType ?? opts.name,
     description: opts.description,
     url: BASE + opts.path,
-    provider: PROVIDER,
+    provider: opts.phone ? { ...PROVIDER, telephone: opts.phone } : PROVIDER,
     areaServed: areas.map((a) => ({ "@type": "Place", name: a })),
   };
 }

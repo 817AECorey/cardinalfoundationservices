@@ -165,12 +165,12 @@ function CIntro() {
 
 /* ---------- SERVICES GRID (links to individual pages) ---------- */
 const C_SERVICES = [
-  { n: "01", t: "Commercial Foundation Repair", d: "Engineered pier systems that stabilize settling slabs and structural foundations.", items: ["Helical Piers", "Drilled Piers", "Steel & Hybrid Piers", "Underpinning", "Post-Tension Repair"], img: "/images/commhub-foundation.webp", imgAlt: "Commercial drilled pier foundation repair", feature: true },
-  { n: "02", t: "Concrete Lifting & Floor Leveling", d: "Settled warehouse slabs and commercial floors raised back to grade with polyurethane foam or mudjacking.", items: ["Warehouse Slab Foundation Repair", "Concrete Leveling", "Slab Lifting", "Void Filling"], img: "/images/commhub-lifting.webp", imgAlt: "Commercial concrete lifting and floor leveling" },
-  { n: "03", t: "Commercial Concrete & Tilt-Wall", d: "Structural slab pours, tilt-wall panel work, and structural crack repair.", items: ["Structural Slab Pours", "Tilt-Wall Panels", "Structural Crack Repair", "Expansion Joints"], img: "/images/commhub-tiltwall.webp", imgAlt: "Commercial concrete and tilt-wall work" },
-  { n: "04", t: "Structural Retaining Walls", d: "Tieback anchors and structural wall work that manage load, slope, and lateral pressure.", items: ["Tieback Anchors", "Structural Wall Repair", "Wall Replacement"], img: "/images/commhub-retaining.webp", imgAlt: "Commercial structural retaining wall" },
-  { n: "05", t: "Commercial Drainage & Stormwater", d: "Water management that protects the slab, footings, and building envelope.", items: ["French Drains", "Perimeter Drainage", "Stormwater Management", "Grading"], img: "/images/commhub-drainage.webp", imgAlt: "Commercial drainage and site work" },
-  { n: "06", t: "Earthwork & Site Grading", d: "Site preparation and grading that corrects how water moves across the property.", items: ["Cut & Fill", "Site Grading", "Soil Preparation"], img: "/images/commhub-earthwork.webp", imgAlt: "Commercial earthwork and site grading" },
+  { n: "01", t: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/", d: "Engineered pier systems that stabilize settling slabs and structural foundations.", items: ["Helical Piers", "Drilled Piers", "Steel & Hybrid Piers", "Underpinning", "Post-Tension Repair"], img: "/images/commhub-foundation.webp", imgAlt: "Commercial drilled pier foundation repair", feature: true },
+  { n: "02", t: "Concrete Lifting & Floor Leveling", href: "/commercial/concrete-lifting/", d: "Settled warehouse slabs and commercial floors raised back to grade with polyurethane foam or mudjacking.", items: ["Warehouse Slab Foundation Repair", "Concrete Leveling", "Slab Lifting", "Void Filling"], img: "/images/commhub-lifting.webp", imgAlt: "Commercial concrete lifting and floor leveling" },
+  { n: "03", t: "Commercial Concrete & Tilt-Wall", href: "/commercial/concrete-construction/", d: "Structural slab pours, tilt-wall panel work, and structural crack repair.", items: ["Structural Slab Pours", "Tilt-Wall Panels", "Structural Crack Repair", "Expansion Joints"], img: "/images/commhub-tiltwall.webp", imgAlt: "Commercial concrete and tilt-wall work" },
+  { n: "04", t: "Structural Retaining Walls", href: "/commercial/retaining-walls/", d: "Tieback anchors and structural wall work that manage load, slope, and lateral pressure.", items: ["Tieback Anchors", "Structural Wall Repair", "Wall Replacement"], img: "/images/commhub-retaining.webp", imgAlt: "Commercial structural retaining wall" },
+  { n: "05", t: "Commercial Drainage & Stormwater", href: "/commercial/drainage/", d: "Water management that protects the slab, footings, and building envelope.", items: ["French Drains", "Perimeter Drainage", "Stormwater Management", "Grading"], img: "/images/commhub-drainage.webp", imgAlt: "Commercial drainage and site work" },
+  { n: "06", t: "Earthwork & Site Grading", href: "/new-construction/earthwork-grading/", d: "Site preparation and grading that corrects how water moves across the property.", items: ["Cut & Fill", "Site Grading", "Soil Preparation"], img: "/images/commhub-earthwork.webp", imgAlt: "Commercial earthwork and site grading" },
 ];
 function CServices() {
   return (
@@ -187,7 +187,7 @@ function CServices() {
         </div>
         <div className="c-svc">
           {C_SERVICES.map((s) => (
-            <a href="#" key={s.t} className="lift" style={{ background: s.feature ? "var(--red)" : "var(--ink-2)", color: "#fff", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column" }}>
+            <a href={s.href} key={s.t} className="lift" style={{ background: s.feature ? "var(--red)" : "var(--ink-2)", color: "#fff", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column" }}>
               <Img label={s.imgAlt ?? s.t + ". Jobsite photo"} src={s.img} h={158} />
               <div style={{ padding: "24px 26px 26px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <span className="disp" style={{ fontSize: 14, color: s.feature ? "rgba(255,255,255,.7)" : "var(--red)" }}>{s.n}</span>

@@ -171,10 +171,10 @@ function NIntro() {
 
 /* ---------- SERVICES GRID (links to individual pages) ---------- */
 const N_SERVICES = [
-  { n: "01", t: "Commercial Concrete", d: "Structural slab pours, building pads, and site concrete for new commercial shells.", items: ["Structural Slab Pours", "Building Pads", "Site Paving", "Foundations"], img: "/images/finished-concrete-foundation-slab.webp", feature: true },
-  { n: "02", t: "Tilt-Wall Construction", d: "Panel fabrication and erection for warehouse and industrial shells.", items: ["Panel Fabrication", "Panel Erection", "Warehouse & Industrial Shells"], img: "/images/nchub-tiltwall.webp", imgAlt: "Tilt-wall construction" },
-  { n: "03", t: "Builder Work & Additions", d: "Specialized structural work for builders and developers. Custom residential, additions, and builder piers.", items: ["Builder Piers", "Additions", "Custom Homes"], img: "/images/nchub-builder.webp", imgAlt: "Builder work and additions" },
-  { n: "04", t: "Earthwork & Grading", d: "Site preparation, grading, and developer infrastructure that sets the foundation up correctly.", items: ["Cut & Fill", "Site Grading", "Soil Preparation", "Developer Infrastructure"], img: "/images/nchub-earthwork.webp", imgAlt: "Earthwork and site grading" },
+  { n: "01", t: "Commercial Concrete", href: "/commercial/concrete-construction/", d: "Structural slab pours, building pads, and site concrete for new commercial shells.", items: ["Structural Slab Pours", "Building Pads", "Site Paving", "Foundations"], img: "/images/finished-concrete-foundation-slab.webp", feature: true },
+  { n: "02", t: "Tilt-Wall Construction", href: "/commercial/tilt-wall/", d: "Panel fabrication and erection for warehouse and industrial shells.", items: ["Panel Fabrication", "Panel Erection", "Warehouse & Industrial Shells"], img: "/images/nchub-tiltwall.webp", imgAlt: "Tilt-wall construction" },
+  { n: "03", t: "Builder Work & Additions", href: "/new-construction/concrete-flatwork/", d: "Specialized structural work for builders and developers. Custom residential, additions, and builder piers.", items: ["Builder Piers", "Additions", "Custom Homes"], img: "/images/nchub-builder.webp", imgAlt: "Builder work and additions" },
+  { n: "04", t: "Earthwork & Grading", href: "/new-construction/earthwork-grading/", d: "Site preparation, grading, and developer infrastructure that sets the foundation up correctly.", items: ["Cut & Fill", "Site Grading", "Soil Preparation", "Developer Infrastructure"], img: "/images/nchub-earthwork.webp", imgAlt: "Earthwork and site grading" },
 ];
 function NServices() {
   return (
@@ -191,7 +191,7 @@ function NServices() {
         </div>
         <div className="r-svc">
           {N_SERVICES.map((s) => (
-            <a href="#" key={s.t} className="lift" style={{ background: s.feature ? "var(--red)" : "var(--ink-2)", color: "#fff", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column" }}>
+            <a href={s.href} key={s.t} className="lift" style={{ background: s.feature ? "var(--red)" : "var(--ink-2)", color: "#fff", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column" }}>
               <Img label={s.imgAlt ?? s.t + ". Jobsite photo"} src={s.img} h={158} />
               <div style={{ padding: "24px 26px 26px", display: "flex", flexDirection: "column", flex: 1 }}>
                 <span className="disp" style={{ fontSize: 14, color: s.feature ? "rgba(255,255,255,.7)" : "var(--red)" }}>{s.n}</span>
