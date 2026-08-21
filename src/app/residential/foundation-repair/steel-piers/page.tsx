@@ -13,14 +13,14 @@ export const metadata: Metadata = {
   description:
     "Steel pier foundation repair for DFW homes. Driven to load-bearing strata for deep, lasting support in North Texas expansive clay. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/steel-piers/" },
-  openGraph: { images: [{ url: "/images/steel-pier-installation-fort-worth-tx.webp", width: 1200, height: 800 }], },
+  openGraph: { images: [{ url: "/images/steel-pier-jobsite-lewisville.webp", width: 1400, height: 1050 }], },
 };
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Foundation Repair", href: "/residential/foundation-repair/" }, { label: "Steel Piers" }],
   kicker: "Residential Foundation Repair · DFW",
   h1: "Steel Piers for Home Foundation Repair",
-  heroImage: { src: "/images/steel-pier-installation-fort-worth-tx.webp", alt: "Steel pier sections being hydraulically driven at a home foundation", width: 1200, height: 800 },
+  heroImage: { src: "/images/steel-pier-jobsite-lewisville.webp", alt: "Steel pier installation at a Lewisville multifamily property", width: 1400, height: 1050 },
   intro: [
     "Steel piers are the deepest-reaching repair system we install under homes across Dallas-Fort Worth and the Houston area. Driven steel reaches through the active clay layer to load-bearing strata, which is why steel is the system we reach for when a home needs support that does not renegotiate with the soil every season. If your doors have started sticking, brick is cracking in stair steps, or floors have gone out of level, an inspection determines whether piers are the answer and which system fits your home.",
   ],
