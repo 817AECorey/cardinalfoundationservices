@@ -22,10 +22,10 @@ const data: ServicePageData = {
   ],
   sections: [],
   childCards: [
-    { t: "Fort Worth", d: "Home base. Headquartered here, with crews working daily across Keller, Southlake, Grapevine, Bedford, Hurst, Euless, North Richland Hills, Burleson, and Weatherford. Residential, commercial, and new construction.", href: "/locations/fort-worth/" },
-    { t: "Dallas", d: "Residential foundation repair, commercial and structural work, concrete lifting, and drainage correction throughout Dallas, Plano, Frisco, McKinney, Allen, Richardson, Garland, Irving, and nearby communities.", href: "/locations/dallas/" },
-    { t: "Houston Area", d: "Residential foundation repair across Katy, Sugar Land, Pearland, Friendswood, Kingwood, and surrounding communities, with commercial work in the region.", href: "/locations/houston/" },
-    { t: "Possum Kingdom Lake", d: "Structural foundation repair, concrete leveling, and balcony repair for lake homes, slopes, and elevated structures.", href: "/locations/possum-kingdom-lake/" },
+    { t: "Fort Worth", img: "/images/loc-fw-commercial.webp", d: "Home base. Headquartered here, with crews working daily across Keller, Southlake, Grapevine, Bedford, Hurst, Euless, North Richland Hills, Burleson, and Weatherford. Residential, commercial, and new construction.", href: "/locations/fort-worth/" },
+    { t: "Dallas", img: "/images/loc-dallas-residential.webp", d: "Residential foundation repair, commercial and structural work, concrete lifting, and drainage correction throughout Dallas, Plano, Frisco, McKinney, Allen, Richardson, Garland, Irving, and nearby communities.", href: "/locations/dallas/" },
+    { t: "Houston Area", img: "/images/houston-area-pier-installation-multifamily.webp", d: "Residential foundation repair across Katy, Sugar Land, Pearland, Friendswood, Kingwood, and surrounding communities, with commercial work in the region.", href: "/locations/houston/" },
+    { t: "Possum Kingdom Lake", img: "/images/loc-pk-structural.webp", d: "Structural foundation repair, concrete leveling, and balcony repair for lake homes, slopes, and elevated structures.", href: "/locations/possum-kingdom-lake/" },
   ],
   related: [
     ["Residential", "/residential/"],

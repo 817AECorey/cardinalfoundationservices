@@ -39,7 +39,7 @@ export type ServicePageData = {
   heroImage?: { src: string; alt: string; width: number; height: number; contain?: boolean; pos?: string };
   sections: Section[];
   /* hub pages: linked child cards composed from each child page's opening (do not invent services) */
-  childCards?: { t: string; d: string; href: string }[];
+  childCards?: { t: string; d: string; href: string; img?: string; imgAlt?: string }[];
   related?: [string, string][]; // [label, href] internal links per front-matter
   faqs: [string, string][];
   faqTitle?: string;
@@ -335,12 +335,15 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
             </div>
             <div className="c-svc" style={d.childCards.length === 4 ? { gridTemplateColumns: "repeat(2, 1fr)" } : undefined}>
               {d.childCards.map((c) => (
-                <Link href={c.href} key={c.href} className="lift" style={{ background: "var(--ink-2)", color: "#fff", padding: "28px 26px", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column", minHeight: 200 }}>
+                <Link href={c.href} key={c.href} className="lift" style={{ background: "var(--ink-2)", color: "#fff", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column", minHeight: 200 }}>
+                  {c.img && <Img label={c.imgAlt ?? c.t} src={c.img} h={158} />}
+                  <div style={{ padding: "28px 26px", display: "flex", flexDirection: "column", flex: 1 }}>
                   <h3 className="disp" style={{ fontSize: 21, marginBottom: 10, lineHeight: 1.06 }}>{c.t}</h3>
                   <p style={{ color: "#a8a8a8", fontSize: 13.5, lineHeight: 1.55, marginBottom: 16 }}>{c.d}</p>
                   <span style={{ marginTop: "auto", display: "flex", alignItems: "center", gap: 8, fontWeight: 800, fontSize: 12, letterSpacing: ".08em", textTransform: "uppercase", color: "var(--red)" }}>
                     View service <Arrow s={14} c="var(--red)" />
                   </span>
+                  </div>
                 </Link>
               ))}
             </div>

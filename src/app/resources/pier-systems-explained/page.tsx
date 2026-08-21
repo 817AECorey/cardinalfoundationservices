@@ -23,6 +23,7 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Comparison at a glance",
+      img: { src: "/images/pier-comparison-pressed-concrete.webp", alt: "Pressed concrete pier installation" },
       table: {
         head: ["System", "How it is installed", "Typical depth reach", "Relative cost", "Strongest fit"],
         rows: [
@@ -37,7 +38,7 @@ const data: ServicePageData = {
     },
     {
       h2: "Steel Piers vs. Concrete Piers",
-      noMedia: true,
+      img: { src: "/images/pier-diagram-pressed.webp", alt: "Pressed pier system cutaway diagram" },
       paras: [
         "The most common comparison homeowners ask about, and the honest version is short: steel piers go deeper and carry more; pressed concrete pilings cost less and are often sufficient.",
         "Pressed concrete pilings are pushed into the ground until soil resistance stops them, which in much of North Texas can mean stopping within or near the active clay zone. For lighter homes on lots where that resistance point is decent bearing soil, they perform well at the lowest installed cost, which is why they are the region's most common repair pier.",
@@ -47,6 +48,7 @@ const data: ServicePageData = {
     },
     {
       h2: "The other systems, briefly",
+      img: { src: "/images/pier-diagram-helical.webp", alt: "Helical pier system cutaway diagram" },
       bullets: [
         ["Drilled piers ", "are built in the ground rather than pushed into it: reinforced concrete formed at a designed depth and diameter. They shine where a specific engineered support is called for, and for structures like additions, porches, decks, and stairs. They are also a backbone of Texas new construction."],
         ["Helical piers ", "screw into the soil like giant threaded anchors, with capacity verified by installation torque. They excel where surface soils are poor, where access is tight, and in tension applications like retaining wall tiebacks, which pure compression piers cannot do."],
