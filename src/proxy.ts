@@ -24,8 +24,10 @@ export function proxy(request: NextRequest) {
   // canonical host: non-www apex; www 301s to it, single hop, path preserved
   const host = request.headers.get("host") ?? "";
   if (host.startsWith("www.")) {
-    const url = request.nextUrl.clone();
-    url.host = host.slice(4);
+    /* Build the target from scratch: cloning nextUrl leaks the container's
+       internal port (:3000) into the public Location header. */
+    const apex = host.slice(4).split(":")[0];
+    const url = new URL(request.nextUrl.pathname + request.nextUrl.search, `https://${apex}`);
     return secured(NextResponse.redirect(url, 301));
   }
   const key = pathname !== "/" && pathname.endsWith("/") ? pathname.slice(0, -1) : pathname;
