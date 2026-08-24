@@ -58,10 +58,11 @@ export const CITY_LINKS: Record<string, string> = {
   "Possum Kingdom Lake": "/locations/possum-kingdom-lake/",
 };
 /* Credibility bar per content/14. The 4.9 Google rating appears as visible
-   text only, NEVER as review markup; TODO: link it to the Google Business
+   text only, NEVER as review markup; linked to the Google Business
    Profile once the GBP URL is provided. */
 export const GOOGLE_RATING = "4.9 \u2605 on Google";
 export const GOOGLE_REVIEWS_URL = "https://share.google/h26ZNieW3Lfqdk5WL";
+export const GBP_REVIEW_URL = "https://g.page/r/CW7oD9fFjBq0EBM/review";
 
 const D_TRUSTBAR = ["BBB A+", GOOGLE_RATING, "Licensed PE Ownership", "AAGD / TAB / ASA Member", "Transferable Workmanship Warranty", "Free Foundation Check"];
 
@@ -873,8 +874,7 @@ function DWork() {
             </a>
           ))}
         </div>
-        {/* Visible rating text only; NO AggregateRating/review markup anywhere.
-            TODO: link this text to the Google Business Profile when the GBP URL is provided. */}
+        {/* Visible rating text only; NO AggregateRating/review markup anywhere. */}
         <div style={{ marginTop: 36, border: "1px dashed rgba(255,255,255,.25)", padding: "28px 32px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 20, flexWrap: "wrap" }}>
           <div>
             <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener"><div className="disp" style={{ color: "#fff", fontSize: 24 }}>{GOOGLE_RATING}</div></a>
@@ -882,7 +882,7 @@ function DWork() {
               Read our verified reviews on our Google Business Profile.
             </p>
           </div>
-          <span className="over" style={{ color: "#7d7d7d", fontSize: 11 }}>FOR-LINK: Google Business Profile URL</span>
+          <a className="over" href={GBP_REVIEW_URL} target="_blank" rel="noopener" style={{ color: "var(--red-bright)", fontSize: 11 }}>Leave us a review -&gt;</a>
         </div>
         {/* SERVICE SHORTCUTS (crawlable links) per content/14 */}
         <div style={{ marginTop: 26, display: "flex", flexWrap: "wrap", gap: "8px 10px" }}>

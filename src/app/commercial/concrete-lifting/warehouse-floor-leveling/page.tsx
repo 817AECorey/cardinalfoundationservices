@@ -16,7 +16,7 @@ const data: ServicePageData = {
   h1: "Warehouse Floor Leveling in DFW & Houston",
   heroImage: { src: "/images/warehouse-floor-injection-work.webp", alt: "Floor leveling injection work at an industrial facility", width: 1050, height: 1400 },
   intro: [
-    "An uneven warehouse floor is a forklift problem, a racking problem, a safety problem, and eventually a structural problem. Cardinal levels warehouse and industrial floors across Dallas-Fort Worth, corrects the voids and settlement underneath them, and does it around your operations rather than instead of them.",
+    "An uneven warehouse floor is a forklift problem, a racking problem, a safety problem, and eventually a structural problem. Cardinal levels warehouse and industrial floors across Dallas-Fort Worth and Houston, corrects the voids and settlement underneath them, and does it around your operations rather than instead of them.",
   ],
   sections: [
     {

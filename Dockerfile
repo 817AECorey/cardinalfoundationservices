@@ -8,6 +8,13 @@ RUN npm ci
 
 # ---- builder: build the Next.js standalone output ----
 FROM node:22-slim AS builder
+# build-time public analytics IDs (inlined by next build)
+ARG NEXT_PUBLIC_GA4_ID
+ARG NEXT_PUBLIC_GADS_CONVERSION_ID
+ARG NEXT_PUBLIC_GADS_CONVERSION_LABEL
+ENV NEXT_PUBLIC_GA4_ID=$NEXT_PUBLIC_GA4_ID
+ENV NEXT_PUBLIC_GADS_CONVERSION_ID=$NEXT_PUBLIC_GADS_CONVERSION_ID
+ENV NEXT_PUBLIC_GADS_CONVERSION_LABEL=$NEXT_PUBLIC_GADS_CONVERSION_LABEL
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
