@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Construction", href: "/commercial/concrete-construction/" }, { label: "Structural Crack Repair" }],
-  kicker: "Concrete Construction · DFW",
+  kicker: "Concrete Construction · DFW, Houston & Texas",
   h1: "Commercial Concrete Crack Repair",
   heroImage: { src: "/images/crack-secondary-v2.webp", alt: "Cracked concrete surface close-up", width: 1600, height: 1600 },
   intro: [

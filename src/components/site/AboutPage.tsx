@@ -48,7 +48,7 @@ function AHero() {
               <Img label="Cracked brick foundation corner on a Fort Worth home in need of repair" src="/images/foundation-repair-fort-worth-cracked-brick.webp" style={{ height: "100%" }} />
             </div>
             <div style={{ position: "absolute", left: 0, bottom: 0, background: "var(--red)", color: "#fff", padding: "18px 24px", maxWidth: 320 }}>
-              <div className="disp" style={{ fontSize: 19 }}>Foundation Repair Experts Serving DFW</div>
+              <div className="disp" style={{ fontSize: 19 }}>Foundation Repair Experts Serving DFW &amp; Houston</div>
             </div>
           </div>
         </div>
@@ -234,7 +234,7 @@ function ACrews() {
             <Img label="Skid steer performing foundation work at a new construction home" src="/images/foundation-work-new-construction-home-skid-steer.webp" style={{ height: "100%" }} />
           </div>
           <div style={{ position: "absolute", left: 0, bottom: 0, background: "var(--red)", color: "#fff", padding: "18px 24px", maxWidth: 320 }}>
-            <div className="disp" style={{ fontSize: 19 }}>Foundation &amp; New Construction Work Across DFW</div>
+            <div className="disp" style={{ fontSize: 19 }}>Foundation &amp; New Construction Work Across DFW, Houston &amp; Texas</div>
           </div>
         </div>
         <div>

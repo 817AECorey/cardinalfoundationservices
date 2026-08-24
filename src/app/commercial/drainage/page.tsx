@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Drainage" }],
-  kicker: "Commercial & Industrial · Dallas-Fort Worth",
+  kicker: "Commercial & Industrial · DFW, Houston & Texas",
   h1: "Commercial Drainage",
   heroImage: { src: "/images/commercial-drainage-gravel-french-drain.webp", alt: "Gravel french drain line installed along a commercial building", width: 1200, height: 1600 },
   intro: [

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/" }, { label: "Drilled Piers" }],
-  kicker: "Commercial Foundation Repair · DFW",
+  kicker: "Commercial Foundation Repair · DFW, Houston & Texas",
   h1: "Drilled Piers for Commercial Buildings",
   heroImage: { src: "/images/drilled-pier-rig-commercial-installation.webp", alt: "Drilled pier rig operating at a commercial foundation installation", width: 1280, height: 1706 },
   intro: [

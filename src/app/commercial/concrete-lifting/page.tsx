@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Lifting" }],
-  kicker: "Commercial & Industrial · Dallas-Fort Worth",
+  kicker: "Commercial & Industrial · DFW, Houston & Texas",
   h1: "Concrete Lifting & Stabilization",
   heroImage: { src: "/images/commercial-concrete-lifting-parking-lot.webp", alt: "Crew lifting settled concrete in a commercial parking lot", width: 1600, height: 1200 },
   intro: [

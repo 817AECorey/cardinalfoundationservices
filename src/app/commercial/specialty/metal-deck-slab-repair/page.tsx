@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Metal Deck Slab Repair" }],
-  kicker: "Specialty Structural · Fort Worth & DFW",
+  kicker: "Specialty Structural · DFW, Houston & Texas",
   h1: "Metal Deck and Pan-Pour Slab Repair",
   heroImage: { src: "/images/metal-deck-slab-repair.webp", alt: "Metal deck slab during commercial repair work", width: 1536, height: 1024 },
   intro: [

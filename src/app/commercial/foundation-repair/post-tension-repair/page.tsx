@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/" }, { label: "Post-Tension Repair" }],
-  kicker: "Commercial Foundation Repair · DFW",
+  kicker: "Commercial Foundation Repair · DFW, Houston & Texas",
   h1: "Commercial Post-Tension Slab Repair",
   intro: [
     "Post-tension slab systems are widely used in commercial construction across North Texas. When cables fail, corrode, or lose tension, structural performance can decline rapidly. Cardinal Foundation Services provides engineered post-tension repair across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide, restoring structural integrity in commercial slabs used in warehouses, office buildings, retail centers, parking structures, and industrial facilities.",

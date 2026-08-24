@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/" }, { label: "Helical Piers & Tiebacks" }],
-  kicker: "Commercial Foundation Repair · DFW",
+  kicker: "Commercial Foundation Repair · DFW, Houston & Texas",
   h1: "Helical Piers and Tieback Systems",
   heroImage: { src: "/images/helical-piers-tieback-installation.webp", alt: "Helical pier and tieback installation at a commercial site", width: 1600, height: 900 },
   intro: [

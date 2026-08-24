@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Retaining Walls" }],
-  kicker: "Commercial & Industrial · Dallas-Fort Worth",
+  kicker: "Commercial & Industrial · DFW, Houston & Texas",
   h1: "Commercial Retaining Walls",
   heroImage: { src: "/images/retaining-wall-repair-crew.webp", alt: "Crew working at a stone retaining wall during repair", width: 1600, height: 1200 },
   intro: [

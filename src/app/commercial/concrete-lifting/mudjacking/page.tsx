@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Lifting", href: "/commercial/concrete-lifting/" }, { label: "Mudjacking" }],
-  kicker: "Concrete Lifting & Stabilization · DFW",
+  kicker: "Concrete Lifting & Stabilization · DFW, Houston & Texas",
   h1: "Commercial Mudjacking",
   heroImage: { src: "/images/mudjacking-crew-v2.webp", alt: "Mudjacking crew and pump at a property", width: 1600, height: 1200 },
   intro: [

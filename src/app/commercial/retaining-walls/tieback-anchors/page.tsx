@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Retaining Walls", href: "/commercial/retaining-walls/" }, { label: "Tieback Anchors" }],
-  kicker: "Commercial Retaining Walls · DFW",
+  kicker: "Commercial Retaining Walls · DFW, Houston & Texas",
   h1: "Retaining Wall Tieback Anchor Systems",
   intro: [
     "When commercial retaining walls begin to lean, bow, or shift due to lateral soil pressure, tieback anchor systems provide engineered stabilization. Cardinal Foundation Services installs commercial retaining wall tieback anchors across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. Tiebacks are deep anchoring systems designed to resist horizontal earth pressure and restore wall alignment without full reconstruction, commonly used in large commercial developments where retaining wall movement threatens structural integrity or adjacent infrastructure.",

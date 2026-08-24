@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Construction", href: "/commercial/concrete-construction/" }, { label: "Slab Pouring" }],
-  kicker: "Concrete Construction · DFW",
+  kicker: "Concrete Construction · DFW, Houston & Texas",
   h1: "Commercial Slab Pouring",
   heroImage: { src: "/images/slab-pouring-formed-foundation.webp", alt: "Formed foundation prepared for concrete placement", width: 1600, height: 1200 },
   intro: [

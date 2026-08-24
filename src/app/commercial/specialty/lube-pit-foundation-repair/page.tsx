@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Lube Pit Foundation Repair" }],
-  kicker: "Specialty Structural · DFW",
+  kicker: "Specialty Structural · DFW, Houston & Texas",
   h1: "Lube Pit Foundation Repair",
   heroImage: { src: "/images/lube-pit-foundation-repair.webp", alt: "Lube pit foundation during commercial repair", width: 1536, height: 1024 },
   intro: [

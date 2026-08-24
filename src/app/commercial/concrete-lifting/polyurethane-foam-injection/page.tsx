@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Lifting", href: "/commercial/concrete-lifting/" }, { label: "Polyurethane Foam Injection" }],
-  kicker: "Concrete Lifting & Stabilization · DFW",
+  kicker: "Concrete Lifting & Stabilization · DFW, Houston & Texas",
   h1: "Commercial Polyurethane Foam Injection",
   heroImage: { src: "/images/polyurethane-foam-injection-port-commercial.webp", alt: "Polyurethane injection equipment set on commercial concrete", width: 1200, height: 1600 },
   intro: [

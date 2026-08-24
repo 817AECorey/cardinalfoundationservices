@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Historical Building Foundation Repair" }],
-  kicker: "Specialty Structural · Fort Worth & Dallas",
+  kicker: "Specialty Structural · DFW, Houston & Texas",
   h1: "Historic Building Foundation Repair",
   heroImage: { src: "/images/historic-building-foundation-restoration-pilot-point.webp", alt: "Equipment staged at a historic Pilot Point building during foundation restoration", width: 1280, height: 1706 },
   intro: [

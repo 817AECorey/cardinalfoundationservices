@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Drainage", href: "/commercial/drainage/" }, { label: "Perimeter Drainage" }],
-  kicker: "Commercial Drainage · DFW",
+  kicker: "Commercial Drainage · DFW, Houston & Texas",
   h1: "Foundation Perimeter Drainage",
   heroImage: { src: "/images/perimeter-secondary-v2.webp", alt: "Perimeter drain system cutaway", width: 1200, height: 1600 },
   intro: [

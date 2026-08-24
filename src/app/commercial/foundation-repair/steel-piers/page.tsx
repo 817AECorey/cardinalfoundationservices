@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/" }, { label: "Steel Piers" }],
-  kicker: "Commercial Foundation Repair · DFW",
+  kicker: "Commercial Foundation Repair · DFW, Houston & Texas",
   h1: "Steel Piers for Commercial Structures",
   heroImage: { src: "/images/commercial-steel-pier-access-pit.webp", alt: "Interior access pit prepared for commercial steel pier installation", width: 1280, height: 960 },
   intro: [

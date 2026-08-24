@@ -77,7 +77,7 @@ export function WhereWePerform({ tree }: { tree: "residential" | "commercial" | 
 /* Eyebrow kicker geo suffix by tree (decorative labels, NOT title tags —
    the title freeze on migrated ranking pages is untouched):
      residential "· DFW"        -> "· DFW & Houston"
-     commercial  "· DFW" family -> "· DFW & Texas"
+     commercial  "· DFW" family -> "· DFW, Houston & Texas"
      new construction           -> unchanged
    Kickers already carrying a broader geo ("Texas", "DFW & Texas") keep it. */
 const DFW_VARIANTS = new Set(["DFW", "Dallas-Fort Worth", "Fort Worth & DFW", "Fort Worth & Dallas"]);
@@ -87,7 +87,7 @@ function geoKicker(kicker: string, tree: "residential" | "commercial" | "newcon"
   if (parts.length < 2) return kicker;
   const geo = parts[parts.length - 1];
   if (tree === "residential" && (DFW_VARIANTS.has(geo) || geo === "Texas")) parts[parts.length - 1] = "DFW & Houston";
-  if (tree === "commercial" && DFW_VARIANTS.has(geo)) parts[parts.length - 1] = "DFW & Texas";
+  if (tree === "commercial" && DFW_VARIANTS.has(geo)) parts[parts.length - 1] = "DFW, Houston & Texas";
   return parts.join(" · ");
 }
 

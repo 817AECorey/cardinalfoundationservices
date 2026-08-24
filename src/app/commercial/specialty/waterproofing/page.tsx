@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Waterproofing" }],
-  kicker: "Specialty Structural · Fort Worth & Dallas",
+  kicker: "Specialty Structural · DFW, Houston & Texas",
   h1: "Commercial Waterproofing",
   intro: [
     "Cardinal Foundation Services provides commercial waterproofing solutions for buildings across the Dallas-Fort Worth metroplex. From foundations and retaining walls to below-grade concrete structures, our team protects against water intrusion, erosion, and long-term moisture damage. Whether you are constructing a new commercial facility or repairing an existing one, waterproofing systems are tailored to the demands of Texas soils and weather, working with contractors, engineers, developers, and property owners to deliver code-compliant results.",

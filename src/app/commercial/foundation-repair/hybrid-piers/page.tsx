@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/" }, { label: "Hybrid Piers" }],
-  kicker: "Commercial Foundation Repair · DFW",
+  kicker: "Commercial Foundation Repair · DFW, Houston & Texas",
   h1: "Hybrid Pier Systems for Commercial Buildings",
   intro: [
     "Commercial buildings across North Texas often experience settlement in varying zones due to inconsistent soil conditions. When a single deep foundation system is not sufficient across an entire footprint, hybrid pier systems provide engineered flexibility. Cardinal Foundation Services installs commercial hybrid pier systems across Texas, from our Fort Worth base serving Dallas-Fort Worth, Houston, and commercial markets statewide. Hybrid systems combine drilled piers and helical piers to address site-specific load requirements and soil variability, allowing precise stabilization where needed while maintaining cost efficiency across large commercial properties.",

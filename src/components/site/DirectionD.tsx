@@ -93,7 +93,7 @@ const D_PIERS: [string, string][] = [
 const D_WORK = [
   { t: "Tilt-Wall Foundation & Drainage Restoration", scope: "Commercial · Foundation + Drainage", img: "/images/project-tiltresto-02.webp", href: "/projects/tilt-wall-foundation-drainage-restoration/" },
   { t: "Industrial Polyurethane Lift & Void Fill", scope: "Industrial · Concrete Lifting", img: "/images/project-diplomat-01.webp", href: "/projects/diplomat-drive-polyurethane-injection-industrial-foundation-lift-void-fill/" },
-  { t: "Multifamily Foundation Repair", scope: "Multifamily · DFW", img: "/images/project-baytown-01.webp", href: "/projects/baytown-multi-family/" },
+  { t: "Multifamily Foundation Repair", scope: "Multifamily · DFW & Houston", img: "/images/project-baytown-01.webp", href: "/projects/baytown-multi-family/" },
   { t: "Steel Pier Installation", scope: "Foundation · Steel Piers", img: "/images/project-stemmons-04.webp", href: "/projects/steel-piers-n-stemmons/" },
 ];
 const D_RES: { t: string; items: string[]; href?: string }[] = [
@@ -622,7 +622,7 @@ function DHero() {
       <div className="wrap" style={{ position: "relative", zIndex: 2, paddingTop: 64, paddingBottom: 60 }}>
         <div className="d-hero">
           <div>
-            <Kicker color="#fff">Fort Worth, Texas · Serving DFW and Texas</Kicker>
+            <Kicker color="#fff">Fort Worth, Texas · Serving DFW, Houston &amp; Texas</Kicker>
             <h1 className="disp fade-up" style={{ fontSize: 62, margin: "20px 0 0", color: "#fff" }}>
               Foundation Repair in Dallas-Fort Worth &amp; Houston
             </h1>
@@ -1072,7 +1072,7 @@ export function DContact() {
             <div style={{ height: 1, background: "rgba(255,255,255,.14)", margin: "22px 0" }} />
             <div className="over" style={{ color: "#9a9a9a", marginBottom: 10 }}>Hours</div>
             <div style={{ fontWeight: 600, marginBottom: 18 }}>Mon–Fri · 7:00 AM to 6:00 PM</div>
-            <div className="over" style={{ color: "#9a9a9a", marginBottom: 10 }}>Service area · Fort Worth based, serving Texas</div>
+            <div className="over" style={{ color: "#9a9a9a", marginBottom: 10 }}>Service area · Fort Worth based · serving DFW, Houston &amp; Texas</div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "7px 8px" }}>
               {D_CITIES.map((c) => CITY_LINKS[c] ? <a key={c} href={CITY_LINKS[c]} style={{ border: "1px solid rgba(255,255,255,.18)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "#e3e1de", cursor: "pointer" }}>{c}</a> : <span key={c} style={{ border: "1px solid rgba(255,255,255,.18)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "#e3e1de" }}>{c}</span>)}
             </div>

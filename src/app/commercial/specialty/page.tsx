@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services" }],
-  kicker: "Commercial & Industrial · Dallas-Fort Worth",
+  kicker: "Commercial & Industrial · DFW, Houston & Texas",
   h1: "Specialty Structural Services",
   heroImage: { src: "/images/specialty-structural-materials-staged.webp", alt: "Structural repair materials staged on site", width: 1600, height: 1200 },
   intro: [

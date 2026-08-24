@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Balcony Repair" }],
-  kicker: "Specialty Structural · Fort Worth & DFW",
+  kicker: "Specialty Structural · DFW, Houston & Texas",
   h1: "Balcony Repair and Concrete Restoration",
   heroImage: { src: "/images/balcony-secondary-v2.webp", alt: "Multifamily balcony structure", width: 1536, height: 1024 },
   intro: [

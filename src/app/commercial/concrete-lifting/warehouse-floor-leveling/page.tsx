@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Lifting", href: "/commercial/concrete-lifting/" }, { label: "Warehouse Floor Leveling" }],
-  kicker: "Industrial · Dallas-Fort Worth",
+  kicker: "Industrial · DFW, Houston & Texas",
   h1: "Warehouse Floor Leveling in DFW & Houston",
   heroImage: { src: "/images/warehouse-floor-injection-work.webp", alt: "Floor leveling injection work at an industrial facility", width: 1050, height: 1400 },
   intro: [

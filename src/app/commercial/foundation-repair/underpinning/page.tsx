@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/" }, { label: "Underpinning" }],
-  kicker: "Commercial Foundation Repair · DFW",
+  kicker: "Commercial Foundation Repair · DFW, Houston & Texas",
   h1: "Commercial Underpinning in DFW & Houston",
   heroImage: { src: "/images/underpinning-crew-structural-support.webp", alt: "Crew performing underpinning work beneath an existing structure", width: 1600, height: 2133, pos: "50% 25%" },
   intro: [

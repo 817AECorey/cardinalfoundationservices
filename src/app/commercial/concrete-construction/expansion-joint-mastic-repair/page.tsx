@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Construction", href: "/commercial/concrete-construction/" }, { label: "Expansion Joint & Mastic Repair" }],
-  kicker: "Concrete Construction · DFW",
+  kicker: "Concrete Construction · DFW, Houston & Texas",
   h1: "Expansion Joint and Mastic Repair",
   heroImage: { src: "/images/expansion-joint-mastic-repair.webp", alt: "Expansion joint prepared for mastic repair at a commercial property", width: 1600, height: 1066 },
   intro: [

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Parking Garage Repair" }],
-  kicker: "Specialty Structural · DFW",
+  kicker: "Specialty Structural · DFW, Houston & Texas",
   h1: "Parking Garage Concrete and Structural Repair",
   heroImage: { src: "/images/parking-garage-concrete-structural-repair.webp", alt: "Parking garage concrete during structural repair work", width: 1600, height: 1066 },
   intro: [

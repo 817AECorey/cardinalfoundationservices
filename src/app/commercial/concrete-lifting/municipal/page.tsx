@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Lifting", href: "/commercial/concrete-lifting/" }, { label: "Municipal" }],
-  kicker: "Municipal & Institutional · DFW",
+  kicker: "Municipal & Institutional · DFW, Houston & Texas",
   h1: "Concrete Leveling for Cities and Municipalities",
   heroImage: { src: "/images/municipal-sidewalk-concrete-repair.webp", alt: "Repaired sidewalk section along a commercial corridor", width: 1200, height: 1600 },
   intro: [

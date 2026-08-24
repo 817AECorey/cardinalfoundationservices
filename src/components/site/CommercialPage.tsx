@@ -37,7 +37,7 @@ function CHero() {
         </div>
         <div className="c-hero">
           <div>
-            <Kicker color="#fff">Commercial &amp; Industrial · Texas</Kicker>
+            <Kicker color="#fff">Commercial &amp; Industrial · DFW, Houston &amp; Texas</Kicker>
             <h1 className="disp" style={{ fontSize: 60, margin: "20px 0 0", color: "#fff" }}>
               Commercial foundation repair, engineered and self-performed.
             </h1>

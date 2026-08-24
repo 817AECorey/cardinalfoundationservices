@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Specialty Services", href: "/commercial/specialty/" }, { label: "Lightweight Concrete Repair" }],
-  kicker: "Specialty Structural · Fort Worth & DFW",
+  kicker: "Specialty Structural · DFW, Houston & Texas",
   h1: "Lightweight Concrete Repair for Elevated Slabs",
   intro: [
     "Cardinal Foundation Services provides lightweight concrete repair throughout Fort Worth, Dallas, Arlington, Grapevine, Irving, and the DFW region, restoring strength, fire rating, and long-term durability while minimizing occupant disruption. Lightweight concrete systems are widely used across North Texas for multifamily housing, commercial buildings, elevated corridors, mezzanines, and balcony structures. While these slabs offer reduced weight and improved fire performance, they require specialized repair methods when cracking, delamination, structural fatigue, or water intrusion occur.",

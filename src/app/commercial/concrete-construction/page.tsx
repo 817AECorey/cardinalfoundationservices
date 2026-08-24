@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Commercial", href: "/commercial/" }, { label: "Concrete Construction" }],
-  kicker: "Commercial & Industrial · Dallas-Fort Worth",
+  kicker: "Commercial & Industrial · DFW, Houston & Texas",
   h1: "Commercial Concrete Construction & Repair",
   heroImage: { src: "/images/concrete-construction-slab-forms-rebar.webp", alt: "Formed slab with reinforcement ready for pour", width: 1600, height: 1200 },
   intro: [
