@@ -333,7 +333,7 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
             <div style={{ maxWidth: 620, marginBottom: 34 }}>
               <Kicker>Services in this category</Kicker>
             </div>
-            <div className="c-svc" style={d.childCards.length === 4 ? { gridTemplateColumns: "repeat(2, 1fr)" } : undefined}>
+            <div className={"c-svc" + (d.childCards.length === 4 ? " c-svc-4" : "")}>
               {d.childCards.map((c) => (
                 <Link href={c.href} key={c.href} className="lift" style={{ background: "var(--ink-2)", color: "#fff", border: "1px solid rgba(255,255,255,.07)", display: "flex", flexDirection: "column", minHeight: 200 }}>
                   {c.img && <Img label={c.imgAlt ?? c.t} src={c.img} h={158} />}

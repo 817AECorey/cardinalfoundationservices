@@ -317,3 +317,16 @@ section { position: relative; }
 @media (max-width: 560px) {
   .a-creds { grid-template-columns: 1fr; }
 }
+
+/* ---- responsive audit fixes (pre-cutover) ---- */
+/* footer link grid: 5-wide desktop, 2-wide tablet, stacked phone */
+.d-footgrid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; gap: 34px; }
+@media (max-width: 1023px) { .d-footgrid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 767px) { .d-footgrid { grid-template-columns: 1fr; } }
+.d-footgrid > * { min-width: 0; }
+/* any long CTA label wraps inside narrow viewports */
+@media (max-width: 420px) { .btn { white-space: normal; text-align: center; } }
+/* four-card category grids: 2x2 above phones, stacked below */
+.c-svc.c-svc-4 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 479px) { .c-svc.c-svc-4 { grid-template-columns: 1fr; } }
+.c-svc > * { min-width: 0; }

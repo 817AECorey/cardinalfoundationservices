@@ -1079,7 +1079,7 @@ export function DContact() {
             <a href={`mailto:${EMAIL}`} style={{ color: "#cfcfcf", fontWeight: 600, fontSize: 14 }}>{EMAIL}</a>
             <div style={{ height: 1, background: "rgba(255,255,255,.14)", margin: "22px 0" }} />
             <div className="over" style={{ color: "#9a9a9a", marginBottom: 10 }}>Hours</div>
-            <div style={{ fontWeight: 600, marginBottom: 18 }}>Mon–Fri · 7:00a to 6:00p</div>
+            <div style={{ fontWeight: 600, marginBottom: 18 }}>Mon–Fri · 7:00 AM to 6:00 PM</div>
             <div className="over" style={{ color: "#9a9a9a", marginBottom: 10 }}>Service area · Fort Worth based, serving Texas</div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "7px 8px" }}>
               {D_CITIES.map((c) => CITY_LINKS[c] ? <a key={c} href={CITY_LINKS[c]} style={{ border: "1px solid rgba(255,255,255,.18)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "#e3e1de", cursor: "pointer" }}>{c}</a> : <span key={c} style={{ border: "1px solid rgba(255,255,255,.18)", padding: "5px 10px", fontSize: 12, fontWeight: 600, color: "#e3e1de" }}>{c}</span>)}
@@ -1200,7 +1200,7 @@ export function DFooter() {
   ];
   return (
     <footer className="tex-dark" style={{ paddingTop: 60 }}>
-      <div className="wrap" style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr 1fr 1fr 1fr", gap: 34, paddingBottom: 48, borderBottom: "1px solid rgba(255,255,255,.1)" }}>
+      <div className="wrap d-footgrid" style={{ paddingBottom: 48, borderBottom: "1px solid rgba(255,255,255,.1)" }}>
         <div>
           <Logo />
           <p style={{ color: "#9a9a9a", fontWeight: 500, lineHeight: 1.6, marginTop: 18, maxWidth: 280 }}>
