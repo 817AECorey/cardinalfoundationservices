@@ -43,6 +43,8 @@ export default function RootLayout({
       <body className="min-h-full">
         {children}
         <DMobileCTABar />
+        {/* CallRail dynamic number insertion; afterInteractive so it never blocks render */}
+        <Script id="callrail-swap" strategy="afterInteractive" src="//cdn.callrail.com/companies/539461128/976e5943e5820e36d22a/12/swap.js" />
         {GA4_ID && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="afterInteractive" />
