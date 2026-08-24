@@ -23,7 +23,7 @@ export type Section = {
   bullets?: Bullet[];
   parasAfter?: string[];
   /* real project photo for the section's media slot; placeholder shows when absent */
-  img?: { src: string; alt: string; pos?: string };
+  img?: { src: string; alt: string; pos?: string; contain?: boolean };
   /* conceptual/comparison sections with no honest photo: full-width text, no media column */
   noMedia?: boolean;
   steps?: [string, string][]; // numbered what-to-expect style
@@ -205,7 +205,8 @@ export default function ServicePage({ data }: { data: ServicePageData }) {
         const media = (
           <div style={{ position: "relative", minHeight: 340 }}>
             <div style={{ position: "absolute", inset: 0 }}>
-              <Img label={s.img?.alt ?? s.h2} src={s.img?.src} style={{ height: "100%", objectPosition: s.img?.pos }} />
+              {/* contain: diagrams must never be cover-cropped (watermark sits at the frame edge) */}
+              <Img label={s.img?.alt ?? s.h2} src={s.img?.src} style={{ height: "100%", objectPosition: s.img?.pos, ...(s.img?.contain ? { objectFit: "contain", background: "#fff", padding: 12 } : {}) }} />
             </div>
           </div>
         );

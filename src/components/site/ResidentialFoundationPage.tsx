@@ -215,7 +215,7 @@ function RfHonesty() {
       <div className="wrap c-2">
         <div style={{ position: "relative", minHeight: 400 }}>
           <div style={{ position: "absolute", inset: 0 }}>
-            <Img label="Foundation inspection and structural assessment in progress" src="/images/hub-engineer-inspection.webp" style={{ height: "100%" }} />
+            <Img label="Daneel Nortier, PE, Owner and Principal Engineer" src="/images/daneel-nortier-pe-owner.webp" style={{ height: "100%", objectPosition: "50% 20%" }} />
           </div>
           <div style={{ position: "absolute", left: 0, bottom: 0, right: 0, background: "linear-gradient(0deg, rgba(15,15,15,.92), transparent)", padding: "40px 26px 22px" }}>
             <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 6 }}>Meet the owner &amp; principal engineer</div>

@@ -16,14 +16,14 @@ const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Residential", href: "/residential/" }, { label: "Concrete Leveling", href: "/residential/concrete-leveling/" }, { label: "Mudjacking" }],
   kicker: "Concrete Leveling · DFW",
   h1: "Mudjacking for Sunken Concrete",
-  heroImage: { src: "/images/mudjacking-slab-leveling-process.webp", alt: "Rendering of mudjacking slurry being pumped beneath a settled slab", width: 1400, height: 767 },
+  heroImage: { src: "/images/mudjacking-slab-leveling-process.webp", alt: "Rendering of mudjacking slurry being pumped beneath a settled slab", width: 1400, height: 767, contain: true },
   intro: [
     "Mudjacking is the original concrete leveling method: a cement-based slurry pumped beneath a settled slab to fill the voids under it and raise it back to level. It has been lifting driveways, patios, and walkways for decades because it works, and for the right slab it remains the economical way to fix sunken concrete without tearing it out, across Dallas-Fort Worth and the Houston area.",
   ],
   sections: [
     {
       h2: "How mudjacking works",
-      img: { src: "/images/mudjacking-slab-leveling-process-2.webp", alt: "Mudjacking process leveling a concrete slab" },
+      img: { src: "/images/mudjacking-slab-leveling-process-2.webp", alt: "Mudjacking process leveling a concrete slab", contain: true },
       paras: [
         "Ports are drilled through the settled slab, and the slurry is pumped beneath it under controlled pressure. The material fills the voids that allowed the drop, then lifts the slab toward level. Once cured, the slurry forms a dense, stable base under the concrete. The slab you already paid for goes back to work, at a fraction of replacement cost.",
       ],

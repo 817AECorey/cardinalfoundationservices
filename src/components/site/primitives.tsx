@@ -44,7 +44,7 @@ export const Kicker = ({ children, color = "var(--red)", style }: { children: Re
    Stock URLs (Unsplash etc.) are never rendered; real media drops in later
    via CompanyCam / Google Drive / Adobe Stock. Local files under /public
    (e.g. the logo) still render as real images. */
-export function Img({ label, src, h, style }: { label: string; src?: string; h?: number; style?: CSSProperties }) {
+export function Img({ label, src, h, style, eager }: { label: string; src?: string; h?: number; style?: CSSProperties; eager?: boolean }) {
   const isLocal = !!src && src.startsWith("/");
   if (!isLocal) {
     return (
@@ -62,7 +62,7 @@ export function Img({ label, src, h, style }: { label: string; src?: string; h?:
     <img
       src={src}
       alt={label}
-      loading="lazy"
+      loading={eager ? "eager" : "lazy"}
       style={{ width: "100%", height: h ? h + "px" : "100%", objectFit: "cover", display: "block", background: "#d9d6d2", ...style }}
     />
   );

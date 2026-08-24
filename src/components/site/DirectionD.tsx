@@ -822,7 +822,7 @@ function DHonesty() {
         <div className="d-honesty">
           <div style={{ position: "relative", minHeight: 380 }}>
             <div style={{ position: "absolute", inset: 0 }}>
-              <Img label="A Cardinal crew member working on a foundation job site" src="/images/hub-engineer-jobsite.webp" style={{ height: "100%" }} />
+              <Img label="Daneel Nortier, PE, Owner and Principal Engineer" src="/images/daneel-nortier-pe-owner.webp" style={{ height: "100%", objectPosition: "50% 20%" }} />
             </div>
             <div style={{ position: "absolute", left: 0, bottom: 0, right: 0, background: "linear-gradient(0deg, rgba(15,15,15,.92), transparent)", padding: "40px 26px 22px" }}>
               <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 6 }}>Meet the owner &amp; principal engineer</div>
@@ -866,7 +866,8 @@ function DWork() {
         <div className="d-workscroll">
           {D_WORK.map((p) => (
             <a href={p.href} key={p.t} className="lift" style={{ background: "var(--ink-2)", border: "1px solid rgba(255,255,255,.06)", display: "flex", flexDirection: "column" }}>
-              <Img label={p.t + ". Real jobsite photo"} src={p.img} h={180} />
+              {/* eager: off-screen scroller cards never lazy-load for some users */}
+              <Img label={p.t + ". Real jobsite photo"} src={p.img} h={180} eager />
               <div style={{ padding: "20px 22px 22px" }}>
                 <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 8 }}>{p.scope}</div>
                 <h3 className="disp" style={{ color: "#fff", fontSize: 18, lineHeight: 1.08 }}>{p.t}</h3>

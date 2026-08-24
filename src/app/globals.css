@@ -330,3 +330,4 @@ section { position: relative; }
 .c-svc.c-svc-4 { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 479px) { .c-svc.c-svc-4 { grid-template-columns: 1fr; } }
 .c-svc > * { min-width: 0; }
+@media (max-width: 767px) { .d-fork { grid-template-columns: 1fr; } }

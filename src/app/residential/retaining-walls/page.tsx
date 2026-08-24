@@ -23,14 +23,14 @@ const data: ServicePageData = {
   sections: [
     {
       h2: "Retaining wall repair",
-      img: { src: "/images/retaining-wall-construction-crew.webp", alt: "Crew member placing stone during retaining wall construction", pos: "50% 15%" },
+      img: { src: "/images/commhub-retaining-v2.webp", alt: "Stone retaining wall with integrated steps" },
       paras: [
         "Leaning and rotation, stair-step cracking in block and stone, bulging faces, failed footings, and walls undermined by erosion. Repair scopes are matched to the failure mode: drainage relief behind the wall, footing repair, structural reinforcement, partial rebuilds, and, where loads justify it, engineered solutions drawn from our commercial tieback work. The evaluation identifies why the wall failed, and the fix addresses that, not just the appearance.",
       ],
     },
     {
       h2: "Retaining wall design and installation",
-      img: { src: "/images/retaining-wall-design-installation.webp", alt: "Retaining wall design and installation" },
+      img: { src: "/images/retaining-wall-terraced-design.webp", alt: "Terraced block retaining walls with landscape planting" },
       paras: [
         "New walls for grade changes, erosion control, and landscape structure, designed for the soil pressure and water they will actually face. Every design considers drainage first, weep paths, backfill, and where the collected water goes, because a wall built without a water plan has a countdown running.",
         "Residential work carries a transferable workmanship warranty, terms vary by service, with financing available and a written quote within one business day of evaluation.",
