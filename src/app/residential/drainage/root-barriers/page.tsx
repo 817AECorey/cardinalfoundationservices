@@ -3,9 +3,9 @@ import ServicePage, { type ServicePageData } from "@/components/site/ServicePage
 import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Root Barriers for Foundation Protection in DFW",
+  title: "Root Barriers for Foundation Protection in DFW & Houston",
   description:
-    "How tree roots affect foundation soil moisture, when a root barrier makes sense, and when it does not. Engineer-led evaluation and honest recommendations across DFW.",
+    "How tree roots affect foundation soil moisture, when a root barrier makes sense, and when it does not. Engineer-led evaluation and honest recommendations across DFW and Houston.",
   alternates: { canonical: "/residential/drainage/root-barriers/" },
 };
 

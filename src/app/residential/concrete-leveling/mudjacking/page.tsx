@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Consolidates 2 live pages. Value-oriented slab work audience. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Mudjacking & Concrete Leveling for Homes in DFW | Cardinal" },
+  title: { absolute: "Mudjacking & Concrete Leveling for Homes in DFW & Houston | Cardinal" },
   description:
     "Mudjacking lifts sunken driveways, patios, and walkways back to level with a proven, economical slurry method. Concrete leveling for DFW homes. Free evaluation.",
   alternates: { canonical: "/residential/concrete-leveling/mudjacking/" },

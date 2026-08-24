@@ -6,7 +6,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    Old copy's superlatives removed per hard rules; coverage carried. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Concrete Pressed Piers in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Concrete Pressed Piers in DFW & Houston | Cardinal Foundation Services" },
   description:
     "Pressed concrete pilings for DFW homes: the region's most common and most economical repair pier, pressed to resistance using the structure's own weight. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/concrete-pressed-piers/" },

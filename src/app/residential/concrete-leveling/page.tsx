@@ -8,7 +8,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    sentences), pending the hub content / snapshot parity pass. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Concrete Leveling for Homes in DFW | Cardinal Foundation Services" },
+  title: { absolute: "Concrete Leveling for Homes in DFW & Houston | Cardinal Foundation Services" },
   description:
     "Concrete leveling for DFW homes: polyurethane foam slab lifting and mudjacking for sunken driveways, patios, walkways, and interior slabs. Free evaluation.",
   alternates: { canonical: "/residential/concrete-leveling/" },

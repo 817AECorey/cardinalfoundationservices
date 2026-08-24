@@ -1,5 +1,9 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { DNav, DFooter } from "@/components/site/DirectionD";
+
+/* Layout template appends "| Cardinal Foundation Services". */
+export const metadata: Metadata = { title: "Page Not Found" };
 
 export default function NotFound() {
   return (

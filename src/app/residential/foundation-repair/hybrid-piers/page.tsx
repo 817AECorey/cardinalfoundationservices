@@ -6,7 +6,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    snapshot body was empty, coverage drawn from the approved pier-systems guide). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Hybrid Piers for Home Foundation Repair in DFW | Cardinal" },
+  title: { absolute: "Hybrid Piers for Home Foundation Repair in DFW & Houston | Cardinal" },
   description:
     "Hybrid pier systems for DFW homes: concrete pilings combined with steel components to buy depth and capacity at less than full steel's cost. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/hybrid-piers/" },

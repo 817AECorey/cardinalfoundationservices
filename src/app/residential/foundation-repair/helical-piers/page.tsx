@@ -5,7 +5,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 /* Snapshot-parity page (source: /services/foundation-repair-fort-worth/helical-piers/). */
 
 export const metadata: Metadata = {
-  title: { absolute: "Helical Piers for Home Foundation Repair in DFW | Cardinal" },
+  title: { absolute: "Helical Piers for Home Foundation Repair in DFW & Houston | Cardinal" },
   description:
     "Helical pier installation for DFW homes: screw-in steel piers with capacity verified by installation torque, resistant to heave in moisture-rich clay. Free inspection report with a mapped elevation survey.",
   alternates: { canonical: "/residential/foundation-repair/helical-piers/" },

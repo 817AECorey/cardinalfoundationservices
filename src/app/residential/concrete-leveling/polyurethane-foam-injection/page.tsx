@@ -6,7 +6,7 @@ import { JsonLd, serviceJsonLd, breadcrumbJsonLd } from "@/lib/schema";
    per spec. Consolidates 2 live pages. */
 
 export const metadata: Metadata = {
-  title: { absolute: "Concrete Slab Lifting & Foam Leveling for Homes in DFW | Cardinal" },
+  title: { absolute: "Concrete Slab Lifting & Foam Leveling for Homes in DFW & Houston | Cardinal" },
   description:
     "Sunken driveway, patio, or interior slab? Polyurethane foam injection lifts settled concrete back to level in hours. Clean, fast slab lifting for DFW homes.",
   alternates: { canonical: "/residential/concrete-leveling/polyurethane-foam-injection/" },

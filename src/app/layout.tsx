@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cardinal Foundation Services",
     description:
-      "Foundation repair and commercial concrete across DFW and Texas. Residential, commercial, and new construction.",
+      "Foundation repair and commercial concrete across DFW, Houston, and Texas. Residential, commercial, and new construction.",
     url: "https://cardinalfoundationservices.com",
     siteName: "Cardinal Foundation Services",
     locale: "en_US",
