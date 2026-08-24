@@ -68,6 +68,31 @@ export function Img({ label, src, h, style, eager }: { label: string; src?: stri
   );
 }
 
+/* Two-portrait owner treatment for the shared honesty card (Gate 8C):
+   both owners shown, captions individually truthful (the PE credential
+   attaches only to Daneel). Crop matches the About page portraits. */
+export function OwnerPortraits() {
+  const owners = [
+    { src: "/images/josh-lavelle-owner.webp", alt: "Josh Lavelle, Owner", name: "Josh Lavelle", role: "Owner" },
+    { src: "/images/daneel-nortier-pe-owner.webp", alt: "Daneel Nortier, PE, Owner and Principal Engineer", name: "Daneel Nortier, PE", role: "Owner & Principal Engineer - Licensed PE since 2012" },
+  ];
+  return (
+    <div className="d-owners">
+      {owners.map((o) => (
+        <div key={o.name} style={{ border: "1px solid var(--line)", background: "#fff", display: "flex", flexDirection: "column" }}>
+          <div style={{ position: "relative", height: 260 }}>
+            <Img label={o.alt} src={o.src} style={{ position: "absolute", inset: 0, height: "100%", objectPosition: "50% 20%" }} />
+          </div>
+          <div style={{ padding: "16px 18px 18px", borderTop: "3px solid var(--red)" }}>
+            <div className="disp" style={{ fontSize: 19, color: "var(--ink)" }}>{o.name}</div>
+            <div className="over" style={{ color: "var(--red)", fontSize: 10.5, marginTop: 6, lineHeight: 1.5 }}>{o.role}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /* TCPA consent line (content/26, REQUIRED under every form submit button). */
 export const TCPA = () => (
   <p style={{ fontSize: 11.5, fontWeight: 500, color: "var(--muted)", lineHeight: 1.5, margin: "4px 0 0", textAlign: "center" }}>

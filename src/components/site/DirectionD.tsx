@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { Arrow, Phone, Check } from "./icons";
-import { Btn, Kicker, Img, Logo, TCPA, dScroll, PHONE, PHONE_TEL, EMAIL } from "./primitives";
+import { Btn, Kicker, Img, Logo, OwnerPortraits, TCPA, dScroll, PHONE, PHONE_TEL, EMAIL } from "./primitives";
 
 /* ============================================================
    DIRECTION D — Production homepage.
@@ -820,16 +820,7 @@ function DHonesty() {
     <section style={{ background: "var(--paper)", padding: "92px 0", position: "relative", overflow: "hidden" }}>
       <div className="wrap">
         <div className="d-honesty">
-          <div style={{ position: "relative", minHeight: 380 }}>
-            <div style={{ position: "absolute", inset: 0 }}>
-              <Img label="Daneel Nortier, PE, Owner and Principal Engineer" src="/images/daneel-nortier-pe-owner.webp" style={{ height: "100%", objectPosition: "50% 20%" }} />
-            </div>
-            <div style={{ position: "absolute", left: 0, bottom: 0, right: 0, background: "linear-gradient(0deg, rgba(15,15,15,.92), transparent)", padding: "40px 26px 22px" }}>
-              <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 6 }}>Meet the owner &amp; principal engineer</div>
-              <div className="disp" style={{ color: "#fff", fontSize: 22 }}>Owner &amp; Principal Engineer</div>
-              <div style={{ color: "#cfcfcf", fontWeight: 600, fontSize: 13, marginTop: 4 }}>Licensed PE since 2012</div>
-            </div>
-          </div>
+          <OwnerPortraits />
           <div>
             <Kicker>The honest difference</Kicker>
             <h2 className="disp" style={{ fontSize: 46, margin: "16px 0 18px", color: "var(--ink)" }}>

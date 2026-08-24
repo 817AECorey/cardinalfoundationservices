@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Arrow, Phone, Check } from "./icons";
-import { Btn, Kicker, Img, TCPA, dScroll, PHONE, PHONE_TEL } from "./primitives";
+import { Btn, Kicker, Img, OwnerPortraits, TCPA, dScroll, PHONE, PHONE_TEL } from "./primitives";
 import { DNav, DTrustBar, DPierPath, DPierSystems, DContact, DFooter, submitLead } from "./DirectionD";
 import { WhereWePerform, FaqJsonLd } from "./ServicePage";
 
@@ -213,16 +213,7 @@ function RfHonesty() {
   return (
     <section style={{ background: "var(--paper)", padding: "88px 0", borderBottom: "1px solid var(--line)" }}>
       <div className="wrap c-2">
-        <div style={{ position: "relative", minHeight: 400 }}>
-          <div style={{ position: "absolute", inset: 0 }}>
-            <Img label="Daneel Nortier, PE, Owner and Principal Engineer" src="/images/daneel-nortier-pe-owner.webp" style={{ height: "100%", objectPosition: "50% 20%" }} />
-          </div>
-          <div style={{ position: "absolute", left: 0, bottom: 0, right: 0, background: "linear-gradient(0deg, rgba(15,15,15,.92), transparent)", padding: "40px 26px 22px" }}>
-            <div className="over" style={{ color: "var(--red)", fontSize: 11, marginBottom: 6 }}>Meet the owner &amp; principal engineer</div>
-            <div className="disp" style={{ color: "#fff", fontSize: 22 }}>Owner &amp; Principal Engineer</div>
-            <div style={{ color: "#cfcfcf", fontWeight: 600, fontSize: 13, marginTop: 4 }}>Licensed PE since 2012</div>
-          </div>
-        </div>
+        <OwnerPortraits />
         <div>
           <Kicker>The honest difference</Kicker>
           <h2 className="disp" style={{ fontSize: 44, margin: "16px 0 18px", color: "var(--ink)" }}>
