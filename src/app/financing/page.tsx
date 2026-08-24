@@ -33,8 +33,8 @@ const data: ServicePageData = {
     {
       h2: "How financing works with your quote",
       bullets: [
-        "Simple application you can complete in minutes",
-        "Fast decisions, typically while your quote is still fresh",
+        "Straightforward application process",
+        "Options reviewed with you alongside your written quote",
         "Options discussed alongside your written scope, so you can compare the repair and the payment in one sitting",
         "No obligation until you approve the scope and the terms",
       ],
@@ -49,7 +49,7 @@ const data: ServicePageData = {
         "Foundation movement does not improve on its own, and drainage or structural causes tend to compound. Financing lets you address the cause on the engineering timeline rather than the savings timeline. The inspection is free either way, and sometimes the honest finding is that you do not need a repair at all.",
       ],
       parasAfter: [
-        "Financing subject to credit approval. Terms vary by program and job type. Ask your Cardinal representative about current options.",
+        "Flexible financing options are available for qualifying customers. Financing is subject to credit approval and the terms of the financing program. Ask your representative about available payment options and current promotions.",
       ],
     },
   ],
@@ -61,7 +61,7 @@ const data: ServicePageData = {
   faqs: [
     ["Is financing available on commercial work?", "Financing is a residential program. Commercial projects receive engineered bids, and payment structure is part of the bid conversation."],
     ["Do I need to decide about financing before the inspection?", "No. The inspection is free and carries no obligation. Financing is simply one of the payment options discussed when you review your written quote."],
-    ["What does financing cost?", "Terms vary by program and job type. Your Cardinal representative can walk through current options against your written scope."],
+    ["What does financing cost?", "Terms vary by program and job type. Financing is subject to credit approval and the terms of the financing program. Your Cardinal representative can walk through current options against your written scope."],
   ],
   faqTitle: "Financing questions",
   ctaLabel: "Request a free inspection",
