@@ -5,7 +5,7 @@ import { JsonLd, breadcrumbJsonLd } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Request Your Free Inspection",
   description:
-    "Request a free, engineer-led foundation inspection from Cardinal Foundation Services. Residential inspections include a mapped elevation survey and a quote within one business day.",
+    "Schedule a free, no-obligation inspection or assessment with Cardinal Foundation Services. Engineer-led, documented findings, and a clear next step.",
   alternates: { canonical: "/request/" },
 };
 

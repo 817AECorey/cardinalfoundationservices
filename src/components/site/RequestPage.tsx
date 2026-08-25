@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { Check } from "./icons";
 import { Kicker, PHONE, PHONE_TEL } from "./primitives";
@@ -15,7 +16,18 @@ import { KContactForm } from "./ContactPage";
    residential-scoped; no em-dashes; no ratings markup.
    ============================================================ */
 
+/* Hero promise follows the audience selected in the form's property-type
+   field (COMPLIANCE: the one-business-day quote is residential-only).
+   Before any selection the line stays audience-neutral. */
+const HERO_LINES: Record<string, string> = {
+  Residential: "Free inspection with mapped elevation readings. If repair is recommended, your written quote is typically delivered within one business day.",
+  Commercial: "Engineer-led assessment with documented findings and a project-specific scope and proposal.",
+  "New Construction": "Project review and scope development based on plans, site conditions, and schedule.",
+};
+const HERO_NEUTRAL = "Schedule a free, no-obligation inspection or assessment. Engineer-led, documented findings, and a clear next step.";
+
 export default function RequestPage() {
+  const [lead, setLead] = useState("");
   return (
     <div className="page dirD c-page">
       <span id="top" />
@@ -31,14 +43,14 @@ export default function RequestPage() {
           <Kicker color="#fff">Free, engineer-led, no obligation</Kicker>
           <h1 className="disp" style={{ fontSize: 56, margin: "20px 0 0", color: "#fff", maxWidth: 780 }}>Request Your Free Inspection</h1>
           <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.55, margin: "22px 0 0", maxWidth: 620, fontWeight: 500 }}>
-            You&apos;ll receive a mapped elevation survey and quote within one business day.
+            {HERO_LINES[lead] ?? HERO_NEUTRAL}
           </p>
         </div>
       </section>
       <DTrustBar />
       <section id="contact" style={{ background: "var(--paper)", padding: "84px 0" }}>
         <div className="wrap k-main">
-          <KContactForm />
+          <KContactForm onLeadChange={setLead} />
           <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
             <div style={{ background: "var(--ink)", color: "#fff", padding: "28px 30px" }}>
               <div className="over" style={{ color: "var(--red)", marginBottom: 8 }}>Phone</div>

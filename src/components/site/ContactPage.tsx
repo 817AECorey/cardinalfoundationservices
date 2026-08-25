@@ -24,7 +24,7 @@ function leadFor(property: string): string {
   return "Residential";
 }
 
-export function KContactForm() {
+export function KContactForm({ onLeadChange }: { onLeadChange?: (lead: string) => void } = {}) {
   const router = useRouter();
   const [property, setProperty] = useState("");
   const [name, setName] = useState("");
@@ -60,7 +60,7 @@ export function KContactForm() {
         <input className="form-input" aria-label="Phone" placeholder="Phone *" required value={phone} onChange={(e) => setPhone(e.target.value)} inputMode="tel" />
         <input className="form-input" aria-label="Email" placeholder={RESIDENTIAL_TYPES.has(property) || property === "" ? "Email (optional)" : "Email *"} type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         <input className="form-input" aria-label="City or ZIP" placeholder="City / ZIP *" required value={city} onChange={(e) => setCity(e.target.value)} />
-        <select className="form-input" aria-label="Property type" value={property} onChange={(e) => setProperty(e.target.value)} style={{ gridColumn: "1 / -1", color: property ? "#222" : "#5d5b58" }}>
+        <select className="form-input" aria-label="Property type" value={property} onChange={(e) => { setProperty(e.target.value); onLeadChange?.(e.target.value ? leadFor(e.target.value) : ""); }} style={{ gridColumn: "1 / -1", color: property ? "#222" : "#5d5b58" }}>
           <option value="">Property type…</option>
           {K_PROPERTY.map((p) => <option key={p}>{p}</option>)}
         </select>

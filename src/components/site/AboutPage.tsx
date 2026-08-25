@@ -143,7 +143,7 @@ function AValues() {
           <Kicker>How we work</Kicker>
           <h2 className="disp" style={{ color: "#fff", fontSize: 46, marginTop: 16 }}>Three commitments on every project</h2>
           <p style={{ color: "#bdbdbd", fontWeight: 500, lineHeight: 1.6, marginTop: 14 }}>
-            Fort Worth is home. We serve the Dallas-Fort Worth Metroplex for residential and commercial work, the Houston area for residential foundation repair, and take larger commercial and specialty structural projects across Texas. Cardinal is BBB A+ rated and holds a 4.9 rating on Google.
+            Fort Worth is home. We serve the Dallas-Fort Worth Metroplex for residential and commercial work, the Houston area for residential and commercial foundation repair, and take larger commercial and specialty structural projects across Texas. Cardinal is BBB A+ rated and holds a 4.9 rating on Google.
           </p>
         </div>
         <div className="c-svc">
