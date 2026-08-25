@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 
 const data: ServicePageData = {
   crumbs: [{ label: "Home", href: "/" }, { label: "Locations", href: "/locations/" }, { label: "Fort Worth" }],
-  kicker: "Foundation Repair · Fort Worth, TX · Headquarters",
+  kicker: "Foundation Repair · Fort Worth, TX · Home Base",
   h1: "Foundation Repair in Fort Worth, Texas",
   heroImage: { src: "/images/fort-worth-residential-foundation-repair.webp", alt: "Foundation repair at a North Texas brick home", width: 1600, height: 1200 },
   intro: [
-    "Fort Worth is home base. Cardinal Foundation Services is headquartered here, our crews work these neighborhoods daily, and the soil under this city, expansive clay that moves with every wet-dry cycle, is the soil our company was built to handle. We provide residential foundation repair, commercial and structural work, concrete services, and drainage correction across Fort Worth and the surrounding communities.",
+    "Fort Worth is home base. Cardinal Foundation Services is based in the area, our crews work these neighborhoods daily, and the soil under this city, expansive clay that moves with every wet-dry cycle, is the soil our company was built to handle. We provide residential foundation repair, commercial and structural work, concrete services, and drainage correction across Fort Worth and the surrounding communities.",
   ],
   sections: [
     {
@@ -48,7 +48,7 @@ const data: ServicePageData = {
     ["Service Areas", "/locations/"],
   ],
   faqs: [
-    ["Where in Fort Worth do you work?", "Throughout the city and surrounding communities, from our headquarters here. If you can see the Fort Worth skyline or the stockyards traffic, you are in our daily service area."],
+    ["Where in Fort Worth do you work?", "Throughout the city and surrounding communities, from our base in the area. If you can see the Fort Worth skyline or the stockyards traffic, you are in our daily service area."],
     ["Why do Fort Worth foundations move so much?", "Expansive clay plus weather whiplash: wet springs swell the soil, triple-digit summers shrink it, and every cycle works on the structures above. Drainage conditions at each property set how hard the cycle hits."],
     ["Do you handle both my house and my business property?", "Yes, through separate residential and commercial processes, each with its own assessment path and the same crews standing behind the work."],
   ],

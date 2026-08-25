@@ -36,7 +36,7 @@ function AHero() {
               A foundation repair company <span style={{ color: "var(--red)" }}>run by an engineer.</span>
             </h1>
             <p style={{ color: "#d6d6d6", fontSize: 18, lineHeight: 1.6, margin: "24px 0 28px", maxWidth: 540, fontWeight: 500 }}>
-              Cardinal Foundation Services is a foundation repair and commercial concrete contractor headquartered in Fort Worth, Texas, serving homeowners, commercial property owners, and builders across DFW and Texas. The company is co-owned by Josh Lavelle and Daneel Nortier, PE, a licensed Texas Professional Engineer since 2012 (License #113157, verifiable on the TBPELS public roster), and the team brings more than 35 years of combined experience across residential repair, commercial structural work, and new construction.
+              Cardinal Foundation Services is a foundation repair and commercial concrete contractor based in the Fort Worth area, serving homeowners, commercial property owners, and builders across DFW and Texas. The company is co-owned by Josh Lavelle and Daneel Nortier, PE, a licensed Texas Professional Engineer since 2012 (License #113157, verifiable on the TBPELS public roster), and the team brings more than 35 years of combined experience across residential repair, commercial structural work, and new construction.
             </p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
               <Btn variant="red" arrow="ur" href="/request/">Request an Inspection</Btn>

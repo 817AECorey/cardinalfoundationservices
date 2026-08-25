@@ -17,12 +17,12 @@ const data: ServicePageData = {
   kicker: "",
   h1: "Where We Work",
   intro: [
-    "Cardinal Foundation Services is headquartered in Fort Worth, Texas. We serve the Dallas-Fort Worth Metroplex for residential and commercial foundation, concrete, and structural work; the Houston area for residential and commercial foundation repair; and take larger commercial and specialty structural projects across Texas.",
+    "Cardinal Foundation Services is based in the Fort Worth area. We serve the Dallas-Fort Worth Metroplex for residential and commercial foundation, concrete, and structural work; the Houston area for residential and commercial foundation repair; and take larger commercial and specialty structural projects across Texas.",
     "Austin and San Antonio are served for commercial and specialty structural projects. Not sure whether we cover your address? Call and we will answer straight: (972) 656-8251.",
   ],
   sections: [],
   childCards: [
-    { t: "Fort Worth", img: "/images/loc-fw-commercial.webp", d: "Home base. Headquartered here, with crews working daily across Keller, Southlake, Grapevine, Bedford, Hurst, Euless, North Richland Hills, Burleson, and Weatherford. Residential, commercial, and new construction.", href: "/locations/fort-worth/" },
+    { t: "Fort Worth", img: "/images/loc-fw-commercial.webp", d: "Home base. Based in the area, with crews working daily across Keller, Southlake, Grapevine, Bedford, Hurst, Euless, North Richland Hills, Burleson, and Weatherford. Residential, commercial, and new construction.", href: "/locations/fort-worth/" },
     { t: "Dallas", img: "/images/loc-dallas-residential.webp", d: "Residential foundation repair, commercial and structural work, concrete lifting, and drainage correction throughout Dallas, Plano, Frisco, McKinney, Allen, Richardson, Garland, Irving, and nearby communities.", href: "/locations/dallas/" },
     { t: "Houston Area", img: "/images/houston-area-pier-installation-multifamily.webp", d: "Residential and commercial foundation repair across Katy, Sugar Land, Pearland, Friendswood, Kingwood, and surrounding communities.", href: "/locations/houston/" },
     { t: "Possum Kingdom Lake", img: "/images/loc-pk-structural.webp", d: "Structural foundation repair, concrete leveling, and balcony repair for lake homes, slopes, and elevated structures.", href: "/locations/possum-kingdom-lake/" },
