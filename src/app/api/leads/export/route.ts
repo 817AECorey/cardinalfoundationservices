@@ -53,7 +53,10 @@ const HEADER = [
 
 export async function GET(request: NextRequest) {
   const notFound = () => new Response("Not Found", { status: 404 });
-  if (!keyMatches(request.nextUrl.searchParams.get("key"))) return notFound();
+  /* Preferred: Authorization: Bearer <key> (never leaks into redirect
+     Locations or access logs). Query param kept for browser use. */
+  const bearer = request.headers.get("authorization")?.replace(/^Bearer\s+/i, "") ?? null;
+  if (!keyMatches(bearer) && !keyMatches(request.nextUrl.searchParams.get("key"))) return notFound();
 
   let raw: string;
   try {
