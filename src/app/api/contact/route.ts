@@ -123,7 +123,38 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const record = { lead, service, property, name, phone, email, city, urgency, details, company, source };
+  /* Attribution (all optional; missing values must never break delivery) */
+  const page = clean(payload.page, 300);
+  const referrer = clean(payload.referrer, 500);
+  const landing = clean(payload.landing, 300);
+  const utm_source = clean(payload.utm_source, 200);
+  const utm_medium = clean(payload.utm_medium, 200);
+  const utm_campaign = clean(payload.utm_campaign, 200);
+  const utm_term = clean(payload.utm_term, 200);
+  const utm_content = clean(payload.utm_content, 200);
+  const gclid = clean(payload.gclid, 200);
+  let firstTouch: Record<string, string> | null = null;
+  try {
+    const parsed = JSON.parse(clean(payload.first_touch, 2000) || "null");
+    if (parsed && typeof parsed === "object") {
+      firstTouch = {};
+      for (const k of ["referrer", "landing", "ts", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid"]) {
+        if (typeof parsed[k] === "string") firstTouch[k] = parsed[k].slice(0, 500);
+      }
+    }
+  } catch { firstTouch = null; }
+
+  const sourceLine = (u: { utm_source?: string; utm_medium?: string; utm_campaign?: string }) =>
+    u.utm_source ? [u.utm_source, u.utm_medium, u.utm_campaign].filter(Boolean).join(" / ") : "direct";
+  const firstTouchLine = firstTouch
+    ? `${sourceLine(firstTouch)}${firstTouch.ts ? ` - ${new Date(firstTouch.ts).toLocaleDateString("en-US", { month: "short", day: "numeric" })}` : ""}${firstTouch.landing ? `, landing ${firstTouch.landing}` : ""}`
+    : "direct";
+
+  const record = {
+    lead, service, property, name, phone, email, city, urgency, details, company, source,
+    page, referrer, landing, utm_source, utm_medium, utm_campaign, utm_term, utm_content, gclid,
+    first_touch: firstTouch,
+  };
 
   // 1) Durable storage FIRST: every submission lands on disk before email.
   const stored = await store({ type: "lead", ...record });
@@ -153,6 +184,13 @@ export async function POST(request: NextRequest) {
     ``,
     details ? `Notes:` : null,
     details || null,
+    ``,
+    `Attribution:`,
+    `Submitted on:   ${page || "-"}`,
+    `Session source: ${sourceLine({ utm_source, utm_medium, utm_campaign })}`,
+    `First touch:    ${firstTouchLine}`,
+    `Referrer:       ${referrer || "-"}`,
+    `gclid:          ${gclid ? "present" : "absent"}`,
     ``,
     `Routed to: ${to}`,
     `Form:      ${source || "unknown"}`,

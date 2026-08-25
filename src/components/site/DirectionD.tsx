@@ -14,6 +14,68 @@ import { Btn, Kicker, Img, Logo, OwnerPortraits, TCPA, dScroll, PHONE, PHONE_TEL
    no em-dashes in on-page copy, DFW/Texas geography only.
    ============================================================ */
 
+/* ---------- lead attribution (silent, storage-based) ----------
+   Captured once per page load by DNav (present sitewide). Session values
+   live in sessionStorage; the FIRST-EVER touch persists 90 days in
+   localStorage so an ad click on Tuesday still credits a bookmark
+   conversion on Friday. Storage failures degrade to no attribution,
+   never to a broken submit. */
+const ATTR_FIRST = "cfs_attr";
+const ATTR_SESSION = "cfs_sess";
+const ATTR_TTL_MS = 90 * 24 * 3600 * 1000;
+const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
+
+function urlParams(): Record<string, string> {
+  const out: Record<string, string> = {};
+  const p = new URLSearchParams(window.location.search);
+  for (const k of [...UTM_KEYS, "gclid"]) {
+    const v = p.get(k);
+    if (v) out[k] = v.slice(0, 200);
+  }
+  return out;
+}
+
+export function captureAttribution(): void {
+  try {
+    const existing = sessionStorage.getItem(ATTR_SESSION);
+    if (!existing) {
+      sessionStorage.setItem(ATTR_SESSION, JSON.stringify({
+        referrer: (document.referrer || "").slice(0, 500),
+        landing: window.location.pathname,
+        ts: new Date().toISOString(),
+        ...urlParams(),
+      }));
+    } else {
+      /* params can arrive mid-session (ad deep link in an open tab) */
+      const s = JSON.parse(existing);
+      let changed = false;
+      for (const [k, v] of Object.entries(urlParams())) {
+        if (!s[k]) { s[k] = v; changed = true; }
+      }
+      if (changed) sessionStorage.setItem(ATTR_SESSION, JSON.stringify(s));
+    }
+    let first: Record<string, string> | null = null;
+    try { first = JSON.parse(localStorage.getItem(ATTR_FIRST) ?? "null"); } catch { first = null; }
+    if (first?.ts && Date.now() - Date.parse(first.ts) > ATTR_TTL_MS) first = null;
+    if (!first) localStorage.setItem(ATTR_FIRST, sessionStorage.getItem(ATTR_SESSION)!);
+  } catch { /* private mode / storage blocked: submit proceeds unattributed */ }
+}
+
+function attributionFields(): Record<string, string> {
+  try {
+    const out: Record<string, string> = { page: window.location.pathname };
+    const sess = JSON.parse(sessionStorage.getItem(ATTR_SESSION) ?? "{}");
+    if (sess.referrer) out.referrer = sess.referrer;
+    if (sess.landing) out.landing = sess.landing;
+    for (const k of [...UTM_KEYS, "gclid"]) if (sess[k]) out[k] = sess[k];
+    const first = localStorage.getItem(ATTR_FIRST);
+    if (first) out.first_touch = first;
+    return out;
+  } catch {
+    return {};
+  }
+}
+
 /* ---------- form submission helper ---------- */
 export type LeadPayload = Record<string, string> & { lead: string; source: string };
 export async function submitLead(payload: LeadPayload): Promise<boolean> {
@@ -21,7 +83,7 @@ export async function submitLead(payload: LeadPayload): Promise<boolean> {
     const res = await fetch("/api/contact/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
+      body: JSON.stringify({ ...attributionFields(), ...payload }),
     });
     return res.ok;
   } catch {
@@ -384,6 +446,9 @@ export function DNav() {
       return null;
     });
   }, []);
+
+  /* attribution capture: DNav mounts on every page */
+  useEffect(() => { captureAttribution(); }, []);
 
   /* Escape + outside click close */
   useEffect(() => {
