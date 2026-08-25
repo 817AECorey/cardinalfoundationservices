@@ -12,6 +12,7 @@ primary_region = "dfw"   # Dallas — closest region to the business + customers
   [build.args]
     NEXT_PUBLIC_GA4_ID = "G-RZD0RB74TN"
     NEXT_PUBLIC_GADS_CONVERSION_ID = "AW-986491398"
+    NEXT_PUBLIC_HOTJAR_ID = "6767089"
 
 [http_service]
   internal_port = 3000

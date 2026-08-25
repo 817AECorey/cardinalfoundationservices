@@ -6,6 +6,9 @@ import { DMobileCTABar } from "@/components/site/DirectionD";
 /* GA4 base tag, env-gated: renders only when NEXT_PUBLIC_GA4_ID is set
    (see launch runbook). The Ads conversion fires on /thank-you/. */
 const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
+/* Hotjar behavior tracking, env-gated the same way. Default input masking
+   stays ON (never enable unmasked recording: lead PII stays out). */
+const HOTJAR_ID = process.env.NEXT_PUBLIC_HOTJAR_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cardinalfoundationservices.com"),
@@ -45,6 +48,18 @@ export default function RootLayout({
         <DMobileCTABar />
         {/* CallRail dynamic number insertion; afterInteractive so it never blocks render */}
         <Script id="callrail-swap" strategy="afterInteractive" src="//cdn.callrail.com/companies/539461128/976e5943e5820e36d22a/12/swap.js" />
+        {HOTJAR_ID && (
+          <Script id="hotjar" strategy="afterInteractive">{`
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:${HOTJAR_ID},hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+          `}</Script>
+        )}
         {GA4_ID && (
           <>
             <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="afterInteractive" />
