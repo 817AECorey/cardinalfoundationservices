@@ -4,6 +4,11 @@
 app = "cardinalfoundationservices"
 primary_region = "dfw"   # Dallas — closest region to the business + customers
 
+[env]
+  # Lead writes + exports replay onto this machine so the JSONL stays
+  # whole on one volume. Update if the machine is ever replaced.
+  PRIMARY_LEADS_MACHINE = "e82d1703f75928"
+
 [[mounts]]
   source = "leads_data"
   destination = "/data"

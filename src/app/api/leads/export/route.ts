@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { createHash, timingSafeEqual } from "crypto";
 import { readFile } from "fs/promises";
+import { replayToPrimary } from "@/lib/leads-primary";
 
 /*
   Protected CSV export of the durable lead store (spec: leads-export gate).
@@ -52,6 +53,8 @@ const HEADER = [
 ];
 
 export async function GET(request: NextRequest) {
+  const replay = replayToPrimary();
+  if (replay) return replay;
   const notFound = () => new Response("Not Found", { status: 404 });
   /* Preferred: Authorization: Bearer <key> (never leaks into redirect
      Locations or access logs). Query param kept for browser use. */

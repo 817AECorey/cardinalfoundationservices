@@ -1,5 +1,6 @@
 import { NextRequest } from "next/server";
 import { Resend } from "resend";
+import { replayToPrimary } from "@/lib/leads-primary";
 import { appendFile, mkdir } from "fs/promises";
 import { dirname } from "path";
 
@@ -86,6 +87,8 @@ function rateLimited(ip: string): boolean {
 }
 
 export async function POST(request: NextRequest) {
+  const replay = replayToPrimary();
+  if (replay) return replay;
   const ip = request.headers.get("fly-client-ip") ?? request.headers.get("x-forwarded-for")?.split(",")[0].trim() ?? "unknown";
   if (rateLimited(ip)) {
     return Response.json({ error: "Too many requests. Please call us instead." }, { status: 429 });
