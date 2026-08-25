@@ -229,10 +229,12 @@ const NAV: NavEntry[] = [
         ],
       },
       {
-        num: "02", title: "Coming Online", links: [
-          { label: "Pier Drilling" },
-          { label: "Foundations" },
-          { label: "Soil Conditioning" },
+        num: "02", title: "Delivered by Our Commercial Crews", links: [
+          { label: "Tilt-Wall Construction", href: "/commercial/tilt-wall/" },
+          { label: "Commercial Concrete & Slab Pouring", href: "/commercial/concrete-construction/slab-pouring/" },
+          { label: "Structural Retaining Walls", href: "/commercial/retaining-walls/" },
+          { label: "Commercial Drainage & Stormwater", href: "/commercial/drainage/" },
+          { label: "WOTUS Contracting", href: "/commercial/specialty/waters-of-the-us/" },
         ],
       },
     ],
@@ -253,6 +255,12 @@ const NAV: NavEntry[] = [
           { label: "Pier Systems Compared", href: "/resources/pier-systems-explained/", hub: true },
         ],
       },
+      {
+        num: "02", title: "For Customers", links: [
+          { label: "Financing", href: "/financing/", hub: true },
+          { label: "Warranty", href: "/warranty/" },
+        ],
+      },
     ],
     feature: {
       kicker: "Steel vs concrete vs helical",
@@ -262,7 +270,26 @@ const NAV: NavEntry[] = [
       cta: "Read the guide",
     },
   },
-  { label: "About", href: "/about/" },
+  {
+    label: "About", href: "/about/",
+    columns: [
+      {
+        num: "01", title: "The Company", links: [
+          { label: "About Us", href: "/about/", hub: true },
+          { label: "Contact", href: "/contact/" },
+        ],
+      },
+      {
+        num: "02", title: "Where We Work", links: [
+          { label: "Where We Work", href: "/locations/", hub: true },
+          { label: "Fort Worth", href: "/locations/fort-worth/" },
+          { label: "Dallas", href: "/locations/dallas/" },
+          { label: "Houston", href: "/locations/houston/" },
+          { label: "Possum Kingdom Lake", href: "/locations/possum-kingdom-lake/" },
+        ],
+      },
+    ],
+  },
 ];
 
 function sectionFor(pathname: string): string | null {
@@ -292,7 +319,7 @@ function MegaPanel({ entry, open, onKeyDown, panelRef }: { entry: NavEntry; open
             {overview.label} <Arrow s={14} c="currentColor" />
           </Link>
         )}
-        <div className="mega-grid" style={entry.columns && entry.columns.length !== 3 ? { gridTemplateColumns: `repeat(${entry.columns.length}, 1fr) 320px` } : undefined}>
+        <div className="mega-grid" style={entry.columns && (entry.columns.length !== 3 || !entry.feature) ? { gridTemplateColumns: `repeat(${entry.columns.length}, 1fr)${entry.feature ? " 320px" : ""}` } : undefined}>
           {entry.columns?.map((col, ci) => (
             <div className="mega-col" key={col.title}>
               <div className="mono mega-kicker"><span className="num">{col.num}</span>{col.title}</div>
@@ -470,7 +497,7 @@ export function DNav() {
             m.columns ? (
               <details key={m.label} open={m.label === "Residential"}>
                 <summary className="disp" style={{ color: "#fff", fontSize: 22, padding: "14px 0" }}>
-                  <span className="mono m-kicker" style={{ display: "block", marginBottom: 4 }}>{m.label === "Residential" ? "Homeowners" : m.label === "Commercial" ? "Owners & PMs" : m.label === "New Construction" ? "Builders & GCs" : "Guides"}</span>
+                  <span className="mono m-kicker" style={{ display: "block", marginBottom: 4 }}>{m.label === "Residential" ? "Homeowners" : m.label === "Commercial" ? "Owners & PMs" : m.label === "New Construction" ? "Builders & GCs" : m.label === "About" ? "Company" : "Guides"}</span>
                   {m.label} ▾
                 </summary>
                 <div style={{ display: "flex", flexDirection: "column", paddingBottom: 14 }}>
