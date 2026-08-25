@@ -9,6 +9,9 @@ const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
 /* Hotjar behavior tracking, env-gated the same way. Default input masking
    stays ON (never enable unmasked recording: lead PII stays out). */
 const HOTJAR_ID = process.env.NEXT_PUBLIC_HOTJAR_ID;
+/* Meta Pixel, env-gated the same way. PageView here; the Lead event fires
+   from the form submit success handler only (never on /thank-you load). */
+const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cardinalfoundationservices.com"),
@@ -48,6 +51,20 @@ export default function RootLayout({
         <DMobileCTABar />
         {/* CallRail dynamic number insertion; afterInteractive so it never blocks render */}
         <Script id="callrail-swap" strategy="afterInteractive" src="//cdn.callrail.com/companies/539461128/976e5943e5820e36d22a/12/swap.js" />
+        {META_PIXEL_ID && (
+          <Script id="meta-pixel" strategy="afterInteractive">{`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '${META_PIXEL_ID}');
+            fbq('track', 'PageView');
+          `}</Script>
+        )}
         {HOTJAR_ID && (
           <Script id="hotjar" strategy="afterInteractive">{`
             (function(h,o,t,j,a,r){

@@ -334,3 +334,5 @@ section { position: relative; }
 .d-owners { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: stretch; }
 .d-owners > * { min-width: 0; }
 @media (max-width: 767px) { .d-owners { grid-template-columns: 1fr; } }
+.d-social { color: #9a9a9a; display: inline-flex; padding: 4px; transition: color .15s; }
+.d-social:hover { color: var(--red-bright); }
