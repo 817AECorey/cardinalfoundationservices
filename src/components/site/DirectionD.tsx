@@ -127,8 +127,8 @@ const NAV: NavEntry[] = [
       {
         num: "01", title: "Structural", links: [
           /* Legacy URL by spec; NEVER the clean path */
-          { label: "Multifamily & Apartments", href: "/commercial/multifamily/" },
           { label: "Commercial Foundation Repair", href: "/services/commercial-foundation-repair/", hub: true },
+          { label: "Multifamily & Apartments", href: "/commercial/multifamily/" },
           { label: "Steel Piers", href: "/commercial/foundation-repair/steel-piers/" },
           { label: "Underpinning", href: "/commercial/foundation-repair/underpinning/" },
           { label: "Tilt Wall", href: "/commercial/tilt-wall/" },
