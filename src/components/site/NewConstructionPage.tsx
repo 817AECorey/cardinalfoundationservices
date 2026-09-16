@@ -122,7 +122,7 @@ function NScopeCard() {
         <input className="form-input" aria-label="Full name" placeholder="Full name *" required value={name} onChange={(e) => setName(e.target.value)} />
         <input className="form-input" aria-label="Phone number" placeholder="Phone number *" required value={phone} onChange={(e) => setPhone(e.target.value)} inputMode="tel" />
         <input className="form-input" aria-label="Email" placeholder="Email *" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input className="form-input" aria-label="City or ZIP" placeholder="City or ZIP *" required value={city} onChange={(e) => setCity(e.target.value)} />
+        <input className="form-input" aria-label="Address" placeholder="Address *" required value={city} onChange={(e) => setCity(e.target.value)} />
         {err && <div style={{ color: "var(--red)", fontSize: 13, fontWeight: 600 }}>{err}</div>}
         <button type="submit" className="btn btn-red" disabled={!ready || busy}
           style={{ justifyContent: "center", width: "100%", marginTop: 2, opacity: ready && !busy ? 1 : .55, cursor: ready && !busy ? "pointer" : "not-allowed" }}>
