@@ -32,6 +32,7 @@ Set with `fly secrets set KEY=value` (each set triggers a restart; batch them):
 | `NEXT_PUBLIC_GA4_ID` | `G-XXXXXXXXXX` from GA4 property | analytics (build-time: set BEFORE deploy build) |
 | `NEXT_PUBLIC_GADS_CONVERSION_ID` | `AW-XXXXXXXXX` from Google Ads | Ads conversion |
 | `NEXT_PUBLIC_GADS_CONVERSION_LABEL` | conversion label string | Ads conversion |
+| `NEXT_PUBLIC_GTM_ID` | `GTM-XXXXXXX` container ID | Google Tag Manager (build-time, in `fly.toml` build.args) |
 
 NOTE: `NEXT_PUBLIC_*` vars are inlined at BUILD time. On Fly, pass them as
 `[build.args]`/`--build-arg` (and `ENV` in Dockerfile) or set them in the GitHub

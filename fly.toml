@@ -19,6 +19,7 @@ primary_region = "dfw"   # Dallas — closest region to the business + customers
     NEXT_PUBLIC_GADS_CONVERSION_ID = "AW-986491398"
     NEXT_PUBLIC_HOTJAR_ID = "6767089"
     NEXT_PUBLIC_META_PIXEL_ID = "28049302708044589"
+    NEXT_PUBLIC_GTM_ID = "GTM-N9MKXL65"
 
 [http_service]
   internal_port = 3000
